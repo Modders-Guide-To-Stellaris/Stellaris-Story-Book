@@ -1,0 +1,26 @@
+﻿l_english:
+
+
+
+#relic stuff
+
+
+ssp_r_khyran_bacterium:0 "Contained Khyran Bacterium"
+ssp_r_khyran_bacterium_desc:0 "TestDesc."
+ssp_r_bacterium_active_effect:0 "$ssp_r_khyran_bacterium$"
+
+
+ssp_r_drive_core:0 "Repaired Drive Core"
+ssp_r_drive_core_desc:0 "TestDesc."
+ssp_r_drive_core_effect:0 "$ssp_r_drive_core$"
+
+ssp_r_animarum:0 "The Animarum"
+ssp_r_animarum_desc:0 "TestDesc."
+ssp_r_animarum_active_effect:0 "$ssp_r_animarum$"
+ssp_r_animarum_passive_effect_tooltip:0 "Unlocks: §Italian Army§! Type" #change this
+ssp_r_animarum_active_effect_tooltip:0 "Spawns Soncio." 
+
+
+#armies
+ ssp_reanimated_army:0 "Director Soncio"
+ ssp_reanimated_army:0 "A powerful Italian named Soncio"
