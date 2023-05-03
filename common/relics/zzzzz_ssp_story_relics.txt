@@ -99,13 +99,13 @@ ssp_r_drive_core = {
 
 ssp_r_animarum = {
 	activation_duration = @triumph_duration_normal
-	portrait = "GFX_relic_galatron"
+	portrait = "GFX_ssp_r_the_animarum"
 	sound = "relic_activation_khans_throne"
 
 	resources = {
 		category = relics
 		cost = {
-            energy = 25000
+            unity = 3000
 		}
 	}
 	

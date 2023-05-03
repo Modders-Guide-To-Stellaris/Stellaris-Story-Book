@@ -10,4 +10,5 @@ ssp_r_animarum_active_effect = {
         army_defense_morale_damage_mult = 0.15
         army_morale_mult = 0.20
         army_morale_damage_mult = 0.15
+        #something is broken here, do some bug testing and looking for scopes
 	}

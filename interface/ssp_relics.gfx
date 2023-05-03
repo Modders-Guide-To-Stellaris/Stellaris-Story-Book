@@ -1,0 +1,7 @@
+#the animarum
+spriteTypes = {
+    spriteType = {
+    name = "GFX_ssp_r_the_animarum"
+    texturefile = "gfx/interface/icons/relics/ssp_r_the_animarum.dds"			
+    }
+}
