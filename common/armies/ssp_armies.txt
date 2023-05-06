@@ -1,7 +1,7 @@
 ssp_reanimated_army = {
 	damage = 3.75
 	morale_damage = 2.5
-	collateral_damage = 3.75
+	collateral_damage = 4.00
 	war_exhaustion = 0.25
 	health = 7.5
 	has_morale = no
@@ -16,8 +16,8 @@ ssp_reanimated_army = {
 			energy = 100
 		}
 		upkeep = {
-			energy = 10
-			alloys = 5
+			energy = 8
+			alloys = 3
 		}
 	}
 	

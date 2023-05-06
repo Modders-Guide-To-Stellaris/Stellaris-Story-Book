@@ -117,18 +117,17 @@ ssp_r_animarum = {
 		potential = {
 			is_gestalt = yes
 		}
-		army_defense_damage_mult = 0.20
-		army_defense_health_mult = 0.15
+		army_defense_damage_mult = 0.25
+		army_defense_health_mult = 0.25
 	}
 	triggered_country_modifier = {
 		potential = {
 			is_gestalt = no
 		}
 		
-		army_defense_morale_mult = 0.05
-		army_defense_morale_damage_mult = 0.05
-		army_defense_damage_mult = 0.2
-		army_defense_health_mult = 0.15
+		army_defense_morale_mult = 0.25
+		army_defense_damage_mult = 0.25
+		army_defense_health_mult = 0.25
 	}
 
 
@@ -150,11 +149,13 @@ ssp_r_animarum = {
 					name = "NAME_reanimated_army_fleet"
 					effect = {
 						set_owner = root
+						while = { 
+						count = 5
 						create_army_transport = {
 							ship_name = "NAME_undead_army_ship"
 							army_name = "NAME_undead_battleship"
 							army_type = ssp_reanimated_army
-							amount = 10
+						}
 						}
 						set_location = {
 							target = prev
@@ -174,7 +175,7 @@ ssp_r_animarum = {
 		hidden_effect = {
 			add_modifier = {
 				modifier = "relic_activation_cooldown" 
-				days = @triumph_duration_normal
+				days = @triumph_duration_half
 			}		
 		}
 	
