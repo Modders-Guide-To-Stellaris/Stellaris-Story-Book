@@ -1,0 +1,125 @@
+namespace = ssp_dig_site
+
+fleet_event = {
+	id = ssp_dig_site.10
+	title = ssp_dig_site.10.name
+	desc = ssp_dig_site.10.desc
+	show_sound = event_scanner
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		fromfrom = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		fromfrom = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = CURIOUS
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier1researchreward
+				min = @tier1researchmin
+				max = @tier1researchmax
+			}
+		}
+	}
+}
+
+
+fleet_event = {
+	id = ssp_dig_site.11
+	title = ssp_dig_site.11.name
+	desc = ssp_dig_site.11.desc
+	picture = GFX_evt_gpm_time_lost
+	show_sound = event_sensor_ping
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		fromfrom = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		fromfrom = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = EXCELLENT
+		owner = {
+			add_monthly_resource_mult = {
+				resource = engineering_research
+				value = @tier2researchreward
+				min = @tier2researchmin
+				max = @tier2researchmax
+			}
+		}
+	}
+}
+
+fleet_event = {
+	id = ssp_dig_site.12
+	title = ssp_dig_site.12.name
+	desc = ssp_dig_site.12.desc
+	picture = GFX_evt_gpm_time_lost_relic
+	show_sound = event_mystic_reveal
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		fromfrom = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		fromfrom = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = CURIOS
+		owner = {
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = @tier4researchreward
+				min = @tier4researchmin
+				max = @tier4researchmax
+			}
+		}
+		owner = { 
+            add_relic = ssp_r_animarum 
+        }
+		log = "<< RELICS >> | ADD_RELIC <<< ssp_r_animarum  >>> to OWNER = [owner.GetName] ; dig site reward"
+		owner = {
+			every_relation = {
+		
+        limit = {
+					gpm_is_country_type_default = yes
+					has_communications = root.owner
+				}
+				log = "<< RELICS >> | RELIC LOOTED <<< create message on THIS = [THIS.GetName]"
+				create_message = {
+					type = GPM_MESSAGE_RELIC_POSSESSION
+					localization = GPM_MESSAGE_RELIC_POSSESSION_DESC
+					days = 30
+					target = root.owner.capital_scope
+					variable = {
+						type = name
+						localization = COUNTRY
+						scope = root.owner
+					}
+				}
+			}
+		}
+	}
+}

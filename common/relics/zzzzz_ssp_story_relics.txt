@@ -3,6 +3,7 @@
 @triumph_duration_forth = 900
 @triumph_duration_1year = 360
 
+#Khyran Bacterium
 ssp_r_khyran_bacterium = {
 	activation_duration = @triumph_duration_normal
 	portrait = "GFX_relic_galatron"
@@ -52,6 +53,7 @@ ssp_r_khyran_bacterium = {
 	}
 }
 
+#Drive Core
 ssp_r_drive_core = {
 	activation_duration = @triumph_duration_normal
 	portrait = "GFX_relic_galatron"
@@ -97,6 +99,7 @@ ssp_r_drive_core = {
 	}
 }
 
+#Animarum
 ssp_r_animarum = {
 	activation_duration = @triumph_duration_normal
 	portrait = "GFX_ssp_r_the_animarum"
@@ -110,7 +113,7 @@ ssp_r_animarum = {
 	}
 	
 	ai_weight = {
-		weight = 100
+		weight = 2500
 	}
 	
 	triggered_country_modifier = {
@@ -152,8 +155,8 @@ ssp_r_animarum = {
 						while = { 
 						count = 5
 						create_army_transport = {
-							ship_name = "NAME_undead_army_ship"
-							army_name = "NAME_undead_battleship"
+							ship_name = "The Undead Army"
+							army_name = "Seeds of the Undead"
 							army_type = ssp_reanimated_army
 						}
 						}
@@ -175,7 +178,7 @@ ssp_r_animarum = {
 		hidden_effect = {
 			add_modifier = {
 				modifier = "relic_activation_cooldown" 
-				days = @triumph_duration_half
+				days = 1800
 			}		
 		}
 	
@@ -184,8 +187,64 @@ ssp_r_animarum = {
 	possible = {
 		custom_tooltip = {
 			fail_text = "requires_relic_no_cooldown"
-			NOT = { has_modifier = relic_activation_cooldown }
+			NOT = { 
+				has_modifier = relic_activation_cooldown 
+			}
 		}
 	}
   }
+}
+
+#pope relic
+	ssp_r_hypno = {
+		activation_duration = @triumph_duration_normal
+		portrait = "GFX_relic_galatron"
+		sound = "relic_activation_the_rubricator"
+	
+		resources = {
+			category = relics
+			cost = {
+				
+			}
+		}
+		
+		ai_weight = {
+			weight = 100
+		}
+		
+		triggered_country_modifier = {
+			potential = { 
+				always = yes 
+			}
+			planet_crime_add = -10
+		}
+		
+		score = 1000
+	
+		active_effect = {
+			add_modifier = { 
+				modifier = "ssp_r__active_effect"
+				days = 3600 
+			}
+			add_modifier = {
+				triggered_country_modifier = {
+					potential = {
+						is_gestalt = no
+					}
+				+30% pop religious
+			}
+			custom_tooltip = relic_triumph_cooldown
+			hidden_effect = {
+				add_modifier = { modifier = "relic_activation_cooldown" days = 3600 }
+			}
+		}
+	
+		# Possible check for activation
+		possible = {
+			custom_tooltip = {
+				fail_text = "requires_relic_no_cooldown"
+				NOT = { has_modifier = relic_activation_cooldown }
+			}
+		}
+	}
 }

@@ -1,9 +1,9 @@
 ﻿l_english:
 
 
-
-#relic stuff
-
+#############
+#relic stuff#
+#############
 
 ssp_r_khyran_bacterium:0 "Contained Khyran Bacterium"
 ssp_r_khyran_bacterium_desc:0 "TestDesc."
@@ -15,12 +15,32 @@ ssp_r_drive_core_desc:0 "TestDesc."
 ssp_r_drive_core_effect:0 "$ssp_r_drive_core$"
 
 ssp_r_animarum:0 "The Animarum"
-ssp_r_animarum_desc:0 "TestDesc."
+ssp_r_animarum_desc:0 "This powerful relic was once in possession of the Grand Reanimator. "
 ssp_r_animarum_active_effect:0 "$ssp_r_animarum$"
-ssp_r_animarum_passive_effect_tooltip:0 "Unlocks: §Italian Army§! Type" #change this
 ssp_r_animarum_active_effect_tooltip:0 "Spawns Soncio." 
 
+########
+#armies#
+########
 
-#armies
- ssp_reanimated_army:0 "Director Soncio"
- ssp_reanimated_army:0 "A powerful Italian named Soncio"
+ ssp_reanimated_army:0 "Reanimated Army"
+ ssp_reanimated_army:0 "Powerful Armies who used to served the Grand Reanimator."
+
+###############
+#Archaeo Sites#
+###############
+
+# Crashed Ship #
+
+ssp_bacterium_ship_digsite:0 "Crashed Y.E.E.T. Ship"
+ssp_bacterium_ship_desc:0 "I have no more energy"
+
+
+ssp_dig_site.10.name:0 "abab"
+ssp_dig_site.10.desc:0 "dada"
+
+ssp_dig_site.11.name:0 "baba"
+ssp_dig_site.11.desc:0 "adad"
+
+ssp_dig_site.12.name:0 "cdcd"
+ssp_dig_site.12.desc:0 "adds relic The Animarum"
