@@ -32,15 +32,18 @@ ssp_r_animarum_active_effect_tooltip:0 "Spawns Soncio."
 
 # Crashed Ship #
 
-ssp_bacterium_ship_digsite:0 "Crashed Y.E.E.T. Ship"
-ssp_bacterium_ship_desc:0 "I have no more energy"
+ssp_bacterium_ship_digsite:0 "Strange Transmission"
+ssp_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere in the galaxy. Hello! We are ** from ship **     -> Radiation levels are too high for our ship, we will have to find a way how to increase our radiation protection to land on the planet"
 
 
-ssp_dig_site.10.name:0 "abab"
-ssp_dig_site.10.desc:0 "dada"
+ssp_dig_site.10.name:0 "Our Ship Lands"
+ssp_dig_site.10.desc:0 ""
 
-ssp_dig_site.11.name:0 "baba"
-ssp_dig_site.11.desc:0 "adad"
+ssp_dig_site.11.name:0 "Flora & Fauna"
+ssp_dig_site.11.desc:0 "Scanning flora & fauna for research"
 
-ssp_dig_site.12.name:0 "cdcd"
-ssp_dig_site.12.desc:0 "adds relic The Animarum"
+ssp_dig_site.12.name:0 "Data Terminal"
+ssp_dig_site.12.desc:0 "find arch site JNNFNDRY_PRCRSRTCH"
+
+ssp_dig_site.13.name:0 "Nuclear Meltdown"
+ssp_dig_site.13.desc:0 ""

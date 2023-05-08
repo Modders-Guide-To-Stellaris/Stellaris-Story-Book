@@ -23,14 +23,14 @@ fleet_event = {
 		name = CURIOUS
 		owner = {
 			add_monthly_resource_mult = {
-				resource = society_research
-				value = @tier1researchreward
-				min = @tier1researchmin
-				max = @tier1researchmax
+				resource = physics_research
+				value = @tier3researchreward
+				min = @tier2researchmin
+				max = @tier5researchmax
 			}
 		}
 	}
-}
+} 
 
 
 fleet_event = {
@@ -57,14 +57,14 @@ fleet_event = {
 		name = EXCELLENT
 		owner = {
 			add_monthly_resource_mult = {
-				resource = engineering_research
-				value = @tier2researchreward
-				min = @tier2researchmin
-				max = @tier2researchmax
+				resource = society_research
+				value = @tier4researchreward
+				min = @tier1researchmin
+				max = @tier4researchmax
 			}
 		}
 	}
-}
+}  #Society Research
 
 fleet_event = {
 	id = ssp_dig_site.12
@@ -91,35 +91,62 @@ fleet_event = {
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
-				value = @tier4researchreward
-				min = @tier4researchmin
-				max = @tier4researchmax
+				value = @tier5researchreward
+				min = @tier1researchmin
+				max = @tier3researchmax
 			}
 		}
-		owner = { 
-            add_relic = ssp_r_animarum 
-        }
-		log = "<< RELICS >> | ADD_RELIC <<< ssp_r_animarum  >>> to OWNER = [owner.GetName] ; dig site reward"
-		owner = {
-			every_relation = {
-		
-        limit = {
-					gpm_is_country_type_default = yes
-					has_communications = root.owner
+		#give coordinates to a different ARCH site that contains Jonan foundry precursor tech
+	}
+}
+
+	fleet_event = {
+		id = ssp_dig_site.13
+		title = ssp_dig_site.13.name
+		desc = ssp_dig_site.13.desc
+		show_sound = event_scanner
+		location = from
+	
+		archaeology = yes
+	
+		is_triggered_only = yes
+	
+		immediate = {
+			fromfrom = { set_site_progress_locked = yes }
+		}
+	
+		after = {
+			fromfrom = { set_site_progress_locked = no }
+		}
+	
+		option = {
+			name = EPIC #either give Khyran Bacterium OR drive core
+
+				owner = { 
+					add_relic = ssp_r_animarum 
 				}
-				log = "<< RELICS >> | RELIC LOOTED <<< create message on THIS = [THIS.GetName]"
-				create_message = {
-					type = GPM_MESSAGE_RELIC_POSSESSION
-					localization = GPM_MESSAGE_RELIC_POSSESSION_DESC
-					days = 30
-					target = root.owner.capital_scope
-					variable = {
-						type = name
-						localization = COUNTRY
-						scope = root.owner
+				log = "<< RELICS >> | ADD_RELIC <<< ssp_r_animarum  >>> to OWNER = [owner.GetName] ; dig site reward"
+				owner = {
+					every_relation = {
+				
+				limit = {
+							gpm_is_country_type_default = yes
+							has_communications = root.owner
+						}
+						log = "<< RELICS >> | RELIC LOOTED <<< create message on THIS = [THIS.GetName]"
+						create_message = {
+							type = GPM_MESSAGE_RELIC_POSSESSION
+							localization = GPM_MESSAGE_RELIC_POSSESSION_DESC
+							days = 30
+							target = root.owner.capital_scope
+							variable = {
+								type = name
+								localization = COUNTRY
+								scope = root.owner
+							}
+						}
 					}
 				}
 			}
 		}
-	}
-}
+	
