@@ -37,10 +37,10 @@ ssp_bacterium_ship_desc:0 "We have received a strange transmission from a scienc
 
 
 ssp_dig_site.10.name:0 "Our Ship Lands"
-ssp_dig_site.10.desc:0 ""
+ssp_dig_site.10.desc:0 "We have landed on the planet, research suggests that this planet has rich biodiversity. The ocean floor is full of metal wrecks along with flora that does not appear on any planet we have seen before. Scans suggest that this has come from the extended exposure to the reactor of the crashed ship. Further research is advised. "
 
-ssp_dig_site.11.name:0 "Flora & Fauna"
-ssp_dig_site.11.desc:0 "Scanning flora & fauna for research"
+ssp_dig_site.11.name:0 "The Mysterious Wreckage"
+ssp_dig_site.11.desc:0 "After traversing and scanning the flora and fauna we finally came apun the ship mentioned in the transmission. Signs show that this ship is more than 1000 years old, which would indicate it served during the Crisis of Kangs era."
 
 ssp_dig_site.12.name:0 "Data Terminal"
 ssp_dig_site.12.desc:0 "find arch site JNNFNDRY_PRCRSRTCH"

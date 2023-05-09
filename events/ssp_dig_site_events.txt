@@ -54,7 +54,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = EXCELLENT
+		name = We should go in to investigate.
 		owner = {
 			add_monthly_resource_mult = {
 				resource = society_research
@@ -87,7 +87,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = CURIOS
+		name = Page the nearest science ship about this discovery.
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -120,12 +120,42 @@ fleet_event = {
 		}
 	
 		option = {
-			name = EPIC #either give Khyran Bacterium OR drive core
+			name = This specimen will be of great use to our reserach department.
 
 				owner = { 
-					add_relic = ssp_r_animarum 
+					add_relic = ssp_r_khyran_bacterium
 				}
-				log = "<< RELICS >> | ADD_RELIC <<< ssp_r_animarum  >>> to OWNER = [owner.GetName] ; dig site reward"
+				log = "<< RELICS >> | ADD_RELIC <<< ssp_r_khyran_bacterium  >>> to OWNER = [owner.GetName] ; dig site reward"
+				owner = {
+					every_relation = {
+				
+				limit = {
+							gpm_is_country_type_default = yes
+							has_communications = root.owner
+						}
+						log = "<< RELICS >> | RELIC LOOTED <<< create message on THIS = [THIS.GetName]"
+						create_message = {
+							type = GPM_MESSAGE_RELIC_POSSESSION
+							localization = GPM_MESSAGE_RELIC_POSSESSION_DESC
+							days = 30
+							target = root.owner.capital_scope
+							variable = {
+								type = name
+								localization = COUNTRY
+								scope = root.owner
+							}
+						}
+					}
+				}
+			}
+
+			option = {
+			name = We will not take unneccersary risks, save the drive core!
+
+				owner = { 
+					add_relic = ssp_r_drive_core
+				}
+				log = "<< RELICS >> | ADD_RELIC <<< ssp_r_drive_core  >>> to OWNER = [owner.GetName] ; dig site reward"
 				owner = {
 					every_relation = {
 				
