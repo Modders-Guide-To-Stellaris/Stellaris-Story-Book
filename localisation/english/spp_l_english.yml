@@ -17,7 +17,7 @@ ssp_r_drive_core_effect:0 "$ssp_r_drive_core$"
 ssp_r_animarum:0 "The Animarum"
 ssp_r_animarum_desc:0 "This powerful relic was once in possession of the Grand Reanimator. "
 ssp_r_animarum_active_effect:0 "$ssp_r_animarum$"
-ssp_r_animarum_active_effect_tooltip:0 "Spawns Soncio." 
+ssp_r_animarum_active_effect_tooltip:0 "Spawns Reanimated Armies" 
 
 ########
 #armies#
