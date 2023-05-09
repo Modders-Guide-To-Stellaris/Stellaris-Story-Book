@@ -20,7 +20,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = CURIOUS
+		name = ssp_dig_site.10a.name
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -54,7 +54,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = We should go in to investigate.
+		name = ssp_dig_site.11a.name
 		owner = {
 			add_monthly_resource_mult = {
 				resource = society_research
@@ -87,7 +87,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = Page the nearest science ship about this discovery.
+		name = ssp_dig_site.12a.name
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -120,7 +120,7 @@ fleet_event = {
 		}
 	
 		option = {
-			name = This specimen will be of great use to our reserach department.
+			name = ssp_dig_site.13a.name
 
 				owner = { 
 					add_relic = ssp_r_khyran_bacterium
@@ -150,7 +150,7 @@ fleet_event = {
 			}
 
 			option = {
-			name = We will not take unneccersary risks, save the drive core!
+			name = ssp_dig_site.13b.name
 
 				owner = { 
 					add_relic = ssp_r_drive_core
