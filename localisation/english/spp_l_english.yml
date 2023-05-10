@@ -37,22 +37,37 @@ ssp_bacterium_ship_desc:0 "We have received a strange transmission from a scienc
 
 Hello! We are ** from ship **    
 
- We have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
+We have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
 
+#!!!figure out how to make spaces inbetween so its not 1 big text bubble 
 
-ssp_dig_site.10.name:0 "Our Ship Lands"
-ssp_dig_site.10a.name:0 "Great"
-ssp_dig_site.10.desc:0 "We have landed on the planet, research suggests that this planet has rich biodiversity. The ocean floor is full of metal wrecks along with flora that does not appear on any planet we have seen before. Scans suggest that this has come from the extended exposure to the reactor of the crashed ship. Further research is advised. "
+ssp_dig_site.1.name:0 "Our Ship Lands"
+ssp_dig_site.1a.name:0 "Great"
+ssp_dig_site.1.desc:0 "We have landed on the planet, research suggests that this planet has rich biodiversity. The ocean floor is full of metal wrecks along with flora that does not appear on any planet we have seen before. Scans suggest that this has come from the extended exposure to the reactor of the crashed ship. Further research is advised. "
 
-ssp_dig_site.11.name:0 "The Mysterious Wreckage"
-ssp_dig_site.11a.name:0 "We should go in to investigate."
-ssp_dig_site.11.desc:0 "After traversing and scanning the flora and fauna we finally came apun the ship mentioned in the transmission. Signs show that this ship is more than 1000 years old, which would indicate it served during the Crisis of Kangs era."
+ssp_dig_site.2.name:0 "The Mysterious Wreckage"
+ssp_dig_site.2a.name:0 "We should go in to investigate."
+ssp_dig_site.2.desc:0 "After traversing and scanning the flora and fauna we finally came apun the ship mentioned in the transmission. Signs show that this ship is more than 1000 years old, which would indicate it served during the Crisis of Kangs era."
 
-ssp_dig_site.12.name:0 "Data Terminal"
-ssp_dig_site.12a.name:0 "Page the nearest science ship about this discovery."
-ssp_dig_site.12.desc:0 "We found a data terminal on the science ship containing data about anomalies and coordinates to now deceased systems. Although we have managed to link one of the coordinates to a system that should still exist, there is a note with the planet saying '01000011 01101111 01101101 01101101 01110101 01101110 01101001 01100011 01100001 01110100 01101001 01101111 01101110 00100000 01001000 01110101 01100010'."
+ssp_dig_site.3.name:0 "Data Terminal"
+ssp_dig_site.3a.name:0 "Page the nearest science ship about this discovery."
+ssp_dig_site.3.desc:0 "We found a data terminal on the science ship containing data about anomalies and coordinates to now deceased systems. Although we have managed to link one of the coordinates to a system that should still exist, there is a note with the planet saying '01000011 01101111 01101101 01101101 01110101 01101110 01101001 01100011 01100001 01110100 01101001 01101111 01101110 00100000 01001000 01110101 01100010'."
 
-ssp_dig_site.13.name:0 "Nuclear Meltdown"
-ssp_dig_site.13a.name:0 "This specimen will be of great use to our reserach department."
-ssp_dig_site.13b.name:0 "We will not take unneccersary risks, save the drive core!"
-ssp_dig_site.13.desc:0 "We may have unsetteled something in the ship, the reactor leak has grown bigger and we are under constant attack from the nearby fauna, we need to make a decision now. We found a robot specimen infected with something, we believe it to be the cause of the death. Alternatively the drive core of the ship. it's more advanced than ours and in is still in perfect state, these jonans knew what they were doing. "
+ssp_dig_site.4.name:0 "Nuclear Meltdown"
+ssp_dig_site.4a.name:0 "This specimen will be of great use to our reserach department."
+ssp_dig_site.4b.name:0 "We will not take unneccersary risks, save the drive core!"
+ssp_dig_site.4.desc:0 "We may have unsetteled something in the ship, the reactor leak has grown bigger and we are under constant attack from the nearby fauna, we need to make a decision now. We found a robot specimen infected with something, we believe it to be the cause of the death. Alternatively the drive core of the ship. it's more advanced than ours and in is still in perfect state, these jonans knew what they were doing. "
+
+# Jonan Communication Hub #
+
+ssp_dig_site.5.name:0 ""
+ssp_dig_site.5a.name:0 ""
+ssp_dig_site.5.desc:0 ""
+
+ssp_dig_site.6.name:0 ""
+ssp_dig_site.6a.name:0 ""
+ssp_dig_site.6.desc:0 ""
+
+ssp_dig_site.7.name:0 ""
+ssp_dig_site.7a.name:0 ""
+ssp_dig_site.7.desc:0 ""

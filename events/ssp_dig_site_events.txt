@@ -1,9 +1,11 @@
 namespace = ssp_dig_site
 
+#BacteriumShip
+
 fleet_event = {
-	id = ssp_dig_site.10
-	title = ssp_dig_site.10.name
-	desc = ssp_dig_site.10.desc
+	id = ssp_dig_site.1
+	title = ssp_dig_site.1.name
+	desc = ssp_dig_site.1.desc
 	show_sound = event_scanner
 	location = from
 
@@ -20,7 +22,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = ssp_dig_site.10a.name
+		name = ssp_dig_site.1a.name
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -34,9 +36,9 @@ fleet_event = {
 
 
 fleet_event = {
-	id = ssp_dig_site.11
-	title = ssp_dig_site.11.name
-	desc = ssp_dig_site.11.desc
+	id = ssp_dig_site.2
+	title = ssp_dig_site.2.name
+	desc = ssp_dig_site.2.desc
 	picture = GFX_evt_gpm_time_lost
 	show_sound = event_sensor_ping
 	location = from
@@ -54,7 +56,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = ssp_dig_site.11a.name
+		name = ssp_dig_site.2a.name
 		owner = {
 			add_monthly_resource_mult = {
 				resource = society_research
@@ -67,9 +69,9 @@ fleet_event = {
 }  #Society Research
 
 fleet_event = {
-	id = ssp_dig_site.12
-	title = ssp_dig_site.12.name
-	desc = ssp_dig_site.12.desc
+	id = ssp_dig_site.3
+	title = ssp_dig_site.3.name
+	desc = ssp_dig_site.3.desc
 	picture = GFX_evt_gpm_time_lost_relic
 	show_sound = event_mystic_reveal
 	location = from
@@ -87,7 +89,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = ssp_dig_site.12a.name
+		name = ssp_dig_site.3a.name
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -101,9 +103,9 @@ fleet_event = {
 }
 
 	fleet_event = {
-		id = ssp_dig_site.13
-		title = ssp_dig_site.13.name
-		desc = ssp_dig_site.13.desc
+		id = ssp_dig_site.4
+		title = ssp_dig_site.4.name
+		desc = ssp_dig_site.4.desc
 		show_sound = event_scanner
 		location = from
 	
@@ -120,7 +122,7 @@ fleet_event = {
 		}
 	
 		option = {
-			name = ssp_dig_site.13a.name
+			name = ssp_dig_site.4a.name
 
 				owner = { 
 					add_relic = ssp_r_khyran_bacterium
@@ -150,7 +152,7 @@ fleet_event = {
 			}
 
 			option = {
-			name = ssp_dig_site.13b.name
+			name = ssp_dig_site.4b.name
 
 				owner = { 
 					add_relic = ssp_r_drive_core
@@ -180,3 +182,5 @@ fleet_event = {
 			}
 		}
 	
+
+#CommunicationHub
