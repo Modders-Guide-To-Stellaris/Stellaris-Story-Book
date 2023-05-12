@@ -88,18 +88,7 @@ fleet_event = {
 		fromfrom = { set_site_progress_locked = no }
 	}
 
-	option = {
-		name = ssp_dig_site.3a.name
-		owner = {
-			add_monthly_resource_mult = {
-				resource = physics_research
-				value = @tier5researchreward
-				min = @tier1researchmin
-				max = @tier3researchmax
-			}
-		}
-		#give coordinates to a different ARCH site that contains Jonan foundry precursor tech
-	}
+##MAKE IT SPAWN THE JONAN FOUNDRY THING HERE
 }
 
 	fleet_event = {
@@ -184,3 +173,99 @@ fleet_event = {
 	
 
 #CommunicationHub
+
+fleet_event = {
+	id = ssp_dig_site.5
+	title = ssp_dig_site.5.name
+	desc = ssp_dig_site.5.desc
+	show_sound = event_scanner
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		fromfrom = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		fromfrom = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = ssp_dig_site.5a.name
+		owner = {
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = @tier3researchreward
+				min = @tier2researchmin
+				max = @tier5researchmax
+			}
+		}
+	} #update this
+} 
+
+
+fleet_event = {
+	id = ssp_dig_site.6
+	title = ssp_dig_site.6.name
+	desc = ssp_dig_site.6.desc
+	picture = GFX_evt_gpm_time_lost
+	show_sound = event_sensor_ping
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		fromfrom = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		fromfrom = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = ssp_dig_site.6a.name
+		owner = {
+			add_monthly_resource_mult = {
+				resource = society_research
+				value = @tier4researchreward
+				min = @tier1researchmin
+				max = @tier4researchmax
+			}
+		}
+	} #update this
+} 
+
+fleet_event = {
+	id = ssp_dig_site.7
+	title = ssp_dig_site.7.name
+	desc = ssp_dig_site.7.desc
+	picture = GFX_evt_gpm_time_lost_relic
+	show_sound = event_mystic_reveal
+	location = from
+
+	archaeology = yes
+
+	is_triggered_only = yes
+
+	immediate = {
+		fromfrom = { set_site_progress_locked = yes }
+	}
+
+	after = {
+		fromfrom = { set_site_progress_locked = no }
+	}
+
+	option = {
+		name = ssp_dig_site.7a.name
+		owner = {
+					add_research_option = tech_ssp_jonan_communication_key
+					hidden_effect = { add_tech_progress = { tech = tech_ssp_jonan_communication_key progress = 0.33 } }
+				}
+				modifier = { factor = 0 owner = { has_technology = tech_ssp_jonan_communication_key } }
+	}
+}

@@ -3,11 +3,19 @@ ssp_bacterium_ship_digsite = {
 	picture = GFX_evt_gpm_time_lost #make it only appear on a custom ocean planet!
 	stages = 4
 	max_instances = 1
-	weight = 0
+		weight = {
+		base = 0
+		modifier = {
+			add = 100
+			is_planet_class = pc_ocean
+		}
+	}
 	allow = {
 		is_ship_class = shipclass_science_ship
 		exists = leader
 	}
+
+	
 	visible = {
 		default_site_visible_trigger = yes
 	}
