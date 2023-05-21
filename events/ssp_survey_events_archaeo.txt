@@ -3,11 +3,14 @@ namespace = ssp_survey_events_archaeo
 ship_event = {
 	id = ssp_survey_events_archaeo.1
 	hide_window = yes
-
 	is_triggered_only = yes
+	location = FROM
 
 	trigger = {
 		FROM = {
+			planet = {
+			class = "pc_ocean"
+			}
 			NOR = {
 				exists = archaeological_site
 				has_planet_flag = suppress_archaeological_sites
@@ -27,33 +30,14 @@ ship_event = {
 			}
 		}
 	}
-
 	immediate = {
-		random_list = {
-			400 = {}
-			100 = { #changed this from 5 to 100
-				modifier = {
-					factor = 0.2
-					OR = {
-						owner = { is_ai = yes }
-						owner = { has_country_flag = discovered_site }
-					}
-				}
-				from = {
-					prevent_anomaly = yes
+		locked_random_list = {
+			5 = {}
+			}
+			95 = {
+				FROM = {
 					create_archaeological_site = ssp_bacterium_ship_digsite
-				}
-				if = { #Not all celestial bodies can have arc sites
-					limit = {
-						exists = from.archaeological_site
-					}
-					owner = {
-						set_timed_country_flag = {
-							flag = discovered_site
-							days = 1800
-						}
-					}
-				}
+
 			}
 		}
 	}
