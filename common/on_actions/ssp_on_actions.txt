@@ -1,5 +1,4 @@
 on_survey = {
 	events = {
-		ssp_survey_events_archaeo.1			# bacterium ship survey chance
     }
 }

@@ -1,9 +1,0 @@
-	planet = {
-		class = "pc_ocean"
-		orbit_distance = 30
-		init_effect = {
-			#set_planet_flag = rubricator_planet
-			#save_global_event_target_as = rubricator_planet
-			create_archaeological_site = ssp_bacterium_ship_digsite
-		}
-	}

@@ -195,12 +195,13 @@ ssp_r_animarum = {
   }
 }
 
+
 #pope relic
 	ssp_r_hypno = {
 		activation_duration = @triumph_duration_normal
 		portrait = "GFX_relic_galatron"
 		sound = "relic_activation_the_rubricator"
-	
+	#make it so materials CANNOT get this relic
 		resources = {
 			category = relics
 			cost = {
@@ -223,7 +224,7 @@ ssp_r_animarum = {
 	
 		active_effect = {
 			add_modifier = { 
-				modifier = "ssp_r__active_effect"
+				modifier = "ssp_r__active_effect" #supposed to still name this thing
 				days = 3600 
 			}
 			add_modifier = {
@@ -231,7 +232,7 @@ ssp_r_animarum = {
 					potential = {
 						is_gestalt = no
 					}
-				+30% pop religious
+				#+30% or 75, whichever is more, make pop religious/Spiritualist
 			}
 			custom_tooltip = relic_triumph_cooldown
 			hidden_effect = {

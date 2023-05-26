@@ -1,0 +1,25 @@
+namespace = fox_archaeo
+### Bacterium Ship
+
+# Encountered Signal
+ship_event = {
+	id = fox_archaeo.1
+	title = "archaeo.1.name"
+	desc = "archaeo.1.desc"
+    picture = GFX_evt_warm_barren
+    show_sound = event_scanner
+    location = fromfrom
+
+    is_triggered_only = yes
+
+    immediate = {
+		from = { save_event_target_as = bacterium_digsite }
+	}
+
+    option = {
+        name = INTRIGUING
+        fromfrom = {
+            create_archaeological_site = ssp_bacterium_ship_digsite
+        }
+    }
+}

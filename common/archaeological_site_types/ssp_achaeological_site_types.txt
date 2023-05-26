@@ -48,7 +48,7 @@ ssp_bacterium_ship_digsite = {
 }
 
 ssp_communication_hub_digsite = {
-	desc = communication_hub_desc
+	desc = ssp_communication_hub_desc
 	picture = GFX_evt_gpm_time_lost
 	stages = 3
 	max_instances = 1

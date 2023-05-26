@@ -66,6 +66,9 @@ ssp_dig_site.4.desc:0 "We may have unsetteled something in the ship, the reactor
 
 # Jonan Communication Hub #
 
+ssp_communication_hub_digsite:0 "Jonan Communication Hub"
+ssp_communication_hub_desc:0 "Precursor Arch Site Pt.2"
+
 ssp_dig_site.5.name:0 ""
 ssp_dig_site.5a.name:0 ""
 ssp_dig_site.5.desc:0 ""
@@ -77,3 +80,21 @@ ssp_dig_site.6.desc:0 ""
 ssp_dig_site.7.name:0 ""
 ssp_dig_site.7a.name:0 ""
 ssp_dig_site.7.desc:0 ""
+
+###########
+#Anomalies#
+###########
+
+#Digsites
+
+disco_bacterium_ship:0 "Strange Transmission"
+disco_bacterium_ship_desc:0 "This is a strange transmission I guess"
+
+########
+#Events#
+########
+
+#Archaeo
+
+archaeo.1.name:0 "Archaeo Digsite Test"
+archaeo.1.desc:0 "Our sciencetists have picked up a strange transmission from §H[From.GetName]§!" 
