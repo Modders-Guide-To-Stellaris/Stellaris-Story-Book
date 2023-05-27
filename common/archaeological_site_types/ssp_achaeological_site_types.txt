@@ -6,7 +6,7 @@ ssp_bacterium_ship_digsite = {
 		weight = {
 		base = 0
 		modifier = {
-			add = 100
+			add = 5
 			is_planet_class = pc_ocean
 		}
 	}

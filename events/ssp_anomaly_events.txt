@@ -1,7 +1,5 @@
 namespace = fox_archaeo
 ### Bacterium Ship
-
-# Encountered Signal
 ship_event = {
 	id = fox_archaeo.1
 	title = "archaeo.1.name"
