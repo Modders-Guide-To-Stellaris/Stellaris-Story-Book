@@ -88,8 +88,26 @@ fleet_event = {
 		fromfrom = { set_site_progress_locked = no }
 	}
 
-##MAKE IT SPAWN THE JONAN FOUNDRY THING HERE
+	immediate = {
+		closest_system = {
+			min_steps = 3
+			max_steps = 10
+			setup_jonan_digsite = yes
+		}
+	}
+	option = {
+		name = ssp_dig_site.3a.name
+		owner = {
+			add_monthly_resource_mult = {
+				resource = physics_research
+				value = @tier3researchreward
+				min = @tier2researchmin
+				max = @tier5researchmax
+			}
+		}
+	}	
 }
+	
 
 	fleet_event = {
 		id = ssp_dig_site.4
