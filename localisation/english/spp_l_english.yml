@@ -39,11 +39,7 @@ ssp_r_animarum_active_effect_tooltip:0 "Spawns Reanimated Armies"
 # Crashed Ship #
 
 ssp_bacterium_ship_digsite:0 "Strange Transmission"
-ssp_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere in the galaxy. 
-
-Hello! We are ** from ship **    
-
-We have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
+ssp_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere in the galaxy. \n\ Hello! We are ** from ship **   \n\ We have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
 
 #!!!figure out how to make spaces inbetween so its not 1 big text bubble 
 
