@@ -39,7 +39,7 @@ ssp_r_animarum_active_effect_tooltip:0 "Spawns Reanimated Armies"
 # Crashed Ship #
 
 ssp_bacterium_ship_digsite:0 "Strange Transmission"
-ssp_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere in the galaxy. \n\ Hello! We are ** from ship **   \n\ We have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
+ssp_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere in the galaxy. \n\\n\ Hello! We are ** from ship **   \n\\n\ We have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
 
 #!!!figure out how to make spaces inbetween so its not 1 big text bubble 
 
@@ -67,15 +67,15 @@ ssp_communication_hub_desc:0 "Precursor Arch Site Pt.2"
 
 ssp_dig_site.5.name:0 ""
 ssp_dig_site.5a.name:0 ""
-ssp_dig_site.5.desc:0 ""
+ssp_dig_site.5.desc:0 "Talk about infiltration of the communication hub"
 
 ssp_dig_site.6.name:0 ""
 ssp_dig_site.6a.name:0 ""
-ssp_dig_site.6.desc:0 ""
+ssp_dig_site.6.desc:0 "something about the turrets still being active"
 
 ssp_dig_site.7.name:0 ""
 ssp_dig_site.7a.name:0 ""
-ssp_dig_site.7.desc:0 ""
+ssp_dig_site.7.desc:0 "something about the AI terminal, communication key. how the race died and they are willing to give us the key."
 
 ###########
 #Anomalies#
@@ -92,4 +92,4 @@ disco_bacterium_ship_desc:0 "This is a strange transmission I guess"
 
 #Archaeo
 archaeo.1.name:0 "Archaeo Digsite Test"
-archaeo.1.desc:0 "Our sciencetists have picked up a strange transmission from §H[From.GetName]§ \n\ The signal is very close to one our ships use. \n\ Study suggests that the signal is in the northwest region of the planet. " 
+archaeo.1.desc:0 "Our sciencetists have picked up a strange transmission from [From.GetName] \n\ The signal is very close to one our ships use. \n\ Study suggests that the signal is in the northwest region of the planet. " 

@@ -1,6 +1,6 @@
 ssp_bacterium_ship_digsite = {
 	desc = ssp_bacterium_ship_desc
-	picture = GFX_evt_gpm_time_lost #make it only appear on a custom ocean planet!
+	picture =  GFX_evt_communication_event
 	stages = 4
 	max_instances = 1
 		weight = {
@@ -20,22 +20,22 @@ ssp_bacterium_ship_digsite = {
 		default_site_visible_trigger = yes
 	}
 	stage = {
-		difficulty = 3
+		difficulty = 2
 		event = ssp_dig_site.1
 		icon = GFX_archaeology_runes_A1
 	}
 	stage = {
-		difficulty = 4
+		difficulty = 3
 		event = ssp_dig_site.2
 		icon = GFX_archaeology_runes_A2
 	}
 	stage = {
-		difficulty = 6
+		difficulty = 4
 		event = ssp_dig_site.3
 		icon = GFX_archaeology_runes_A3
 	}
 	stage = {
-		difficulty = 8
+		difficulty = 6
 		event = ssp_dig_site.4
 		icon = GFX_archaeology_runes_A1
 	}
@@ -49,7 +49,7 @@ ssp_bacterium_ship_digsite = {
 
 ssp_communication_hub_digsite = {
 	desc = ssp_communication_hub_desc
-	picture = GFX_evt_gpm_time_lost
+	picture = GFX_evt_intelligence_report
 	stages = 3
 	max_instances = 1
 	weight = 0
@@ -61,17 +61,17 @@ ssp_communication_hub_digsite = {
 		default_site_visible_trigger = yes
 	}
 	stage = {
-		difficulty = 6
+		difficulty = 5
 		event = ssp_dig_site.5
 		icon = GFX_archaeology_runes_A1
 	}
 	stage = {
-		difficulty = 7
+		difficulty = 5
 		event = ssp_dig_site.6
 		icon = GFX_archaeology_runes_A2
 	}
 	stage = {
-		difficulty = 8
+		difficulty = 7
 		event = ssp_dig_site.7
 		icon = GFX_archaeology_runes_A3
 	}

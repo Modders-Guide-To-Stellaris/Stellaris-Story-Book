@@ -6,6 +6,7 @@ fleet_event = {
 	id = ssp_dig_site.1
 	title = ssp_dig_site.1.name
 	desc = ssp_dig_site.1.desc
+	picture = GFX_evt_landing_ship
 	show_sound = event_scanner
 	location = from
 
@@ -39,7 +40,7 @@ fleet_event = {
 	id = ssp_dig_site.2
 	title = ssp_dig_site.2.name
 	desc = ssp_dig_site.2.desc
-	picture = GFX_evt_gpm_time_lost
+	picture = GFX_evt_ocean
 	show_sound = event_sensor_ping
 	location = from
 
@@ -72,7 +73,7 @@ fleet_event = {
 	id = ssp_dig_site.3
 	title = ssp_dig_site.3.name
 	desc = ssp_dig_site.3.desc
-	picture = GFX_evt_gpm_time_lost_relic
+	picture = GFX_evt_ancient_databank
 	show_sound = event_mystic_reveal
 	location = from
 
@@ -82,19 +83,17 @@ fleet_event = {
 
 	immediate = {
 		fromfrom = { set_site_progress_locked = yes }
+		closest_system = {
+			min_steps = 5
+			max_steps = 15
+			setup_jonan_digsite = yes
+		}
 	}
 
 	after = {
 		fromfrom = { set_site_progress_locked = no }
 	}
 
-	immediate = {
-		closest_system = {
-			min_steps = 3
-			max_steps = 10
-			setup_jonan_digsite = yes
-		}
-	}
 	option = {
 		name = ssp_dig_site.3a.name
 		owner = {
@@ -113,6 +112,7 @@ fleet_event = {
 		id = ssp_dig_site.4
 		title = ssp_dig_site.4.name
 		desc = ssp_dig_site.4.desc
+		picture = GFX_evt_exploding_ship
 		show_sound = event_scanner
 		location = from
 	
@@ -133,58 +133,13 @@ fleet_event = {
 
 				owner = { 
 					add_relic = ssp_r_khyran_bacterium
-				}
-				log = "<< RELICS >> | ADD_RELIC <<< ssp_r_khyran_bacterium  >>> to OWNER = [owner.GetName] ; dig site reward"
-				owner = {
-					every_relation = {
-				
-				limit = {
-							gpm_is_country_type_default = yes
-							has_communications = root.owner
-						}
-						log = "<< RELICS >> | RELIC LOOTED <<< create message on THIS = [THIS.GetName]"
-						create_message = {
-							type = GPM_MESSAGE_RELIC_POSSESSION
-							localization = GPM_MESSAGE_RELIC_POSSESSION_DESC
-							days = 30
-							target = root.owner.capital_scope
-							variable = {
-								type = name
-								localization = COUNTRY
-								scope = root.owner
-							}
-						}
-					}
-				}
 			}
-
+		}
 			option = {
 			name = ssp_dig_site.4b.name
 
 				owner = { 
 					add_relic = ssp_r_drive_core
-				}
-				log = "<< RELICS >> | ADD_RELIC <<< ssp_r_drive_core  >>> to OWNER = [owner.GetName] ; dig site reward"
-				owner = {
-					every_relation = {
-				
-				limit = {
-							gpm_is_country_type_default = yes
-							has_communications = root.owner
-						}
-						log = "<< RELICS >> | RELIC LOOTED <<< create message on THIS = [THIS.GetName]"
-						create_message = {
-							type = GPM_MESSAGE_RELIC_POSSESSION
-							localization = GPM_MESSAGE_RELIC_POSSESSION_DESC
-							days = 30
-							target = root.owner.capital_scope
-							variable = {
-								type = name
-								localization = COUNTRY
-								scope = root.owner
-							}
-						}
-					}
 				}
 			}
 		}
@@ -196,6 +151,7 @@ fleet_event = {
 	id = ssp_dig_site.5
 	title = ssp_dig_site.5.name
 	desc = ssp_dig_site.5.desc
+	picture = GFX_evt_synth_sabotage
 	show_sound = event_scanner
 	location = from
 
@@ -229,7 +185,7 @@ fleet_event = {
 	id = ssp_dig_site.6
 	title = ssp_dig_site.6.name
 	desc = ssp_dig_site.6.desc
-	picture = GFX_evt_gpm_time_lost
+	picture = GFX_evt_sentry_guns
 	show_sound = event_sensor_ping
 	location = from
 
@@ -262,7 +218,7 @@ fleet_event = {
 	id = ssp_dig_site.7
 	title = ssp_dig_site.7.name
 	desc = ssp_dig_site.7.desc
-	picture = GFX_evt_gpm_time_lost_relic
+	picture = GFX_evt_sapient_AI
 	show_sound = event_mystic_reveal
 	location = from
 
