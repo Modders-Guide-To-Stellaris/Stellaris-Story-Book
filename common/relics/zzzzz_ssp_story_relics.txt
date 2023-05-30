@@ -6,8 +6,8 @@
 #Khyran Bacterium
 ssp_r_khyran_bacterium = {
 	activation_duration = @triumph_duration_normal
-	portrait = "GFX_relic_galatron"
-	sound = "relic_activation_the_rubricator"
+	portrait = "GFX_relic_bacterium_sample"
+	sound = "relic_activation_javorian_pox_sample"
 
 	resources = {
 		category = relics
@@ -56,7 +56,7 @@ ssp_r_khyran_bacterium = {
 #Drive Core
 ssp_r_drive_core = {
 	activation_duration = @triumph_duration_normal
-	portrait = "GFX_relic_galatron"
+	portrait = "GFX_relic_drive_core"
 	sound = "relic_activation_the_rubricator"
 
 	resources = {
