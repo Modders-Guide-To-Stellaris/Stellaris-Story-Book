@@ -12,9 +12,8 @@ ssp_r_khyran_bacterium = {
 	resources = {
 		category = relics
 		cost = {
-			minor_artifacts = 1000
-            energy = 50000
-			unity = 50000
+			minor_artifacts = 100
+			unity = 5000
 		}
 	}
 	
@@ -26,9 +25,9 @@ ssp_r_khyran_bacterium = {
 		potential = { 
 			always = yes 
 		}
-		country_base_exotic_gases_produces_add = 10
-		country_society_research_produces_mult = 0.5
-		country_engineering_research_produces_mult = 0.5
+		
+		species_leader_exp_gain = 0.5
+		#passive effect
 	}
 	
 	score = 1000
@@ -62,7 +61,8 @@ ssp_r_drive_core = {
 	resources = {
 		category = relics
 		cost = {
-            energy = 25000
+			minor_artifacts = 100
+            energy = 5000
 		}
 	}
 	
@@ -81,14 +81,26 @@ ssp_r_drive_core = {
 
 	active_effect = {
 		add_modifier = { 
-			modifier = "ssp_r_drive_core_active_effect"
-			days = 3600 
+			modifier = "ssp_r_drive_core_active_effect_a"
+			days = 3600
 		}
+		hidden_effect = {
+			add_modifier = { 
+				modifier = "ssp_r_drive_core_active_effect_b" 
+				days = 3600 
+			}
+
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = { modifier = "relic_activation_cooldown" days = 3600 }
 		}
+			set_timed_country_flag = {
+			flag = jump_drive_allowed
+			days = 3600
+		}
+		
 	}
+}
 
 	# Possible check for activation
 	possible = {
@@ -98,6 +110,7 @@ ssp_r_drive_core = {
 		}
 	}
 }
+
 
 #Animarum
 ssp_r_animarum = {

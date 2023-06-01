@@ -1,14 +1,26 @@
+#khyran
 ssp_r_bacterium_active_effect = {
-    all_technology_research_speed = 0.20
-	planet_stability_add = -5
-    #make it spawn a "copycat" fleet of one owned fleet
+    pop_happiness = -0.10
+    pop_job_amenities_mult = -0.10
+}
+
+#drivecore
+ssp_r_drive_core_active_effect_a = {
+ ship_jumpdrive_cooldown_mult = 1.00
+}
+ssp_r_drive_core_active_effect_b = {
+ ship_ftl_jumpdrive_range_mult = 50
+}
+ 
+#animarum
+ssp_r_animarum_active_effect = {
+    army_morale = 0.20
+    army_morale_damage_mult = 0.15
+}
+
+#cloak designer
+ssp_r_cloaked_ship_designer_active_effect = {
+     #make it spawn a "copycat" fleet of one owned fleet
     #0 weapon dmg and like 10 hp for each ship
     #yeah that's the "cool n all but howtfwedothis"
 }
-ssp_r_drive_core_active_effect = {
-    all_technology_research_speed = 10
-}
-ssp_r_animarum_active_effect = {
-        army_morale = 0.20
-        army_morale_damage_mult = 0.15
-	}

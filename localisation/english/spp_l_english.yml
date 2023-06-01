@@ -12,13 +12,13 @@ tech_ssp_jonan_communication_key_desc:0 "A way to encrypt our messages into the 
 #############
 
 ssp_r_khyran_bacterium:0 "Contained Khyran Bacterium"
-ssp_r_khyran_bacterium_desc:0 "TestDesc."
+ssp_r_khyran_bacterium_desc:0 "Sample of an unknown bacteria gathered from a dead Jonan onboard the Ichki-0ne"
 ssp_r_bacterium_active_effect:0 "$ssp_r_khyran_bacterium$"
 
 
 ssp_r_drive_core:0 "Repaired Drive Core"
-ssp_r_drive_core_desc:0 "TestDesc."
-ssp_r_drive_core_effect:0 "$ssp_r_drive_core$"
+ssp_r_drive_core_desc:0 "The repaired drive core we salvaged from the Jonan Foundry science ship"
+ssp_r_drive_core_active_effect_a:0 "Active the powerful precursor jump drives giving you full galaxy warp range at the cost of a longer recharge"
 
 ssp_r_animarum:0 "The Animarum"
 ssp_r_animarum_desc:0 "This powerful relic was once in possession of the Grand Reanimator. "
@@ -39,9 +39,7 @@ ssp_r_animarum_active_effect_tooltip:0 "Spawns Reanimated Armies"
 # Crashed Ship #
 
 ssp_bacterium_ship_digsite:0 "Strange Transmission"
-ssp_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere in the galaxy. \n\\n\ Hello! We are ** from ship **   \n\\n\ We have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
-
-#!!!figure out how to make spaces inbetween so its not 1 big text bubble 
+ssp_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere in the galaxy. \n\ Hello! We are &^@#$*&!!*() from science ship Ichki-0ne, our engines have blown while studying planet [From.planet.GetName] and we request immediate pickup! \n\ Our scientists have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
 
 ssp_dig_site.1.name:0 "Our Ship Lands"
 ssp_dig_site.1a.name:0 "Great"
@@ -49,7 +47,7 @@ ssp_dig_site.1.desc:0 "We have landed on the planet, research suggests that this
 
 ssp_dig_site.2.name:0 "The Mysterious Wreckage"
 ssp_dig_site.2a.name:0 "We should go in to investigate."
-ssp_dig_site.2.desc:0 "After traversing and scanning the flora and fauna we finally came apun the ship mentioned in the transmission. Signs show that this ship is more than 1000 years old, which would indicate it served during the Crisis of Kangs era."
+ssp_dig_site.2.desc:0 "After traversing and scanning the flora and fauna we finally came apun the ship mentioned in the transmission, their message seemed to be for a now extinct species. Signs show that this ship is more than 1000 years old, which would indicate it served during the Crisis of Kangs era."
 
 ssp_dig_site.3.name:0 "Data Terminal"
 ssp_dig_site.3a.name:0 "Page the nearest science ship about this discovery."
@@ -65,17 +63,17 @@ ssp_dig_site.4.desc:0 "We may have unsetteled something in the ship, the reactor
 ssp_communication_hub_digsite:0 "Jonan Communication Hub"
 ssp_communication_hub_desc:0 "Precursor Arch Site Pt.2"
 
-ssp_dig_site.5.name:0 ""
-ssp_dig_site.5a.name:0 ""
-ssp_dig_site.5.desc:0 "Talk about infiltration of the communication hub"
+ssp_dig_site.5.name:0 "Infiltration"
+ssp_dig_site.5a.name:0 "Translate and keep going."
+ssp_dig_site.5.desc:0 "As soon as we landed on the somehow still active hub we stumbled apun an inscription and alot of warnings, we are unsure on how to proceed."
 
-ssp_dig_site.6.name:0 ""
-ssp_dig_site.6a.name:0 ""
-ssp_dig_site.6.desc:0 "something about the turrets still being active"
+ssp_dig_site.6.name:0 "Active Defenses!"
+ssp_dig_site.6a.name:0 "Shut them down, no matter the cost."
+ssp_dig_site.6.desc:0 "It was a trap! after following the wierd inscribed instructions left by our predecessor, we found ourselfs in a hallway which quickly turned into our prison when one of the scientists activated one of the traps inside the hallway. /n/ luckily one of crew found a way to shutdown the device but its very risky."
 
-ssp_dig_site.7.name:0 ""
-ssp_dig_site.7a.name:0 ""
-ssp_dig_site.7.desc:0 "something about the AI terminal, communication key. how the race died and they are willing to give us the key."
+ssp_dig_site.7.name:0 "Jonan AI Intellingence"
+ssp_dig_site.7a.name:0 "Take the key"
+ssp_dig_site.7.desc:0 "We found ourself standing infront of a giant AI, the controller of the facility. /n/ After we told the AI what had become of his creator he decided to share with us the secrets of their ways."
 
 ###########
 #Anomalies#
@@ -84,12 +82,12 @@ ssp_dig_site.7.desc:0 "something about the AI terminal, communication key. how t
 #Digsites
 
 disco_bacterium_ship:0 "Strange Transmission"
-disco_bacterium_ship_desc:0 "This is a strange transmission I guess"
+disco_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere on, it won't take long to track down an estimated point of origin on [From.GetName], we should send a science ship to check it out."
 
 ########
 #Events#
 ########
 
-#Archaeo
+#Archaeo DEPRECATED
 archaeo.1.name:0 "Archaeo Digsite Test"
 archaeo.1.desc:0 "Our sciencetists have picked up a strange transmission from [From.GetName] \n\ The signal is very close to one our ships use. \n\ Study suggests that the signal is in the northwest region of the planet. " 
