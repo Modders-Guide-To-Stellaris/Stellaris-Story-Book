@@ -1,0 +1,35 @@
+origin_reanimated_hive = {
+	is_origin = yes
+	#icon = "gfx/interface/icons/origins/origin_here_be_dragons.dds"
+	#picture = GFX_origin_here_be_dragons
+	#flags = { custom_start_screen first_alien_life }
+
+	playable = {
+		has_necroids = yes
+        
+    }
+
+	possible = {
+        authority = { value = auth_hive_mind }
+		civics = {
+                value = civic_hive_strength_of_legions
+			NOR = {
+				value = civic_hive_devouring_swarm
+			}
+		}
+       
+	}
+
+   traits = {
+        trait = ssp_traits_advanced_reanimated
+    }
+
+	description = civic_tooltip_defensive_origin_effects
+
+	advanced_start = yes
+	max_once_global = yes
+
+	random_weight = {
+		base = 5
+	}
+}

@@ -91,3 +91,18 @@ disco_bacterium_ship_desc:0 "We have received a strange transmission from a scie
 #Archaeo DEPRECATED
 archaeo.1.name:0 "Archaeo Digsite Test"
 archaeo.1.desc:0 "Our sciencetists have picked up a strange transmission from [From.GetName] \n\ The signal is very close to one our ships use. \n\ Study suggests that the signal is in the northwest region of the planet. " 
+
+#########
+#Origins#
+#########
+
+origin_reanimated_hive:0 "Reanimated Hive"
+origin_reanimated_hive_desc:0 "§R- WARNING: Challenging Origin§! \n- After being wiped out by the Cybrex they have been revived by the grand reanimator who sacrificed his life for the empire."
+civic_tooltip_defensive_origin_effects:0 "TEST ORIGIN, DO NOT TOUCH"
+
+########
+#traits#
+########
+
+ssp_traits_advanced_reanimated:0 "Reanimated"
+ssp_traits_advanced_reanimated_desc:0 "Due to being reanimated these species suffer from lack of feeling causing all sorts of incidents."
