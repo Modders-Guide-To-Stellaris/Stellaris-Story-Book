@@ -98,7 +98,7 @@ archaeo.1.desc:0 "Our sciencetists have picked up a strange transmission from [F
 
 origin_reanimated_hive:0 "Reanimated Hive"
 origin_reanimated_hive_desc:0 "§R- WARNING: Challenging Origin§! \n- After being wiped out by the Cybrex they have been revived by the grand reanimator who sacrificed his life for the empire."
-civic_tooltip_defensive_origin_effects:0 "TEST ORIGIN, DO NOT TOUCH"
+civic_tooltip_defensive_origin_effects:0 "note: origin still under balance review"
 
 ########
 #traits#

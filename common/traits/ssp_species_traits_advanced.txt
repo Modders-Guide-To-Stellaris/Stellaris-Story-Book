@@ -27,7 +27,11 @@ ssp_traits_advanced_reanimated = {
 
 	modifier = {
 		leader_age = -20
-		pop_growth_speed = -0.25
+		pop_growth_speed = -0.5
+		planet_pops_organics_food_upkeep_mult = -0.5
+		planet_jobs_ruler_produces_mult = -0.05
+		planet_jobs_specialist_only_produces_mult = -0.05
+		planet_jobs_worker_only_produces_mult = 0.1
 	}
 
 	#custom_tooltip_with_modifiers = trait_necrophage_gestalt_tooltip
