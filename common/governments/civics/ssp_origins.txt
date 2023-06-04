@@ -1,33 +1,19 @@
-origin_reanimated_hive = {
+origin_follower_cult = {
 	is_origin = yes
 	#icon = "gfx/interface/icons/origins/origin_here_be_dragons.dds"
 	#picture = GFX_origin_here_be_dragons
 	#flags = { custom_start_screen first_alien_life }
 
 	playable = {
-		has_utopia = yes
+		has_necroids = yes
     }
 
 	possible = {
-    	authority = { value = auth_hive_mind }
-			ethics = {
-				NOT = {
-					value = ethic_gestalt_empathy
-					}
-				}			
 			civics = {
-               		value = civic_hive_strength_of_legions
-				NOR = {
-					value = civic_hive_devouring_swarm
-					value = civic_hive_empath
-					}
+               		value = civic_death_cult
 		  		}
 			}
-		
 
-   traits = {
-        trait = ssp_traits_advanced_reanimated
-    }
 
 	description = civic_tooltip_defensive_origin_effects
 

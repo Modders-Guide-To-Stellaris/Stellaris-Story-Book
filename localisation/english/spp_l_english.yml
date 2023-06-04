@@ -96,13 +96,22 @@ archaeo.1.desc:0 "Our sciencetists have picked up a strange transmission from [F
 #Origins#
 #########
 
-origin_reanimated_hive:0 "Reanimated Hive"
-origin_reanimated_hive_desc:0 "§R- WARNING: Challenging Origin§! \n- After being wiped out by the Cybrex they have been revived by the grand reanimator who sacrificed his life for the empire."
-civic_tooltip_defensive_origin_effects:0 "note: origin still under balance review"
+origin_follower_cult:0 "Followers Of The "
+origin_follower_cult_desc:0 "§R- WARNING: Challenging Origin§! \n-"
+civic_tooltip_defensive_origin_effects:0 "- Start the game with all £pop£ Pops having the trait §HFanatic Worshipper§, decreasing §HSpecialist§ and §HRuler§ output aswell as §HPop Growth§."
 
 ########
 #traits#
 ########
 
-ssp_traits_advanced_reanimated:0 "Reanimated"
-ssp_traits_advanced_reanimated_desc:0 "Due to being reanimated these species suffer from lack of feeling causing all sorts of incidents."
+ssp_traits_survivor_I:0 "Survivor I"
+ssp_traits_survivor_I_desc:0 ""
+
+ssp_traits_survivor_II:0 "Survivor II"
+ssp_traits_survivor_II_desc:0 ""
+
+ssp_traits_survivor_III:0 "Survivor III"
+ssp_traits_survivor_III_desc:0 ""
+
+ssp_traits_grand_reanimator:0 "Grand Reanimator"
+ssp_traits_grand_reanimator_desc:0 ""
