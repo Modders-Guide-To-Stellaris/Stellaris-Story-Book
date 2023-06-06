@@ -1,8 +1,8 @@
 origin_follower_cult = {
 	is_origin = yes
-	#icon = "gfx/interface/icons/origins/origin_here_be_dragons.dds"
-	#picture = GFX_origin_here_be_dragons
-	#flags = { custom_start_screen first_alien_life }
+	icon = "gfx/interface/icons/origins/unused/origins_unwashed_masses.dds"
+	picture = GFX_origin_fanatic_worshippers
+
 
 	playable = {
 		has_necroids = yes

@@ -1,0 +1,8 @@
+spriteTypes = {
+#Fanatic Worshippers
+    spriteType = {
+		name = "GFX_origin_fanatic_worshippers"
+		texturefile = "gfx/event_pictures/origins/origin_ssp_fanatic_worshippers.dds"
+		alwaystransparent = yes
+	}
+}

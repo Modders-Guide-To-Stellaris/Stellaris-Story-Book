@@ -1,0 +1,12 @@
+part = {
+	location = 1
+	localization = "START_SCREEN_PART_ONE_CULT"
+
+	trigger = {
+		has_origin = origin_follower_cult
+        NOR = {
+            has_country_flag = custom_start_screen
+        }
+    }
+}
+

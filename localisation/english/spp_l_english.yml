@@ -1,15 +1,15 @@
 ﻿l_english:
 
-############
-#Technology#
-############
+##############
+# Technology
+##############
 
 tech_ssp_jonan_communication_key:0 "Jonan Communication Key"
 tech_ssp_jonan_communication_key_desc:0 "A way to encrypt our messages into the old Jonan language."
 
-#############
-#relic stuff#
-#############
+###############
+# relic stuff
+###############
 
 ssp_r_khyran_bacterium:0 "Contained Khyran Bacterium"
 ssp_r_khyran_bacterium_desc:0 "Sample of an unknown bacteria gathered from a dead Jonan onboard the Ichki-0ne"
@@ -25,16 +25,16 @@ ssp_r_animarum_desc:0 "This powerful relic was once in possession of the Grand R
 ssp_r_animarum_active_effect:0 "$ssp_r_animarum$"
 ssp_r_animarum_active_effect_tooltip:0 "Spawns Reanimated Armies" 
 
-########
-#armies#
-########
+##########
+# armies
+##########
 
  ssp_reanimated_army:0 "Reanimated Army"
  ssp_reanimated_army:0 "Powerful Armies who used to served the Grand Reanimator."
 
-###############
-#Archaeo Sites#
-###############
+#################
+# Archaeo Sites
+#################
 
 # Crashed Ship #
 
@@ -75,43 +75,50 @@ ssp_dig_site.7.name:0 "Jonan AI Intellingence"
 ssp_dig_site.7a.name:0 "Take the key"
 ssp_dig_site.7.desc:0 "We found ourself standing infront of a giant AI, the controller of the facility. /n/ After we told the AI what had become of his creator he decided to share with us the secrets of their ways."
 
-###########
-#Anomalies#
-###########
+#############
+# Anomalies
+#############
 
 #Digsites
 
 disco_bacterium_ship:0 "Strange Transmission"
 disco_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere on, it won't take long to track down an estimated point of origin on [From.GetName], we should send a science ship to check it out."
 
-########
-#Events#
-########
+##########
+# Events
+##########
 
 #Archaeo DEPRECATED
 archaeo.1.name:0 "Archaeo Digsite Test"
 archaeo.1.desc:0 "Our sciencetists have picked up a strange transmission from [From.GetName] \n\ The signal is very close to one our ships use. \n\ Study suggests that the signal is in the northwest region of the planet. " 
 
-#########
-#Origins#
-#########
+###########
+# Origins
+###########
 
-origin_follower_cult:0 "Followers Of The "
+origin_follower_cult:0 "Dictionnaire Infernal"
 origin_follower_cult_desc:0 "§R- WARNING: Challenging Origin§! \n-"
-civic_tooltip_defensive_origin_effects:0 "- Start the game with all £pop£ Pops having the trait §HFanatic Worshipper§, decreasing §HSpecialist§ and §HRuler§ output aswell as §HPop Growth§."
+civic_tooltip_defensive_origin_effects:0 "- Start the game with all £pop£ Pops having the trait §HFanatic Worshipper, decreasing §HSpecialist and §HRuler output aswell as §HPop Growth."
 
-########
-#traits#
-########
+##########
+# traits
+###########
 
-ssp_traits_survivor_I:0 "Survivor I"
+ssp_traits_survivor_I:0 ""
 ssp_traits_survivor_I_desc:0 ""
 
-ssp_traits_survivor_II:0 "Survivor II"
+ssp_traits_survivor_II:0 ""
 ssp_traits_survivor_II_desc:0 ""
 
-ssp_traits_survivor_III:0 "Survivor III"
+ssp_traits_survivor_III:0 ""
 ssp_traits_survivor_III_desc:0 ""
 
 ssp_traits_grand_reanimator:0 "Grand Reanimator"
 ssp_traits_grand_reanimator_desc:0 ""
+
+
+################
+# Start Screen
+################
+
+START_SCREEN_PART_ONE_CULT:0 "Will add later as soncio didnt ask me to add this and since I want to finish the core first :P"

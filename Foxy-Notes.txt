@@ -1,0 +1,14 @@
+#game start
+#Tooltip saying "we can't read shit of this book, but we can try to make sense of it"
+#Situation starts, base monthly progress
+#On first sacrifice
+#X amount of pops reanimate with 3rd lvl "zombie/negative" trait
+#"Well that did not work as intended, we must keep experimenting"
+#Situation will have N number of stages
+#Either fixed progression where once the X amount doubles ( so like if initially only 25% of pops reanimate, make it then 50%, then 75%, DO NOT MAKE IT TILL 100% unless you don't do the enlist option) , or the "zombie/negative" trait lvl is reduced till lvl 1
+#(if you want to overdo, give the option each checkpoint to choose if to make the rite more efficient on quantity or quality, if someone goes all the quality/quantity upgrades first, force the remaining one in the last checkpoints, optional , you can make them fixed alternating rewards between quantity and quality if the making them choose requires too much work)
+#on situation end
+#"We finished the book and discovered who it belongs to / who was the teacher of this prick" "Charting course to THE GRAND REANIMATOR"
+#Spawn system with big boss dude
+#On big boss dude defeated OPTIONAL give option to A kill and get relic, B Enlist legendary paragon and upgrade to final tier both quantity and quality of reanimated sacrifices (100% reanimated sacrifices, trait gives small bonuses based on "not fearing death itself" instead of any malus) 
+
