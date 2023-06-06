@@ -1,0 +1,244 @@
+#Grimoire Decipher situation to be triggered on game start for the infernal dictionary origin
+
+
+
+
+#############################################################################################
+#For Foxy for later use
+#############################################################################################
+
+# # # #########################################################################################
+#How to count the number of sacrificed initiates, includes later as you see overlord holdings initiates too
+#sacrifice_result_mult should be the total empire sacrifices, including overlord holdings sacrifices of any type
+#sacrifice_vassal_amount should be only the overlord REGULAR holdings sacrifices
+#sacrifice_vassal_amount_drone should be only the overlord GESTALT holdings sacrifices
+#You shouldn't need to run the export trigger command as the sacrifice edict does it already, this is
+#just so you can check what each variable is used for
+#You will likely have to add at the end of the chain of export something that does alike
+
+#   change_variable = {
+#            which = sacrifice_result_total (NEW, USED BY US)
+#            value = sacrifice_result_mult
+#        }
+
+#We could neet to "initialize" the new variable by doing set_variable = {which = { sacrifice_result_total value = 0} 
+#not 100% sure it's required, but if you have time the way to do this is by making a new country_event and trigger it
+#in the on_start portion of the situation
+
+
+
+#export_trigger_value_to_variable = {
+#    trigger = num_assigned_jobs
+#    parameters = {
+#        job = mortal_initiate
+#    }
+#    variable = sacrifice_result_mult
+#}
+#every_subject = {
+#    export_trigger_value_to_variable = {
+#        trigger = num_assigned_jobs
+#        parameters = {
+#            job = overlord_mortal_initiate
+#        }
+#        variable = sacrifice_vassal_amount
+#    }
+#    prev = {
+#        change_variable = {
+#            which = sacrifice_result_mult
+#            value = prev.sacrifice_vassal_amount
+#        }
+#    }
+#    export_trigger_value_to_variable = {
+#        trigger = num_assigned_jobs
+#        parameters = {
+#            job = overlord_mortal_initiate_drone
+#        }
+#        variable = sacrifice_vassal_amount_drone
+#    }
+#    prev = {
+#        change_variable = {
+#            which = sacrifice_result_mult
+#            value = prev.sacrifice_vassal_amount_drone
+#        }
+#    }
+#}
+# # # #########################################################################################
+
+
+
+
+
+situation_grimoire_decipher = {
+	picture = GFX_evt_disease_outbreak
+	complete_icon_frame = GFX_situation_outcome_frame_blue
+	complete_icon = GFX_situation_outcome_unknown
+	on_start = {
+        owner = {
+        }
+	}
+
+	on_abort = {
+
+	}
+	
+	target_modifier = {
+
+	}
+
+	start_value = 0
+	stages = {
+		situation_grimoire_decipher_stage_one = {
+			icon = GFX_situation_stage_1
+			icon_background = GFX_situation_stage_frame_red
+			end = 200
+            on_first_enter = {
+                
+			}
+		}
+		situation_grimoire_decipher_stage_two = {
+			icon = GFX_situation_stage_2
+			icon_background = GFX_situation_stage_frame_red
+			end = 400
+			on_first_enter = {
+
+			}
+		}
+		situation_grimoire_decipher_stage_three = {
+			icon = GFX_situation_stage_3
+			icon_background = GFX_situation_stage_frame_red
+			end = 600
+			on_first_enter = {
+
+			}
+		}
+        situation_grimoire_decipher_stage_four = {
+			icon = GFX_situation_stage_4
+			icon_background = GFX_situation_stage_frame_red
+			end = 800
+			on_first_enter = {
+
+			}
+		}
+        situation_grimoire_decipher_stage_five = {
+			icon = GFX_situation_stage_5
+			icon_background = GFX_situation_stage_frame_red
+			end = 1000
+			on_first_enter = {
+
+			}
+		}
+	}
+
+	on_progress_complete = {
+
+	}
+
+	monthly_progress = {
+		base = 1
+        add = sacrifice_result_total
+        divide = 10
+# monthly progress = 0.1 + 0.1 times sacrificed pops
+		modifier = {
+			desc = string_current_approach
+			add = 1
+			current_situation_approach = "SSP_TBD"
+		}
+		modifier = {
+			desc = string_current_approach
+			add = 2
+			current_situation_approach = "SSP_TBD"
+		}
+	}
+
+	on_monthly = {
+		random_events = {
+            100 = 0
+		}
+	}
+
+	approach = {
+		name = "SSP_TBD"
+		icon = GFX_situation_approach_research
+		icon_background = GFX_situation_approach_bg_yellow
+		on_select = {
+			custom_tooltip = "SSP_TBD"
+			set_situation_flag = "SSP_TBD"
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = "SSP_TBD"
+			}
+		}
+	}
+
+	approach = {
+		name = "SSP_TBD"
+		icon = GFX_situation_approach_balance_sheet
+		icon_background = GFX_situation_approach_bg_green
+		on_select = {
+			if = {
+				limit = {
+					owner = {
+                        
+					}
+				}
+				owner = {
+
+				}
+			}
+			custom_tooltip = "SSP_TBD"
+			set_situation_flag = "SSP_TBD"
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = "SSP_TBD"
+			}
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				trigger = {
+				}
+				food = "SSP_TBD"
+			}
+		}
+	}
+
+	approach = {
+		name = "SSP_TBD"
+		icon = GFX_situation_approach_this_is_fine
+		icon_background = GFX_situation_approach_bg_red
+		on_select = {
+			if = {
+				limit = {
+					owner = {
+
+					}
+				}
+				owner = {
+
+				}
+			}
+			custom_tooltip = "SSP_TBD"
+			set_situation_flag = "SSP_TBD"
+		}
+		allow = {
+			custom_tooltip = {
+				fail_text = "SSP_TBD"
+			}
+		}
+		resources = {
+			category = situations
+			upkeep = {
+				unity = "SSP_TBD"
+			}
+		}
+	}
+
+	abort_trigger = {
+		target = {
+
+
+        }
+	}
+}
