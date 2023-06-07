@@ -1,0 +1,51 @@
+namespace = ssp_ritual
+
+planet_event = {
+    id = ssp_ritual.100
+    title = ssp_ritual.100.name
+	desc = ssp_ritual.100.desc
+	picture = GFX_evt_alien_propaganda
+	show_sound = event_death_cult
+	location = capital_scope
+    is_triggered_only = yes
+
+    modifier = {
+        trigger = {
+		is_spiritualist = yes
+		OR = {
+			has_valid_civic = civic_death_cult
+            has_valid_civic = civic_death_cult_corporate
+        }
+    }
+    
+}
+immediate = {
+    while = {
+		count = 4
+		create_pop = {
+			species = owner_species
+            add_traits_at_start_of_list = yes
+                    }
+                    last_created_pop = {
+                        set_pop_flag = ssp_reinc_zombie
+                        if = {
+                            limit = {
+                                NOT = {
+                                    has_trait = trait_zombie
+                                }
+                            }
+                        add_trait = trait_zombie
+                        #count = 4
+                        #species = this
+                        #add_trait = trait_zombie
+                        add_traits_at_start_of_list = yes
+                        }
+                    }
+                    #every_owned_pop = {
+                     #   limit = {
+                      #      has_pop_flag = ssp_reinc_zombie
+                       # }
+                    }
+                }
+    clear_variable = sacrifice_result_mult
+}

@@ -14,7 +14,7 @@
 #sacrifice_vassal_amount_drone should be only the overlord GESTALT holdings sacrifices
 #You shouldn't need to run the export trigger command as the sacrifice edict does it already, this is
 #just so you can check what each variable is used for
-#You will likely have to add at the end of the chain of export something that does alike
+#You will most likely have to add it at the end of the chain of export or of something that does alike
 
 #   change_variable = {
 #            which = sacrifice_result_total (NEW, USED BY US)

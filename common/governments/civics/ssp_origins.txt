@@ -10,9 +10,12 @@ origin_follower_cult = {
 
 	possible = {
 			civics = {
-               		value = civic_death_cult
-		  		}
-			}
+				OR = {
+					value = civic_death_cult_corporate
+					value = civic_death_cult
+				}
+		  	}
+		}
 
 
 	description = civic_tooltip_defensive_origin_effects
