@@ -2,3 +2,9 @@ on_survey = {
 	events = {
     }
 }
+
+on_game_start_country = {
+	events = {
+        necroids.1000
+    }
+}

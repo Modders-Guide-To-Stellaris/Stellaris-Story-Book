@@ -1,0 +1,55 @@
+mortal_initiate = {
+	category = worker
+	condition_string = WORKER_JOB_TRIGGER
+	building_icon = building_sacrificial_temple_1
+	clothes_texture_index = 3
+	icon = mortal_initiate
+
+	possible_pre_triggers = {
+		has_owner = yes
+		is_sapient = yes
+		is_enslaved = no
+		is_being_purged = no
+		is_being_assimilated = no
+	}
+
+	possible_precalc = can_fill_worker_job
+	possible = {
+		NOT = { has_trait = trait_mechanical } #No machines
+		NOT = { has_trait = trait_zombie } #How do you kill that which has no life?
+        NOT = { has_trait = trait_grimoire_qualityI }
+		NOT = { has_trait = trait_grimoire_qualityII }
+		NOT = { has_trait = trait_grimoire_qualityIII }
+	}
+
+	resources = {
+		category = planet_administrators
+		produces = {
+			unity = 2
+			society_research = 1
+		}
+	}
+
+	triggered_planet_modifier = {
+		potential = {
+			always = yes
+		}
+		planet_amenities_add = 2
+		mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+	}
+
+	weight = {
+		weight = @specialist_job_weight
+		mult = value:job_weights_multiple_resources_modifier|JOB|mortal_initiate|RESOURCE1|unity|WEIGHT1|0.5|RESOURCE2|society_research|WEIGHT2|0.3|
+		mult = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+		modifier = {
+			factor = 0.2
+			has_citizenship_rights = no
+			NOT = { has_trait = trait_mechanical }
+		}
+		modifier = {
+			factor = 0.1
+			can_take_servant_job = yes
+		}
+	}
+}

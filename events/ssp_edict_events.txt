@@ -23,31 +23,14 @@ country_event = {
 immediate = {
     switch = {
         trigger = has_country_flag
-            grimoire_levelI = {
+           
+            grimoire_quantityII = {
                 divide_variable = {
                     which = sacrifice_result_current_count
-                    value = 0.25
-            }
-        }
-            grimoire_levelII = {
-                divide_variable = {
-                    which = sacrifice_result_current_count
-                    value = 0.25
+                    value = 0.5
             }
          }
-            grimoire_levelIII = {
-                divide_variable = {
-                    which = sacrifice_result_current_count
-                    value = 0.5
-            }
-        }
-            grimoire_levelIV = {
-                divide_variable = {
-                    which = sacrifice_result_current_count
-                    value = 0.5
-            }
-        }
-            grimoire_levelV = {
+            grimoire_quantityIII = {
                 divide_variable = {
                     which = sacrifice_result_current_count
                     value = 0.75
@@ -59,34 +42,97 @@ immediate = {
                     value = 1
                 }
             }
+             default = {
+                divide_variable = {
+                    which = sacrifice_result_current_count
+                    value = 0.25
+            }
+        }
         }
     }
 
 
     while = {
 		count = sacrifice_result_current_count
-        capital_scope = {
-		create_pop = {
-			species = owner_species
-            add_traits_at_start_of_list = yes
+        switch = {
+            trigger = has_country_flag
+            grimoire_qualityII = {
+                capital_scope = {
+		        create_pop = {
+			    species = owner_species
+                add_traits_at_start_of_list = yes
                     }
                     last_created_pop = {
                         set_pop_flag = ssp_reinc_zombie
-                        if = {
-                            limit = {
-                                NOT = {
-                                    has_trait = trait_zombie
-                                }
-                            }
                             modify_species = {
                                 species = this
-                                add_trait = trait_zombie
+                                add_trait = trait_grimoire_qualityII
+                                add_traits_at_start_of_list = yes
+                            }
+                        }
+                    }
+                }
+            
+
+        grimoire_qualityIII = {
+                capital_scope = {
+		        create_pop = {
+			    species = owner_species
+                add_traits_at_start_of_list = yes
+                    }
+                    last_created_pop = {
+                        set_pop_flag = ssp_reinc_zombie
+                            modify_species = {
+                                species = this
+                                add_trait = trait_grimoire_qualityIII
+                                add_traits_at_start_of_list = yes
+                            }
+                        }
+                    }
+                }
+            
+
+        grimoire_maxima = {
+                capital_scope = {
+		        create_pop = {
+			    species = owner_species
+                add_traits_at_start_of_list = yes
+                    }
+                    last_created_pop = {
+                        if = {
+                            limit = {
+                                has_trait = trait_maxima
+                            }
+                        set_pop_flag = ssp_reinc_zombie
+                            modify_species = {
+                                species = this
+                                add_trait = trait_maxima
+                                add_traits_at_start_of_list = yes
+                        }
+                    }
+                }
+             }
+        }
+            
+
+        default = {
+                capital_scope = {
+		        create_pop = {
+			    species = owner_species
+                add_traits_at_start_of_list = yes
+                    }
+                    last_created_pop = {
+                        set_pop_flag = ssp_reinc_zombie
+                            modify_species = {
+                                species = this
+                                add_trait = trait_grimoire_qualityI
                                 add_traits_at_start_of_list = yes
                             }
                         }
                     }
                 }
             }
+        }
     clear_variable = sacrifice_result_mult
 }
 

@@ -4,6 +4,7 @@ origin_follower_cult = {
 	picture = GFX_origin_fanatic_worshippers
 
 
+
 	playable = {
 		has_necroids = yes
     }
@@ -16,7 +17,7 @@ origin_follower_cult = {
 				}
 		  	}
 		}
-
+#situation_grimoire_decipher
 
 	description = civic_tooltip_defensive_origin_effects
 

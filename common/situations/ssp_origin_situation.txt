@@ -92,7 +92,7 @@ situation_grimoire_decipher = {
 			icon_background = GFX_situation_stage_frame_red
 			end = 200
             on_first_enter = {
-                
+				set_country_flag = grimoire_qualityII
 			}
 		}
 		situation_grimoire_decipher_stage_two = {
@@ -100,7 +100,7 @@ situation_grimoire_decipher = {
 			icon_background = GFX_situation_stage_frame_red
 			end = 400
 			on_first_enter = {
-
+				set_country_flag = grimoire_quantityII
 			}
 		}
 		situation_grimoire_decipher_stage_three = {
@@ -108,7 +108,8 @@ situation_grimoire_decipher = {
 			icon_background = GFX_situation_stage_frame_red
 			end = 600
 			on_first_enter = {
-
+				remove_country_flag = grimoire_qualityII
+				set_country_flag = grimoire_qualityIII
 			}
 		}
         situation_grimoire_decipher_stage_four = {
@@ -116,21 +117,14 @@ situation_grimoire_decipher = {
 			icon_background = GFX_situation_stage_frame_red
 			end = 800
 			on_first_enter = {
-
-			}
-		}
-        situation_grimoire_decipher_stage_five = {
-			icon = GFX_situation_stage_5
-			icon_background = GFX_situation_stage_frame_red
-			end = 1000
-			on_first_enter = {
-
+				remove_country_flag = grimoire_quantityII
+				set_country_flag = grimoire_quantityIII
 			}
 		}
 	}
 
 	on_progress_complete = {
-
+		#spawn new system with the godfather
 	}
 
 	monthly_progress = {

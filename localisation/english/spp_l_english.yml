@@ -104,17 +104,17 @@ civic_tooltip_defensive_origin_effects:0 "- Start the game with all £pop£ Pops
 # traits
 ###########
 
-ssp_traits_survivor_I:0 ""
-ssp_traits_survivor_I_desc:0 ""
+grimoire_qualityI:0 "Reincarnated?"
+grimoire_qualityI_desc:0 "This pop is basically a braindead zombie"
 
-ssp_traits_survivor_II:0 ""
-ssp_traits_survivor_II_desc:0 ""
+grimoire_qualityII:0 "Signs of Life"
+grimoire_qualityII_desc:0 "This pop still has some brain activity left"
 
-ssp_traits_survivor_III:0 ""
-ssp_traits_survivor_III_desc:0 ""
+grimoire_qualityIII:0 "Average Worker"
+grimoire_qualityIII_desc:0 "This pop is suffering from constant fatigue"
 
-ssp_traits_grand_reanimator:0 "Grand Reanimator"
-ssp_traits_grand_reanimator_desc:0 ""
+grimoire_maxima:0 "Resurrection Maxima"
+grimoire_maxima_desc:0 "This pop doesn't fear death itself!"
 
 
 ################
