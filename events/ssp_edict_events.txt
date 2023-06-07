@@ -34,11 +34,10 @@ immediate = {
                                     has_trait = trait_zombie
                                 }
                             }
-                        add_trait = trait_zombie
-                        #count = 4
-                        #species = this
-                        #add_trait = trait_zombie
-                        add_traits_at_start_of_list = yes
+                            modify_species = {
+                                species = this
+                                add_trait = trait_zombie
+                                add_traits_at_start_of_list = yes
                         }
                     }
                     #every_owned_pop = {
