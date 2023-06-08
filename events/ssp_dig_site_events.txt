@@ -108,41 +108,40 @@ fleet_event = {
 }
 	
 
-	fleet_event = {
-		id = ssp_dig_site.4
-		title = ssp_dig_site.4.name
-		desc = ssp_dig_site.4.desc
-		picture = GFX_evt_exploding_ship
-		show_sound = event_scanner
-		location = from
+fleet_event = {
+	id = ssp_dig_site.4
+	title = ssp_dig_site.4.name
+	desc = ssp_dig_site.4.desc
+	picture = GFX_evt_exploding_ship
+	show_sound = event_scanner
+	location = from
 	
-		archaeology = yes
+	archaeology = yes
 	
-		is_triggered_only = yes
+	is_triggered_only = yes
 	
-		immediate = {
-			fromfrom = { set_site_progress_locked = yes }
+	immediate = {
+		fromfrom = { set_site_progress_locked = yes }
+	}
+	
+	after = {
+		fromfrom = { set_site_progress_locked = no }
+	}
+	
+	option = {
+		name = ssp_dig_site.4a.name
+		owner = { 
+			add_relic = ssp_r_khyran_bacterium
 		}
-	
-		after = {
-			fromfrom = { set_site_progress_locked = no }
-		}
-	
-		option = {
-			name = ssp_dig_site.4a.name
+	}
 
-				owner = { 
-					add_relic = ssp_r_khyran_bacterium
-			}
+	option = {
+		name = ssp_dig_site.4b.name
+		owner = { 
+			add_relic = ssp_r_drive_core
 		}
-			option = {
-			name = ssp_dig_site.4b.name
-
-				owner = { 
-					add_relic = ssp_r_drive_core
-				}
-			}
-		}
+	}
+}
 	
 
 #CommunicationHub
@@ -237,9 +236,8 @@ fleet_event = {
 	option = {
 		name = ssp_dig_site.7a.name
 		owner = {
-					add_research_option = tech_ssp_jonan_communication_key
+			add_research_option = tech_ssp_jonan_communication_key
 					hidden_effect = { add_tech_progress = { tech = tech_ssp_jonan_communication_key progress = 0.33 } }
-				}
-				modifier = { factor = 0 owner = { has_technology = tech_ssp_jonan_communication_key } }
+		}
 	}
 }

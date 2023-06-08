@@ -1,3 +1,8 @@
+
+@sacrificeDuration = 1800
+
+@sacrificeReward1 = 0.15
+
 sacrifice_togetherness = {
 	length = @sacrificeDuration
 	icon = "GFX_edict_type_time"

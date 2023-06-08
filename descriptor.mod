@@ -3,4 +3,4 @@ tags={
 	"Gameplay"
 }
 name="Foxy Story Hijack"
-supported_version="3.7.4"
+supported_version="3.8.*"

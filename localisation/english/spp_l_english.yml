@@ -39,7 +39,7 @@ ssp_r_animarum_active_effect_tooltip:0 "Spawns Reanimated Armies"
 # Crashed Ship #
 
 ssp_bacterium_ship_digsite:0 "Strange Transmission"
-ssp_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere in the galaxy. \n\ Hello! We are &^@#$*&!!*() from science ship Ichki-0ne, our engines have blown while studying planet [From.planet.GetName] and we request immediate pickup! \n\ Our scientists have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
+ssp_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere in the galaxy.\n\Hello! We are &^@#$*&!!*() from science ship Ichki-0ne, our engines have blown while studying planet [From.planet.GetName] and we request immediate pickup!\n\Our scientists have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
 
 ssp_dig_site.1.name:0 "Our Ship Lands"
 ssp_dig_site.1a.name:0 "Great"
@@ -90,7 +90,7 @@ disco_bacterium_ship_desc:0 "We have received a strange transmission from a scie
 
 #Archaeo DEPRECATED
 archaeo.1.name:0 "Archaeo Digsite Test"
-archaeo.1.desc:0 "Our sciencetists have picked up a strange transmission from [From.GetName] \n\ The signal is very close to one our ships use. \n\ Study suggests that the signal is in the northwest region of the planet. " 
+archaeo.1.desc:0 "Our sciencetists have picked up a strange transmission from [From.GetName] \n\The signal is very close to one our ships use.\n\Study suggests that the signal is in the northwest region of the planet. " 
 
 ###########
 # Origins
