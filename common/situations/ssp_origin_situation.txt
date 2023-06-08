@@ -74,6 +74,8 @@ situation_grimoire_decipher = {
 	complete_icon = GFX_situation_outcome_unknown
 	on_start = {
         owner = {
+			set_country_flag = grimoire_qualityI
+			set_country_flag = grimoire_quantityI
         }
 	}
 
@@ -92,10 +94,10 @@ situation_grimoire_decipher = {
 			icon_background = GFX_situation_stage_frame_red
 			end = 200
             on_first_enter = {
-				owner = {
-				set_country_flag = grimoire_qualityI
-				set_country_flag = grimoire_quantityI
-				}
+			#	owner = {
+			#	set_country_flag = grimoire_qualityI
+			#	set_country_flag = grimoire_quantityI
+			#	}
 			}
 		}
 		situation_grimoire_decipher_stage_two = {

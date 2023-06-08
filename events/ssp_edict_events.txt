@@ -21,11 +21,19 @@ country_event = {
 
 
     option = {
-    NAME = The_Dead_Rise
-    custom_tooltip =  "Some of the dead have risen"
-    }
+        name = sspresurrection.100a
 
-    after = {
+        switch = {
+            trigger = has_country_flag
+       
+            grimoire_quantityI = { custom_tooltip =  "Only few of the initiates have risen from the dead, estimates indicate a ~25% rate of success, we must decipher more of the book" }
+            grimoire_quantityII = { custom_tooltip =  "Only half of the initiates have risen from the dead, we must decipher more of the book"}
+            grimoire_quantityIII = { custom_tooltip =  "Only cmst of the initiates have risen from the dead, estimates indicate a ~75% rate of success, but the book has already been completely deciphe"}
+            grimoire_maxima = { custom_tooltip =  "True Immortality at last" }
+        }
+#    }
+
+#    immediate = {
         hidden_effect = {
             switch = {
                 trigger = has_country_flag
@@ -58,7 +66,6 @@ country_event = {
                     }
                     ceiling_variable = { sacrifice_result_current_count }
                 }
-
             }
         }
     
@@ -68,11 +75,25 @@ country_event = {
             switch = {
                 trigger = has_country_flag
 
+                default = {
+                    capital_scope = {
+		                create_pop = {
+		    	            species = owner_species
+                        }
+                        last_created_pop = {
+                            set_pop_flag = ssp_reinc_zombie
+                            modify_species = {
+                                species = this
+                                add_trait = trait_zombie
+                                add_traits_at_start_of_list = yes
+                            }
+                        }
+                    }
+                }
                 grimoire_qualityI = {
                     capital_scope = {
 		                create_pop = {
 		    	            species = owner_species
-                            add_traits_at_start_of_list = yes
                         }
                         last_created_pop = {
                             set_pop_flag = ssp_reinc_zombie
@@ -88,7 +109,6 @@ country_event = {
                     capital_scope = {
 		                create_pop = {
 			                species = owner_species
-                            add_traits_at_start_of_list = yes
                         }
                         last_created_pop = {
                             set_pop_flag = ssp_reinc_zombie
@@ -104,7 +124,6 @@ country_event = {
                     capital_scope = {
 		                create_pop = {
 			                species = owner_species
-                            add_traits_at_start_of_list = yes
                         }
                         last_created_pop = {
                             set_pop_flag = ssp_reinc_zombie
@@ -120,12 +139,11 @@ country_event = {
                     capital_scope = {
 		                create_pop = {
 			                species = owner_species
-                            add_traits_at_start_of_list = yes
                         }
                         last_created_pop = {
                             if = {
                                 limit = {
-                                    has_trait = trait_maxima
+                                    NOT = { has_trait = trait_maxima }
                                 }
                                 set_pop_flag = ssp_reinc_zombie
                                 modify_species = {
