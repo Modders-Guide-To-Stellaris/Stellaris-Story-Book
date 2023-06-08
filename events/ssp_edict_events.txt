@@ -31,9 +31,9 @@ country_event = {
             grimoire_quantityIII = { custom_tooltip =  "Only cmst of the initiates have risen from the dead, estimates indicate a ~75% rate of success, but the book has already been completely deciphe"}
             grimoire_maxima = { custom_tooltip =  "True Immortality at last" }
         }
-#    }
+    }
 
-#    immediate = {
+    immediate = {
         hidden_effect = {
             switch = {
                 trigger = has_country_flag
@@ -43,28 +43,28 @@ country_event = {
                         which = sacrifice_result_current_count
                         value = 0.25
                     }
-                    ceiling_variable = { sacrifice_result_current_count }
+                    ceiling_variable = sacrifice_result_current_count 
                 }
                 grimoire_quantityII = {
                     multiply_variable = {
                         which = sacrifice_result_current_count
                         value = 0.5
                     }
-                    ceiling_variable = { sacrifice_result_current_count }
+                    ceiling_variable = sacrifice_result_current_count 
                 }
                 grimoire_quantityIII = {
                     multiply_variable = {
                         which = sacrifice_result_current_count
                         value = 0.75
                     }
-                    ceiling_variable = { sacrifice_result_current_count }
+                    ceiling_variable = sacrifice_result_current_count 
                 }
                 grimoire_maxima = {
                     multiply_variable = {
                         which = sacrifice_result_current_count
                         value = 1
                     }
-                    ceiling_variable = { sacrifice_result_current_count }
+                    ceiling_variable = sacrifice_result_current_count 
                 }
             }
         }
@@ -143,12 +143,12 @@ country_event = {
                         last_created_pop = {
                             if = {
                                 limit = {
-                                    NOT = { has_trait = trait_maxima }
+                                    NOT = { has_trait = trait_grimoire_maxima }
                                 }
                                 set_pop_flag = ssp_reinc_zombie
                                 modify_species = {
                                     species = this
-                                    add_trait = trait_maxima
+                                    add_trait = trait_grimoire_maxima
                                     add_traits_at_start_of_list = yes
                                 }
                             }
