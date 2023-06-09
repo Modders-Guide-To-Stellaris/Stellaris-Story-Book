@@ -8,3 +8,9 @@ on_game_start_country = {
         necroids.1000
     }
 }
+
+on_jump_drive = {
+    events = {
+        ssp_relic.100
+    }
+}

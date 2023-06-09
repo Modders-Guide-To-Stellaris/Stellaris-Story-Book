@@ -89,8 +89,8 @@ disco_bacterium_ship_desc:0 "We have received a strange transmission from a scie
 ##########
 
 #Archaeo DEPRECATED
-archaeo.1.name:0 "Archaeo Digsite Test"
-archaeo.1.desc:0 "Our sciencetists have picked up a strange transmission from [From.GetName] \n\The signal is very close to one our ships use.\n\Study suggests that the signal is in the northwest region of the planet. " 
+ssp_relic.100.name:0 "Archaeo Digsite Test"
+ssp_relic.100.desc:0 "Our sciencetists have picked up a strange transmission from [From.GetName] \n\The signal is very close to one our ships use.\n\Study suggests that the signal is in the northwest region of the planet. " 
 
 ###########
 # Origins
@@ -104,17 +104,17 @@ civic_tooltip_defensive_origin_effects:0 "- Start the game with all £pop£ Pops
 # traits
 ###########
 
-grimoire_qualityI:0 "Reincarnated?"
-grimoire_qualityI_desc:0 "This pop is basically a braindead zombie"
+trait_grimoire_qualityI:0 "Reincarnated?"
+trait_grimoire_qualityI_desc:0 "This pop is basically a braindead zombie"
 
-grimoire_qualityII:0 "Signs of Life"
-grimoire_qualityII_desc:0 "This pop still has some brain activity left"
+trait_grimoire_qualityII:0 "Signs of Life"
+trait_grimoire_qualityII_desc:0 "This pop still has some brain activity left"
 
-grimoire_qualityIII:0 "Average Worker"
-grimoire_qualityIII_desc:0 "This pop is suffering from constant fatigue"
+trait_grimoire_qualityIII:0 "Average Worker"
+trait_grimoire_qualityIII_desc:0 "This pop is suffering from constant fatigue"
 
-grimoire_maxima:0 "Resurrection Maxima"
-grimoire_maxima_desc:0 "This pop doesn't fear death itself!"
+trait_grimoire_maxima:0 "Resurrection Maxima"
+trait_grimoire_maxima_desc:0 "This pop doesn't fear death itself!"
 
 
 ################

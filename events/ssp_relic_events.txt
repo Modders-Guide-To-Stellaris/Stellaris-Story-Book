@@ -1,0 +1,25 @@
+namespace = ssp_relic
+
+country_event = {
+    id = ssp_relic.100
+    title = ssp_relic.100.name
+	desc =  ssp_relic.100.desc
+	#picture = 
+	#show_sound = 
+	location = country_scope
+    is_triggered_only = yes
+
+country_scope = {
+    if = {
+    limit = {
+        trigger = {
+        has_country_flag = allowed_jump_once
+        }
+    }
+    remove_country_flag = allowed_jump_once
+    remove_country_flag = jump_drive_allowed
+    remove_modifier = "ssp_r_drive_core_active_effect_a"
+    remove_modifier = "ssp_r_drive_core_active_effect_b"
+        }
+    }
+}

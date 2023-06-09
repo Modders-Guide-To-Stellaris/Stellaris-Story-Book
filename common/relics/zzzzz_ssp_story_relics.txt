@@ -93,7 +93,11 @@ ssp_r_drive_core = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = { modifier = "relic_activation_cooldown" days = 3600 }
+		owner = {
+			set_country_flag = allowed_jump_once
 		}
+	}
+
 			set_timed_country_flag = {
 			flag = jump_drive_allowed
 			days = 3600
