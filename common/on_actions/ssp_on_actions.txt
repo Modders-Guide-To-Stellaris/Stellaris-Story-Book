@@ -21,3 +21,8 @@ on_ship_built = {
     }
 }
 
+on_relic_obtained = {
+    events = {
+        sonciodontkillfoxyplease.69
+    }
+}

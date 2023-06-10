@@ -47,10 +47,47 @@ ship_event = {
 			is_ship_class = shipclass_science_ship
 	}
 
-	immediate = {
-		add_modifier = {
+	immediate = {		
+        add_modifier = {
 			modifier = ssp_r_drive_core_passive
 			days = -1
 		}
 	}
+}
+
+# trigger when you obtain the relic!
+country_event = {
+    id = sonciodontkillfoxyplease.69 #all praise rodathnov for this amazing id
+    hide_window = no #CHANGE TO YES WHEN DONE TESTING
+    is_triggered_only = yes
+
+    trigger = {
+        has_relic = ssp_r_drive_core
+    }
+
+    immediate = {
+        every_controlled_ship = {
+            limit = {
+                is_ship_class = shipclass_science_ship
+            }
+            add_modifier = {
+                modifier = ssp_r_drive_core_passive
+            }
+        }
+    }
+}
+
+#Custom On_action
+# scope: leader
+# from: country
+ssp_on_obtain_drive_core = {
+	$from$ = {
+		fire_on_action = {
+			on_action = on_relic_obtained
+			scopes = {
+				from = prev
+			}
+		}
+	}
+	set_leader_flag = tec_first_leader_handle_starting_modifiers_done
 }

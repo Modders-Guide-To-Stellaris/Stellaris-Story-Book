@@ -29,8 +29,8 @@ ssp_r_animarum_active_effect_tooltip:0 "Spawns Reanimated Armies"
 # armies
 ##########
 
- ssp_reanimated_army:0 "Reanimated Army"
- ssp_reanimated_army:0 "Powerful Armies who used to served the Grand Reanimator."
+ssp_reanimated_army:0 "Reanimated Army"
+ssp_reanimated_army:0 "Powerful Armies who used to served the Grand Reanimator."
 
 #################
 # Archaeo Sites
