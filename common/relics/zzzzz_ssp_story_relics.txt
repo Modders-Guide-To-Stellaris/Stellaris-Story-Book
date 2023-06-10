@@ -72,19 +72,29 @@ ssp_r_drive_core = {
 	
 	triggered_country_modifier = {
 		potential = { 
-			always = yes 
+			always = yes
 		}
+		#unfortunately, I could NOT figure out how to apply an event here, no matter how hard I tried I just couldn't. It's 3 AM and I'm sorry but I actually require sleep
+		#Unless you figure out how to do it I would advise the following, either make every ship have around ~15% more SUBL. Speed instead of just science ships
+		#ORRR, come up with a low quality basic modifier like 5% more Energy credit here. In the meantime I will(or not if I pass out xD) put the event trigger where you obtain the relic.
+		#that way it still gets triggered, FYI the on_build ship thing works perfectly fine. Idolatrine for the imbeciles.
+
+
+	#Todo:
+	#-Add Khyran Bacterium Passive & Active effects, active effect should have debuffs alongside positives, balance it against this relic as we want both to be a good option.
+	#-Add localisation for both relics. (Tooltips dont show)
+	#-Whatever else you desire to do soncio
+
+		#side note: I quickly tried adding it to the arch site and I couldnt get it to work within the first 2 tries meaning; IM GOING TO BED, Communication terminated.
+
+
 
 	}
-	
+
 	score = 1000
 
 	active_effect = {
-		add_modifier = { 
-			modifier = "ssp_r_drive_core_active_effect_a"
-			days = 3600
-		}
-		hidden_effect = {
+		hidden_effect = { 
 			add_modifier = { 
 				modifier = "ssp_r_drive_core_active_effect_b" 
 				days = 3600 
@@ -114,7 +124,6 @@ ssp_r_drive_core = {
 		}
 	}
 }
-
 
 #Animarum
 ssp_r_animarum = {

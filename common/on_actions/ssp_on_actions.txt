@@ -10,7 +10,14 @@ on_game_start_country = {
 }
 
 on_jump_drive = {
-    events = {
+    events ={
         ssp_relic.100
     }
+}       
+
+on_ship_built = {
+	events = {
+		ssp_relic.200
+    }
 }
+

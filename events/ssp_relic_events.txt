@@ -1,25 +1,56 @@
 namespace = ssp_relic
 
-country_event = {
+ship_event = {
     id = ssp_relic.100
-    title = ssp_relic.100.name
-	desc =  ssp_relic.100.desc
+    #title = ssp_relic.100.name
+	#desc =  ssp_relic.100.desc
 	#picture = 
 	#show_sound = 
-	location = country_scope
+	#location = capital_scope
+    hide_window = yes
     is_triggered_only = yes
+    
 
-country_scope = {
-    if = {
-    limit = {
-        trigger = {
-        has_country_flag = allowed_jump_once
+    immediate = {
+
+        add_modifier = {
+            modifier = "ssp_r_drive_core_active_effect_a"
+            days = 5
+        }
+
+        if = {
+            limit = {
+                controller = {
+                    has_country_flag = allowed_jump_once
+                }   
+            }
+            controller = {
+                remove_country_flag = jump_drive_allowed
+                remove_country_flag = allowed_jump_once
+                remove_modifier = ssp_r_drive_core_active_effect_b
+            }
         }
     }
-    remove_country_flag = allowed_jump_once
-    remove_country_flag = jump_drive_allowed
-    remove_modifier = "ssp_r_drive_core_active_effect_a"
-    remove_modifier = "ssp_r_drive_core_active_effect_b"
-        }
-    }
+}
+
+
+ship_event = {
+	id = ssp_relic.200
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = owner
+		owner = {
+			has_relic = ssp_r_drive_core
+		}
+			is_ship_class = shipclass_science_ship
+	}
+
+	immediate = {
+		add_modifier = {
+			modifier = ssp_r_drive_core_passive
+			days = -1
+		}
+	}
 }

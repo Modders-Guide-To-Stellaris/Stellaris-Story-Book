@@ -5,18 +5,27 @@ ssp_r_bacterium_active_effect = {
 }
 
 #drivecore
-ssp_r_drive_core_active_effect_a = {
- ship_jumpdrive_cooldown_mult = 1.00
+
+ssp_r_drive_core_passive = {
+	ship_speed_mult = 0.5
 }
+
+ssp_r_drive_core_active_effect_a = {
+ ship_jumpdrive_cooldown_mult = -0.999 
+}
+
 ssp_r_drive_core_active_effect_b = {
  ship_ftl_jumpdrive_range_mult = 50
 }
+
  
 #animarum
 ssp_r_animarum_active_effect = {
     army_morale = 0.20
     army_morale_damage_mult = 0.15
 }
+
+
 
 #cloak designer
 ssp_r_cloaked_ship_designer_active_effect = {
