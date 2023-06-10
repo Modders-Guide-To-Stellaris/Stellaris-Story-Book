@@ -2,11 +2,6 @@ namespace = ssp_relic
 
 ship_event = {
     id = ssp_relic.100
-    #title = ssp_relic.100.name
-	#desc =  ssp_relic.100.desc
-	#picture = 
-	#show_sound = 
-	#location = capital_scope
     hide_window = yes
     is_triggered_only = yes
     
@@ -57,8 +52,8 @@ ship_event = {
 
 # trigger when you obtain the relic!
 country_event = {
-    id = sonciodontkillfoxyplease.69 #all praise rodathnov for this amazing id
-    hide_window = no #CHANGE TO YES WHEN DONE TESTING
+    id = ssp_relic.300
+    hide_window = no #CHANGE TO YES WHEN DONE
     is_triggered_only = yes
 
     trigger = {
@@ -75,19 +70,4 @@ country_event = {
             }
         }
     }
-}
-
-#Custom On_action
-# scope: leader
-# from: country
-ssp_on_obtain_drive_core = {
-	$from$ = {
-		fire_on_action = {
-			on_action = on_relic_obtained
-			scopes = {
-				from = prev
-			}
-		}
-	}
-	set_leader_flag = tec_first_leader_handle_starting_modifiers_done
 }

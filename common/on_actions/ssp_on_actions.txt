@@ -21,8 +21,8 @@ on_ship_built = {
     }
 }
 
-on_relic_obtained = {
-    events = {
-        sonciodontkillfoxyplease.69
+on_monthly_pulse_country = {
+	events = {
+        ssp_relic.300
     }
 }

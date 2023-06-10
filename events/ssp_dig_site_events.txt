@@ -137,7 +137,7 @@ fleet_event = {
 
 	option = {
 		name = ssp_dig_site.4b.name
-		owner = { 
+		owner = { # trigger ssp_relic.300 here!
 			add_relic = ssp_r_drive_core
 		}
 	}

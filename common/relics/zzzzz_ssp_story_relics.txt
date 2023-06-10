@@ -79,11 +79,12 @@ ssp_r_drive_core = {
 	score = 1000
 
 	active_effect = {
-		hidden_effect = { 
+
+
+#add it so a random fleet gets chosen and applied effect B, && jump drives (see timed country flag down here)
 			add_modifier = { 
 				modifier = "ssp_r_drive_core_active_effect_b" 
 				days = 3600 
-			}
 
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
