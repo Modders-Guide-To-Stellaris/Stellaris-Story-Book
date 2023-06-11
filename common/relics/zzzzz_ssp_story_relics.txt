@@ -79,28 +79,43 @@ ssp_r_drive_core = {
 	score = 1000
 
 	active_effect = {
+		custom_tooltip = drive_core_random
+		hidden_effect = {
+			root = {
+				random_owned_fleet = {
+						limit = {
+							any_controlled_ship = {
+								is_ship_class = shipclass_military
+							}
+						}
 
+					add_modifier = { 
+						modifier = "ssp_r_drive_core_active_effect_b" 
+						days = 3600 
+					}
+					
+					set_timed_fleet_flag = {
+						flag = jump_drive_allowed
+						days = 3600
+					}
+				}
+			}
+		}
 
 #add it so a random fleet gets chosen and applied effect B, && jump drives (see timed country flag down here)
-			add_modifier = { 
-				modifier = "ssp_r_drive_core_active_effect_b" 
-				days = 3600 
+			
 
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = { modifier = "relic_activation_cooldown" days = 3600 }
-		owner = {
-			set_country_flag = allowed_jump_once
-		}
+			owner = {
+				set_country_flag = allowed_jump_once
+			}
+		}	
 	}
-
-			set_timed_country_flag = {
-			flag = jump_drive_allowed
-			days = 3600
-		}
 		
-	}
-}
+	
+
 
 	# Possible check for activation
 	possible = {

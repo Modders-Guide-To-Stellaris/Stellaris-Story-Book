@@ -24,5 +24,6 @@ on_ship_built = {
 on_monthly_pulse_country = {
 	events = {
         ssp_relic.300
+        ssp_relic.301
     }
 }

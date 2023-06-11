@@ -18,7 +18,7 @@ ssp_r_bacterium_active_effect:0 "$ssp_r_khyran_bacterium$"
 
 ssp_r_drive_core:0 "Repaired Drive Core"
 ssp_r_drive_core_desc:0 "The repaired drive core we salvaged from the Jonan Foundry science ship"
-ssp_r_drive_core_active_effect:0 "Active the powerful precursor jump drives giving you full galaxy warp range for one fleet"
+drive_core_random:0 "Active the powerful precursor jump drives giving you full galaxy warp range for a random fleet"
 
 ssp_r_animarum:0 "The Animarum"
 ssp_r_animarum_desc:0 "This powerful relic was once in possession of the Grand Reanimator. "

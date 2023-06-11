@@ -58,9 +58,16 @@ country_event = {
 
     trigger = {
         has_relic = ssp_r_drive_core
+        NOR = {
+            has_country_flag = drive_core_passive_activated
+        }
     }
 
     immediate = {
+        owner = {
+             set_country_flag = drive_core_passive_activated
+        }
+
         every_controlled_ship = {
             limit = {
                 is_ship_class = shipclass_science_ship
@@ -68,6 +75,29 @@ country_event = {
             add_modifier = {
                 modifier = ssp_r_drive_core_passive
             }
+        }
+    }
+}
+
+
+country_event = {
+    id = ssp_relic.301
+    hide_window = no #CHANGE TO YES WHEN DONE
+    is_triggered_only = yes
+
+    trigger = {
+        NOT = {
+            has_relic = ssp_r_drive_core
+        }
+    }
+
+    immediate = {
+        every_controlled_ship = {
+            limit = {
+                is_ship_class = shipclass_science_ship
+                has_modifier = ssp_r_drive_core_passive
+            }
+            remove_modifier = ssp_r_drive_core_passive
         }
     }
 }
