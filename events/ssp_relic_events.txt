@@ -10,7 +10,7 @@ ship_event = {
 
         add_modifier = {
             modifier = "ssp_r_drive_core_active_effect_a"
-            days = 5
+            days = 10
         }
 
         if = {
@@ -22,7 +22,11 @@ ship_event = {
             controller = {
                 remove_country_flag = jump_drive_allowed
                 remove_country_flag = allowed_jump_once
+                remove_country_flag = psi_jump_drive_modifier_disallowed
                 remove_modifier = ssp_r_drive_core_active_effect_b
+                fleet.owner = {
+                    remove_modifier = ssp_r_drive_core_active_effect_c
+                }
             }
         }
     }
@@ -86,6 +90,7 @@ country_event = {
     is_triggered_only = yes
 
     trigger = {
+        has_country_flag = drive_core_passive_activated
         NOT = {
             has_relic = ssp_r_drive_core
         }

@@ -88,16 +88,12 @@ disco_bacterium_ship_desc:0 "We have received a strange transmission from a scie
 # Events
 ##########
 
-#Archaeo DEPRECATED
-ssp_relic.100.name:0 "Archaeo Digsite Test"
-ssp_relic.100.desc:0 "Our sciencetists have picked up a strange transmission from [From.GetName] \n\The signal is very close to one our ships use.\n\Study suggests that the signal is in the northwest region of the planet. " 
-
 ###########
 # Origins
 ###########
 
 origin_follower_cult:0 "Dictionnaire Infernal"
-origin_follower_cult_desc:0 "§R- WARNING: Challenging Origin§! \n-"
+origin_follower_cult_desc:0 "§R- WARNING: Challenging Origin§! \n- Little note for anyone who sees this, It's still Work in progress so don't actually pick this xD -Foxy"
 civic_tooltip_defensive_origin_effects:0 "- Start the game with all £pop£ Pops having the trait §HFanatic Worshipper, decreasing §HSpecialist and §HRuler output aswell as §HPop Growth."
 
 ##########

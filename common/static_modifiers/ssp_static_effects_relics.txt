@@ -11,13 +11,20 @@ ssp_r_drive_core_passive = {
 }
 
 ssp_r_drive_core_active_effect_a = {
- ship_jumpdrive_cooldown_mult = -0.999 
+ ship_jumpdrive_cooldown_mult = -1 
 }
 
 ssp_r_drive_core_active_effect_b = {
  ship_ftl_jumpdrive_range_mult = 50
 }
 
+ssp_r_drive_core_active_effect_c = {
+    ship_ftl_jumpdrive_range_mult = -1
+}
+
+ssp_r_drive_core_active_effect_d = {
+    ship_ftl_jumpdrive_range_mult = -1.50
+}
  
 #animarum
 ssp_r_animarum_active_effect = {
