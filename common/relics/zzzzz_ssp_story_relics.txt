@@ -25,9 +25,8 @@ ssp_r_khyran_bacterium = {
 		potential = { 
 			always = yes 
 		}
-		
-		species_leader_exp_gain = 0.5
-		#passive effect
+		#passive effect, we are calling ssp_relic.400 here
+		#dont forget to write a description here.
 	}
 	
 	score = 1000

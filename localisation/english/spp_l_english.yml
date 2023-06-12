@@ -88,6 +88,8 @@ disco_bacterium_ship_desc:0 "We have received a strange transmission from a scie
 # Events
 ##########
 
+MESSAGE_FAVOR_GAINED_BY_MIND_CONTROL:0 "Thanks to mind control bacteria, we have managed to gain a Favor from the $WHO|Y$."
+
 ###########
 # Origins
 ###########

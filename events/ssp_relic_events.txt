@@ -1,5 +1,7 @@
 namespace = ssp_relic
 
+
+
 ship_event = {
     id = ssp_relic.100
     hide_window = yes
@@ -24,13 +26,12 @@ ship_event = {
                 remove_country_flag = allowed_jump_once
                 remove_country_flag = psi_jump_drive_modifier_disallowed
                 remove_modifier = ssp_r_drive_core_active_effect_b
-                fleet.owner = {
-                    remove_modifier = ssp_r_drive_core_active_effect_c
+                remove_modifier = ssp_r_drive_core_active_effect_c
                 }
             }
         }
     }
-}
+
 
 
 ship_event = {
@@ -54,7 +55,8 @@ ship_event = {
 	}
 }
 
-# trigger when you obtain the relic!
+# trigger when you obtain the relic! (Rodathnov)
+# .300 = Warpdrive
 country_event = {
     id = ssp_relic.300
     hide_window = no #CHANGE TO YES WHEN DONE
@@ -105,4 +107,52 @@ country_event = {
             remove_modifier = ssp_r_drive_core_passive
         }
     }
+}
+
+# on_monthly_pulse_country: give favours for envoys (Stellaris)
+# .400 = Bacterium
+country_event = {
+	id = ssp_relic.400
+	is_triggered_only = yes
+	hide_window = yes
+
+	trigger = {
+		has_relic = ssp_r_khyran_bacterium
+	}
+
+	immediate = {
+		every_envoy = {
+			limit = {
+				has_envoy_task = { task = improve_relations }
+				root = {
+					num_favors = {
+						target = prev.envoy_location_country
+						value < 10
+					}
+				}
+			}
+			random_list = {
+				5 = {
+					root = {
+						add_favors = {
+							target = prev.envoy_location_country
+							value = 1
+						}
+						create_message = {
+							type = MESSAGE_FAVOR_GAINED_TRADITION
+							localization = MESSAGE_FAVOR_GAINED_BY_MIND_CONTROL
+							days = 30
+							target = prev.envoy_location_country.capital_scope
+							variable = {
+								type = name
+								localization = WHO
+								scope = prev.envoy_location_country
+							}
+						}
+					}
+				}
+				95 = {}
+			}
+		}
+	}
 }
