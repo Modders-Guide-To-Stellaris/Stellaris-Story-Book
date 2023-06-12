@@ -10,23 +10,29 @@ ship_event = {
 
     immediate = {
 
-        add_modifier = {
+        add_modifier = { #BIG BUG, DOESNT WORK
             modifier = "ssp_r_drive_core_active_effect_a"
-            days = 10
+            days = 5
         }
 
         if = {
             limit = {
                 controller = {
                     has_country_flag = allowed_jump_once
+                    has_fleet_flag = jump_drive_ship
                 }   
             }
             controller = {
                 remove_country_flag = jump_drive_allowed
                 remove_country_flag = allowed_jump_once
-                remove_country_flag = psi_jump_drive_modifier_disallowed
-                remove_modifier = ssp_r_drive_core_active_effect_b
-                remove_modifier = ssp_r_drive_core_active_effect_c
+                }
+                every_controlled_ship = {
+                    remove_modifier = ssp_r_drive_core_active_effect_b
+                    remove_modifier = ssp_r_drive_core_active_effect_c
+                    remove_modifier = ssp_r_drive_core_active_effect_d
+                }
+                every_controlled_fleet = {
+                    remove_fleet_flag = jump_drive_ship
                 }
             }
         }

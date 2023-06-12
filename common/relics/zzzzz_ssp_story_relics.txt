@@ -92,6 +92,7 @@ ssp_r_drive_core = {
 						modifier = "ssp_r_drive_core_active_effect_b" 
 						days = 3600 
 					}
+					set_fleet_flag = jump_drive_ship
 				}
 			}
 		}

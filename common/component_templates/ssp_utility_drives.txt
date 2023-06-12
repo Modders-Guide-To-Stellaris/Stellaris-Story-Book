@@ -1,5 +1,5 @@
 #utility_component_template = {
-#	key = "PSI_JUMP_DRIVE_1"
+#	key = "PSI_JUMP_DRIVE_1" #Updated jumpdrives without extra jump drive range
 #	size = small
 #	icon = "GFX_ship_part_psi_jump_drive_1"
 #	icon_frame = 1
@@ -15,7 +15,7 @@
 #	ship_modifier = {
 #		ship_disengage_opportunities_add = 3
 #		ship_windup_mult = -0.9
-#       ship_speed_mult = 0.5
+#       ship_speed_mult = 0.5 
 #	}
 #   
 #	ai_weight = {
