@@ -13,12 +13,14 @@ tech_ssp_jonan_communication_key_desc:0 "A way to encrypt our messages into the 
 
 ssp_r_khyran_bacterium:0 "Contained Khyran Bacterium"
 ssp_r_khyran_bacterium_desc:0 "Sample of an unknown bacteria gathered from a dead Jonan onboard the Ichki-0ne"
-ssp_r_bacterium_active_effect:0 "$ssp_r_khyran_bacterium$"
-
+bacterium_control_passive:0 "Has a small chance of brainwashing the opposing empire to give you favors when improving relations"
+bacterium_control_agressive:0 "Use your envoy whos improving relations to slip something into the opposing empire's food, in turn the Empire will follow you on the galactic community for 1 year"
 
 ssp_r_drive_core:0 "Repaired Drive Core"
 ssp_r_drive_core_desc:0 "The repaired drive core we salvaged from the Jonan Foundry science ship"
+drive_core_passive:0 "Grants your science ships +50% Sublight speed.\n\Try and catch my Science vessel now stupid fallen empire!"
 drive_core_random:0 "Active the powerful precursor jump drives giving you full galaxy warp range for a random fleet"
+
 
 ssp_r_animarum:0 "The Animarum"
 ssp_r_animarum_desc:0 "This powerful relic was once in possession of the Grand Reanimator. "
@@ -114,6 +116,8 @@ trait_grimoire_qualityIII_desc:0 "This pop is suffering from constant fatigue"
 trait_grimoire_maxima:0 "Resurrection Maxima"
 trait_grimoire_maxima_desc:0 "This pop doesn't fear death itself!"
 
+
+#When you *insert thing here* with the grand reanimator >> option "What was, will be"
 
 ################
 # Start Screen

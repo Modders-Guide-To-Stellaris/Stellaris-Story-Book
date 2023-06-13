@@ -25,17 +25,20 @@ ssp_r_khyran_bacterium = {
 		potential = { 
 			always = yes 
 		}
-		#passive effect, we are calling ssp_relic.400 here
-		#dont forget to write a description here.
+		custom_tooltip = bacterium_control_passive
 	}
 	
 	score = 1000
 
 	active_effect = {
+		custom_tooltip = bacterium_control_agressive
 		add_modifier = { 
 			modifier = "ssp_r_bacterium_active_effect"
-			days = 3600 
+			days = 360
 		}
+
+		#People you have improve relations (now brainwashed) on are forced to follow your vote for 1 year, 
+
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = { modifier = "relic_activation_cooldown" days = 3600 }
@@ -73,6 +76,7 @@ ssp_r_drive_core = {
 		potential = { 
 			always = yes
 		}
+		custom_tooltip = drive_core_passive
 	}
 
 	score = 1000
@@ -92,7 +96,6 @@ ssp_r_drive_core = {
 						modifier = "ssp_r_drive_core_active_effect_b" 
 						days = 3600 
 					}
-					set_fleet_flag = jump_drive_ship
 				}
 			}
 		}
@@ -116,6 +119,7 @@ ssp_r_drive_core = {
 						}
 					}
 				}
+				set_ship_flag = jump_drive_enabled_effect
 			}
 		}
 

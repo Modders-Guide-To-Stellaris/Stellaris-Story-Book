@@ -4,14 +4,14 @@ namespace = ssp_relic
 
 ship_event = {
     id = ssp_relic.100
-    hide_window = yes
+    hide_window = no
     is_triggered_only = yes
     
 
     immediate = {
 
-        add_modifier = { #BIG BUG, DOESNT WORK
-            modifier = "ssp_r_drive_core_active_effect_a"
+        add_modifier = { 
+            modifier = ssp_r_drive_core_active_effect_a
             days = 5
         }
 
@@ -19,24 +19,27 @@ ship_event = {
             limit = {
                 controller = {
                     has_country_flag = allowed_jump_once
-                    has_fleet_flag = jump_drive_ship
                 }   
             }
             controller = {
                 remove_country_flag = jump_drive_allowed
                 remove_country_flag = allowed_jump_once
-                }
-                every_controlled_ship = {
-                    remove_modifier = ssp_r_drive_core_active_effect_b
-                    remove_modifier = ssp_r_drive_core_active_effect_c
-                    remove_modifier = ssp_r_drive_core_active_effect_d
-                }
-                every_controlled_fleet = {
-                    remove_fleet_flag = jump_drive_ship
-                }
             }
         }
+        if = {
+            limit = {
+                has_ship_flag = jump_drive_enabled_effect
+            }
+        }
+        every_controlled_ship = {
+            remove_modifier = ssp_r_drive_core_active_effect_b
+            remove_modifier = ssp_r_drive_core_active_effect_c
+            remove_modifier = ssp_r_drive_core_active_effect_d
+            remove_ship_flag = jump_drive_enabled_effect
+        }
     }
+
+}
 
 
 
