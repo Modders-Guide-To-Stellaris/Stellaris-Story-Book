@@ -11,8 +11,8 @@ ship_event = {
     immediate = {
 
         add_modifier = { 
-            modifier = ssp_r_drive_core_active_effect_a
-            days = 5
+            modifier = "ssp_r_drive_core_active_effect_a"
+            days = 10
         }
 
         if = {
@@ -26,20 +26,44 @@ ship_event = {
                 remove_country_flag = allowed_jump_once
             }
         }
+        
+        controller = {
+            every_controlled_ship = {
+                if = {
+                    limit = {
+                        has_ship_flag = jump_drive_enabled_effect
+                    }
+                        remove_modifier = "ssp_r_drive_core_active_effect_b"
+                        remove_modifier = "ssp_r_drive_core_active_effect_c"
+                        remove_modifier = "ssp_r_drive_core_active_effect_d"
+                        remove_ship_flag = jump_drive_enabled_effect
+                }
+            }
+        }
+    }
+}
+
+
+ship_event = {
+    id = ssp_relic.101
+    hide_window = yes 
+    is_triggered_only = yes 
+
+    immediate = {
+    every_controlled_ship = {
         if = {
             limit = {
                 has_ship_flag = jump_drive_enabled_effect
             }
-        }
-        every_controlled_ship = {
-            remove_modifier = ssp_r_drive_core_active_effect_b
-            remove_modifier = ssp_r_drive_core_active_effect_c
-            remove_modifier = ssp_r_drive_core_active_effect_d
-            remove_ship_flag = jump_drive_enabled_effect
+                    remove_modifier = "ssp_r_drive_core_active_effect_b"
+                    remove_modifier = "ssp_r_drive_core_active_effect_c"
+                    remove_modifier = "ssp_r_drive_core_active_effect_d"
+                    remove_ship_flag = jump_drive_enabled_effect
+                }
+            }
         }
     }
 
-}
 
 
 

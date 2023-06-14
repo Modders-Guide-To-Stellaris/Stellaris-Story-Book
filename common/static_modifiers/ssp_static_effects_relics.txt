@@ -2,6 +2,8 @@
 ssp_r_bacterium_active_effect = {
     pop_happiness = -0.10
     pop_job_amenities_mult = -0.10
+    country_unity_produces_mult = 0.75 #Replace this with the actual active effect
+	pop_growth_speed = -0.1
 }
 
 #drivecore
@@ -11,7 +13,7 @@ ssp_r_drive_core_passive = {
 }
 
 ssp_r_drive_core_active_effect_a = {
- ship_jumpdrive_cooldown_mult = -1 
+ ship_jumpdrive_cooldown_mult = -0.999
 }
 
 ssp_r_drive_core_active_effect_b = {
