@@ -27,6 +27,8 @@ ssp_r_animarum_desc:0 "This powerful relic was once in possession of the Grand R
 ssp_r_animarum_active_effect:0 "$ssp_r_animarum$"
 ssp_r_animarum_active_effect_tooltip:0 "Spawns Reanimated Armies" 
 
+relic_religious_active:0 "Religious Banter\n Removes crime from every planet by screaming people with religious ideals."
+
 ##########
 # armies
 ##########

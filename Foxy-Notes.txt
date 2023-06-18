@@ -12,3 +12,17 @@
 #Spawn system with big boss dude
 #On big boss dude defeated OPTIONAL give option to A kill and get relic, B Enlist legendary paragon and upgrade to final tier both quantity and quality of reanimated sacrifices (100% reanimated sacrifices, trait gives small bonuses based on "not fearing death itself" instead of any malus) 
 
+
+#Bacterium - Warp drive Relics
+
+#Soncio — Today at 6:22 PM
+#no
+#you simply don't allow them to take a pacifist option
+#Curator Foxy — Today at 6:22 PM
+#custom tooltip, got it
+#Soncio — Today at 6:23 PM
+#so you add a check for "if this empire just knows war, don't allow this option/grey out"
+
+#so
+#NOT
+#has_government = "gov_devouring_swarm"

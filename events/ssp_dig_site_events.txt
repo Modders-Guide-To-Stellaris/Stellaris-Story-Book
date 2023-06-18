@@ -130,6 +130,11 @@ fleet_event = {
 	
 	option = {
 		name = ssp_dig_site.4a.name
+		trigger = {
+			NOT = {
+				has_government = "gov_devouring_swarm"
+			}
+		}
 		owner = { 
 			add_relic = ssp_r_khyran_bacterium
 		}

@@ -244,6 +244,8 @@ ssp_r_animarum = {
 
 
 #pope relic
+#anti crime
+
 	ssp_r_hypno = {
 		activation_duration = @triumph_duration_normal
 		portrait = "GFX_relic_galatron"
@@ -264,14 +266,15 @@ ssp_r_animarum = {
 			potential = { 
 				always = yes 
 			}
-			planet_crime_add = -10
+			#something here?
 		}
 		
 		score = 1000
 	
 		active_effect = {
+			custom_tooltip = relic_religious_active
 			add_modifier = { 
-				modifier = "ssp_r__active_effect" #supposed to still name this thing
+				modifier = "ssp_r_pope_hat_active_effect" #supposed to still name this thing
 				days = 3600 
 			}
 			add_modifier = {
@@ -280,6 +283,14 @@ ssp_r_animarum = {
 						is_gestalt = no
 					}
 				#+30% or 75, whichever is more, make pop religious/Spiritualist
+			}
+			add_modifier = {
+				triggered_country_modifier = {
+					potential = {
+						is_gestalt = yes
+					}
+				}
+				#Make relic self destruct for some unity
 			}
 			custom_tooltip = relic_triumph_cooldown
 			hidden_effect = {
