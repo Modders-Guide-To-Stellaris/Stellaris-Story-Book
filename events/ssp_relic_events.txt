@@ -4,7 +4,7 @@ namespace = ssp_relic
 
 ship_event = {
     id = ssp_relic.100
-    hide_window = no
+    hide_window = yes
     is_triggered_only = yes
     
 
@@ -92,7 +92,7 @@ ship_event = {
 # .300 = Warpdrive
 country_event = {
     id = ssp_relic.300
-    hide_window = no #CHANGE TO YES WHEN DONE
+    hide_window = yes
     is_triggered_only = yes
 
     trigger = {
@@ -121,7 +121,7 @@ country_event = {
 
 country_event = {
     id = ssp_relic.301
-    hide_window = no #CHANGE TO YES WHEN DONE
+    hide_window = yes
     is_triggered_only = yes
 
     trigger = {
@@ -188,4 +188,30 @@ country_event = {
 			}
 		}
 	}
+}
+
+country_event = {
+	id = ssp_relic.401
+	is_triggered_only = yes
+	hide_window = yes
+
+	immediate = {
+		every_envoy = {
+			limit = {
+				has_envoy_task = { task = improve_relations }
+                root = {
+                    num_favors = {
+					target = prev.envoy_location_country
+					value < 10
+                    }
+			    }
+            }
+            root = {
+				add_favors = {
+				target = prev.envoy_location_country
+				value = 10
+				}
+            }
+        }
+    }
 }

@@ -32,12 +32,11 @@ ssp_r_khyran_bacterium = {
 
 	active_effect = {
 		custom_tooltip = bacterium_control_agressive
-		add_modifier = { 
-			modifier = "ssp_r_bacterium_active_effect"
-			days = 360
+		
+		hidden_effect = {
+			country_event = {	id = ssp_relic.401	}
 		}
 
-		#People you have improve relations (now brainwashed) on are forced to follow your vote for 1 year, 
 
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
