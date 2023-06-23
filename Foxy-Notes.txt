@@ -26,3 +26,7 @@
 #so
 #NOT
 #has_government = "gov_devouring_swarm"
+
+
+
+#maybe improve hanger bays to boost strike craft

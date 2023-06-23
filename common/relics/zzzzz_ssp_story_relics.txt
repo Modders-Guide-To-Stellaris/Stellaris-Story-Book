@@ -81,6 +81,9 @@ ssp_r_drive_core = {
 	score = 1000
 
 	active_effect = {
+
+		set_country_flag = drive_core_active_flag
+
 		custom_tooltip = drive_core_random
 		hidden_effect = {
 			root = {

@@ -49,6 +49,10 @@ ship_event = {
     hide_window = yes 
     is_triggered_only = yes 
 
+        trigger = {
+            has_country_flag = drive_core_active_flag 
+        }
+
     immediate = {
     every_controlled_ship = {
         if = {
@@ -61,6 +65,9 @@ ship_event = {
                     remove_ship_flag = jump_drive_enabled_effect
                 }
             }
+        }
+        owner = {
+            remove_country_flag = drive_core_active_flag
         }
     }
 

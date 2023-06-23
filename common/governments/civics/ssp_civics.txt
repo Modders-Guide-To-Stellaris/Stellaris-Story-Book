@@ -1,0 +1,32 @@
+civic_ssp_coven_system = {
+	#icon = 
+	description = "civic_ssp_coven_system_tooltip"
+
+	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
+	}
+	possible = {
+		ethics = {
+            OR = {
+				text = civic_tooltip_spiritualist
+				value = ethic_spiritualist
+            }
+		}
+            civics = {
+			NOR = {
+				value = civic_exalted_priesthood 
+				value = civic_technocracy
+                value = civic_reanimators
+                value = civic_imperial_cult
+                value = civic_parliamentary_system
+			}
+		}
+	}
+	random_weight = { base = @civic_default_random_weight }
+
+	modifier = {
+#replace ruler jobs with random coven head jobs, each with its own rewards
+#also add a custom building 
+	}
+}

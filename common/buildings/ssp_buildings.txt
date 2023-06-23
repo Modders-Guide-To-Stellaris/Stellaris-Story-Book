@@ -1,0 +1,282 @@
+building_coven_castle_1 = {
+    base_buildtime = @b1_time
+    can_build = no
+    category = government
+    can_be_disabled = no
+    upgrades = { "building_covenant_2" }
+
+	potential = {
+		exists = owner
+		owner = {
+			is_country_type = default
+		}
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+		}
+		is_artificial = no
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		OR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 1500
+			multiplier = value:gaiaseeder_cost_mult
+		}
+		upkeep = {
+            unity = 5
+			multiplier = value:gaiaseeder_upkeep
+		}
+	}
+
+	    planet_modifier = {
+		    job_coven_head_add = 1
+	    }
+    }
+}
+
+building_coven_castle_2 = {
+    base_buildtime = @b1_time
+    can_build = no
+    category = government
+    can_be_disabled = no
+
+	potential = {
+		exists = owner
+		owner = {
+			is_country_type = default
+		}
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+		}
+		is_artificial = no
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		OR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 1500
+			multiplier = value:gaiaseeder_cost_mult
+		}
+		upkeep = {
+            unity = 50
+			multiplier = value:gaiaseeder_upkeep
+		}
+	}
+
+	    planet_modifier = {
+		    job_coven_head_add = 1 
+	    }
+    }
+}
+
+building_coven_castle_3 = {
+    base_buildtime = @b1_time
+    can_build = no
+    category = government
+    can_be_disabled = no
+
+	potential = {
+		exists = owner
+		owner = {
+			is_country_type = default
+		}
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+		}
+		is_artificial = no
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		OR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 1500
+			multiplier = value:gaiaseeder_cost_mult
+		}
+		upkeep = {
+            unity = 100
+			multiplier = value:gaiaseeder_upkeep
+		}
+	}
+
+	    planet_modifier = {
+            #random_list = {
+#
+ #           }
+		    job_coven_head_add = 1 
+	    }
+    }
+}
+
+
+building_covenant_1 = {
+	base_buildtime = @b1_time
+	base_cap_amount = 2
+	category = government
+	can_be_disabled = no
+	upgrades = { "building_covenant_2" }
+
+	potential = {
+		exists = owner
+		owner = {
+			is_country_type = default
+		}
+		NOR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+		}
+		is_artificial = no
+	}
+
+	allow = {
+		has_upgraded_capital = yes
+	}
+
+	destroy_trigger = {
+		OR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 1500
+			multiplier = value:gaiaseeder_cost_mult
+		}
+		upkeep = {
+			energy = 20
+			multiplier = value:gaiaseeder_upkeep
+		}
+	}
+
+	    planet_modifier = {
+		    job_coven_scholar_add = 1 #TODO: ADD COVEN_SCHOLAR JOB!!
+	    }
+    }
+}
+
+building_covenant_2 = {
+	base_buildtime = @b2_time
+	can_build = no
+	category = government
+	can_be_disabled = no
+	upgrades = { "building_covenant_3" }
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 1500
+			exotic_gases = @b2_rare_cost
+		}
+		upkeep = {
+			energy = 20
+			exotic_gases = @b2_rare_upkeep
+			multiplier = value:gaiaseeder_upkeep
+		}
+	}
+
+	destroy_trigger = {
+		OR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+		}
+	}
+
+	planet_modifier = {
+        job_coven_student_add = 2
+	}
+}
+
+building_covenant_3 = {
+	base_buildtime = @b2_time
+	can_build = no
+	category = government
+	can_be_disabled = no
+	upgrades = { "building_covenant_4" }
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 1500
+			exotic_gases = @b3_rare_cost
+		}
+		upkeep = {
+			energy = 20
+			exotic_gases = @b3_rare_upkeep
+			multiplier = value:gaiaseeder_upkeep
+		}
+	}
+
+	destroy_trigger = {
+		OR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+		}
+	}
+
+	planet_modifier = {
+		job_coven_student_add = 2
+        job_coven_scholar_add = 1
+	}
+}
+
+building_covenant_4 = {
+	base_buildtime = @b3_time
+	can_build = no
+	category = government
+	can_be_disabled = no
+
+	destroy_trigger = {
+		OR = {
+			is_planet_class = pc_hive
+			is_planet_class = pc_machine
+		}
+	}
+
+	resources = {
+		category = planet_buildings
+		cost = {
+			energy = 1500
+			exotic_gases = @b4_rare_cost
+		}
+	}
+
+	planet_modifier = {
+		job_coven_scholar_add = 2
+        job_coven_student_add = 2 
+	}
+}
+

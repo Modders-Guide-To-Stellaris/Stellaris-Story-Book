@@ -126,3 +126,26 @@ trait_grimoire_maxima_desc:0 "This pop doesn't fear death itself!"
 ################
 
 START_SCREEN_PART_ONE_CULT:0 "Will add later as soncio didnt ask me to add this and since I want to finish the core first :P"
+
+##########
+# Civics
+##########
+
+
+civic_ssp_coven_system:0 "Coven Branded"
+civic_ssp_coven_system_tooltip:0 "Replaces Ruler jobs with Coven Head jobs. Each Coven Head has it's own production line.\n\ Allows the building of Coventions which produce Student/Scholar jobs."
+
+#############
+# Buildings
+#############
+
+building_covenant:0 "Coventions"
+building_covenant_1:0 "$building_covenant$ - Phase 1"
+building_covenant_2:0 "$building_covenant$ - Phase 2"
+building_covenant_3:0 "$building_covenant$ - Phase 3"
+building_covenant_4:0 "$building_covenant$ - Final Phase"
+building_covenant_all_desc:0 "Prestigious Facilities that produce the finest scholars"
+building_covenant_1_desc:0 "$building_covenant_all_desc$"
+building_covenant_2_desc:0 "$building_covenant_all_desc$"
+building_covenant_3_desc:0 "$building_covenant_all_desc$"
+building_covenant_4_desc:0 "$building_covenant_all_desc$"

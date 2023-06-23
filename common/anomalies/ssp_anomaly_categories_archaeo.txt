@@ -7,7 +7,7 @@ disco_bacterium_ship = {
 
 	spawn_chance = {
 		modifier = {
-			add = 10
+			add = 20
 			is_planet_class = pc_ocean
 		}
 	}
