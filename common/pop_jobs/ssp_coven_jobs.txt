@@ -5,59 +5,42 @@ coven_scholar = {
 
 coven_student = {
     category = specialist
-	condition_string = SPECIALIST_JOB_TRIGGER
+    condition_string = SPECIALIST_JOB_TRIGGER
 }
 
-coven_head_potions = { #no idea
-   category = ruler
-	condition_string = RULER_JOB_TRIGGER
-
-}
-
+#Covenheads
 coven_head_healing = { #pop growth or repair speed
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
-
 }
 
 coven_head_plant = { #food/habitability stuff
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
-
 }
 
 coven_head_beast_keeping = { #no idea? some leader traits I guess?
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
-
 }
 
 coven_head_construction = { #planetary build speed / mega structure build speed / cheaper building
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
-
 }
 
 coven_head_illusion = { #Sensor range and cloaking
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
-
-}
-
-coven_head_abomination = { #?? no idea // The Abomination Coven focuses on the creation and utilization of purple ooze golems known as abominations. Witches in the Abomination Coven can create, summon, and control abominations to do their bidding, and more powerful witches can even use abomination matter to create constructs or even assume an abomination-based form.
-   category = ruler
-	condition_string = RULER_JOB_TRIGGER
-	
 }
 
 coven_head_oracle = { #spiritualist stuff?
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
-
 }
 
 coven_head_bard = { #amenities
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
-
 }
+

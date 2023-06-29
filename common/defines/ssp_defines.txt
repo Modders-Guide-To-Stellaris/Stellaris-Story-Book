@@ -2,3 +2,7 @@
         BORROW_DIPLO_WEIGHT_FAVOR_RESOURCE	= { "unity" }
         BORROW_DIPLO_WEIGHT_FAVOR_COST		= { 50 }
     }
+
+    NGameplay = {
+        ALLOW_EMPIRE_DESIGN_CHEATS = no #DO NOT TOUCH Although the feature is hilarious... I should enable this on april fools lol
+    }

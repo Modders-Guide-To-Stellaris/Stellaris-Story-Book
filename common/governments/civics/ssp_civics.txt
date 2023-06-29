@@ -30,3 +30,15 @@ civic_ssp_coven_system = {
 #also add a custom building 
 	}
 }
+
+civic_ssp_one_planet_forced = {
+	modification = no
+	icon = "gfx/interface/icons/governments/civics/civic_empire_in_decline.dds"
+	potential = {
+		always = yes
+	}
+	random_weight = { base = @civic_default_random_weight }
+	description = FALLEN_EMPIRE_LETHARGY_2
+	modifier = {
+	}
+}

@@ -1,0 +1,5 @@
+is_not_doing_one_planet_challenge = {
+    NOT = {
+        has_civic = civic_ssp_one_system_forced
+    }
+}
