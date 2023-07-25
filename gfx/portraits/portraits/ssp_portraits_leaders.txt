@@ -1,0 +1,6 @@
+# leg 50 grand rean
+par_legendary_50 = { entity = "paragon_50_legendary_portrait_50_entity"	clothes_selector = "no_texture" attachment_selector = "no_texture"	greeting_sound = "necroid_portrait_07_exoskeletoid"
+    character_textures = {
+        "gfx/models/portraits/necroid/necroids_06_portrait_red.dds"
+    }
+}

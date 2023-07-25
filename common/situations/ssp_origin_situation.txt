@@ -147,7 +147,11 @@ situation_grimoire_decipher = {
 	}
 
 	on_progress_complete = {
-		#spawn new system with the nazi necromancer
+		owner = {
+			country_event = {
+				id = ssp_relic.500
+			}
+		}
 	}
 
 	monthly_progress = {

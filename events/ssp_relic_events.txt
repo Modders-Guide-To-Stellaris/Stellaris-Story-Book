@@ -274,3 +274,341 @@ country_event = {
         }
     }
 }
+
+fleet_event = { #Enter the toxic system, meet the entity
+    id = ssp_relic.501
+    title = "ssp_relic.501.name"
+    desc = "ssp_relic.501.desc" # Just open hyperlane
+    picture = GFX_evt_toxic_god #TODO: change
+    show_sound = evn_tox_knights_of_the_toxic_god
+    location = from
+
+    is_triggered_only = yes
+
+    trigger = {
+        from = {
+            has_star_flag = guardian_reanimator_system
+        }
+        controller = {
+            has_origin = origin_follower_cult
+            NOR = {
+                has_country_flag = visited_reanimator_system
+                has_global_flag = reanimator_captured
+            }
+        }
+        from = {
+            any_fleet_in_system = { has_fleet_flag = grand_reanimator_original_fleet }
+        }
+    }
+
+    immediate = {
+        controller = {
+            set_country_flag = visited_reanimator_system
+        }
+    }
+
+    option = { # This monstruosity is no god of mine! Smite it!
+        name = ssp_relic.501.a
+    }
+
+    option = { # The God wishes to test our mettle! Bring our armies!
+        name = ssp_relic.501.b
+    }
+}
+
+country_event = { # Upon defeating the Entity
+    id = ssp_relic.502
+    title = "ssp_relic.502.name"
+    desc = "ssp_relic.502.desc"
+    picture = GFX_evt_toxic_god
+    show_sound = evn_tox_knights_of_the_toxic_god
+
+    is_triggered_only = yes
+
+    trigger = {
+        this = {
+            from = { is_country_type = guardian_dragon_reanimator }
+        }
+        has_origin = origin_follower_cult
+    }
+
+    option = { # recruit him
+        name = ssp_relic.502.a
+        custom_tooltip = ssp_relic.502.a.tt
+        hidden_effect = {
+            owner = {
+                country_event = { id = toxoids.7320 days = 900 }
+                create_fleet = {
+                    name = "NAME_Toxic_God"
+                    settings = {
+                        spawn_debris = no
+                        is_boss = yes
+                    }
+                    effect = {
+                        set_owner = root.owner
+                        create_ship = {
+                            name = "NAME_Toxic_God"
+                            design = "NAME_Venomous_Deity" #call galparagon here
+                        }
+                        set_location = {
+                            target = fromfrom
+                            distance = 5
+                            angle = random
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    option = {  # Kill him, kill him now. DEW IT
+        name = ssp_relic.502.b
+        custom_tooltip = ssp_relic.502.b.tt
+        hidden_effect = {
+            owner = {
+                country_event = { id = ssp_relic.511 scopes = { fromfrom = fromfrom.solar_system } }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_relic.511
+    title = ssp_relic.511.name
+    desc = ssp_relic.511.desc.origin
+    picture = GFX_evt_toxic_god
+    location = fromfrom
+    show_sound = event_mystic_reveal
+
+    is_triggered_only = yes
+
+    option = {
+        name = ssp_relic.511.A
+        add_relic = ssp_r_animarum
+    }
+}
+
+country_event = { # Create Exakeides - 20 yo
+    id = ssp_relic.598
+    title = "ssp_relic.598.name"
+    desc = "ssp_relic.598.desc"
+    picture = GFX_evt_board_meeting
+    show_sound = par_event_keides
+    fire_only_once = yes
+    is_triggered_only = yes
+    event_window_type = leader_story
+    event_picture_background = "GFX_leader_recruitment_bg_legendary_keides"
+
+    immediate = {
+        random_system = {
+            limit = { has_star_flag = legendary_leader_1st_system }
+            save_event_target_as = 1st_system_legendary
+        }
+        random_system = {
+            limit = { has_star_flag = legendary_leader_2nd_system }
+            save_event_target_as = 2nd_system_legendary
+        }
+        random_system = {
+            limit = { has_star_flag = legendary_leader_3rd_system }
+            save_event_target_as = 3rd_system_legendary
+        }
+
+        create_country = {
+            name = "NAME_Unknown"
+            type = global_event
+            auto_delete = yes
+            flag = {
+                icon = {
+                    category = "special"
+                    file = "unknown.dds"
+                }
+                background = {
+                    category = "backgrounds"
+                    file = "00_solid.dds"
+                }
+                colors = {
+                    "red"
+                    "red"
+                    "null"
+                    "null"
+                }
+            }
+            effect = {
+                save_event_target_as = keides_country
+            }
+        }
+        event_target:keides_country = {
+            create_species = {
+                name = "NAME_Unknown"
+                class = HUM
+                portrait = paragon_exakeides_artifact_1 #Exakeides portrait
+                namelist = "PRT1"
+                traits = {
+                    trait = "trait_enduring"
+                    trait = "trait_quick_learners"
+                    trait = "trait_erudite"
+                }
+                effect = {
+                    save_event_target_as = exakeides_species
+                }
+            }
+            create_leader = {
+                class = scientist
+                species = event_target:exakeides_species
+                name = "NAME_Exakeides"
+                skill = 1
+                gender = male
+                event_leader = yes
+                skip_background_generation = yes
+                custom_catch_phrase = keides_catch_phrase
+                custom_description = desc_exakeides
+                set_age = 20
+                effect = {
+                    set_leader_flag = legendary_leader
+                    set_leader_flag = exakeides
+                    set_leader_flag = immune_to_negative_traits
+                    save_global_event_target_as = legendary_lost_leader
+                    add_trait_no_notify = leader_trait_legendary_far_from_home
+                    set_owner = root
+                    exile_leader_as = legendary_lost_leader
+                }
+            }
+        }
+    }
+
+    picture_event_data = {
+        portrait = event_target:legendary_lost_leader
+        room = galactic_custodian_room
+    }
+
+    option = {
+        name = paragon.3115.a
+        hidden_effect = { country_event = { id = paragon.3116 } }
+    }
+}
+
+country_event = { # HIRE/DISMISS Exakeides
+    id = ssp_relic.599
+    title = "ssp_relic.599.name"
+    desc = "ssp_relic.599.desc"
+    diplomatic = yes
+    fire_only_once = yes
+    is_triggered_only = yes
+    show_sound = par_event_keides
+
+    picture = GFX_leader_recruitment_bg_legendary_keides
+    event_window_type = leader_recruit
+
+    picture_event_data = {
+        portrait = event_target:legendary_lost_leader
+        room = galactic_custodian_room
+    }
+
+    trigger = {
+        exists = event_target:legendary_lost_leader
+    }
+
+    option = {
+        # Special tag to make mark this is the hire option
+        name = HIRE
+        tag = hire_leader
+        sound = "par_keides_hire"
+
+        hidden_effect = {
+            clone_leader = {
+                target = event_target:legendary_lost_leader
+            }
+            last_created_leader = {
+                set_leader_flag = exakeides
+                set_leader_flag = legendary_leader
+                save_global_event_target_as = legendary_lost_leader
+                set_leader_flag = immune_to_negative_traits
+                add_trait_no_notify = leader_trait_legendary_far_from_home
+                set_owner = root
+            }
+            switch = {
+                trigger = has_global_flag
+                leader_raised_xenophile = {
+                    event_target:legendary_lost_leader = { change_background_ethic = ethic_xenophile }
+                }
+                leader_raised_xenophobe = {
+                    event_target:legendary_lost_leader = { change_background_ethic = ethic_xenophobe }
+                }
+                leader_raised_militarist = {
+                    event_target:legendary_lost_leader = { change_background_ethic = ethic_militarist }
+                }
+                leader_raised_pacifist = {
+                    event_target:legendary_lost_leader = { change_background_ethic = ethic_pacifist }
+                }
+                leader_raised_egalitarian = {
+                    event_target:legendary_lost_leader = { change_background_ethic = ethic_egalitarian }
+                }
+                leader_raised_authoritarian = {
+                    event_target:legendary_lost_leader = { change_background_ethic = ethic_authoritarian }
+                }
+                leader_raised_spiritualist = {
+                    event_target:legendary_lost_leader = { change_background_ethic = ethic_spiritualist }
+                }
+                leader_raised_materialist = {
+                    event_target:legendary_lost_leader = { change_background_ethic = ethic_materialist }
+                }
+            }
+
+            random_owned_planet = {
+                limit = {
+                    is_variable_set = paragon_memory_vault
+                }
+                change_variable = {
+                    which = paragon_memory_vault
+                    value = 1
+                }
+            }
+            country_event = { id = paragon.3117 days = 60 random = 60 }
+        }
+
+        create_message = {
+            type = MESSAGE_RECRUITED_LEADER
+            localization =  MESSAGE_RECRUITED_LEADER_DESC
+            days = @toast_message_days
+            target = event_target:legendary_lost_leader
+            variable = {
+                type = name
+                localization = LEADER
+                scope = event_target:legendary_lost_leader
+            }
+            variable = {
+                key = "border"
+                value = "GFX_border_legendary"
+            }
+        }
+    }
+
+    option = {
+        name = DISMISS
+        # Special tag to mark this as the dismiss option
+        tag = dismiss_leader
+        sound = "par_keides_dismiss"
+
+        hidden_effect = {
+            event_target:legendary_lost_leader = {
+                kill_leader = { show_notification = no }
+            }
+        }
+    }
+
+    option = {
+        name = paragon.3116.a
+        response_text = paragon.3116.a.response
+        is_dialog_only = yes
+    }
+    option = {
+        name = paragon.3116.b
+        response_text = paragon.3116.b.response
+        is_dialog_only = yes
+    }
+    option = {
+        name = paragon.3116.c
+        response_text = paragon.3116.c.response
+        is_dialog_only = yes
+    }
+}

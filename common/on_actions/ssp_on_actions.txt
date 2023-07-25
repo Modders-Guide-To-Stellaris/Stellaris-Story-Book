@@ -30,3 +30,8 @@ on_monthly_pulse_country = {
     }
 }
 
+on_entering_system_fleet = {
+    events = {
+        ssp_relic.501
+    }
+}
