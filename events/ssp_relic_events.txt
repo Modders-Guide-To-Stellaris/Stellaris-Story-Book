@@ -400,18 +400,6 @@ country_event = { # Create Exakeides - 20 yo
     event_picture_background = "GFX_leader_recruitment_bg_legendary_keides"
 
     immediate = {
-        random_system = {
-            limit = { has_star_flag = legendary_leader_1st_system }
-            save_event_target_as = 1st_system_legendary
-        }
-        random_system = {
-            limit = { has_star_flag = legendary_leader_2nd_system }
-            save_event_target_as = 2nd_system_legendary
-        }
-        random_system = {
-            limit = { has_star_flag = legendary_leader_3rd_system }
-            save_event_target_as = 3rd_system_legendary
-        }
 
         create_country = {
             name = "NAME_Unknown"
@@ -453,31 +441,31 @@ country_event = { # Create Exakeides - 20 yo
                 }
             }
             create_leader = {
-                class = scientist
+                class = general
                 species = event_target:exakeides_species
                 name = "NAME_Exakeides"
-                skill = 1
+                skill = 8
                 gender = male
                 event_leader = yes
                 skip_background_generation = yes
                 custom_catch_phrase = keides_catch_phrase
                 custom_description = desc_exakeides
-                set_age = 20
+                set_age = 1999
                 effect = {
                     set_leader_flag = legendary_leader
-                    set_leader_flag = exakeides
+                    set_leader_flag = "TBD"
                     set_leader_flag = immune_to_negative_traits
-                    save_global_event_target_as = legendary_lost_leader
-                    add_trait_no_notify = leader_trait_legendary_far_from_home
+                    save_global_event_target_as = "TBD"
+                    #add_trait_no_notify = leader_trait_legendary_far_from_home
                     set_owner = root
-                    exile_leader_as = legendary_lost_leader
+                    exile_leader_as = "TBD"
                 }
             }
         }
     }
 
     picture_event_data = {
-        portrait = event_target:legendary_lost_leader
+        portrait = event_target:"TBD"
         room = galactic_custodian_room
     }
 
@@ -500,12 +488,12 @@ country_event = { # HIRE/DISMISS Exakeides
     event_window_type = leader_recruit
 
     picture_event_data = {
-        portrait = event_target:legendary_lost_leader
+        portrait = event_target:"TBD"
         room = galactic_custodian_room
     }
 
     trigger = {
-        exists = event_target:legendary_lost_leader
+        exists = event_target:"TBD"
     }
 
     option = {
@@ -516,65 +504,54 @@ country_event = { # HIRE/DISMISS Exakeides
 
         hidden_effect = {
             clone_leader = {
-                target = event_target:legendary_lost_leader
+                target = event_target:"TBD"
             }
             last_created_leader = {
-                set_leader_flag = exakeides
+                set_leader_flag = "TBD"
                 set_leader_flag = legendary_leader
-                save_global_event_target_as = legendary_lost_leader
+                save_global_event_target_as = "TBD"
                 set_leader_flag = immune_to_negative_traits
-                add_trait_no_notify = leader_trait_legendary_far_from_home
+                #add_trait_no_notify = leader_trait_legendary_far_from_home
                 set_owner = root
             }
             switch = {
                 trigger = has_global_flag
                 leader_raised_xenophile = {
-                    event_target:legendary_lost_leader = { change_background_ethic = ethic_xenophile }
+                    event_target:"TBD" = { change_background_ethic = ethic_xenophile }
                 }
                 leader_raised_xenophobe = {
-                    event_target:legendary_lost_leader = { change_background_ethic = ethic_xenophobe }
+                    event_target:"TBD" = { change_background_ethic = ethic_xenophobe }
                 }
                 leader_raised_militarist = {
-                    event_target:legendary_lost_leader = { change_background_ethic = ethic_militarist }
+                    event_target:"TBD" = { change_background_ethic = ethic_militarist }
                 }
                 leader_raised_pacifist = {
-                    event_target:legendary_lost_leader = { change_background_ethic = ethic_pacifist }
+                    event_target:"TBD" = { change_background_ethic = ethic_pacifist }
                 }
                 leader_raised_egalitarian = {
-                    event_target:legendary_lost_leader = { change_background_ethic = ethic_egalitarian }
+                    event_target:"TBD" = { change_background_ethic = ethic_egalitarian }
                 }
                 leader_raised_authoritarian = {
-                    event_target:legendary_lost_leader = { change_background_ethic = ethic_authoritarian }
+                    event_target:"TBD" = { change_background_ethic = ethic_authoritarian }
                 }
                 leader_raised_spiritualist = {
-                    event_target:legendary_lost_leader = { change_background_ethic = ethic_spiritualist }
+                    event_target:"TBD" = { change_background_ethic = ethic_spiritualist }
                 }
                 leader_raised_materialist = {
-                    event_target:legendary_lost_leader = { change_background_ethic = ethic_materialist }
+                    event_target:"TBD" = { change_background_ethic = ethic_materialist }
                 }
             }
-
-            random_owned_planet = {
-                limit = {
-                    is_variable_set = paragon_memory_vault
-                }
-                change_variable = {
-                    which = paragon_memory_vault
-                    value = 1
-                }
-            }
-            country_event = { id = paragon.3117 days = 60 random = 60 }
         }
 
         create_message = {
             type = MESSAGE_RECRUITED_LEADER
             localization =  MESSAGE_RECRUITED_LEADER_DESC
             days = @toast_message_days
-            target = event_target:legendary_lost_leader
+            target = event_target:"TBD"r
             variable = {
                 type = name
                 localization = LEADER
-                scope = event_target:legendary_lost_leader
+                scope = event_target:"TBD"
             }
             variable = {
                 key = "border"
@@ -590,25 +567,25 @@ country_event = { # HIRE/DISMISS Exakeides
         sound = "par_keides_dismiss"
 
         hidden_effect = {
-            event_target:legendary_lost_leader = {
+            event_target:"TBD" = {
                 kill_leader = { show_notification = no }
             }
         }
     }
 
     option = {
-        name = paragon.3116.a
-        response_text = paragon.3116.a.response
+        name = "TBD".a
+        response_text = "TBD".response
         is_dialog_only = yes
     }
     option = {
-        name = paragon.3116.b
-        response_text = paragon.3116.b.response
+        name = "TBD".b
+        response_text = "TBD".response
         is_dialog_only = yes
     }
     option = {
-        name = paragon.3116.c
-        response_text = paragon.3116.c.response
+        name = "TBD"
+        response_text = "TBD".response
         is_dialog_only = yes
     }
 }
