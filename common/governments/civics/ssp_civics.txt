@@ -1,8 +1,9 @@
 civic_ssp_coven_system = {
-	#icon = 
+	icon = gfx/interface/icons/governments/civics/civic_lethargic_leadership.dds
 	description = "civic_ssp_coven_system_tooltip"
 
 	potential = {
+		always = no
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 		authority = { NOT = { value = auth_corporate } }
 	}
@@ -15,9 +16,9 @@ civic_ssp_coven_system = {
 		}
             civics = {
 			NOR = {
-				value = civic_exalted_priesthood 
+				value = civic_exalted_priesthood
 				value = civic_technocracy
-                value = civic_reanimators
+               # value = civic_reanimators
                 value = civic_imperial_cult
                 value = civic_parliamentary_system
 			}
@@ -35,10 +36,10 @@ civic_ssp_one_planet_forced = {
 	modification = no
 	icon = "gfx/interface/icons/governments/civics/civic_empire_in_decline.dds"
 	potential = {
-		always = yes
+		always = no
 	}
 	random_weight = { base = @civic_default_random_weight }
-	description = FALLEN_EMPIRE_LETHARGY_2
+	description = civic_ssp_one_planet_forced_desc
 	modifier = {
 	}
 }

@@ -1,0 +1,96 @@
+grand_reanimator_finish = {
+    class = sc_b
+    usage = misc_system_init
+
+    flags = { guardian_reanimator_system guardian hostile_system }
+
+    # Star
+    planet = {
+        count = 1
+        class = star
+        orbit_distance = 0
+        orbit_angle = 1
+        size = { min = 20 max = 30 }
+        has_ring = no
+
+        # Create the grand reanimator
+        init_effect = {
+            clear_deposits = yes
+            add_deposit = d_zro_deposit_5
+
+
+            save_event_target_as = reanimator_sun
+            create_country = {
+                name = "NAME_grand_reanimator"
+                type = guardian_dragon_reanimator
+                flag = {
+                    icon = {
+                        category = "spherical" #TODO: replace flag
+                        file = "flag_spherical_6.dds"
+                    }
+                    background = {
+                        category = "backgrounds"
+                        file = "00_solid.dds"
+                    }
+                    colors={
+                        "red"
+                        "red"
+                        "null"
+                        "null"
+                    }
+                }
+                effect = {
+                    set_country_flag = grand_reanimator_country
+                    save_global_event_target_as = grand_reanimator_country
+                    set_global_flag = grand_reanimator_spawned
+                }
+            }
+            create_fleet = {
+                name = "NAME_Grand_Reanimator"
+                settings = {
+                    spawn_debris = no
+                    is_boss = yes
+                }
+                effect = {
+                    set_owner = event_target:grand_reanimator_country
+                    set_fleet_flag = grand_reanimator_original_fleet
+                    save_global_event_target_as = grand_reanimator
+                    create_ship = {
+                        name = "NAME_Grand_Reanimator"
+                        design = "NAME_Shard_Dragon"
+                    }
+                    set_location = {
+                        target = event_target:reanimator_sun
+                        distance = 0
+                        angle = random
+                    }
+                    set_fleet_stance = aggressive
+                    set_aggro_range_measure_from = return_point
+                    set_aggro_range = 350
+                }
+            }
+        }
+    }
+
+    # Asteroid belt
+    asteroid_belt = {
+        type = debris_asteroid_belt
+        radius = 65
+    }
+    change_orbit = 65
+    planet = {
+        count = { min = 2 max = 3 }
+        class = pc_asteroid
+        orbit_distance = 0
+        orbit_angle = { min = 50 max = 110 }
+    }
+
+    change_orbit = 40
+
+    planet = {
+        orbit_distance = 35
+        class = pc_shrouded
+        size = 30
+        orbit_angle = { min = 90 max = 270 }
+    }
+}

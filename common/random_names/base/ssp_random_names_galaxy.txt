@@ -1,0 +1,12 @@
+nebula_names = {
+    Soncini_Balance
+}
+
+star_names = {
+    Mallet_SCM
+    Semichki_SCM
+}
+
+black_hole_names = {
+    Hypno_SCM
+}

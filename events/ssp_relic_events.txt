@@ -222,3 +222,55 @@ country_event = {
         }
     }
 }
+#grand renanimator
+country_event = {
+    id = ssp_relic.500
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = {
+                NOT = { has_global_flag = grand_reanimator_spawned }
+            }
+            owner = {
+                random_system_within_border = {
+                    weights = {
+                        base = 1
+                        modifier = {
+                            factor = 10
+                            is_capital_system = no
+                        }
+                        modifier = {
+                            factor = 10
+                            OR = {
+                                NOT = { exists = sector }
+                                sector = {
+                                    NOT = { has_sector_type = core_sector }
+                                }
+                            }
+                        }
+                    }
+                    save_event_target_as = spawning_system
+                    spawn_system = {
+                        initializer = grand_reanimator_finish
+                        effect = {
+                            root = { set_visited = prev }
+                            save_event_target_as = ssp_reanimator_system
+                        }
+                    }
+                    if = {
+                        limit = { last_created_system = { NOT = { has_hyperlane_to = prev } } }
+                        add_hyperlane = {
+                            from = this
+                            to = last_created_system
+                        }
+                    }
+                    else = {
+                        add_extra_hyperlane_to_spawned_system_effect = yes
+                    }
+                }
+            }
+        }
+    }
+}

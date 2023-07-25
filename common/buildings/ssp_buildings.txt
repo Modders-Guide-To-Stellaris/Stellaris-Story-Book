@@ -1,9 +1,9 @@
 building_coven_castle_1 = {
-    base_buildtime = @b1_time
-    can_build = no
-    category = government
-    can_be_disabled = no
-    upgrades = { "building_covenant_2" }
+	base_buildtime = @b1_time
+	can_build = no
+	category = government
+	can_be_disabled = no
+	upgrades = { "building_covenant_2" }
 
 	potential = {
 		exists = owner
@@ -25,25 +25,32 @@ building_coven_castle_1 = {
 		OR = {
 			is_planet_class = pc_hive
 			is_planet_class = pc_machine
-	}
-
-	resources = {
-		category = planet_buildings
-		cost = {
-			energy = 1500
-			multiplier = value:gaiaseeder_cost_mult
-		}
-		upkeep = {
-            unity = 5
-			multiplier = value:gaiaseeder_upkeep
 		}
 	}
+	on_built = {
+		random_list = {
+			16 = {
+				set_planet_flag = job.1#healing
+			}
+			17 = {
+				set_planet_flag = job.2#plant
+			}
+			17 = {
+				set_planet_flag = job.4#construction
+			}
+			16 = {
+				set_planet_flag = job.5#illusion
+			}
+			17 = {
+				set_planet_flag = job.6#oracle
+			}
+			17 = {
+				set_planet_flag = job.7#bard
+				}
+			}
+		}
+	}
 
-	    planet_modifier = {
-		    job_coven_head_add = 1
-	    }
-    }
-}
 
 building_coven_castle_2 = {
     base_buildtime = @b1_time
@@ -71,8 +78,8 @@ building_coven_castle_2 = {
 		OR = {
 			is_planet_class = pc_hive
 			is_planet_class = pc_machine
+		}
 	}
-
 	resources = {
 		category = planet_buildings
 		cost = {
@@ -85,11 +92,12 @@ building_coven_castle_2 = {
 		}
 	}
 
-	    planet_modifier = {
-		    job_coven_head_add = 1 
-	    }
+
+
+
     }
-}
+
+
 
 building_coven_castle_3 = {
     base_buildtime = @b1_time
@@ -117,6 +125,7 @@ building_coven_castle_3 = {
 		OR = {
 			is_planet_class = pc_hive
 			is_planet_class = pc_machine
+		}
 	}
 
 	resources = {
@@ -168,6 +177,7 @@ building_covenant_1 = {
 		OR = {
 			is_planet_class = pc_hive
 			is_planet_class = pc_machine
+		}
 	}
 
 	resources = {

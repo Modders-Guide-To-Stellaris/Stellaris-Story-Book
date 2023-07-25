@@ -1,17 +1,21 @@
 coven_scholar = {
     category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
+
 }
 
 coven_student = {
     category = specialist
     condition_string = SPECIALIST_JOB_TRIGGER
+
 }
 
 #Covenheads
-coven_head_healing = { #pop growth or repair speed
+coven_head_healing = { #boost to medical workers
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
+
+
 }
 
 coven_head_plant = { #food/habitability stuff
@@ -19,28 +23,66 @@ coven_head_plant = { #food/habitability stuff
 	condition_string = RULER_JOB_TRIGGER
 }
 
-coven_head_beast_keeping = { #no idea? some leader traits I guess?
-   category = ruler
-	condition_string = RULER_JOB_TRIGGER
-}
 
 coven_head_construction = { #planetary build speed / mega structure build speed / cheaper building
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
+
+    triggered_planet_modifier = {
+        potential = { always = yes }
+        planet_building_build_speed_mult = 1.00
+    }
+    triggered_country_modifier = {
+        potential = {
+            has_galactic_wonders = yes
+        }
+        megastructure_build_speed_mult = 0.50
+        country_megastructure_build_cap_add = 1
+    }
 }
 
 coven_head_illusion = { #Sensor range and cloaking
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
+
+    triggered_planet_modifier = {
+        potential = { always = yes }
+        planet_sensor_range_add = 2
+        ship_cloaking_strength_add = 1
+    }
+
+    triggered_country_modifier = {
+        intel_encryption_add = 2
+        intel_decryption_add = 1
+    }
 }
 
-coven_head_oracle = { #spiritualist stuff?
+coven_head_oracle = { #Spiritualist Buffs
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
+
+    triggered_planet_modifier = {
+        potential = { always = yes }
+
+        planet_priests_produces_mult = 0.20
+    }
 }
 
 coven_head_bard = { #amenities
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
+
+        resources = {
+            category = planet_administrators
+            produces = {
+                unity = 20 #atleast something positive I guess?
+            }
+        }
+
+        triggered_planet_modifier = {
+            potential = { always = yes }
+            planet_amenities_add = 10
+            mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+        }
 }
 

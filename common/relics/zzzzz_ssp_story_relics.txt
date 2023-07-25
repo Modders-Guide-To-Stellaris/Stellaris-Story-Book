@@ -193,7 +193,7 @@ ssp_r_animarum = {
 			days = 3600
 		}
 
-	
+
 		custom_tooltip = "ssp_r_animarum_active_effect_tooltip"
 		hidden_effect = {
 			capital_scope = {
@@ -201,18 +201,18 @@ ssp_r_animarum = {
 					name = "NAME_reanimated_army_fleet"
 					effect = {
 						set_owner = root
-						while = { 
-						count = 5
-						create_army_transport = {
-							ship_name = "The Undead Army"
-							army_name = "Seeds of the Undead"
-							army_type = ssp_reanimated_army
-						}
+						while = {
+							count = 5
+							create_army_transport = {
+								ship_name = "The Undead Army"
+								army_name = "Seeds of the Undead"
+								army_type = ssp_reanimated_army
+							}
 						}
 						set_location = {
 							target = prev
 							distance = 5
-							angle = random 
+							angle = random
 						}
 					}
 					settings = {
@@ -226,11 +226,11 @@ ssp_r_animarum = {
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
-				modifier = "relic_activation_cooldown" 
+				modifier = "relic_activation_cooldown"
 				days = 1800
-			}		
+			}
 		}
-	
+	}
 
 	# Possible check for activation
 	possible = {
@@ -242,13 +242,13 @@ ssp_r_animarum = {
 		}
 	}
   }
-}
+
 
 
 #pope relic
 #anti crime
 
-	ssp_r_hypno = {
+	ssp_r_hypno = { #whatever
 		activation_duration = @triumph_duration_normal
 		portrait = "GFX_relic_galatron"
 		sound = "relic_activation_the_rubricator"
@@ -275,10 +275,11 @@ ssp_r_animarum = {
 	
 		active_effect = {
 			custom_tooltip = relic_religious_active
-			add_modifier = { 
+			add_modifier = {
 				modifier = "ssp_r_pope_hat_active_effect" #supposed to still name this thing
-				days = 3600 
+				days = 3600
 			}
+
 			add_modifier = {
 				triggered_country_modifier = {
 					potential = {

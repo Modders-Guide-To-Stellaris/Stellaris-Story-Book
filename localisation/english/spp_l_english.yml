@@ -14,11 +14,11 @@ tech_ssp_jonan_communication_key_desc:0 "A way to encrypt our messages into the 
 ssp_r_khyran_bacterium:0 "Contained Khyran Bacterium"
 ssp_r_khyran_bacterium_desc:0 "Sample of an unknown bacteria gathered from a dead Jonan onboard the Ichki-0ne"
 bacterium_control_passive:0 "Has a small chance of brainwashing the opposing empire to give you favors when improving relations"
-bacterium_control_agressive:0 "Use your envoy whos improving relations to slip something into the opposing empire's food, in turn the Empire will give you favors"
+bacterium_control_agressive:0 "Use your envoy who's improving relations to slip something into the opposing empire's food, in turn the Empire will give you favors"
 
 ssp_r_drive_core:0 "Repaired Drive Core"
 ssp_r_drive_core_desc:0 "The repaired drive core we salvaged from the Jonan Foundry science ship"
-drive_core_passive:0 "Grants your science ships +50% Sublight speed.\n\Try and catch my Science vessel now stupid fallen empire!"
+drive_core_passive:0 "Grants your science ships +50% Sublight speed.\n Try and catch my Science vessel now stupid fallen empire!"
 drive_core_random:0 "Active the powerful precursor jump drives giving you full galaxy warp range for a random fleet"
 
 
@@ -34,7 +34,7 @@ relic_religious_active:0 "Religious Banter\n Removes crime from every planet by 
 ##########
 
 ssp_reanimated_army:0 "Reanimated Army"
-ssp_reanimated_army:0 "Powerful Armies who used to served the Grand Reanimator."
+ssp_reanimated_army_desc:0 "Powerful Armies who used to served the Grand Reanimator."
 
 #################
 # Archaeo Sites
@@ -43,7 +43,7 @@ ssp_reanimated_army:0 "Powerful Armies who used to served the Grand Reanimator."
 # Crashed Ship #
 
 ssp_bacterium_ship_digsite:0 "Strange Transmission"
-ssp_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere in the galaxy.\n\Hello! We are &^@#$*&!!*() from science ship Ichki-0ne, our engines have blown while studying planet [From.planet.GetName] and we request immediate pickup!\n\Our scientists have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
+ssp_bacterium_ship_desc:0 "We have received a strange transmission from a science crew somewhere in the galaxy.\n Hello! We are &^@#$*&!!*() from science ship Ichki-0ne, our engines have blown while studying planet [From.planet.GetName] and we request immediate pickup!\n Our scientists have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
 
 ssp_dig_site.1.name:0 "Our Ship Lands"
 ssp_dig_site.1a.name:0 "Great"
@@ -51,16 +51,16 @@ ssp_dig_site.1.desc:0 "We have landed on the planet, research suggests that this
 
 ssp_dig_site.2.name:0 "The Mysterious Wreckage"
 ssp_dig_site.2a.name:0 "We should go in to investigate."
-ssp_dig_site.2.desc:0 "After traversing and scanning the flora and fauna we finally came apun the ship mentioned in the transmission, their message seemed to be for a now extinct species. Signs show that this ship is more than 1000 years old, which would indicate it served during the Crisis of Kangs era."
+ssp_dig_site.2.desc:0 "After traversing and scanning the flora and fauna we finally came upon the ship mentioned in the transmission, their message seemed to be for a now extinct species. Signs show that this ship is more than 1000 years old, which would indicate it served during the Crisis of Kangs era."
 
 ssp_dig_site.3.name:0 "Data Terminal"
 ssp_dig_site.3a.name:0 "Page the nearest science ship about this discovery."
 ssp_dig_site.3.desc:0 "We found a data terminal on the science ship containing data about anomalies and coordinates to now deceased systems. Although we have managed to link one of the coordinates to a system that should still exist, there is a note with the planet saying '01000011 01101111 01101101 01101101 01110101 01101110 01101001 01100011 01100001 01110100 01101001 01101111 01101110 00100000 01001000 01110101 01100010'."
 
 ssp_dig_site.4.name:0 "Nuclear Meltdown"
-ssp_dig_site.4a.name:0 "This specimen will be of great use to our reserach department."
-ssp_dig_site.4b.name:0 "We will not take unneccersary risks, save the drive core!"
-ssp_dig_site.4.desc:0 "We may have unsetteled something in the ship, the reactor leak has grown bigger and we are under constant attack from the nearby fauna, we need to make a decision now. We found a robot specimen infected with something, we believe it to be the cause of the death. Alternatively the drive core of the ship. it's more advanced than ours and in is still in perfect state, these jonans knew what they were doing. "
+ssp_dig_site.4a.name:0 "This specimen will be of great use to our research department."
+ssp_dig_site.4b.name:0 "We will not take unnecessary risks, save the drive core!"
+ssp_dig_site.4.desc:0 "We may have unsettled something in the ship, the reactor leak has grown bigger and we are under constant attack from the nearby fauna, we need to make a decision now. We found a robot specimen infected with something, we believe it to be the cause of the death. Alternatively the drive core of the ship. it's more advanced than ours and in is still in perfect state, these jonans knew what they were doing. "
 
 # Jonan Communication Hub #
 
@@ -69,15 +69,15 @@ ssp_communication_hub_desc:0 "Precursor Arch Site Pt.2"
 
 ssp_dig_site.5.name:0 "Infiltration"
 ssp_dig_site.5a.name:0 "Translate and keep going."
-ssp_dig_site.5.desc:0 "As soon as we landed on the somehow still active hub we stumbled apun an inscription and alot of warnings, we are unsure on how to proceed."
+ssp_dig_site.5.desc:0 "As soon as we landed on the somehow still active hub we stumbled upon an inscription and a lot of warnings, we are unsure on how to proceed."
 
 ssp_dig_site.6.name:0 "Active Defenses!"
 ssp_dig_site.6a.name:0 "Shut them down, no matter the cost."
-ssp_dig_site.6.desc:0 "It was a trap! after following the wierd inscribed instructions left by our predecessor, we found ourselfs in a hallway which quickly turned into our prison when one of the scientists activated one of the traps inside the hallway. /n/ luckily one of crew found a way to shutdown the device but its very risky."
+ssp_dig_site.6.desc:0 "It was a trap! after following the wierd inscribed instructions left by our predecessor, we found ourselves in a hallway which quickly turned into our prison when one of the scientists activated one of the traps inside the hallway. /n/ luckily one of crew found a way to shutdown the device but its very risky."
 
-ssp_dig_site.7.name:0 "Jonan AI Intellingence"
+ssp_dig_site.7.name:0 "Jonan AI Intelligence"
 ssp_dig_site.7a.name:0 "Take the key"
-ssp_dig_site.7.desc:0 "We found ourself standing infront of a giant AI, the controller of the facility. /n/ After we told the AI what had become of his creator he decided to share with us the secrets of their ways."
+ssp_dig_site.7.desc:0 "We found ourself standing infront of a giant AI, the controller of the facility. \n After we told the AI what had become of his creator he decided to share with us the secrets of their ways."
 
 #############
 # Anomalies
@@ -100,14 +100,14 @@ MESSAGE_FAVOR_GAINED_BY_MIND_CONTROL:0 "Thanks to mind control bacteria, we have
 
 origin_follower_cult:0 "Dictionnaire Infernal"
 origin_follower_cult_desc:0 "§R- WARNING: Challenging Origin§! \n- Little note for anyone who sees this, It's still Work in progress so don't actually pick this xD -Foxy"
-civic_tooltip_defensive_origin_effects:0 "- Start the game with all £pop£ Pops having the trait §HFanatic Worshipper, decreasing §HSpecialist and §HRuler output aswell as §HPop Growth."
+civic_tooltip_defensive_origin_effects:0 "- Start the game with all £pop£ Pops having the trait §HFanatic Worshipper, decreasing §HSpecialist and §HRuler output as well as §HPop Growth."
 
 ##########
 # traits
 ###########
 
 trait_grimoire_qualityI:0 "Reincarnated?"
-trait_grimoire_qualityI_desc:0 "This pop is basically a braindead zombie"
+trait_grimoire_qualityI_desc:0 "This pop is basically a brain dead zombie"
 
 trait_grimoire_qualityII:0 "Signs of Life"
 trait_grimoire_qualityII_desc:0 "This pop still has some brain activity left"
@@ -125,7 +125,7 @@ trait_grimoire_maxima_desc:0 "This pop doesn't fear death itself!"
 # Start Screen
 ################
 
-START_SCREEN_PART_ONE_CULT:0 "Will add later as soncio didnt ask me to add this and since I want to finish the core first :P"
+START_SCREEN_PART_ONE_CULT:0 "Will add later as soncio didn't ask me to add this and since I want to finish the core first :P"
 
 ##########
 # Civics
@@ -136,6 +136,8 @@ civic_ssp_coven_system:0 "Coven Branded"
 civic_ssp_coven_system_tooltip:0 "Replaces Ruler jobs with Coven Head jobs. Each Coven Head has it's own production line.\n\ Allows the building of Coventions which produce Student/Scholar jobs."
 
 civic_ssp_one_planet_forced:0 "One Planet Challenge"
+ civic_ssp_one_planet_forced_desc:0 "§EUnable to colonize planets.§!"
+
 
 #############
 # Buildings
@@ -151,4 +153,23 @@ building_covenant_1_desc:0 "$building_covenant_all_desc$"
 building_covenant_2_desc:0 "$building_covenant_all_desc$"
 building_covenant_3_desc:0 "$building_covenant_all_desc$"
 building_covenant_4_desc:0 "$building_covenant_all_desc$"
+
+#########
+# Jobs
+#########
+
+ job_coven_head_bard:0 "Head Bard"
+ job_coven_head_bard_desc:0 "Head Witch of the Bard Coven"
+ job_coven_head_plant: ""
+ job_coven_head_plant_desc: "REPLACE_ME"
+ job_coven_head_oracle: "REPLACE_ME"
+ job_coven_head_oracle_desc: "REPLACE_ME"
+ job_coven_head_beast_keeping: "Beast keeper"
+ job_coven_head_beast_keeping_desc: "Head of the Beast Keeping Coven"
+ job_coven_head_healing: "Grand Healer"
+ job_coven_head_healing_desc: "Head of the Healing Coven"
+ job_coven_head_construction: "The Engineer"
+ job_coven_head_construction_desc: "Head of the Construction Coven"
+ job_coven_head_illusion: "Master Illusionist"
+ job_coven_head_illusion_desc: "Head of the Illusionist Coven"
 
