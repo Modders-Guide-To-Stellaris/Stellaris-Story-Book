@@ -3,8 +3,12 @@
  Soncini_Balance:0 "Soncini's Balance" #Destroy all minmaxers refrence
 
  #star names
- Mallet_SCM:0 "Malletia"
- Semichki_SCM:0 "Drunken spin"
+ Mallet:0 "Malletia"
+ Semichki:0 "Drunken spin"
+ Vox:0 "Vox"
+
+ #event star names
+ NAME_reanimator:0 "Malfunctioning USB port"
 
  #black holes
- Hypno_SCM:0 "Stellar Cavity Mu"
+ Hypno:0 "Stellar Cavity Mu"

@@ -46,19 +46,22 @@ ship_event = {
 
 ship_event = {
     id = ssp_relic.101
-    hide_window = yes 
-    is_triggered_only = yes 
+    hide_window = yes
+    is_triggered_only = yes
 
-        trigger = {
-            has_country_flag = drive_core_active_flag 
+    trigger = {
+        fleet.owner = {
+            has_country_flag = drive_core_active_flag
         }
+    }
 
-    immediate = {
-    every_controlled_ship = {
-        if = {
-            limit = {
-                has_ship_flag = jump_drive_enabled_effect
-            }
+    immediate = { #changed this to owner, so incase any issue arise, remove owner
+        owner = {
+            every_controlled_ship = {
+                if = {
+                    limit = {
+                        has_ship_flag = jump_drive_enabled_effect
+                    }
                     remove_modifier = "ssp_r_drive_core_active_effect_b"
                     remove_modifier = "ssp_r_drive_core_active_effect_c"
                     remove_modifier = "ssp_r_drive_core_active_effect_d"
@@ -70,6 +73,7 @@ ship_event = {
             remove_country_flag = drive_core_active_flag
         }
     }
+}
 
 
 
@@ -337,31 +341,31 @@ country_event = { # Upon defeating the Entity
         custom_tooltip = ssp_relic.502.a.tt
         hidden_effect = {
             owner = {
-                country_event = { id = toxoids.7320 days = 900 }
-                create_fleet = {
-                    name = "NAME_Toxic_God"
-                    settings = {
-                        spawn_debris = no
-                        is_boss = yes
-                    }
-                    effect = {
-                        set_owner = root.owner
-                        create_ship = {
-                            name = "NAME_Toxic_God"
-                            design = "NAME_Venomous_Deity" #call galparagon here
-                        }
-                        set_location = {
-                            target = fromfrom
-                            distance = 5
-                            angle = random
-                        }
-                    }
-                }
+                country_event = { id = ssp_relic.598 }
+                #      create_fleet = {
+                #         name = "NAME_Toxic_God"
+                #       settings = {
+                #            spawn_debris = no
+                #           is_boss = yes
+                #      }
+                #    effect = {
+                #         set_owner = root.owner
+                #       create_ship = {
+                #          name = "NAME_Toxic_God"
+                #         design = "NAME_Venomous_Deity" #call galparagon here
+                #    }
+                #   set_location = {
+                #      target = fromfrom
+                #     distance = 5
+                #    angle = random
+                # }
+                # }
             }
         }
     }
 
-    option = {  # Kill him, kill him now. DEW IT
+
+    option = { # Kill him, kill him now. DEW IT
         name = ssp_relic.502.b
         custom_tooltip = ssp_relic.502.b.tt
         hidden_effect = {
@@ -375,7 +379,7 @@ country_event = { # Upon defeating the Entity
 country_event = {
     id = ssp_relic.511
     title = ssp_relic.511.name
-    desc = ssp_relic.511.desc.origin
+    desc = ssp_relic.511.desc
     picture = GFX_evt_toxic_god
     location = fromfrom
     show_sound = event_mystic_reveal
@@ -388,7 +392,7 @@ country_event = {
     }
 }
 
-country_event = { # Create Exakeides - 20 yo
+country_event = { # Create Semichki && maybe spawn him on some reanimated armies: See animarum active effect
     id = ssp_relic.598
     title = "ssp_relic.598.name"
     desc = "ssp_relic.598.desc"
@@ -422,28 +426,28 @@ country_event = { # Create Exakeides - 20 yo
                 }
             }
             effect = {
-                save_event_target_as = keides_country
+                save_event_target_as = semichki_country
             }
         }
-        event_target:keides_country = {
+        event_target:semichki_country = {
             create_species = {
-                name = "NAME_Unknown"
-                class = HUM
+                name = "NAME_Semichki"
+                class = NECROID
                 portrait = paragon_exakeides_artifact_1 #Exakeides portrait
                 namelist = "PRT1"
                 traits = {
-                    trait = "trait_enduring"
+                 #   trait = "trait_"
                     trait = "trait_quick_learners"
-                    trait = "trait_erudite"
+                   # trait = "trait_erudite"
                 }
                 effect = {
-                    save_event_target_as = exakeides_species
+                    save_event_target_as = semichki_species
                 }
             }
             create_leader = {
                 class = general
-                species = event_target:exakeides_species
-                name = "NAME_Exakeides"
+                species = event_target:semichki_species
+                name = "NAME_Semichki_leader"
                 skill = 8
                 gender = male
                 event_leader = yes
@@ -455,6 +459,7 @@ country_event = { # Create Exakeides - 20 yo
                     set_leader_flag = legendary_leader
                     set_leader_flag = "TBD"
                     set_leader_flag = immune_to_negative_traits
+                    set_immortal = yes
                     save_global_event_target_as = "TBD"
                     #add_trait_no_notify = leader_trait_legendary_far_from_home
                     set_owner = root
@@ -471,11 +476,11 @@ country_event = { # Create Exakeides - 20 yo
 
     option = {
         name = paragon.3115.a
-        hidden_effect = { country_event = { id = paragon.3116 } }
+        hidden_effect = { country_event = { id = ssp_relic.599 } }
     }
 }
 
-country_event = { # HIRE/DISMISS Exakeides
+country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy anyways?
     id = ssp_relic.599
     title = "ssp_relic.599.name"
     desc = "ssp_relic.599.desc"
@@ -493,7 +498,7 @@ country_event = { # HIRE/DISMISS Exakeides
     }
 
     trigger = {
-        exists = event_target:"TBD"
+        exists = event_target:semichki_country
     }
 
     option = {
@@ -504,7 +509,7 @@ country_event = { # HIRE/DISMISS Exakeides
 
         hidden_effect = {
             clone_leader = {
-                target = event_target:"TBD"
+                target = event_target:semichki_country
             }
             last_created_leader = {
                 set_leader_flag = "TBD"
@@ -547,11 +552,11 @@ country_event = { # HIRE/DISMISS Exakeides
             type = MESSAGE_RECRUITED_LEADER
             localization =  MESSAGE_RECRUITED_LEADER_DESC
             days = @toast_message_days
-            target = event_target:"TBD"r
+            target = event_target:semichki_country
             variable = {
                 type = name
                 localization = LEADER
-                scope = event_target:"TBD"
+                scope = event_target:semichki_country
             }
             variable = {
                 key = "border"

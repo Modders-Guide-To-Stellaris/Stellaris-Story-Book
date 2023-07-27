@@ -35,3 +35,9 @@ on_entering_system_fleet = {
         ssp_relic.501
     }
 }
+
+on_ship_destroyed_perp = {
+    events = {
+        ssp_relic.502
+    }
+}
