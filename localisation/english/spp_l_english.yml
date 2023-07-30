@@ -157,7 +157,7 @@ building_covenant_4_desc:0 "$building_covenant_all_desc$"
 #########
 # Jobs
 #########
-
+#OVERHAULING THIS CIVIC SOON
  job_coven_head_bard:0 "Head Bard"
  job_coven_head_bard_desc:0 "Head Witch of the Bard Coven"
  job_coven_head_plant: ""

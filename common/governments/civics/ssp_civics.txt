@@ -1,4 +1,4 @@
-civic_ssp_coven_system = {
+civic_ssp_coven_system = { #Spiritualist Feature Civic (This is ours, not evolved)
 	icon = gfx/interface/icons/governments/civics/civic_lethargic_leadership.dds
 	description = "civic_ssp_coven_system_tooltip"
 

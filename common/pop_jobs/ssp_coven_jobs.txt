@@ -10,7 +10,7 @@ coven_student = {
 
 }
 
-#Covenheads
+#Coven head jobs
 coven_head_healing = { #boost to medical workers
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
@@ -48,16 +48,18 @@ coven_head_illusion = { #Sensor range and cloaking
     triggered_planet_modifier = {
         potential = { always = yes }
         planet_sensor_range_add = 2
-        ship_cloaking_strength_add = 1
     }
+
 
     triggered_country_modifier = {
         intel_encryption_add = 2
         intel_decryption_add = 1
+        ship_cloaking_strength_add = 1 #I dont actually know if I am supposed to call this here but thats for later
     }
 }
 
-coven_head_oracle = { #Spiritualist Buffs
+coven_head_oracle = { #Spiritualist Buffs// For Soncio: An oracle is someone who tries to predict the future. Basically the
+    #crystal ball people stereotype fortune teller garbo
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
 
