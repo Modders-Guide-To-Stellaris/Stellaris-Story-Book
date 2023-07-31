@@ -1,0 +1,146 @@
+farmer = {
+    category = worker
+    condition_string = WORKER_JOB_TRIGGER
+    building_icon = building_food_processing_facility
+    clothes_texture_index = 2
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_worker_job
+    possible = {
+        hidden_trigger = { exists = owner }
+        owner = {
+            is_gestalt = no
+        }
+    }
+
+    resources = {
+        category = planet_farmers
+        produces = {
+            food = 6
+        }
+        produces = {
+            trigger = {
+                exists = owner
+                owner = {
+                    is_robot_empire = yes
+                }
+            }
+            food = -1
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = has_produce_requisitorium
+                }
+            }
+            food = @requisitorium_food_reduction
+        }
+        produces = {
+            trigger = {  }
+                alloys = 0.125 # (aka 1 per 8)
+                multiplier = value:farmer_production_value|BASE|6| # swap to 8 on the angler job
+            }
+        }
+#farmer_production_value = {
+    #  base = $BASE$
+    #  add = modifier:planet_farmers_food_produces_add
+    #  mult = value:job_total_output_modifier|JOB|farmer|RESOURCE|food|
+    #}
+
+    overlord_resources = {
+        category = planet_requisitioned_food
+        produces = {
+            trigger = {
+                planet = {
+                    has_planet_flag = has_produce_requisitorium
+                }
+            }
+            food = @requisitorium_food_overlord
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { has_valid_civic = civic_agrarian_idyll }
+        }
+        planet_amenities_add = 2
+        mult = value:scripted_modifier_mult|MODIFIER|pop_job_amenities_mult|
+    }
+
+    weight = {
+        weight = @worker_job_weight
+        mult = value:job_weights_modifier|JOB|farmer|RESOURCE|food|
+        modifier = {
+            factor = 1.1
+            owner = { has_valid_civic = civic_agrarian_idyll }
+        }
+        modifier = {
+            factor = 10
+            is_enslaved = yes
+            can_take_servant_job = no
+            NOT = { has_slavery_type = { type = slavery_indentured } }
+        }
+        modifier = {
+            factor = 3
+            OR = {
+                is_non_sapient_robot = yes
+                is_shackled_robot = yes
+            }
+            can_take_servant_job = no
+            owner = { has_technology = tech_droid_workers }
+        }
+        modifier = {
+            factor = 200
+            OR = {
+                is_non_sapient_robot = yes
+                is_shackled_robot = yes
+            }
+            can_take_servant_job = no
+            owner = { NOT = { has_technology = tech_droid_workers } }
+        }
+        modifier = {
+            factor = 0.25
+            can_take_servant_job = yes
+        }
+        modifier = {
+            factor = value:scripted_modifier_job_weight_mult|MODIFIER|pop_job_amenities_mult|
+            owner = { has_valid_civic = civic_agrarian_idyll }
+        }
+        # low income modifier
+        modifier = {
+            factor = 1.2
+            exists = planet
+            planet = {
+                has_available_jobs = farmer
+            }
+            exists = owner
+            owner = {
+                is_ai = yes
+                has_monthly_income = {
+                    resource = food
+                    value < 10
+                }
+            }
+        }
+
+        modifier = {
+            factor = 0.5
+            has_trait = trait_lithoid
+
+            owner = {
+                is_lithoid_empire = yes
+                has_monthly_income = {
+                    resource = food
+                    value >= 0
+                }
+            }
+        }
+    }
+}

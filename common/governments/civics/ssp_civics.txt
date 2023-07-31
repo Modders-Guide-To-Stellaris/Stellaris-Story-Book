@@ -3,7 +3,7 @@ civic_ssp_coven_system = { #Spiritualist Feature Civic (This is ours, not evolve
 	description = "civic_ssp_coven_system_tooltip"
 
 	potential = {
-		always = no
+		always = yes
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 		authority = { NOT = { value = auth_corporate } }
 	}
@@ -41,5 +41,20 @@ civic_ssp_one_planet_forced = {
 	random_weight = { base = @civic_default_random_weight }
 	description = civic_ssp_one_planet_forced_desc
 	modifier = {
+	}
+}
+
+civic_ssp_farmer_delight = {
+	modification = no
+	icon = ""
+	potential = {
+		text = civic_tooltip_ecologist
+		inline_script = governments/conditions/ethic_green
+	}
+	random_weight = { base = @civic_default_random_weight }
+	description = civic_ssp_farmers_delight_desc
+	modifier = {
+		planet_farmers_alloys_produces_add = 1
+		planet_farmers_food_produces_mult = -0.25
 	}
 }

@@ -138,6 +138,9 @@ civic_ssp_coven_system_tooltip:0 "Replaces Ruler jobs with Coven Head jobs. Each
 civic_ssp_one_planet_forced:0 "One Planet Challenge"
  civic_ssp_one_planet_forced_desc:0 "§EUnable to colonize planets.§!"
 
+ civic_ssp_farmer_delight:0 "Farmer's Delight"
+ civic_ssp_farmers_delight_desc:0 "Makes your farmers able to produce alloys at the cost of food output"
+
 
 #############
 # Buildings
@@ -172,4 +175,7 @@ building_covenant_4_desc:0 "$building_covenant_all_desc$"
  job_coven_head_construction_desc: "Head of the Construction Coven"
  job_coven_head_illusion: "Master Illusionist"
  job_coven_head_illusion_desc: "Head of the Illusionist Coven"
+
+ mod_planet_farmers_alloys_produces_mult:1 "£alloys£ $alloy$ from £job_farmer£ [GetFarmerPlural]"
+ mod_planet_farmers_alloys_produces_add:0 "$mod_planet_farmers_alloys_produces_mult$"
 
