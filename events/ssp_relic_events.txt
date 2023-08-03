@@ -281,8 +281,8 @@ country_event = {
 
 fleet_event = { #Enter the toxic system, meet the entity
     id = ssp_relic.501
-    title = "ssp_relic.501.name"
-    desc = "ssp_relic.501.desc" # Just open hyperlane
+    title = ssp_relic.501.name
+    desc = ssp_relic.501.desc # Just open hyperlane
     picture = GFX_evt_toxic_god #TODO: change
     show_sound = evn_tox_knights_of_the_toxic_god
     location = from
@@ -322,7 +322,7 @@ fleet_event = { #Enter the toxic system, meet the entity
 
 country_event = { # Upon defeating the Entity
     id = ssp_relic.502
-    title = "ssp_relic.502.name"
+    title = ssp_relic.502.name
     desc = "ssp_relic.502.desc"
     picture = GFX_evt_toxic_god
     show_sound = evn_tox_knights_of_the_toxic_god
