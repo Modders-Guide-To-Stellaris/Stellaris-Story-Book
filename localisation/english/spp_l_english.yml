@@ -94,6 +94,30 @@ disco_bacterium_ship_desc:0 "We have received a strange transmission from a scie
 
 MESSAGE_FAVOR_GAINED_BY_MIND_CONTROL:0 "Thanks to mind control bacteria, we have managed to gain a Favor from the $WHO|Y$."
 
+ssp_relic.501.name:0 "placeholder"
+ssp_relic.501.desc:0 "placeholder"
+ssp_relic.501.a:0 "placeholder"
+ssp_relic.501.b:0 "placeholder"
+
+ssp_relic.502.name:0 "placeholder"
+ssp_relic.502.desc:0 "placeholder"
+ssp_relic.502.a:0 "placeholder"
+ssp_relic.502.a.tt:0 "placeholder"
+ssp_relic.502.b:0 "placeholder"
+ssp_relic.502.b.tt:0 "placeholder"
+
+ssp_relic.511.name:0 "placeholder"
+ssp_relic.511.desc:0 "placeholder"
+ssp_relic.511.A:0 "placeholder"
+
+ssp_relic.598.name:0 "placeholder"
+ssp_relic.598.desc:0 "placeholder"
+
+ssp_relic.599.name:0 "placeholder"
+ssp_relic.599.desc:0 "placeholder" 
+
+  ##add the TBD on the last option here
+
 ###########
 # Origins
 ###########
