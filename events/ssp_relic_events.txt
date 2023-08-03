@@ -394,8 +394,8 @@ country_event = {
 
 country_event = { # Create Semichki && maybe spawn him on some reanimated armies: See animarum active effect
     id = ssp_relic.598
-    title = "ssp_relic.598.name
-    desc = "ssp_relic.598.desc"
+    title = ssp_relic.598.name
+    desc = ssp_relic.598.desc
     picture = GFX_evt_board_meeting
     show_sound = par_event_keides
     fire_only_once = yes
@@ -482,8 +482,8 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
 
 country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy anyways?
     id = ssp_relic.599
-    title = "ssp_relic.599.name"
-    desc = "ssp_relic.599.desc"
+    title = ssp_relic.599.name
+    desc = ssp_relic.599.desc
     diplomatic = yes
     fire_only_once = yes
     is_triggered_only = yes
