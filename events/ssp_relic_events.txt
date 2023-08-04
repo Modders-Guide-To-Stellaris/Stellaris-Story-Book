@@ -436,9 +436,8 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
                 portrait = nec6 #Exakeides portrait
                 namelist = "PRT1"
                 traits = {
-                 #   trait = "trait_"
-                    trait = "trait_quick_learners"
-                   # trait = "trait_erudite"
+                    trait = "trait_"
+                    trait = "ssp_trait_alcoholic"
                 }
                 effect = {
                     save_event_target_as = semichki_species
@@ -519,6 +518,8 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
                 set_leader_flag = immune_to_negative_traits
                 #add_trait_no_notify = leader_trait_legendary_far_from_home
                 set_owner = root
+                    #traits
+                add_trait = leader_trait_pilferer
             }
             switch = {
                 trigger = has_global_flag #I'm going to force it to be either militarist or xenophobe
@@ -578,7 +579,7 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
             }
         }
     }
-
+#these doesnt actually give the Leader XDDDDDD
     option = {
         name = "TBD".a
         response_text = "TBD".response

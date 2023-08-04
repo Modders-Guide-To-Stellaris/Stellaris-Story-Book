@@ -1,0 +1,32 @@
+#basic
+ssp_trait_alcoholic = {
+
+}
+
+#destiny
+ssp_destiny_genpar = {
+    destiny_trait = yes
+    ethic_destiny_trait = yes
+    inline_script = {
+        script = trait/icon
+        CLASS = general
+        ICON = "GFX_leader_trait_pilferer"
+        RARITY = paragon
+        COUNCIL = no
+        TIER = none
+    }
+    custom_tooltip_with_modifiers = leader_trait_supreme_warrior_effect
+    modifier = {
+        army_damage_mult = 0.2
+        army_morale = 0.5
+        army_collateral_damage_mult = -0.35
+    }
+    leader_potential_add = {
+        has_paragon_dlc = yes
+        has_ethic = ethic_xenophobe
+    }
+    leader_class = { general }
+    custom_tooltip = leader_trait_pilferer_effect
+    selectable_weight = @subclass_trait_weight
+    destiny_background_icon = "GFX_leader_background_destiny_1"
+}
