@@ -1,6 +1,13 @@
 # leg 50 grand rean
-par_legendary_50 = { entity = "paragon_50_legendary_portrait_50_entity"	clothes_selector = "no_texture" attachment_selector = "no_texture"	greeting_sound = "necroid_portrait_07_exoskeletoid"
+#necroid_portrait_07_exoskeletoid
+
+paragon_semichki 	= {	entity = "portrait_necroid_06_entity" clothes_selector = "no_texture" attachment_selector = "no_texture" greeting_sound = "mammalian_01_greetings"
     character_textures = {
         "gfx/models/portraits/necroid/necroids_06_portrait_red.dds"
     }
+
+    custom_close_up_position_offset = { x = 0 y = 280 }
+    custom_close_up_scale = 1.7
+    custom_mid_close_up_position_offset = { x = 10 y = 60 }
+    custom_mid_close_up_scale = 1.2
 }

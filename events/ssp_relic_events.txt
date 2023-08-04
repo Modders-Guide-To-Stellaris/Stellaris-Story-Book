@@ -433,7 +433,7 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
             create_species = {
                 name = "NAME_Semichki"
                 class = NECROID
-                portrait = paragon_exakeides_artifact_1 #Exakeides portrait
+                portrait = nec6 #Exakeides portrait
                 namelist = "PRT1"
                 traits = {
                  #   trait = "trait_"
@@ -457,20 +457,20 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
                 set_age = 1999
                 effect = {
                     set_leader_flag = legendary_leader
-                    set_leader_flag = "TBD"
+                    #set_leader_flag = "TBD"
                     set_leader_flag = immune_to_negative_traits
                     set_immortal = yes
-                    save_global_event_target_as = "TBD"
+                    save_global_event_target_as = semichki_leader
                     #add_trait_no_notify = leader_trait_legendary_far_from_home
                     set_owner = root
-                    exile_leader_as = "TBD"
+                    exile_leader_as = semichki_leader
                 }
             }
         }
     }
 
     picture_event_data = {
-        portrait = event_target:"TBD"
+        portrait = event_target:semichki_leader
         room = galactic_custodian_room
     }
 
@@ -493,7 +493,7 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
     event_window_type = leader_recruit
 
     picture_event_data = {
-        portrait = event_target:"TBD"
+        portrait = event_target:semichki_leader
         room = galactic_custodian_room
     }
 
@@ -509,41 +509,41 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
 
         hidden_effect = {
             clone_leader = {
-                target = event_target:semichki_country
+                target = event_target:semichki_leader
             }
             last_created_leader = {
                 set_leader_flag = "TBD"
                 set_leader_flag = legendary_leader
-                save_global_event_target_as = "TBD"
+                save_global_event_target_as = semichki_leader
                 set_leader_flag = immune_to_negative_traits
                 #add_trait_no_notify = leader_trait_legendary_far_from_home
                 set_owner = root
             }
             switch = {
-                trigger = has_global_flag
+                trigger = has_global_flag #I'm going to force it to be either militarist or xenophobe
                 leader_raised_xenophile = {
-                    event_target:"TBD" = { change_background_ethic = ethic_xenophile }
+                    event_target:semichki_leader = { change_background_ethic = ethic_xenophile }
                 }
                 leader_raised_xenophobe = {
-                    event_target:"TBD" = { change_background_ethic = ethic_xenophobe }
+                    event_target:semichki_leader = { change_background_ethic = ethic_xenophobe }
                 }
                 leader_raised_militarist = {
-                    event_target:"TBD" = { change_background_ethic = ethic_militarist }
+                    event_target:semichki_leader = { change_background_ethic = ethic_militarist }
                 }
                 leader_raised_pacifist = {
-                    event_target:"TBD" = { change_background_ethic = ethic_pacifist }
+                    event_target:semichki_leader = { change_background_ethic = ethic_pacifist }
                 }
                 leader_raised_egalitarian = {
-                    event_target:"TBD" = { change_background_ethic = ethic_egalitarian }
+                    event_target:semichki_leader = { change_background_ethic = ethic_egalitarian }
                 }
                 leader_raised_authoritarian = {
-                    event_target:"TBD" = { change_background_ethic = ethic_authoritarian }
+                    event_target:semichki_leader = { change_background_ethic = ethic_authoritarian }
                 }
                 leader_raised_spiritualist = {
-                    event_target:"TBD" = { change_background_ethic = ethic_spiritualist }
+                    event_target:semichki_leader = { change_background_ethic = ethic_spiritualist }
                 }
                 leader_raised_materialist = {
-                    event_target:"TBD" = { change_background_ethic = ethic_materialist }
+                    event_target:semichki_leader = { change_background_ethic = ethic_materialist }
                 }
             }
         }
@@ -556,7 +556,7 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
             variable = {
                 type = name
                 localization = LEADER
-                scope = event_target:semichki_country
+                scope = event_target:semichki_leader
             }
             variable = {
                 key = "border"
@@ -572,7 +572,7 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
         sound = "par_keides_dismiss"
 
         hidden_effect = {
-            event_target:"TBD" = {
+            event_target:semichki_leader = {
                 kill_leader = { show_notification = no }
             }
         }
