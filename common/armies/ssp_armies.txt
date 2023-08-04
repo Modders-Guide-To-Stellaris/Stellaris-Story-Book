@@ -1,11 +1,11 @@
 ssp_reanimated_army = {
 	damage = 3.75
 	morale_damage = 2.5
-	collateral_damage = 4.00
+	collateral_damage = 7.50
 	war_exhaustion = 0.25
 	health = 7.5
 	has_morale = no
-	time = 360
+	time = 900
 
 	has_species = no
     icon = GFX_army_type_undead
@@ -23,11 +23,16 @@ ssp_reanimated_army = {
 	
 
 	potential = {
-		always = no
+		owner = {
+			has_relic = ssp_r_animarum
+		}
+
 	}
 
 	
 	allow = {
-		always = no
+		owner = {
+			has_relic = ssp_r_animarum
+		}
 	}
 }
