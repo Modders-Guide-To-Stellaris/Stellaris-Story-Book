@@ -436,8 +436,7 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
                 portrait = nec6 #Exakeides portrait
                 namelist = "PRT1"
                 traits = {
-                    trait = "trait_"
-                    trait = "ssp_trait_alcoholic"
+                    #trait = "trait_"
                 }
                 effect = {
                     save_event_target_as = semichki_species
@@ -519,7 +518,8 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
                 #add_trait_no_notify = leader_trait_legendary_far_from_home
                 set_owner = root
                     #traits
-                add_trait = leader_trait_pilferer
+                add_trait = ssp_destiny_genpar
+                add_trait = ssp_trait_alcoholic
             }
             switch = {
                 trigger = has_global_flag #I'm going to force it to be either militarist or xenophobe

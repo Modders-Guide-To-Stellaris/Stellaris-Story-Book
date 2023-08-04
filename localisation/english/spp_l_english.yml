@@ -147,6 +147,10 @@ trait_grimoire_qualityIII_desc:0 "This pop is suffering from constant fatigue"
 trait_grimoire_maxima:0 "Resurrection Maxima"
 trait_grimoire_maxima_desc:0 "This pop doesn't fear death itself!"
 
+ssp_trait_alcoholic:0 "Alcoholic"
+ssp_destiny_genpar:0 "Grand Reanimator"
+
+
 
 #When you *insert thing here* with the grand reanimator >> option "What was, will be"
 
