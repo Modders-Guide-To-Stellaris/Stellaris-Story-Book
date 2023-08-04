@@ -208,3 +208,10 @@ building_covenant_4_desc:0 "$building_covenant_all_desc$"
  mod_planet_farmers_alloys_produces_mult:1 "£alloys£ $alloy$ from £job_farmer£ [GetFarmerPlural]"
  mod_planet_farmers_alloys_produces_add:0 "$mod_planet_farmers_alloys_produces_mult$"
 
+
+###########
+# LEADERS
+###########
+
+ NAME_Semichki_leader:0 "Broken Chair Lad"
+ NAME_Semichki:0 "The Lads"
