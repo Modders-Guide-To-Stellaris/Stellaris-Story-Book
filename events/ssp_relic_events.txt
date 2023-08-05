@@ -446,7 +446,7 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
                 class = general
                 species = event_target:semichki_species
                 name = "NAME_Semichki_leader"
-                skill = 8
+                skill =
                 gender = male
                 event_leader = yes
                 skip_background_generation = yes
@@ -458,6 +458,7 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
                     set_leader_flag = legendary_leader
                     set_leader_flag = semichki_leader
                     set_leader_flag = immune_to_negative_traits
+                    set_leader_flag = immune_to_destiny_traits
                     set_immortal = yes
                     save_global_event_target_as = semichki_leader
                     #add_trait_no_notify = leader_trait_legendary_far_from_home
@@ -520,33 +521,6 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
                     #traits
                 add_trait = ssp_destiny_genpar
                 add_trait = ssp_trait_alcoholic
-            }
-            switch = {
-                trigger = has_global_flag #I'm going to force it to be either militarist or xenophobe
-                leader_raised_xenophile = {
-                    event_target:semichki_leader = { change_background_ethic = ethic_xenophile }
-                }
-                leader_raised_xenophobe = {
-                    event_target:semichki_leader = { change_background_ethic = ethic_xenophobe }
-                }
-                leader_raised_militarist = {
-                    event_target:semichki_leader = { change_background_ethic = ethic_militarist }
-                }
-                leader_raised_pacifist = {
-                    event_target:semichki_leader = { change_background_ethic = ethic_pacifist }
-                }
-                leader_raised_egalitarian = {
-                    event_target:semichki_leader = { change_background_ethic = ethic_egalitarian }
-                }
-                leader_raised_authoritarian = {
-                    event_target:semichki_leader = { change_background_ethic = ethic_authoritarian }
-                }
-                leader_raised_spiritualist = {
-                    event_target:semichki_leader = { change_background_ethic = ethic_spiritualist }
-                }
-                leader_raised_materialist = {
-                    event_target:semichki_leader = { change_background_ethic = ethic_materialist }
-                }
             }
         }
 

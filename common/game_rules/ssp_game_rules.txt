@@ -1,0 +1,8 @@
+# this = leader
+can_leader_get_destiny_trait = {
+    NAND = {
+        exists = owner
+        owner = { is_gestalt = yes }
+        has_leader_flag = immune_to_destiny_traits
+    }
+}
