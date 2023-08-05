@@ -39,6 +39,7 @@ ssp_destiny_genpar = {
     leader_potential_add = {
         has_paragon_dlc = yes
         has_ethic = ethic_xenophobe
+        always = no
     }
     leader_class = { general }
     custom_tooltip = ssp_destiny_genpar_effect

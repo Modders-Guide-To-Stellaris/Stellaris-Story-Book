@@ -114,9 +114,15 @@ ssp_relic.598.name:0 "placeholder"
 ssp_relic.598.desc:0 "placeholder"
 
 ssp_relic.599.name:0 "placeholder"
-ssp_relic.599.desc:0 "placeholder" 
+ssp_relic.599.desc:0 "placeholder"
 
-  ##add the TBD on the last option here
+ssp_semichki_response.A1:0 "Who are you?"
+ssp_semichki_response.A2:0 "RESPONSE A"
+ssp_semichki_response.B1:0 "State your purpose"
+ssp_semichki_response.B2:0 "GENERIC RESPONSE B"
+ssp_semichki_response.C1:0 "Why is your chair broken?"
+ssp_semichki_response.C2:0 "I fell asleep after passing out. Completely normal here lad."
+
 
 ###########
 # Origins

@@ -279,7 +279,7 @@ country_event = {
     }
 }
 
-fleet_event = { #Enter the toxic system, meet the entity
+fleet_event = { #meet dragon
     id = ssp_relic.501
     title = ssp_relic.501.name
     desc = ssp_relic.501.desc # Just open hyperlane
@@ -311,11 +311,11 @@ fleet_event = { #Enter the toxic system, meet the entity
         }
     }
 
-    option = { # This monstruosity is no god of mine! Smite it!
+    option = {
         name = ssp_relic.501.a
     }
 
-    option = { # The God wishes to test our mettle! Bring our armies!
+    option = {
         name = ssp_relic.501.b
     }
 }
@@ -342,24 +342,6 @@ country_event = { # Upon defeating the Entity
         hidden_effect = {
             owner = {
                 country_event = { id = ssp_relic.598 }
-                #      create_fleet = {
-                #         name = "NAME_Toxic_God"
-                #       settings = {
-                #            spawn_debris = no
-                #           is_boss = yes
-                #      }
-                #    effect = {
-                #         set_owner = root.owner
-                #       create_ship = {
-                #          name = "NAME_Toxic_God"
-                #         design = "NAME_Venomous_Deity" #call galparagon here
-                #    }
-                #   set_location = {
-                #      target = fromfrom
-                #     distance = 5
-                #    angle = random
-                # }
-                # }
             }
         }
     }
@@ -446,7 +428,7 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
                 class = general
                 species = event_target:semichki_species
                 name = "NAME_Semichki_leader"
-                skill =
+                skill = 8
                 gender = male
                 event_leader = yes
                 skip_background_generation = yes
@@ -512,11 +494,10 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
                 target = event_target:semichki_leader
             }
             last_created_leader = {
-                set_leader_flag = "TBD"
+                set_leader_flag = immune_to_destiny_traits
                 set_leader_flag = legendary_leader
                 save_global_event_target_as = semichki_leader
                 set_leader_flag = immune_to_negative_traits
-                #add_trait_no_notify = leader_trait_legendary_far_from_home
                 set_owner = root
                     #traits
                 add_trait = ssp_destiny_genpar
@@ -553,20 +534,20 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
             }
         }
     }
-#these doesnt actually give the Leader XDDDDDD
+#these doesn't actually give the Leader XDDDDDD
     option = {
-        name = "TBD".a
-        response_text = "TBD".response
+        name = ssp_semichki_response.A1
+        response_text =  ssp_semichki_response.A2
         is_dialog_only = yes
     }
     option = {
-        name = "TBD".b
-        response_text = "TBD".response
+        name = ssp_semichki_response.B1
+        response_text =  ssp_semichki_response.B2
         is_dialog_only = yes
     }
     option = {
-        name = "TBD"
-        response_text = "TBD".response
+        name =  ssp_semichki_response.C1
+        response_text = ssp_semichki_response.C2
         is_dialog_only = yes
     }
 }
