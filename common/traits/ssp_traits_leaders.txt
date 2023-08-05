@@ -1,6 +1,14 @@
 #basic
 ssp_trait_alcoholic = {
+    inline_script = {
+        script = trait/icon
+        ICON = "GFX_leader_trait_lavish_lifestyle"
+        RARITY = common
+        COUNCIL = no
+        TIER = 1
+    }
     negative = yes
+
     modifier = {
         country_consumer_goods_produces_mult = -0.1
     }
@@ -30,11 +38,13 @@ ssp_destiny_genpar = {
         COUNCIL = no
         TIER = none
     }
-    custom_tooltip_with_modifiers = ssp_destiny_genpar_effect
     modifier = {
         army_damage_mult = 0.2
         army_morale = 0.5
         army_collateral_damage_mult = -0.35
+    }
+    self_modifier = {
+        planet_combat_width_add = 100
     }
     leader_potential_add = {
         has_paragon_dlc = yes
@@ -43,6 +53,6 @@ ssp_destiny_genpar = {
     }
     leader_class = { general }
     custom_tooltip = ssp_destiny_genpar_effect
-    selectable_weight = @subclass_trait_weight
+
     destiny_background_icon = "GFX_leader_background_destiny_1"
 }
