@@ -5,15 +5,13 @@ building_dread_encampment = {
 	category = army
 
 	potential = {
-		exists = owner
-		owner = { has_valid_civic = civic_reanimated_armies }
-		OR = {
-			AND = {
-				owner = { has_origin = origin_follower_cult}
-				has_grand_reanimator = yes
-			}
-		}
+			exists = owner
+			owner = { has_valid_civic = civic_reanimated_armies }
+			#has_grand_reanimator = yes
 	}
+
+
+
 
 
 	convert_to = {
@@ -70,13 +68,10 @@ holding_dread_outpost = {
 
 	potential = {
 		owner.overlord = {
-			has_valid_civic = civic_reanimated_armies
-			OR = {
-				AND = {
-					owner = { has_origin = origin_follower_cult}
-					has_grand_reanimator = yes
-				}
-			}
+			#OR = {
+				has_valid_civic = civic_reanimated_armies
+				#has_grand_reanimator = yes
+			#}
 		}
 	}
 

@@ -594,10 +594,10 @@ country_event = {
 	trigger = {
 		exists = fromfrom
 		fromfrom = {
-			OR = {
+			#OR = {
 				has_valid_civic = civic_reanimated_armies
-				has_grand_reanimator = yes
-			}
+				#has_grand_reanimator = yes
+			#}
 		}
 		from = {
 			exists = species

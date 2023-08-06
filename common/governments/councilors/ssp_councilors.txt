@@ -7,13 +7,10 @@ councilor_reanimated_armies = { #OVERWRITE
         }
     }
     possible = {
+        #OR = {
             has_civic = civic_reanimated_armies
-            OR = {
-                AND = {
-                    has_origin = origin_follower_cult
-                    has_grand_reanimator = yes
-                }
-            }
+            #has_grand_reanimator = yes
+        #}
     }
     custom_tooltip = "councilor_reanimated_armies_custom_modifier_desc"
 }
