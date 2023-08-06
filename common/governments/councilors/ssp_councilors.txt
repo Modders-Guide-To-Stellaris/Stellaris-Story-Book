@@ -1,0 +1,19 @@
+councilor_reanimated_armies = { #OVERWRITE
+    leader_class = { general scientist }
+    is_leader_possible = {
+        OR = {
+            leader_class = general
+            leader_class = scientist
+        }
+    }
+    possible = {
+            has_civic = civic_reanimated_armies
+            OR = {
+                AND = {
+                    has_origin = origin_follower_cult
+                    has_grand_reanimator = yes
+                }
+            }
+    }
+    custom_tooltip = "councilor_reanimated_armies_custom_modifier_desc"
+}

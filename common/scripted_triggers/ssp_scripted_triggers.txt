@@ -3,3 +3,20 @@ is_not_doing_one_planet_challenge = {
         has_civic = civic_ssp_one_system_forced
     }
 }
+
+has_grand_reanimator = {
+    has_ssp_reanimator_trait = yes
+}
+
+has_ssp_reanimator_trait = {
+    has_trait = ssp_destiny_genpar
+}
+
+is_reanimator = {
+    OR = {
+        has_valid_civic = civic_reanimated_armies
+        has_valid_civic = civic_permanent_employment
+        has_valid_civic = civic_hive_cordyceptic_drones
+        has_ssp_reanimator_trait = yes
+    }
+}

@@ -585,3 +585,41 @@ country_event = {
 		}
 	}
 }
+
+country_event = {
+	id = necroids.15
+	hide_window = yes
+	is_triggered_only = yes
+
+	trigger = {
+		exists = fromfrom
+		fromfrom = {
+			OR = {
+				has_valid_civic = civic_reanimated_armies
+				has_grand_reanimator = yes
+			}
+		}
+		from = {
+			exists = species
+			species = {
+				is_robotic = no
+			}
+		}
+		NOT = { is_country_type = "gate_builders" }
+	}
+
+	immediate = {
+		random_list = {
+			2 = { }
+			1 = {
+				fromfromfrom = {
+					create_army = {
+						owner = root.fromfrom
+						type = undead_army
+						species = root.from.species
+					}
+				}
+			}
+		}
+	}
+}
