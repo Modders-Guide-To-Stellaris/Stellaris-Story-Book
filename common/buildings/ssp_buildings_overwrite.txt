@@ -7,7 +7,11 @@ building_dread_encampment = {
 	potential = {
 			exists = owner
 			owner = { has_valid_civic = civic_reanimated_armies }
-			#has_grand_reanimator = yes
+		OR = {
+			owner = {
+				has_country_flag = obtained_semichki
+			}
+		}
 	}
 
 
@@ -68,10 +72,11 @@ holding_dread_outpost = {
 
 	potential = {
 		owner.overlord = {
-			#OR = {
-				has_valid_civic = civic_reanimated_armies
-				#has_grand_reanimator = yes
-			#}
+			OR = {
+				owner = {
+					has_country_flag = obtained_semichki
+				}
+			}
 		}
 	}
 

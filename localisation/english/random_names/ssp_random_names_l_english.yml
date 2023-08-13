@@ -6,9 +6,10 @@
  Mallet:0 "Malletia"
  Semichki:0 "Drunken spin"
  Vox:0 "Vox"
+ Swedania:0 "Swedania"
 
  #event star names
- NAME_reanimator:0 "Malfunctioning USB port"
+ NAME_reanimator:0 "Malfunctioning USB port" #Semichki Origin Star
 
  #black holes
- Hypno:0 "Stellar Cavity Mu"
+ Hypno:0 "Stellar Cavity Mu" #blantent SCM marketing scheme from Hypno

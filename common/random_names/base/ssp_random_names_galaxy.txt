@@ -6,6 +6,7 @@ star_names = {
     Mallet
     Semichki
     Vox
+    Swedania
 }
 
 black_hole_names = {

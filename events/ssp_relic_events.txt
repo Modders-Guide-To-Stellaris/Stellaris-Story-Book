@@ -409,8 +409,10 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
             }
             effect = {
                 save_event_target_as = semichki_country
-            }
+                set_country_flag = obtained_semichki
+                }
         }
+
         event_target:semichki_country = {
             create_species = {
                 name = "NAME_Semichki"

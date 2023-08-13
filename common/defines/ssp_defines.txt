@@ -4,5 +4,5 @@
     }
 
     NGameplay = {
-        ALLOW_EMPIRE_DESIGN_CHEATS = no #DO NOT TOUCH Although the feature is hilarious... I should enable this on april fools lol
+        ALLOW_EMPIRE_DESIGN_CHEATS = no #DO NOT TOUCH
     }

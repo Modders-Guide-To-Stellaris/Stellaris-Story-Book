@@ -8,20 +8,14 @@ ssp_trait_alcoholic = {
         TIER = 1
     }
     negative = yes
+    councilor_trait = yes
 
     modifier = {
         country_consumer_goods_produces_mult = -0.1
     }
     leader_class = { governor scientist admiral general }
-    selectable_weight = {
-        weight = @shared_negative_trait_weight
-        modifier = {
-            species = {
-                    has_trait = trait_wasteful
-            }
-            factor = @species_trait_weight_mult
-        }
-    }
+    initial = no
+    randomized = no
 }
 
 
@@ -44,7 +38,7 @@ ssp_destiny_genpar = {
         army_collateral_damage_mult = -0.35
     }
     self_modifier = {
-        planet_combat_width_add = 100
+        planet_combat_width_add = 5
     }
     leader_potential_add = {
         has_paragon_dlc = yes
@@ -52,7 +46,9 @@ ssp_destiny_genpar = {
         always = no
     }
     leader_class = { general }
-    custom_tooltip = ssp_destiny_genpar_effect
+    #custom_tooltip = ssp_destiny_genpar_effect
 
     destiny_background_icon = "GFX_leader_background_destiny_1"
+    initial = no
+    randomized = no
 }

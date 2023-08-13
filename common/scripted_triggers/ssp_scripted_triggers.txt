@@ -7,7 +7,7 @@ is_not_doing_one_planet_challenge = {
 has_grand_reanimator = {
     has_ssp_reanimator_trait = yes
 }
-
+#dont check for a trait, but for a flag
 has_ssp_reanimator_trait = {
     has_trait = ssp_destiny_genpar
 }

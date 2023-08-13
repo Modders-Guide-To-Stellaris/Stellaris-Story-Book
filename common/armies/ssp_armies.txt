@@ -13,7 +13,8 @@ ssp_reanimated_army = {
 	resources = {
 		category = armies
 		cost = {
-			energy = 100
+			unity = 1000
+			energy = 500
 		}
 		upkeep = {
 			energy = 8
@@ -64,7 +65,7 @@ undead_army = {
 
 	show_tech_unlock_if = {
 		has_valid_civic = civic_reanimated_armies
-		#has_grand_reanimator = yes
+		has_country_flag = obtained_semichki
 	}
 
 	potential_country = { has_valid_civic = civic_reanimated_armies }

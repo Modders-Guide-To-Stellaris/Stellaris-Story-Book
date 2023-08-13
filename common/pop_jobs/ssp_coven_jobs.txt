@@ -1,13 +1,66 @@
 coven_scholar = {
     category = specialist
 	condition_string = SPECIALIST_JOB_TRIGGER
+    clothes_texture_index = 3
 
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        complex_specialist_job_check_trigger = yes
+    }
+
+
+    resources = {
+        category = planet_researchers
+        produces = {
+            physics_research = 10
+            engineering_research = 10
+            society_research = 10
+            unity = 10
+        }
+        upkeep = {
+            consumer_goods = 5
+        }
+    }
 }
 
+#TODO: change output on both of these :)
 coven_student = {
     category = specialist
     condition_string = SPECIALIST_JOB_TRIGGER
+    clothes_texture_index = 3
 
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_specialist_job
+    possible = {
+        complex_specialist_job_check_trigger = yes
+    }
+
+
+    resources = {
+        category = planet_researchers
+        produces = {
+            physics_research = 4
+            engineering_research = 4
+            society_research = 4
+            unity = 4
+        }
+        upkeep = {
+            consumer_goods = 2
+        }
+    }
 }
 
 #Coven head jobs

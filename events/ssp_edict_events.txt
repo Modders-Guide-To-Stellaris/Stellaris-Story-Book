@@ -1,6 +1,6 @@
 namespace = ssp_ritual
 
-country_event = {
+country_event = {  #make sure that this only triggers when you have origin dictionnaire infernal
     id = ssp_ritual.100
     title = ssp_ritual.100.name
 	desc = ssp_ritual.100.desc
