@@ -17,12 +17,19 @@ country_event = {
 
     immediate = {
         capital_scope = {
-            if = {
-                limit = {
-                    has_building = building_low_tech_admin_hub
+                if = {
+                    limit = {
+                        OR = {
+                        has_building = building_sacrificial_temple_1
+                        has_building = building_temple
+                        has_building = building_low_tech_admin_hub
+                        }
+                   }
+                        remove_building = building_sacrificial_temple_1
+                        remove_building = building_low_tech_admin_hub
+                        remove_building = building_temple
                 }
-                remove_building = building_low_tech_admin_hub
-            }
+
             if = {
                 limit = {
                     free_building_slots <= 0
@@ -33,26 +40,6 @@ country_event = {
                 add_district = district_city
             }
             add_building = building_coven_castle_1
-        }
-    }
-    immediate = {
-        capital_scope = {
-            if = {
-                limit = {
-                    has_building = building_sacrificial_temple_1
-                }
-                        remove_building = building_sacrificial_temple_1
-                    }
-                    if = {
-                        limit = {
-                            free_building_slots <= 0
-                            has_district = district_generator
-                            has_district = district_city
-                        }
-                        remove_district = district_generator
-                         add_district = district_city
-                    }
-                    add_building = building_coven_castle_1
         }
     }
 }

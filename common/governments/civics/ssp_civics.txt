@@ -9,7 +9,7 @@ civic_ssp_coven_system = { #Spiritualist Feature Civic (This is ours, not evolve
 	}
 	possible = {
 		ethics = {
-            OR = {
+            OR = {was sy
 				text = civic_tooltip_spiritualist
 				value = ethic_spiritualist
             }
