@@ -7,6 +7,7 @@ on_game_start_country = {
 	events = {
         necroids.1000
         ssp_gamestart.1
+        ssp_gamestart.2
     }
 }
 

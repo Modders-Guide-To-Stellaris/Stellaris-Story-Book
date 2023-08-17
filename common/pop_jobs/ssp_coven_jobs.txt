@@ -78,12 +78,12 @@ coven_head_plant = { #food/habitability stuff
    category = ruler
 	condition_string = RULER_JOB_TRIGGER
 
-    triggered_planet_modifier = {
+    pop_modifier = {
         planet_farmers_food_produces_mult = 0.5
     }
 
-    triggered_country_modifier = {
-        habitability_floor_add = 10
+    country_modifier = {
+        habitability_floor_add = 0.1
 
     }
 }
@@ -97,10 +97,7 @@ coven_head_construction = { #planetary build speed / mega structure build speed 
         potential = { always = yes }
         planet_building_build_speed_mult = 1.00
     }
-    triggered_country_modifier = {
-        potential = {
-            has_galactic_wonders = yes
-        }
+    country_modifier = {
         megastructure_build_speed_mult = 0.50
         country_megastructure_build_cap_add = 1
     }
@@ -113,6 +110,7 @@ coven_head_illusion = { #Sensor range and cloaking
     triggered_planet_modifier = {
         potential = { always = yes }
         planet_sensor_range_add = 2
+
     }
 
 

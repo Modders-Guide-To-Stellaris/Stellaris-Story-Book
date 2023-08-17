@@ -31,7 +31,6 @@ ssp_r_animarum_active_effect = {
 }
 
 
-
 #cloak designer
 ssp_r_cloaked_ship_designer_active_effect = {
      #make it spawn a "copycat" fleet of one owned fleet

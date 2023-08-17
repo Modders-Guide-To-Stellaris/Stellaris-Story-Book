@@ -18,14 +18,16 @@
 #Soncio — Today at 6:22 PM
 #no
 #you simply don't allow them to take a pacifist option
+
 #Curator Foxy — Today at 6:22 PM
 #custom tooltip, got it
 #Soncio — Today at 6:23 PM
 #so you add a check for "if this empire just knows war, don't allow this option/grey out"
-
+#Curator Foxy — Today at 6:23 PM
 #so
-#NOT
-#has_government = "gov_devouring_swarm"
+#NOT = { has_government = "gov_devouring_swarm" }
+#Soncio — Today at 6:23 PM
+#Yes
 
 
 

@@ -1,15 +1,15 @@
 civic_ssp_coven_system = { #Spiritualist Feature Civic (This is ours, not evolved)
+	modification = no
 	icon = gfx/interface/icons/governments/civics/civic_lethargic_leadership.dds
 	description = "civic_ssp_coven_system_tooltip"
 
 	potential = {
-		always = yes
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 		authority = { NOT = { value = auth_corporate } }
 	}
 	possible = {
 		ethics = {
-            OR = {was sy
+            OR = {
 				text = civic_tooltip_spiritualist
 				value = ethic_spiritualist
             }
@@ -46,23 +46,27 @@ civic_ssp_coven_system = { #Spiritualist Feature Civic (This is ours, not evolve
 
 civic_ssp_farmer_delight = {
 	modification = yes
-	icon = ""
+	icon = "gfx/interface/icons/governments/civics/regular_civics/civic_ssp_farmerdelight.dds"
 	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
 		text = civic_tooltip_ecologist
 		inline_script = governments/conditions/ethic_green
 	}
 	random_weight = { base = @civic_default_random_weight }
 	description = civic_ssp_farmers_delight_desc
 	modifier = {
-		planet_farmers_alloys_produces_add = 1 #replace this with the farmer job funny stuff from roadd
+	#	planet_farmers_alloys_produces_add = 1 #replace this with the farmer job funny stuff from roadd
 		planet_farmers_food_produces_mult = -0.25
 	}
 }
 
 civic_ssp_the_diplomat = {
 	modification = no
-	icon = ""
+	icon = "gfx/interface/icons/governments/civics/regular_civics/civic_ssp_diplomat.dds"
 	potential = {
+		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		authority = { NOT = { value = auth_corporate } }
 		civics = {
 			NOT = {
 				value = civic_diplomatic_corps

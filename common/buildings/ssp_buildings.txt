@@ -25,34 +25,13 @@ building_coven_castle_1 = {
 	}
 
 	destroy_trigger = {
+		always = yes
 		OR = {
 			is_planet_class = pc_hive
 			is_planet_class = pc_machine
 		}
 	}
-	on_built = {
-		random_list = {
-			16 = {
-				set_planet_flag = ssp_job.1#healing
-			}
-			17 = {
-				set_planet_flag = ssp_job.2#plant
-			}
-			17 = {
-				set_planet_flag = ssp_job.4#construction
-			}
-			16 = {
-				set_planet_flag = ssp_job.5#illusion
-			}
-			17 = {
-				set_planet_flag = ssp_job.6#oracle
-			}
-			17 = {
-				set_planet_flag = ssp_job.7#bard
-				}
-			}
-		}
-	}
+}
 
 
 building_coven_castle_2 = {
@@ -96,6 +75,9 @@ building_coven_castle_2 = {
 			unity = 50
 			multiplier = value:gaiaseeder_upkeep
 		}
+	}
+	on_built = {
+		triggerrandomlist = yes
 	}
 }
 

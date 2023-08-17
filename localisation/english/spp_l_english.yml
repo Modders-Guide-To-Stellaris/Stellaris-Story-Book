@@ -174,13 +174,14 @@ START_SCREEN_PART_ONE_CULT:0 "Will add later as soncio didn't ask me to add this
 
 
 civic_ssp_coven_system:0 "Coven Branded"
-civic_ssp_coven_system_tooltip:0 "Replaces Ruler jobs with Coven Head jobs. Each Coven Head has it's own production line.\n\ Allows the building of Coventions which produce Student/Scholar jobs."
+civic_ssp_coven_system_tooltip:0 "Replaces Ruler jobs with Coven Head jobs. Each Coven Head has it's own production line.\n Allows the building of Coventions which produce Student/Scholar jobs.\n Warning: Overhaul in progress"
 
+ #deprecated
 civic_ssp_one_planet_forced:0 "One Planet Challenge"
- civic_ssp_one_planet_forced_desc:0 "§EUnable to colonize planets.§!"
+civic_ssp_one_planet_forced_desc:0 "§EUnable to colonize planets.§!"
 
- civic_ssp_farmer_delight:0 "Farmer's Delight"
- civic_ssp_farmers_delight_desc:0 "Makes your farmers able to produce alloys at the cost of food output"
+civic_ssp_farmer_delight:0 "Farmer's Delight"
+civic_ssp_farmers_delight_desc:0 "Makes your farmers able to produce alloys at the cost of food output\n\n§HModifiers§!:\n £job_farmer£ [GetFarmerPlural] produce §c+1§! £alloys£ $alloy$ per §c12§! £food£ $food$"
 
 
 #############
