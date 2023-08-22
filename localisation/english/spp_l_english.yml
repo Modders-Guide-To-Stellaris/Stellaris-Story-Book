@@ -180,8 +180,8 @@ civic_ssp_coven_system_tooltip:0 "Replaces Ruler jobs with Coven Head jobs. Each
 civic_ssp_one_planet_forced:0 "One Planet Challenge"
 civic_ssp_one_planet_forced_desc:0 "§EUnable to colonize planets.§!"
 
-civic_ssp_farmer_delight:0 "Farmer's Delight"
-civic_ssp_farmers_delight_desc:0 "Makes your farmers able to produce alloys at the cost of food output\n\n§HModifiers§!:\n £job_farmer£ [GetFarmerPlural] produce §c+1§! £alloys£ $alloy$ per §c12§! £food£ $food$"
+civic_ssp_mri:0 "Military readiness initiative"
+civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §HModifiers§!:\n £alloys£ $alloy$ from £job£ Menial jobs +§c0.5§!\n £minerals_1£ $minerals$ upkeep from £job£ Menial jobs +§c1§!"
 
 
 #############
@@ -218,8 +218,7 @@ building_covenant_4_desc:0 "$building_covenant_all_desc$"
  job_coven_head_illusion: "Master Illusionist"
  job_coven_head_illusion_desc: "Head of the Illusionist Coven"
 
- mod_planet_farmers_alloys_produces_mult:1 "£alloys£ $alloy$ from £job_farmer£ [GetFarmerPlural]"
- mod_planet_farmers_alloys_produces_add:0 "$mod_planet_farmers_alloys_produces_mult$"
+
 
 
 ###########
@@ -229,3 +228,21 @@ building_covenant_4_desc:0 "$building_covenant_all_desc$"
  NAME_Semichki_leader:0 "Broken Chair Lad"
  NAME_Semichki:0 "The Lads"
  desc_semichki:0 "I'm gonna hear airhorns in my sleep"
+
+#############
+# Modifiers
+#############
+
+ mod_planet_farmers_minerals_upkeep_add:0 "£minerals£$minerals$ upkeep from £job_farmer£ [GetFarmerPlural]"
+ mod_planet_farmers_minerals_produces_add:0 "$mod_planet_farmers_minerals_upkeep_add$"
+ mod_planet_farmers_alloys_produces_mult:0 "£alloys£ $alloys$ from £job_farmer£ [GetFarmerPlural]"
+ mod_planet_farmers_alloys_produces_add:0 "$mod_planet_farmers_alloys_produces_mult$"
+
+ mod_planet_clerks_alloys_produces_add:0 "£alloys£ $alloys$ from £job_clerk£ $job_clerk_plural$"
+ mod_planet_clerks_minerals_produces_add:0 "£minerals£$minerals$ upkeep from £job_clerk£ $job_clerk_plural$"
+
+ mod_planet_miners_minerals_upkeep_add:0 "£minerals£$minerals$ upkeep from £job_miner£ [GetMinerPlural]"
+
+ mod_planet_technician_alloys_produces_add:0 "£alloys£ $alloys$ from £job_technician£ [GetTechnicianPlural]"
+ mod_planet_technician_minerals_upkeep_add:0 "£minerals£$minerals$ upkeep from £job_technician£ [GetTechnicianPlural]"
+ mod_planet_technician_minerals_produces_add:0 "$mod_planet_technician_minerals_upkeep_add$"

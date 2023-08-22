@@ -44,7 +44,7 @@ civic_ssp_coven_system = { #Spiritualist Feature Civic (This is ours, not evolve
 #	}
 #}
 
-civic_ssp_farmer_delight = {
+civic_ssp_mri = {
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/regular_civics/civic_ssp_farmerdelight.dds"
 	potential = {
@@ -54,11 +54,19 @@ civic_ssp_farmer_delight = {
 		inline_script = governments/conditions/ethic_green
 	}
 	random_weight = { base = @civic_default_random_weight }
-	description = civic_ssp_farmers_delight_desc
+	description = civic_ssp_mri_desc
 	modifier = {
-	#	planet_farmers_alloys_produces_add = 1 #replace this with the farmer job funny stuff from roadd
-		planet_farmers_food_produces_mult = -0.25
+		planet_farmers_alloys_produces_add = 1
+		planet_clerks_alloys_produces_add = 1
+		planet_miners_alloys_produces_add = 1
+		planet_technician_alloys_produces_add = 1
+		#upkeep
+		planet_farmers_minerals_produces_add = -2
+		planet_clerks_minerals_produces_add = -2
+		planet_miners_minerals_produces_add = -2
+		planet_technician_minerals_produces_add = -2
 	}
+
 }
 
 civic_ssp_the_diplomat = {

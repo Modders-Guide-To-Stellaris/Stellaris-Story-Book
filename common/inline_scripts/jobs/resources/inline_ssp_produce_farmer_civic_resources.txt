@@ -1,11 +1,11 @@
 # jobs/resources/inline_ssp_produce_farmer_civic_resources
 
-produces = {
-    trigger = {
-        owner = {
-            has_valid_civic = civic_ssp_farmer_delight
-        }
-    }
-    alloys = $alloys$
-    multiplier = $mult$
-}
+#produces = {
+#    trigger = {
+#        owner = {
+#            has_valid_civic = civic_ssp_farmer_delight
+#        }
+#    }
+#    alloys = $alloys$
+#    multiplier = $mult$
+#}
