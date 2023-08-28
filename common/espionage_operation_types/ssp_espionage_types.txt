@@ -1,0 +1,90 @@
+operation_xenomorph_deployment = {
+    categories = { op_cat_bioweapons op_cat_military }
+    picture = GFX_evt_space_station
+    desc = {
+        trigger = { has_overlord_dlc = no }
+        text = operation_sabotage_starbase_desc
+    }
+    desc = {
+        trigger = { has_overlord_dlc = yes }
+        text = operation_sabotage_starbase_orbring_desc
+    }
+    stages = 3
+
+    resources = {
+        category = operations
+        cost = {
+            influence = 150
+            minor_artifacts = 50
+        }
+        upkeep = {
+            society_research = 500
+        }
+    }
+
+    spy_power_cost = 90
+    target = country
+
+    potential = {
+       owner = {
+           has_relic = ssp_r_xenomorph_queen
+       }
+    }
+    allow = {
+        custom_tooltip = {
+            fail_text = operation_sabotage_starbase_no_targets
+            target = {
+                any_owned_planet = {
+                }
+            }
+        }
+        custom_tooltip = {
+            is_running_espionage_operation = no
+            fail_text = operation_one_at_a_time
+        }
+    }
+    target_allow = {
+        custom_tooltip = {
+            fail_text = operation_sabotage_starbase_no_targets
+            OR = {
+                AND = {
+                    count_starbase_modules = {
+                        type != shipyard
+                        count > 0
+                    }
+                    count_starbase_modules = {
+                        type != orbital_ring_shipyard
+                        count > 0
+                    }
+                }
+                has_nonshipyard_starbase_buildings = yes
+            }
+        }
+    }
+    stage = {
+        difficulty = @diff_t5
+        icon = GFX_espionage_chapter_icon_motion
+        event = operation.2000
+    }
+    stage = {
+        difficulty = @diff_t5
+        icon = GFX_espionage_chapter_icon_target
+        event = operation.2001
+    }
+    stage = {
+        difficulty = @diff_t5
+        icon = GFX_espionage_chapter_icon_success
+        event = operation.2002
+    }
+    on_roll_failed = {
+        standard_espionage_operation_on_roll_failed = { RANDOM_EVENTS = operation_random_events_sabotage_targeted } #Requires a bespoke set of trigger scopes given 'target' is not a country
+    }
+    on_create = {
+        target.owner = {
+            set_timed_country_flag = {
+                flag = espionage_operation_targeted_by@root.owner #Used in random Spy Network events
+                days = @operationTargetedByTimer
+            }
+        }
+    }
+}

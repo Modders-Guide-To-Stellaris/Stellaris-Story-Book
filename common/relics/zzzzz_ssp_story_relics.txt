@@ -243,70 +243,61 @@ ssp_r_animarum = {
 	}
   }
 
+#XenoQueen
+ssp_r_xenomorph_queen = {
+	activation_duration = @triumph_duration_normal
+	portrait = "GFX_ssp_r_the_animarum"
+	sound = "relic_activation_khans_throne"
+
+	resources = {
+		category = relics
+		cost = {
+			unity = 3000
+		}
+	}
+
+	ai_weight = {
+		weight = 2500
+	}
+
+	triggered_country_modifier = {
+		potential = {
+			always = yes
+		}
+
+	}
 
 
-#pope relic
-#anti crime
 
-	ssp_r_hypno = { #whatever
-		activation_duration = @triumph_duration_normal
-		portrait = "GFX_relic_galatron"
-		sound = "relic_activation_the_rubricator"
-	#make it so materials CANNOT get this relic
-		resources = {
-			category = relics
-			cost = {
-				
-			}
+
+	score = 1000
+
+	active_effect = {
+		add_modifier = {
+			modifier = "ssp_r_animarum_active_effect"
+			days = 3600
 		}
-		
-		ai_weight = {
-			weight = 100
-		}
-		
-		triggered_country_modifier = {
-			potential = { 
-				always = yes 
-			}
-			#something here?
-		}
-		
-		score = 1000
-	
-		active_effect = {
-			custom_tooltip = relic_religious_active
+
+
+		custom_tooltip = "ssp_r_animarum_active_effect_tooltip"
+		custom_tooltip = relic_triumph_cooldown
+		hidden_effect = {
 			add_modifier = {
-				modifier = "ssp_r_pope_hat_active_effect" #supposed to still name this thing
-				days = 3600
-			}
-
-			add_modifier = {
-				triggered_country_modifier = {
-					potential = {
-						is_gestalt = no
-					}
-				#+30% or 75, whichever is more, make pop religious/Spiritualist
-			}
-			add_modifier = {
-				triggered_country_modifier = {
-					potential = {
-						is_gestalt = yes
-					}
-				}
-				#Make relic self destruct for some unity
-			}
-			custom_tooltip = relic_triumph_cooldown
-			hidden_effect = {
-				add_modifier = { modifier = "relic_activation_cooldown" days = 3600 }
+				modifier = "relic_activation_cooldown"
+				days = 1800
 			}
 		}
-	
-		# Possible check for activation
-		possible = {
-			custom_tooltip = {
-				fail_text = "requires_relic_no_cooldown"
-				NOT = { has_modifier = relic_activation_cooldown }
+	}
+
+	# Possible check for activation
+	possible = {
+		custom_tooltip = {
+			fail_text = "requires_relic_no_cooldown"
+			NOT = {
+				has_modifier = relic_activation_cooldown
 			}
 		}
 	}
 }
+
+
