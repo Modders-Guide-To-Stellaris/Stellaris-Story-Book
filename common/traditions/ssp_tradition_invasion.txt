@@ -1,0 +1,353 @@
+tr_ssp_invasion_adopt = {
+
+    possible = {
+        #custom_tooltip = {
+        #	fail_text = tec_requires_supremacy_or_unyielding_traditions_finished
+        #	OR = {
+        #		has_tradition = tr_supremacy_finish
+        #		has_tradition = tr_unyielding_finish
+        #	}
+        #}
+        tec_can_adopt_might = yes
+    }
+
+    modifier = {
+        starbase_shipyard_build_speed_mult = 0.1
+    }
+
+    ai_weight = {
+        factor = 10
+        modifier = {
+            factor = 5
+            years_passed < 10
+        }
+        modifier = {
+            factor = 2
+            OR = {
+                has_ethic = ethic_militarist
+                has_ethic = ethic_gestalt_apathy
+            }
+        }
+        modifier = {
+            factor = 3
+            has_ethic = ethic_fanatic_militarist
+        }
+        modifier = {
+            factor = 0
+            OR = {
+                AND = {
+                    has_tradition = tr_expansion_adopt
+                    NOT = { has_tradition = tr_expansion_finish }
+                }
+                AND = {
+                    has_tradition = tr_domination_adopt
+                    NOT = { has_tradition = tr_domination_finish }
+                }
+                AND = {
+                    has_tradition = tr_harmony_adopt
+                    NOT = { has_tradition = tr_harmony_finish }
+                }
+                AND = {
+                    has_tradition = tr_prosperity_adopt
+                    NOT = { has_tradition = tr_prosperity_finish }
+                }
+                AND = {
+                    has_tradition = tr_diplomacy_adopt
+                    NOT = { has_tradition = tr_diplomacy_finish }
+                }
+                AND = {
+                    has_tradition = tr_discovery_adopt
+                    NOT = { has_tradition = tr_discovery_finish }
+                }
+                # new
+                AND = {
+                    has_tradition = tr_tec_outreach_adopt
+                    NOT = { has_tradition = tr_tec_outreach_finish }
+                }
+                AND = {
+                    has_tradition = tr_tec_control_adopt
+                    NOT = { has_tradition = tr_tec_control_finish }
+                }
+                AND = {
+                    has_tradition = tr_tec_balance_adopt
+                    NOT = { has_tradition = tr_tec_balance_finish }
+                }
+                AND = {
+                    has_tradition = tr_tec_might_adopt
+                    NOT = { has_tradition = tr_tec_might_finish }
+                }
+                AND = {
+                    has_tradition = tr_tec_statecraft_adopt
+                    NOT = { has_tradition = tr_tec_statecraft_finish }
+                }
+                AND = {
+                    has_tradition = tr_tec_invention_adopt
+                    NOT = { has_tradition = tr_tec_invention_finish }
+                }
+            }
+        }
+    }
+}
+
+tr_ssp_invasion_finish = {
+    custom_tooltip_with_modifiers = tr_tec_might_finish_tooltip
+    modifier = {
+        ascension_perks_add = 1
+    }
+
+    on_enabled = {
+        hidden_effect = {
+            country_event = {
+                id = tec_tradition.520
+            }
+        }
+    }
+}
+
+
+tr_ssp_invasion_1 = {
+
+    custom_tooltip = tr_tec_might_1_tooltip
+
+    ai_weight = {
+        factor = 1000
+    }
+
+    tradition_swap = {
+        name = tr_tec_might_1_hive
+        inherit_effects = no
+        inherit_icon = yes
+        inherit_name = yes
+        trigger = {
+            always = no
+            is_hive_empire = yes
+        }
+
+        custom_tooltip = tr_tec_might_1_hive_tooltip
+
+        weight = {
+            factor = 1
+        }
+    }
+    tradition_swap = {
+        name = tr_tec_might_1_machine
+        inherit_effects = no
+        inherit_icon = yes
+        inherit_name = yes
+        trigger = {
+            always = no
+            is_machine_empire = yes
+        }
+
+        custom_tooltip = tr_tec_might_1_machine_tooltip
+
+        weight = {
+            factor = 1
+        }
+    }
+}
+
+tr_ssp_invasion_2 = {
+
+    modifier = {
+        shipclass_starbase_hull_mult = 0.25
+        army_defense_health_mult = 0.25
+    }
+
+    ai_weight = {
+        factor = 1000
+    }
+}
+
+tr_ssp_invasion_3 = {
+    possible = {
+        has_tradition = tr_tec_might_1
+        has_tradition = tr_tec_might_2
+    }
+
+    modifier = {
+        country_claim_influence_cost_mult = -0.1
+    }
+
+    ai_weight = {
+        factor = 1000
+    }
+
+    tradition_swap = {
+        name = tr_tec_might_3B
+        inherit_effects = no
+        inherit_icon = yes
+        inherit_name = no
+        trigger = {
+            has_tradition = tr_unyielding_adopt
+            is_homicidal = no
+        }
+
+        modifier = {
+            country_hostile_claim_influence_cost_mult = 0.2
+        }
+
+        weight = {
+            factor = 1
+        }
+    }
+
+    tradition_swap = {
+        name = tr_tec_might_3C
+        inherit_effects = no
+        inherit_icon = yes
+        inherit_name = no
+        trigger = {
+            is_homicidal = yes
+        }
+
+        modifier = {
+            ship_fire_rate_mult = 0.05
+            ship_speed_mult = 0.1
+        }
+
+        weight = {
+            factor = 1
+        }
+    }
+}
+
+tr_ssp_invasion_4 = {
+    possible = {
+        has_tradition = tr_tec_might_3
+    }
+
+    custom_tooltip = tr_tec_might_4_tooltip
+
+    ai_weight = {
+        factor = 1000
+    }
+}
+
+tr_ssp_invasion_final_1 = {
+    possible = {
+        has_tradition = tr_tec_might_4
+        NOR = {
+            has_tradition = tr_tec_might_final_2
+            has_tradition = tr_tec_might_final_3
+        }
+    }
+
+    custom_tooltip_with_modifiers = tr_tec_might_final_1_tooltip
+    modifier = {
+        starbase_shipyard_build_speed_mult = 0.05
+    }
+
+    on_enabled = {
+        set_country_flag = tec_might_1
+        add_tradition = tr_tec_might_finish
+    }
+
+    ai_weight = {
+        factor = 1000
+    }
+
+    tradition_swap = {
+        name = tr_tec_might_final_1_disabled
+        inherit_effects = no
+        inherit_icon = yes
+        inherit_name = no
+        trigger = {
+            OR = {
+                has_country_flag = tec_might_2
+                has_country_flag = tec_might_3
+            }
+        }
+        custom_tooltip = tr_tec_might_final_1_disabled_tooltip
+
+        weight = {
+            factor = 1
+        }
+    }
+}
+
+
+
+tr_ssp_invasion_final_2 = {
+    possible = {
+        has_tradition = tr_tec_might_4
+        NOR = {
+            has_tradition = tr_tec_might_final_1
+            has_tradition = tr_tec_might_final_3
+        }
+    }
+
+    custom_tooltip = tr_tec_might_final_2_tooltip
+
+    on_enabled = {
+        set_country_flag = tec_might_2
+        add_tradition = tr_tec_might_finish
+        hidden_effect = {
+            country_event = {
+                id = tec_tradition.530
+            }
+        }
+    }
+
+    ai_weight = {
+        factor = 1000
+    }
+
+    tradition_swap = {
+        name = tr_tec_might_final_2_disabled
+        inherit_effects = no
+        inherit_icon = yes
+        inherit_name = no
+        trigger = {
+            OR = {
+                has_country_flag = tec_might_1
+                has_country_flag = tec_might_3
+            }
+        }
+        custom_tooltip = tr_tec_might_final_2_disabled_tooltip
+
+        weight = {
+            factor = 1
+        }
+    }
+}
+
+
+tr_ssp_invasion_final_3 = {
+    possible = {
+        has_tradition = tr_tec_might_4
+        NOR = {
+            has_tradition = tr_tec_might_final_1
+            has_tradition = tr_tec_might_final_2
+        }
+    }
+
+    custom_tooltip = tr_tec_might_final_3_tooltip
+
+    on_enabled = {
+        set_country_flag = tec_might_3
+        add_tradition = tr_tec_might_finish
+    }
+
+    ai_weight = {
+        factor = 1000
+    }
+
+    tradition_swap = {
+        name = tr_tec_might_final_3_disabled
+        inherit_effects = no
+        inherit_icon = yes
+        inherit_name = no
+        trigger = {
+            OR = {
+                has_country_flag = tec_might_1
+                has_country_flag = tec_might_2
+            }
+        }
+        custom_tooltip = tr_tec_might_final_3_disabled_tooltip
+
+        weight = {
+            factor = 1
+        }
+    }
+}

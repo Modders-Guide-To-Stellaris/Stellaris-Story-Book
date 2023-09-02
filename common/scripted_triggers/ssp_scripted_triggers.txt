@@ -20,3 +20,23 @@ is_reanimator = {
         has_ssp_reanimator_trait = yes
     }
 }
+
+ssp_can_adopt_invasion = {
+    OR = {
+        has_tradition = tr_supremacy_finish
+        has_tradition = tr_unyielding_finish
+    }
+    NOT = {
+        has_tradition = tr_tec_might_adopt
+    }
+}
+
+tec_can_adopt_might = { #evolved
+    OR = {
+        has_tradition = tr_supremacy_finish
+        has_tradition = tr_unyielding_finish
+    }
+    NOT = {
+        has_tradition = tr_ssp_invasion_adopt
+    }
+}

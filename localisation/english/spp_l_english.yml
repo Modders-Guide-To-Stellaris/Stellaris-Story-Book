@@ -28,6 +28,7 @@ ssp_r_animarum_active_effect:0 "$ssp_r_animarum$"
 ssp_r_animarum_active_effect_tooltip:0 "Spawns Reanimated Armies"
 
 ssp_r_xenomorph_queen:0 "Xenomorph Queen"
+xenomorph_queen_passive:0 "Allows the Operation 'Deploy Xenomorphs' as an espionage option."
 
 
 

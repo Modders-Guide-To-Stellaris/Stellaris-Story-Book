@@ -246,7 +246,7 @@ ssp_r_animarum = {
 #XenoQueen
 ssp_r_xenomorph_queen = {
 	activation_duration = @triumph_duration_normal
-	portrait = "GFX_ssp_r_the_animarum"
+	portrait = "GFX_ssp_r_xeno_queen"
 	sound = "relic_activation_khans_throne"
 
 	resources = {
@@ -264,7 +264,7 @@ ssp_r_xenomorph_queen = {
 		potential = {
 			always = yes
 		}
-
+		custom_tooltip = xenomorph_queen_passive
 	}
 
 
@@ -279,7 +279,7 @@ ssp_r_xenomorph_queen = {
 		}
 
 
-		custom_tooltip = "ssp_r_animarum_active_effect_tooltip"
+		custom_tooltip = ""
 		custom_tooltip = relic_triumph_cooldown
 		hidden_effect = {
 			add_modifier = {
