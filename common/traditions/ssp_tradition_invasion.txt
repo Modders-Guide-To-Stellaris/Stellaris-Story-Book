@@ -8,87 +8,86 @@ tr_ssp_invasion_adopt = {
         #		has_tradition = tr_unyielding_finish
         #	}
         #}
-        tec_can_adopt_might = yes
+        ssp_can_adopt_invasion = yes
     }
 
     modifier = {
         starbase_shipyard_build_speed_mult = 0.1
     }
 
-    ai_weight = {
-        factor = 10
-        modifier = {
-            factor = 5
-            years_passed < 10
-        }
-        modifier = {
-            factor = 2
-            OR = {
-                has_ethic = ethic_militarist
-                has_ethic = ethic_gestalt_apathy
-            }
-        }
-        modifier = {
-            factor = 3
-            has_ethic = ethic_fanatic_militarist
-        }
-        modifier = {
-            factor = 0
-            OR = {
-                AND = {
-                    has_tradition = tr_expansion_adopt
-                    NOT = { has_tradition = tr_expansion_finish }
-                }
-                AND = {
-                    has_tradition = tr_domination_adopt
-                    NOT = { has_tradition = tr_domination_finish }
-                }
-                AND = {
-                    has_tradition = tr_harmony_adopt
-                    NOT = { has_tradition = tr_harmony_finish }
-                }
-                AND = {
-                    has_tradition = tr_prosperity_adopt
-                    NOT = { has_tradition = tr_prosperity_finish }
-                }
-                AND = {
-                    has_tradition = tr_diplomacy_adopt
-                    NOT = { has_tradition = tr_diplomacy_finish }
-                }
-                AND = {
-                    has_tradition = tr_discovery_adopt
-                    NOT = { has_tradition = tr_discovery_finish }
-                }
-                # new
-                AND = {
-                    has_tradition = tr_tec_outreach_adopt
-                    NOT = { has_tradition = tr_tec_outreach_finish }
-                }
-                AND = {
-                    has_tradition = tr_tec_control_adopt
-                    NOT = { has_tradition = tr_tec_control_finish }
-                }
-                AND = {
-                    has_tradition = tr_tec_balance_adopt
-                    NOT = { has_tradition = tr_tec_balance_finish }
-                }
-                AND = {
-                    has_tradition = tr_tec_might_adopt
-                    NOT = { has_tradition = tr_tec_might_finish }
-                }
-                AND = {
-                    has_tradition = tr_tec_statecraft_adopt
-                    NOT = { has_tradition = tr_tec_statecraft_finish }
-                }
-                AND = {
-                    has_tradition = tr_tec_invention_adopt
-                    NOT = { has_tradition = tr_tec_invention_finish }
-                }
-            }
-        }
-    }
+    #ai_weight = {
+    #        factor = 10
+    #        modifier = {
+    #            factor = 5
+    #            years_passed < 10
+    #        }
+    #        modifier = {
+    #            factor = 2
+    #            OR = {
+    #                has_ethic = ethic_militarist
+    #                has_ethic = ethic_gestalt_apathy
+    #            }
+    #        }
+    #        modifier = {
+    #            factor = 3
+    #            has_ethic = ethic_fanatic_militarist
+    #        }
+    #        modifier = {
+    #            factor = 0
+    #            OR = {
+    #                AND = {
+    #                    has_tradition = tr_expansion_adopt
+    #                    NOT = { has_tradition = tr_expansion_finish }
+    #                }
+    #                AND = {
+    #                    has_tradition = tr_domination_adopt
+    #                    NOT = { has_tradition = tr_domination_finish }
+    #                }
+    #                AND = {
+    #                    has_tradition = tr_harmony_adopt
+    #                    NOT = { has_tradition = tr_harmony_finish }
+    #                }
+    #                AND = {
+    #                    has_tradition = tr_prosperity_adopt
+    #                    NOT = { has_tradition = tr_prosperity_finish }
+    #                }
+    #                AND = {
+    #                    has_tradition = tr_diplomacy_adopt
+    #                    NOT = { has_tradition = tr_diplomacy_finish }
+    #                }
+    #                AND = {
+    #                    has_tradition = tr_discovery_adopt
+    #                    NOT = { has_tradition = tr_discovery_finish }
+    #                }
+    #                # new
+    #                AND = {
+    #                    has_tradition = tr_tec_outreach_adopt
+    #                    NOT = { has_tradition = tr_tec_outreach_finish }
+    #                }
+    #                AND = {
+    #                    has_tradition = tr_tec_control_adopt
+    #                    NOT = { has_tradition = tr_tec_control_finish }
+    #                }
+    #                AND = {
+    #                    has_tradition = tr_tec_balance_adopt
+    #                    NOT = { has_tradition = tr_tec_balance_finish }
+    #                }
+    #                AND = {
+    #                    has_tradition = tr_tec_might_adopt
+    #                    NOT = { has_tradition = tr_tec_might_finish }
+    #                }
+    #                AND = {
+    #                    has_tradition = tr_tec_statecraft_adopt
+    #                    NOT = { has_tradition = tr_tec_statecraft_finish }
+    #                }
+    #                AND = {
+    #                    has_tradition = tr_tec_invention_adopt
+    #                    NOT = { has_tradition = tr_tec_invention_finish }
+    #                }
+    #            }
+    #        }
+    #    }
 }
-
 tr_ssp_invasion_finish = {
     custom_tooltip_with_modifiers = tr_tec_might_finish_tooltip
     modifier = {
@@ -107,7 +106,7 @@ tr_ssp_invasion_finish = {
 
 tr_ssp_invasion_1 = {
 
-    custom_tooltip = tr_tec_might_1_tooltip
+    custom_tooltip = tr_ssp_invasion_1tt
 
     ai_weight = {
         factor = 1000
@@ -161,12 +160,12 @@ tr_ssp_invasion_2 = {
 
 tr_ssp_invasion_3 = {
     possible = {
-        has_tradition = tr_tec_might_1
-        has_tradition = tr_tec_might_2
+        has_tradition = tr_ssp_invasion_1
+        has_tradition = tr_ssp_invasion_2
     }
 
     modifier = {
-        country_claim_influence_cost_mult = -0.1
+        planet_combat_width_add = 10
     }
 
     ai_weight = {
@@ -214,7 +213,7 @@ tr_ssp_invasion_3 = {
 
 tr_ssp_invasion_4 = {
     possible = {
-        has_tradition = tr_tec_might_3
+        has_tradition = tr_ssp_invasion_3
     }
 
     custom_tooltip = tr_tec_might_4_tooltip
@@ -226,10 +225,10 @@ tr_ssp_invasion_4 = {
 
 tr_ssp_invasion_final_1 = {
     possible = {
-        has_tradition = tr_tec_might_4
+        has_tradition = tr_ssp_invasion_4
         NOR = {
-            has_tradition = tr_tec_might_final_2
-            has_tradition = tr_tec_might_final_3
+            has_tradition = tr_ssp_invasion_final_2
+            has_tradition = tr_ssp_invasion_final_3
         }
     }
 
@@ -270,10 +269,10 @@ tr_ssp_invasion_final_1 = {
 
 tr_ssp_invasion_final_2 = {
     possible = {
-        has_tradition = tr_tec_might_4
+        has_tradition = tr_ssp_invasion_4
         NOR = {
-            has_tradition = tr_tec_might_final_1
-            has_tradition = tr_tec_might_final_3
+            has_tradition = tr_ssp_invasion_final_1
+            has_tradition = tr_ssp_invasion_final_3
         }
     }
 
@@ -315,10 +314,10 @@ tr_ssp_invasion_final_2 = {
 
 tr_ssp_invasion_final_3 = {
     possible = {
-        has_tradition = tr_tec_might_4
+        has_tradition = tr_ssp_invasion_4
         NOR = {
-            has_tradition = tr_tec_might_final_1
-            has_tradition = tr_tec_might_final_2
+            has_tradition = tr_ssp_invasion_final_1
+            has_tradition = tr_ssp_invasion_final_2
         }
     }
 

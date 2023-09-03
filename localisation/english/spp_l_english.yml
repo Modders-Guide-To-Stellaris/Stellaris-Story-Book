@@ -266,3 +266,17 @@ building_covenant_4_desc:0 "$building_covenant_all_desc$"
 
  #Types
  operation_xenomorph_deployment:0 "Operation Xenomorph Deployment"
+
+##############
+# Traditions
+##############
+
+tradition_ssp_invasion:0 "Invasion"
+tradition_ssp_invasion_desc:0 "Offense is the best defence. \n Disruption of communications can mean only one thing.... INVASION!"
+tr_ssp_invasion_adopt:0 "Invasion Traditions"
+ tr_ssp_invasion_1:0 "Improved Logistics"
+ tr_ssp_invasion_1tt:0 "Decreases the build speed of armies"
+ tr_ssp_invasion_2:0 "Specialized Military Training" #+25% Army health n damage
+ tr_ssp_invasion_3:0 "Strategic Battleplans" #+10 Combat width
+ tr_ssp_invasion_4:0 "Conscription Initiative" #50% less resources for an army recruitment.
+ tr_ssp_invasion_final_2:0 "Extensive Operations" #+25 combat width or smt
