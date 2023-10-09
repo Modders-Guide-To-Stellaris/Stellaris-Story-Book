@@ -126,6 +126,10 @@ ssp_semichki_response.B2:0 "GENERIC RESPONSE B"
 ssp_semichki_response.C1:0 "Why is your chair broken?"
 ssp_semichki_response.C2:0 "I fell asleep after passing out. Completely normal here lad."
 
+ #Strange Remnant
+ssp_colony.100.name:0 "Abandoned Complex"
+ ssp_relic.100.desc:0 "Da da dum dum dum dum, dum dum dum diddly doom doom doom, diddly doom, dum dum diddly dum dum dum dum diddly dum dum dum dum dum. "
+
 
 ###########
 # Origins
@@ -184,13 +188,13 @@ civic_ssp_one_planet_forced:0 "One Planet Challenge"
 civic_ssp_one_planet_forced_desc:0 "§EUnable to colonize planets.§!"
 
 civic_ssp_mri:0 "Military readiness initiative"
-civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §HModifiers§!:\n £alloys£ $alloy$ from £job£ Menial jobs +§c0.5§!\n £minerals_1£ $minerals$ upkeep from £job£ Menial jobs +§c1§!"
+civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §HModifiers§!:\n £alloys£ $alloy$ from £job£ Menial jobs +§c1§!\n £minerals£ $minerals$ upkeep from £job£ Menial jobs +§R2§!"
 
 
 #############
 # Buildings
 #############
-
+#to be reworked
 building_covenant:0 "Coventions"
 building_covenant_1:0 "$building_covenant$ - Phase 1"
 building_covenant_2:0 "$building_covenant$ - Phase 2"
@@ -220,6 +224,16 @@ building_covenant_4_desc:0 "$building_covenant_all_desc$"
  job_coven_head_construction_desc: "Head of the Construction Coven"
  job_coven_head_illusion: "Master Illusionist"
  job_coven_head_illusion_desc: "Head of the Illusionist Coven"
+
+ #Explorer
+ job_ssp_explorer:0 "Explorer"
+ job_ssp_explorer_plural:0 "Explorers"
+ job_ssp_explorer_desc:0 "FOXY PLACEHOLDER"
+ mod_job_ssp_explorer_add:0 "adds $job_ssp_explorer_worker$"
+ job_ssp_explorer_drone:0 "Surveyor Drone"
+ job_ssp_explorer_drone_plural:0 "Surveyor Drones"
+ job_ssp_explorer_drone_desc:0 "FOXY PLACEHOLDER"
+ mod_job_ssp_explorer_drone_add:0 "adds $job_ssp_explorer_drone$"
 
 
 
@@ -260,12 +274,24 @@ building_covenant_4_desc:0 "$building_covenant_all_desc$"
  mod_op_cat_bioweapons_skill_add:0 "Operation Skill (Bioweapons)"
  mod_op_cat_bioweapons_speed_mult:0 "Operation Speed (Bioweapons)"
 
-
  #Categories
  op_cat_bioweapons:0 "Bioweapons Department"
 
  #Types
  operation_xenomorph_deployment:0 "Operation Xenomorph Deployment"
+ operation_xenomorph_deployment_desc: "REPLACE_ME"
+ operation_xenomorph_deployment_no_dlc_desc: "REPLACE_ME"
+ operation_xenomorph_deployment_on_success: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_speed_mult: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_speed_mult_desc: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_difficulty_add: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_difficulty_add_desc: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_difficulty_mult: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_difficulty_mult_desc: "REPLACE_ME"
+ mod_hostile_operation_xenomorph_deployment_difficulty_add: "REPLACE_ME"
+ mod_hostile_operation_xenomorph_deployment_difficulty_add_desc: "REPLACE_ME"
+ mod_hostile_operation_xenomorph_deployment_difficulty_mult: "REPLACE_ME"
+ mod_hostile_operation_xenomorph_deployment_difficulty_mult_desc: "REPLACE_ME"
 
 ##############
 # Traditions
@@ -280,3 +306,13 @@ tr_ssp_invasion_adopt:0 "Invasion Traditions"
  tr_ssp_invasion_3:0 "Strategic Battleplans" #+10 Combat width
  tr_ssp_invasion_4:0 "Conscription Initiative" #50% less resources for an army recruitment.
  tr_ssp_invasion_final_2:0 "Extensive Operations" #+25 combat width or smt
+
+
+###########
+# Deposits
+###########
+ d_ssp_strange_remnant_ruins:0 "Entertainment Hall Ruins"
+###NOTE FOR FOXY, BY FOXY:
+#Make a random event that can only be triggered once.. when the colony hits 5 or 10 years or smt along those lines anyways.
+#ThatOneFoxy Factory, kill 5 pop. Etc.
+

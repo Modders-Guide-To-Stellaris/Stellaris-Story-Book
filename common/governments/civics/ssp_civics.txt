@@ -4,6 +4,7 @@ civic_ssp_coven_system = { #Spiritualist Feature Civic (This is ours, not evolve
 	description = "civic_ssp_coven_system_tooltip"
 
 	potential = {
+		always = no
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
 		authority = { NOT = { value = auth_corporate } }
 	}
@@ -11,7 +12,7 @@ civic_ssp_coven_system = { #Spiritualist Feature Civic (This is ours, not evolve
 		ethics = {
             OR = {
 				text = civic_tooltip_spiritualist
-				value = ethic_spiritualist
+				inline_script = governments/conditions/ethic_spiritualist
             }
 		}
             civics = {
@@ -49,9 +50,16 @@ civic_ssp_mri = {
 	icon = "gfx/interface/icons/governments/civics/regular_civics/civic_ssp_farmerdelight.dds"
 	potential = {
 		ethics = { NOT = { value = ethic_gestalt_consciousness } }
+		ethics = {
+			OR = {
+				value = ethic_fanatic_militarist
+				value = ethic_militarist
+			}
+		}
 		authority = { NOT = { value = auth_corporate } }
-		text = civic_tooltip_ecologist
-		inline_script = governments/conditions/ethic_green
+
+		text = civic_tooltip_militarist
+		inline_script = governments/conditions/ethic_militarist
 	}
 	random_weight = { base = @civic_default_random_weight }
 	description = civic_ssp_mri_desc

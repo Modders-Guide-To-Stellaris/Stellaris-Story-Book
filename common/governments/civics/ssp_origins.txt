@@ -10,6 +10,7 @@ origin_follower_cult = {
     }
 
 	possible = {
+		always = no
 			civics = {
 				OR = {
 					value = civic_death_cult_corporate

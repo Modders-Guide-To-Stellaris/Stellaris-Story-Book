@@ -559,3 +559,12 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
         is_dialog_only = yes
     }
 }
+
+#XenoDisaster
+planet_event = { #REVERT HIDE WINDOW LATER
+    id = ssp_relic.600
+    title = ssp_relic.600.name
+    desc = ssp_relic.600.desc
+    hide_window =  yes
+    is_triggered_only = yes
+}
