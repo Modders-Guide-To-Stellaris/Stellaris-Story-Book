@@ -18,7 +18,7 @@ bacterium_control_agressive:0 "Use your envoy who's improving relations to slip 
 
 ssp_r_drive_core:0 "Repaired Drive Core"
 ssp_r_drive_core_desc:0 "The repaired drive core we salvaged from the Jonan Foundry science ship"
-drive_core_passive:0 "Grants your science ships +50% Sublight speed.\n Try and catch my Science vessel now stupid fallen empire!"
+drive_core_passive:0 "Grants your science ships +50% Sublight speed"
 drive_core_random:0 "Active the powerful precursor jump drives giving you full galaxy warp range for a random fleet"
 
 
@@ -179,10 +179,6 @@ START_SCREEN_PART_ONE_CULT:0 "Will add later as soncio didn't ask me to add this
 # Civics
 ##########
 
-
-civic_ssp_coven_system:0 "Coven Branded"
-civic_ssp_coven_system_tooltip:0 "Replaces Ruler jobs with Coven Head jobs. Each Coven Head has it's own production line.\n Allows the building of Coventions which produce Student/Scholar jobs.\n Warning: Overhaul in progress"
-
  #deprecated
 civic_ssp_one_planet_forced:0 "One Planet Challenge"
 civic_ssp_one_planet_forced_desc:0 "§EUnable to colonize planets.§!"
@@ -194,36 +190,10 @@ civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §
 #############
 # Buildings
 #############
-#to be reworked
-building_covenant:0 "Coventions"
-building_covenant_1:0 "$building_covenant$ - Phase 1"
-building_covenant_2:0 "$building_covenant$ - Phase 2"
-building_covenant_3:0 "$building_covenant$ - Phase 3"
-building_covenant_4:0 "$building_covenant$ - Final Phase"
-building_covenant_all_desc:0 "Prestigious Facilities that produce the finest scholars"
-building_covenant_1_desc:0 "$building_covenant_all_desc$"
-building_covenant_2_desc:0 "$building_covenant_all_desc$"
-building_covenant_3_desc:0 "$building_covenant_all_desc$"
-building_covenant_4_desc:0 "$building_covenant_all_desc$"
 
 #########
 # Jobs
 #########
-#OVERHAULING THIS CIVIC SOON
- job_coven_head_bard:0 "Head Bard"
- job_coven_head_bard_desc:0 "Head Witch of the Bard Coven"
- job_coven_head_plant: ""
- job_coven_head_plant_desc: "REPLACE_ME"
- job_coven_head_oracle: "REPLACE_ME"
- job_coven_head_oracle_desc: "REPLACE_ME"
- job_coven_head_beast_keeping: "Beast keeper"
- job_coven_head_beast_keeping_desc: "Head of the Beast Keeping Coven"
- job_coven_head_healing: "Grand Healer"
- job_coven_head_healing_desc: "Head of the Healing Coven"
- job_coven_head_construction: "The Engineer"
- job_coven_head_construction_desc: "Head of the Construction Coven"
- job_coven_head_illusion: "Master Illusionist"
- job_coven_head_illusion_desc: "Head of the Illusionist Coven"
 
  #Explorer
  job_ssp_explorer:0 "Explorer"
@@ -300,6 +270,9 @@ building_covenant_4_desc:0 "$building_covenant_all_desc$"
 tradition_ssp_invasion:0 "Invasion"
 tradition_ssp_invasion_desc:0 "Offense is the best defence. \n Disruption of communications can mean only one thing.... INVASION!"
 tr_ssp_invasion_adopt:0 "Invasion Traditions"
+ tr_ssp_invasion_finish: "REPLACE_ME"
+ tr_ssp_invasion_finish_delayed: "I dont know where this is used for so this is its name"
+ tr_ssp_invasion_finish_desc: "REPLACE_ME"
  tr_ssp_invasion_1:0 "Improved Logistics"
  tr_ssp_invasion_1tt:0 "Decreases the build speed of armies"
  tr_ssp_invasion_2:0 "Specialized Military Training" #+25% Army health n damage

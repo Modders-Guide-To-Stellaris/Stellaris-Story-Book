@@ -1,38 +1,3 @@
-civic_ssp_coven_system = { #Spiritualist Feature Civic (This is ours, not evolved)
-	modification = no
-	icon = gfx/interface/icons/governments/civics/civic_lethargic_leadership.dds
-	description = "civic_ssp_coven_system_tooltip"
-
-	potential = {
-		always = no
-		ethics = { NOT = { value = ethic_gestalt_consciousness } }
-		authority = { NOT = { value = auth_corporate } }
-	}
-	possible = {
-		ethics = {
-            OR = {
-				text = civic_tooltip_spiritualist
-				inline_script = governments/conditions/ethic_spiritualist
-            }
-		}
-            civics = {
-			NOR = {
-				value = civic_exalted_priesthood
-				value = civic_technocracy
-               # value = civic_reanimators
-                value = civic_imperial_cult
-                value = civic_parliamentary_system
-			}
-		}
-	}
-	random_weight = { base = @civic_default_random_weight }
-
-	modifier = {
-#replace ruler jobs with random coven head jobs, each with its own rewards
-#also add a custom building 
-	}
-}
-
 #civic_ssp_one_planet_forced = {
 #	modification = no
 #	icon = "gfx/interface/icons/governments/civics/civic_empire_in_decline.dds"

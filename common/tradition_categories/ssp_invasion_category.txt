@@ -1,5 +1,5 @@
 tradition_ssp_invasion = {
-	tree_template = "tree_tec_might" #tree_trad_invasion
+	tree_template = "tree_trad_invasion" #tree_trad_invasion
 
 	adoption_bonus = "tr_ssp_invasion_adopt"
 	finish_bonus = "tr_ssp_invasion_finish"
