@@ -1,0 +1,8 @@
+﻿l_english:
+ #bombardment
+ orbital_bombardment_chemical: "White Phosphorus"
+ orbital_bombardment_chemical_name: "Chemical Warfare"
+ orbital_bombardment_chemical_desc: "Haha warcrimes go brrr"
+
+ bombardment_chemical_warfare: "REPLACE_ME"
+ bombardment_chemical_warfare_desc: "REPLACE_ME"

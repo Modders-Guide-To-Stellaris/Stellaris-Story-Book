@@ -87,14 +87,14 @@ tr_ssp_invasion_adopt = {
     #            }
     #        }
     #    }
-}
+} #TODO: change the Evolved thingies of Gestalt stuff
 tr_ssp_invasion_finish = {
     custom_tooltip_with_modifiers = tr_ssp_invasion_finish_tooltip
     modifier = {
         ascension_perks_add = 1
     }
 
-    on_enabled = {
+    on_enabled = { #TODO: See Tec_tradition.520
         hidden_effect = {
             country_event = {
                 id = tec_tradition.520
@@ -106,12 +106,17 @@ tr_ssp_invasion_finish = {
 
 tr_ssp_invasion_1 = {
 
-    custom_tooltip = tr_ssp_invasion_1tt
+    custom_tooltip_with_modifiers = tr_ssp_invasion_1_tt
+
+    modifier = {
+        planet_army_build_time_mult = -0.25
+        armies_upkeep_mult = -0.25
+    }
 
     ai_weight = {
         factor = 1000
     }
-
+#Idk what this is tbh, should replace
     tradition_swap = {
         name = tr_tec_might_1_hive
         inherit_effects = no
@@ -148,9 +153,12 @@ tr_ssp_invasion_1 = {
 
 tr_ssp_invasion_2 = {
 
+    custom_tooltip_with_modifiers = tr_ssp_invasion_2_tt
+
     modifier = {
-        shipclass_starbase_hull_mult = 0.25
+        army_attack_health_mult = 0.25
         army_defense_health_mult = 0.25
+        ship_fire_rate_mult = 0.05
     }
 
     ai_weight = {
@@ -159,6 +167,9 @@ tr_ssp_invasion_2 = {
 }
 
 tr_ssp_invasion_3 = {
+
+    custom_tooltip_with_modifiers = tr_ssp_invasion_3_tt
+
     possible = {
         has_tradition = tr_ssp_invasion_1
         has_tradition = tr_ssp_invasion_2
@@ -212,11 +223,16 @@ tr_ssp_invasion_3 = {
 }
 
 tr_ssp_invasion_4 = {
+
+    custom_tooltip_with_modifiers = tr_ssp_invasion_4_tt
+
     possible = {
         has_tradition = tr_ssp_invasion_3
     }
 
-    custom_tooltip = tr_tec_might_4_tooltip
+    modifier = {
+        armies_cost_mult = -0.5
+    }
 
     ai_weight = {
         factor = 1000
@@ -232,14 +248,17 @@ tr_ssp_invasion_final_1 = {
         }
     }
 
-    custom_tooltip_with_modifiers = tr_tec_might_final_1_tooltip
+    custom_tooltip_with_modifiers = tr_ssp_invasion_final_1_tt
     modifier = {
-        starbase_shipyard_build_speed_mult = 0.05
+        planet_army_build_speed_mult = 1
+        army_attack_damage_mult = -0.25
+        army_defense_damage_mult = -0.25
+
     }
 
     on_enabled = {
-        set_country_flag = tec_might_1
-        add_tradition = tr_tec_might_finish
+        set_country_flag = tr_invasion_1
+        add_tradition = tr_ssp_invasion_finish
     }
 
     ai_weight = {
@@ -247,17 +266,17 @@ tr_ssp_invasion_final_1 = {
     }
 
     tradition_swap = {
-        name = tr_tec_might_final_1_disabled
+        name = tr_ssp_invasion_final_1_disabled
         inherit_effects = no
         inherit_icon = yes
         inherit_name = no
         trigger = {
             OR = {
-                has_country_flag = tec_might_2
-                has_country_flag = tec_might_3
+                has_country_flag = tr_invasion_2
+                has_country_flag = tr_invasion_3
             }
         }
-        custom_tooltip = tr_tec_might_final_1_disabled_tooltip
+        custom_tooltip = tr_ssp_invasion_final_1_disabled_tt
 
         weight = {
             factor = 1
@@ -276,11 +295,15 @@ tr_ssp_invasion_final_2 = {
         }
     }
 
-    custom_tooltip = tr_tec_might_final_2_tooltip
+    modifier = {
+        planet_combat_width_add = 25 #if too op potentially change this to 15
+    }
+
+    custom_tooltip_with_modifiers = tr_ssp_invasion_final_2_tt
 
     on_enabled = {
-        set_country_flag = tec_might_2
-        add_tradition = tr_tec_might_finish
+        set_country_flag = tr_invasion_2
+        add_tradition = tr_ssp_invasion_finish
         hidden_effect = {
             country_event = {
                 id = tec_tradition.530
@@ -293,17 +316,17 @@ tr_ssp_invasion_final_2 = {
     }
 
     tradition_swap = {
-        name = tr_tec_might_final_2_disabled
+        name = tr_ssp_invasion_final_2_disabled
         inherit_effects = no
         inherit_icon = yes
         inherit_name = no
         trigger = {
             OR = {
-                has_country_flag = tec_might_1
-                has_country_flag = tec_might_3
+                has_country_flag = tr_invasion_1
+                has_country_flag = tr_invasion_3
             }
         }
-        custom_tooltip = tr_tec_might_final_2_disabled_tooltip
+        custom_tooltip = tr_ssp_invasion_final_2_disabled_tt
 
         weight = {
             factor = 1
@@ -321,11 +344,11 @@ tr_ssp_invasion_final_3 = {
         }
     }
 
-    custom_tooltip = tr_tec_might_final_3_tooltip
+    custom_tooltip_with_modifiers = tr_ssp_invasion_final_3_tt
 
     on_enabled = {
-        set_country_flag = tec_might_3
-        add_tradition = tr_tec_might_finish
+        set_country_flag = tr_invasion_3
+        add_tradition = tr_ssp_invasion_finish
     }
 
     ai_weight = {
@@ -333,17 +356,17 @@ tr_ssp_invasion_final_3 = {
     }
 
     tradition_swap = {
-        name = tr_tec_might_final_3_disabled
+        name = tr_ssp_invasion_final_3_disabled
         inherit_effects = no
         inherit_icon = yes
         inherit_name = no
         trigger = {
             OR = {
-                has_country_flag = tec_might_1
-                has_country_flag = tec_might_2
+                has_country_flag = tr_invasion_1
+                has_country_flag = tr_invasion_2
             }
         }
-        custom_tooltip = tr_tec_might_final_3_disabled_tooltip
+        custom_tooltip = tr_ssp_invasion_final_3_disabled_tt
 
         weight = {
             factor = 1

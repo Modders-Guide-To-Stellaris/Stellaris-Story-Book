@@ -1,0 +1,69 @@
+﻿l_english:
+
+ tradition_warning1:0 "§RChoosing this tradition disable other options.§!"
+ tradition_warning2:0 "§R$TRIGGER_FAIL$This tradition is disabled as another choice has been made.§!"
+
+
+ #-Invasion
+
+ tradition_ssp_invasion:0 "Invasion"
+ tradition_ssp_invasion_desc:0 "Offence is the best defence. \n Disruption of communications can mean only one thing.... INVASION!"
+
+ tr_ssp_invasion_adopt:0 "Invasion Traditions"
+
+ tr_ssp_invasion_finish: "REPLACE_ME"
+ tr_ssp_invasion_finish_delayed: "I dont know where this is used for so this is its name"
+ tr_ssp_invasion_finish_desc: "REPLACE_ME"
+ tr_ssp_invasion_finish_tooltip:0 "REPLACE_ME"
+
+ tr_ssp_invasion_1:0 "Improved Logistics"
+ tr_ssp_invasion_1_tt_txt:0 "Decreases the build speed of armies"
+ tr_ssp_invasion_1_tt:0 "$tr_ssp_invasion_1_tt_txt$"
+ tr_ssp_invasion_1_delayed:0 "REPLACE_ME"
+
+ tr_ssp_invasion_2:0 "Specialized Military Training"
+ tr_ssp_invasion_2_tt_txt:0 "+25% Army health n damage"
+ tr_ssp_invasion_2_tt:0 "$tr_ssp_invasion_2_tt_txt$"
+ tr_ssp_invasion_2_delayed:0 "REPLACE_ME"
+
+ tr_ssp_invasion_3:0 "Strategic Battleplans"
+ tr_ssp_invasion_3_tt_txt:0 "+10 Combat width"
+ tr_ssp_invasion_3_tt:0 "$tr_ssp_invasion_3_tt_txt$"
+ tr_ssp_invasion_3_delayed:0 "REPLACE_ME"
+
+ tr_ssp_invasion_4:0 "REPLACE_ME"
+ tr_ssp_invasion_4_tt_txt:0 "50% less resources for an army recruitment."
+ tr_ssp_invasion_4_tt:0 "$tr_ssp_invasion_4_tt_txt$"
+ tr_ssp_invasion_4_delayed:0 "REPLACE_ME"
+
+ tr_ssp_invasion_final_1:0 "Conscription Initiative"
+ tr_ssp_invasion_final_1_tt_txt:0 "Lowers the age to go into the army, Significantly boosts recruitment speed but also permanently lowers damage output."
+ tr_ssp_invasion_final_1_tt:0 "$tradition_warning1$\n\n$tr_ssp_invasion_final_1_tt_txt$"
+ tr_ssp_invasion_final_1_delayed:0 "REPLACE_ME"
+ #/
+ tr_ssp_invasion_final_1_disabled:0 "$tr_ssp_invasion_final_1$"
+ tr_ssp_invasion_final_1_disabled_tt:0 "$tradition_warning2$\n\n$tr_ssp_invasion_final_1_tt_txt$"
+ tr_ssp_invasion_final_1_disabled_delayed:0 "$tr_ssp_invasion_final_1_delayed$"
+
+ tr_ssp_invasion_final_2:0 "Extensive Operations" #+25 combat width or smt
+ tr_ssp_invasion_final_2_tt_txt:0 "REPLACE_ME"
+ tr_ssp_invasion_final_2_tt:0 "$tradition_warning1$\n\n$tr_ssp_invasion_final_2_tt_txt$"
+ tr_ssp_invasion_final_2_delayed:0 "REPLACE_ME"
+ #/
+ tr_ssp_invasion_final_2_disabled:0 "$tr_ssp_invasion_final_2$"
+ tr_ssp_invasion_final_2_disabled_tt:0 "$tradition_warning2$\n\n$tr_ssp_invasion_final_2_tt_txt$"
+ tr_ssp_invasion_final_2_disabled_delayed:0 "$tr_ssp_invasion_final_2_delayed$"
+
+ tr_ssp_invasion_final_3:0 "Chemical Warfare"
+ tr_ssp_invasion_final_3_tt_txt:0 "REPLACE_ME"
+ tr_ssp_invasion_final_3_tt:0 "$tradition_warning1$\n\n$tr_ssp_invasion_final_3_tt_txt$"
+ tr_ssp_invasion_final_3_delayed:0 "REPLACE_ME"
+ #/
+ tr_ssp_invasion_final_3_disabled:0 "$tr_ssp_invasion_final_3$"
+ tr_ssp_invasion_final_3_disabled_tt:0 "$tradition_warning2$\n\n$tr_ssp_invasion_final_3_tt_txt$"
+ tr_ssp_invasion_final_3_disabled_delayed:0 "$tr_ssp_invasion_final_3_delayed$"
+
+
+
+
+

@@ -1,8 +1,8 @@
-is_not_doing_one_planet_challenge = {
-    NOT = {
-        has_civic = civic_ssp_one_system_forced
-    }
-}
+#is_not_doing_one_planet_challenge = { why check if NOT has civic. You should check IF it has the civic instead -Foxy
+#    NOT = {
+#        has_civic = civic_ssp_one_system_forced
+#    }
+#}
 
 has_grand_reanimator = {
     has_ssp_reanimator_trait = yes
@@ -26,21 +26,6 @@ ssp_can_adopt_invasion = {
         OR = {
             has_tradition = tr_supremacy_finish
             has_tradition = tr_unyielding_finish
-        }
-        NOT = {
-            has_tradition = tr_tec_might_adopt
-       }
-    }
-}
-
-tec_can_adopt_might = { #evolved might tradition check
-    AND = {
-        OR = {
-            has_tradition = tr_supremacy_finish
-            has_tradition = tr_unyielding_finish
-        }
-        NOT = {
-            has_tradition = tr_ssp_invasion_adopt
         }
     }
 }
