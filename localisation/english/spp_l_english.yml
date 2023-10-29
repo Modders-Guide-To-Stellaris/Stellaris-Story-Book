@@ -264,8 +264,12 @@ civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §
  mod_hostile_operation_xenomorph_deployment_difficulty_mult_desc: "REPLACE_ME"
 
 ##############
-# Traditions -> Moved to ssp_traditions_l_english
+# Galaxy Shapes/Types
 ##############
+
+ #Types
+ mediocre:0 "Mediocre"
+ #Shapes
 
 ###########
 # Deposits
