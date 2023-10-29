@@ -1,0 +1,10 @@
+music = {
+    name = "maintheme10"
+    file = ssbtemp_maintheme.ogg
+    volume = 0.7
+}
+music = {
+    name = "overlord_menumusic"
+    file = "overlord_menumusic.ogg"
+    volume = 0.45
+}

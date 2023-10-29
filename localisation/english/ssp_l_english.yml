@@ -1,5 +1,5 @@
 ﻿l_english:
-
+#for anyone looking through the code and wondering why the files are labeled as 'SSP' it's because before Stellaris Story Book this project was named Stellaris Story Pack -Foxy
 ##############
 # Technology
 ##############
@@ -279,3 +279,6 @@ civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §
 #Make a random event that can only be triggered once.. when the colony hits 5 or 10 years or smt along those lines anyways.
 #ThatOneFoxy Factory, kill 5 pop. Etc.
 
+
+ ssp_version:0 "Version FOX-A1RA (§R10-29-2023§!)"
+ssp_version_tooltip:0 "This is a restricted build, you shouldn't be looking at this!"
