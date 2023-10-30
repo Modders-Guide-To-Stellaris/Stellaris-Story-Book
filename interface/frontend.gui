@@ -182,32 +182,30 @@ guiTypes = {
                 format = left
                 orientation = lower_left
             }
-            # Evolved version 310/1355
-            buttonType = {
-                name = "version_button"
-                quadTextureSprite = "GFX_invisible"
-                position = { x = 310 y = 21 }
-                size = { x = 450 y = 20 }
-                buttonFont = "cg_16b"
-                buttonText = "ssp_version"
-                pdx_tooltip = "ssp_version_tooltip"
-                format = left
-                oversound = mouse_over
-                web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=2992227470"
-            }
 
 
             buttonType = {
                 name = "version_button"
                 spriteType = "GFX_invisible"
-                size = { x = 450 y = 20 }
+                size = { x = 450 y = -70 }
                 position = { x = 310 y = 0 }
                 orientation = lower_left
                 no_clicksound = yes
             }
 
-            @button_large_width = 340
-            @button_large_height = 49 # Reduced by 1 pixel to avoid overlap
+            buttonType = {
+                name = "ssp_version_button"
+                quadTextureSprite = "GFX_invisible"
+                buttonFont = "cg_16b"
+                buttonText = "SSP_VERSION"
+                position = { x = 310 y = 20 }
+                size = { x = 380 y = 20 }
+                orientation = lower_left
+                format = left
+                pdx_tooltip = "SSP_VERSION_TOOLTIP"
+                oversound = mouse_over
+                web_link = "https://steamcommunity.com/sharedfiles/filedetails/?id=2992227470"
+            }
 
             containerWindowType = {
                 name = "buttons"
@@ -224,8 +222,8 @@ guiTypes = {
                     size = { width = @button_large_width height = 575 }
                 }
 
-#                @button_large_width = 340
-                #                @button_large_height = 49 # Reduced by 1 pixel to avoid overlap
+                @button_large_width = 340
+                @button_large_height = 49 # Reduced by 1 pixel to avoid overlap
 
                 containerWindowType = {
                     name = "start_game_container"
@@ -405,7 +403,6 @@ guiTypes = {
                 #	}
                 #}
 
-
                 containerWindowType = {
                     name = "settings_container"
                     position = { x = 0 y = 200 }
@@ -510,174 +507,41 @@ guiTypes = {
                         alwaysTransparent = yes
                     }
                 }
+#SSP Archive button TODO: DONT FORGET TO REMOVE THIS IN PUBLISHED VERSION
+                containerWindowType = {
+                    name = "ssp_version_container"
+                    position = { x = 0 y = 300 }
+                    size = { width = @button_large_width height = @button_large_height }
 
-                # OLD SYSTEM
-                #@old_x_txt = 787
-                ## -155
-                #@old_x_button = 771
-                ## -171
-                #@tec_newgame_x = 	560
-                #@tec_loadgame_x = 	770
-                #@tec_cogame_x = 	980
-                #@tec_mpgame_x = 	1190
-                #@tec_settings_x = 	1400
-                #@tec_exit_x = 		1610
-                #
-                #@tec_newgame_x_txt = 	630
-                #@tec_loadgame_x_txt = 	820
-                #@tec_cogame_x_txt = 	1010
-                #@tec_mpgame_x_txt = 	1200
-                #@tec_settings_x_txt = 	1410
-                #@tec_exit_x_txt = 		1620
-                #
-                #buttonType =	{
-                #	id = "start"
-                #	name = "start"
-                #	quadTextureSprite = "GFX_white_stripe_button"
-                #	position = { x= @tec_newgame_x  y = @old_x_button  }
-                #	shortCut = "n"
-                #	oversound = mouse_over
-                #	navRight = "multiplayer"
-                #	defaultSelection = yes
-                #	clicksound = confirm_click
-                #}
-                #instantTextBoxType={
-                #	name = "start_new_game"
-                #	font = "malgun_goth_24"
-                #	text = "FRONT_START"
-                #	position = { x= @tec_newgame_x_txt y = @old_x_txt }
-                #	maxWidth = 400
-                #	maxHeight = 35
-                #	fixedSize = yes
-                #	format = left
-                #	alwaysTransparent = yes
-                #}
-                #
-                ## Evolved Note: swapped load with multiplayer so sp block and mp block are separated
-                ## Makes sense no?
-                #buttonType =	{
-                #	id = "load"
-                #	name = "load"
-                #	quadTextureSprite = "GFX_white_stripe_button"
-                #	position = { x= @tec_loadgame_x y = @old_x_button  }
-                #	shortCut = "l"
-                #	oversound = mouse_over
-                #	navLeft = "multiplayer"
-                #	navRight = "credits"
-                #	clicksound = confirm_click
-                #}
-                #instantTextBoxType = {
-                #	name = "load_game_text"
-                #	font = "malgun_goth_24"
-                #	text = "FRONT_LOAD"
-                #	position = { x= @tec_loadgame_x_txt y = @old_x_txt  }
-                #	maxWidth = 400
-                #	maxHeight = 35
-                #	fixedSize = yes
-                #	format = left
-                #	alwaysTransparent = yes
-                #}
-                #
-                #buttonType =	{
-                #	id = "coop"
-                #	name = "coop"
-                #	quadTextureSprite = "GFX_white_stripe_button"
-                #	position = { x= @tec_cogame_x y = @old_x_button }
-                #	shortCut = "c"
-                #	oversound = mouse_over
-                #	navLeft = "multiplayer"
-                #	navRight = "load"
-                #	clicksound = confirm_click
-                #	pdx_tooltip = NAME_Beta
-                #}
-                #instantTextBoxType = {
-                #	name = "coop_player_text"
-                #	font = "malgun_goth_24"
-                #	text = "FRONT_COOP"
-                #	position = { x= @tec_cogame_x_txt y = @old_x_txt  }
-                #	maxWidth = 400
-                #	maxHeight = 35
-                #	fixedSize = yes
-                #	format = left
-                #	alwaysTransparent = yes
-                #}
-                #
-                #buttonType =	{
-                #	id = "multiplayer"
-                #	name = "multiplayer"
-                #	quadTextureSprite = "GFX_white_stripe_button"
-                #	position = { x= @tec_mpgame_x y = @old_x_button  }
-                #	shortCut = "m"
-                #	oversound = mouse_over
-                #	navLeft = "start"
-                #	navRight = "load"
-                #	clicksound = confirm_click
-                #}
-                #instantTextBoxType = {
-                #	name = "multi_player_text"
-                #	font = "malgun_goth_24"
-                #	text = "FRONT_MULTIPLAYER"
-                #	position = { x= @tec_mpgame_x_txt y = @old_x_txt  }
-                #	maxWidth = 400
-                #	maxHeight = 35
-                #	fixedSize = yes
-                #	format = left
-                #	alwaysTransparent = yes
-                #}
-                #
-                ##buttonType =	{
-                ##	id = "credits"
-                ##	name = "credits"
-                ##	quadTextureSprite = "GFX_main_menu_credits"
-                ##	position = { x= 157 y = -52  }
-                ##	pdx_tooltip = "CREDITS"
-                ##}
-                #
-                #buttonType =	{
-                #	id = "settings"
-                #	name = "settings"
-                #	quadTextureSprite = "GFX_white_stripe_button"
-                #	position = { x= @tec_settings_x y = @old_x_button  }
-                #	shortCut = "s"
-                #	oversound = mouse_over
-                #	navLeft = "credits"
-                #	navRight = "quit"
-                #	clicksound = confirm_click
-                #}
-                #instantTextBoxType = {
-                #	name = "settings_text"
-                #	font = "malgun_goth_24"
-                #	text = "FRONT_SETTINGS"
-                #	position = { x= @tec_settings_x_txt y = @old_x_txt }
-                #	maxWidth = 400
-                #	maxHeight = 35
-                #	fixedSize = yes
-                #	format = left
-                #	alwaysTransparent = yes
-                #}
-                #
-                #buttonType =	{
-                #	id = "quit"
-                #	name = "quit"
-                #	quadTextureSprite = "GFX_white_stripe_button"
-                #	position = { x= @tec_exit_x y = @old_x_button }
-                #	shortCut = "e"
-                #	oversound = mouse_over
-                #	navLeft = "settings"
-                #	actionShortCut = "cancel"
-                #}
-                #instantTextBoxType = {
-                #	name = "quit_text"
-                #	font = "malgun_goth_24"
-                #	text = "FRONT_QUIT"
-                #	position = { x= @tec_exit_x_txt y = @old_x_txt }
-                #	maxWidth = 400
-                #	maxHeight = 35
-                #	fixedSize = yes
-                #	format = left
-                #	alwaysTransparent = yes
-                #}
-                # /
+                    if_scaled_resolution = {
+                        min_height = 900
+
+                        position = { x = 0 y = 525 }
+                    }
+
+                    buttonType = {
+                        id = "ssp"
+                        name = "button"
+                        spriteType = "GFX_main_menu_button"
+                        position = { x = 0 y = 0 }
+                        size = { x = @button_large_width y = @button_large_height }
+                        oversound = mouse_over
+                        clicksound = confirm_click
+                    }
+
+                    instantTextBoxType = {
+                        name = "text"
+                        font = "jura"
+                        text = "FRONT_SSP"
+                        position = { x = 0 y = -5 }
+                        maxWidth = @button_large_width
+                        maxHeight = @button_large_height
+                        fixedSize = yes
+                        format = left
+                        vertical_alignment = center
+                        alwaysTransparent = yes
+                    }
+                }
             }
 
             iconType = {
@@ -704,53 +568,49 @@ guiTypes = {
 
         ### load save
         containerWindowType = {
-            name ="load_save"
-            position = { x=0 y=0 }
-            size = { width=1024 height=720 }
+            name = "load_save"
+            position = { x = 0 y = 0 }
+            size = { width = 1024 height = 720 }
             orientation = center
             origo = center
 
             instantTextBoxType = {
-
-                name ="title"
+                name = "title"
                 position = { x = 180 y = 40 }
                 textureFile = ""
                 font = "cg_16b"
-                borderSize = {x = 4 y = 4}
+                borderSize = { x = 4 y = 4 }
                 text = "FRONT_SAVE_GAMES"
                 Orientation = "UPPER_LEFT"
                 format = left
                 maxWidth = 200
                 maxHeight = 100
             }
-            buttonType =
-            {
+            buttonType = {
                 name = "launch"
                 quadTextureSprite = "GFX_button"
-                position = { x= -200 y = -200  }
+                position = { x = -200 y = -200 }
                 Orientation = "LOWER_RIGHT"
                 buttonText = "FRONT_LAUNCH"
                 buttonFont = "cg_16b"
             }
 
-            buttonType =
-            {
+            buttonType = {
                 name = "back"
                 quadTextureSprite = "GFX_button"
-                position = { x= -400 y = -200  }
+                position = { x = -400 y = -200 }
                 Orientation = "LOWER_RIGHT"
                 buttonText = "FRONT_BACK"
                 buttonFont = "cg_16b"
             }
 
-            listboxType =
-            {
-                name ="list"
-                position = { x=100 y =80}
-                size = { x=220 y =260}
+            listboxType = {
+                name = "list"
+                position = { x = 100 y = 80 }
+                size = { x = 220 y = 260}
                 horizontal = 0
                 scrollbartype = "standardlistbox_slider"
-                borderSize = {x = 20 y = 20}
+                borderSize = { x = 20 y = 20 }
                 Orientation = "UPPER_LEFT"
             }
         }
@@ -785,14 +645,14 @@ guiTypes = {
 
         ### DEBUG
         buttonType = {
-            name ="portrait_room"
+            name = "portrait_room"
             spriteType = "GFX_portrait_room"
             Orientation = "CENTER"
-            position = { x= -476 y= -10 }
+            position = { x = -476 y = -10 }
         }
 
         buttonType = {
-            name ="portrait_planet"
+            name = "portrait_planet"
             spriteType = "GFX_portrait_planet_character"
             Orientation = "CENTER"
             position = { x= -100 y= -320 }

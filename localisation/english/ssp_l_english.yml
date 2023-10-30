@@ -269,6 +269,8 @@ civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §
 
  #Types
  mediocre:0 "Mediocre"
+
+
  #Shapes
 
 ###########
@@ -280,5 +282,13 @@ civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §
 #ThatOneFoxy Factory, kill 5 pop. Etc.
 
 
- ssp_version:0 "Version FOX-A1RA (§R10-29-2023§!)"
-ssp_version_tooltip:0 "This is a restricted build, you shouldn't be looking at this!"
+#SSP Button controls.. Adding on a later date.
+ #if I figure out how make it that is.
+SSP:0 "SSP"
+ FRONT_SSP:0 "§RUnused§"
+
+ #Version thingie
+ SSP_VERSION_BUTTON:0 "Version"
+ SSP_VERSION:0 "Story Book Version: FOX-A1RA (§R10-30-2023§!)"
+ #Naming system: FOX=Foxy SON=Soncio, / A=Alpha B=Beta R=Release, / RA=Restricted Access 
+SSP_VERSION_TOOLTIP:0 "This is a restricted build, you shouldn't be looking at this!"
