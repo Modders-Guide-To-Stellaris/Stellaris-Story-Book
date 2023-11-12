@@ -290,5 +290,5 @@ SSP:0 "SSP"
  #Version thingie
  SSP_VERSION_BUTTON:0 "Version"
  SSP_VERSION:0 "Story Book Version: FOX-A1RA (§R10-30-2023§!)"
- #Naming system: FOX=Foxy SON=Soncio, / A=Alpha B=Beta R=Release, / RA=Restricted Access 
+ #Naming system: FOX=Foxy SON=Soncio, / A=Alpha B=Beta R=Release, / RA=Restricted Access
 SSP_VERSION_TOOLTIP:0 "This is a restricted build, you shouldn't be looking at this!"
