@@ -2,4 +2,4 @@ farmer_production_value = {
     base = $BASE$
     add = modifier:planet_farmers_food_produces_add
     mult = value:job_total_output_modifier|JOB|farmer|RESOURCE|food|
-}
+}#idk if this is actually used anymore. Might have soncio take a glance at this.

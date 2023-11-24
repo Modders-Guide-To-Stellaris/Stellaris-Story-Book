@@ -126,9 +126,6 @@ ssp_semichki_response.B2:0 "GENERIC RESPONSE B"
 ssp_semichki_response.C1:0 "Why is your chair broken?"
 ssp_semichki_response.C2:0 "I fell asleep after passing out. Completely normal here lad."
 
- #Strange Remnant
-ssp_colony.100.name:0 "Abandoned Complex"
- ssp_relic.100.desc:0 "Da da dum dum dum dum, dum dum dum diddly doom doom doom, diddly doom, dum dum diddly dum dum dum dum diddly dum dum dum dum dum. "
 
 
 ###########
@@ -194,19 +191,6 @@ civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §
 #########
 # Jobs
 #########
-
- #Explorer
- job_ssp_explorer:0 "Explorer"
- job_ssp_explorer_plural:0 "Explorers"
- job_ssp_explorer_desc:0 "FOXY PLACEHOLDER"
- mod_job_ssp_explorer_add:0 "adds $job_ssp_explorer_worker$"
- job_ssp_explorer_drone:0 "Surveyor Drone"
- job_ssp_explorer_drone_plural:0 "Surveyor Drones"
- job_ssp_explorer_drone_desc:0 "FOXY PLACEHOLDER"
- mod_job_ssp_explorer_drone_add:0 "adds $job_ssp_explorer_drone$"
-
-
-
 
 ###########
 # LEADERS
@@ -276,19 +260,14 @@ civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §
 ###########
 # Deposits
 ###########
- d_ssp_strange_remnant_ruins:0 "Entertainment Hall Ruins"
-###NOTE FOR FOXY, BY FOXY:
-#Make a random event that can only be triggered once.. when the colony hits 5 or 10 years or smt along those lines anyways.
-#ThatOneFoxy Factory, kill 5 pop. Etc.
-
 
 #SSP Button controls.. Adding on a later date.
  #if I figure out how make it that is.
 SSP:0 "SSP"
- FRONT_SSP:0 "§RUnused§"
+ #FRONT_SSP:0 "§RUnused§"
 
  #Version thingie
  SSP_VERSION_BUTTON:0 "Version"
- SSP_VERSION:0 "Story Book Version: FOX-A1RA (§R10-30-2023§!)"
+ SSP_VERSION:0 "Story Book Version: FOX-A1RA (§R11-24-2023§!)" #todo: update this to FOX-A1R (§R11-24-2023§!) when update push
  #Naming system: FOX=Foxy SON=Soncio, / A=Alpha B=Beta R=Release, / RA=Restricted Access
 SSP_VERSION_TOOLTIP:0 "This is a restricted build, you shouldn't be looking at this!"

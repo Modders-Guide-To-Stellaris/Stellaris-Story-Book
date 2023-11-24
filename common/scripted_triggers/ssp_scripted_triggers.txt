@@ -7,7 +7,7 @@
 has_grand_reanimator = {
     has_ssp_reanimator_trait = yes
 }
-#dont check for a trait, but for a flag
+#dont check for a trait, but for a flag TODO
 has_ssp_reanimator_trait = {
     has_trait = ssp_destiny_genpar
 }

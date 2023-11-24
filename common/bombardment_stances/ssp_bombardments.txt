@@ -5,7 +5,7 @@ chemical_warfare = {
         }
     }
 
-
+#todo: fix this.
 
     default = no
 

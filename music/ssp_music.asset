@@ -1,5 +1,5 @@
 music = {
-    name = "fnaf_maintheme"
-    file = "fnaf_maintheme.ogg"
+    name = ""
+    file = ""
     volume = 1.0
 }

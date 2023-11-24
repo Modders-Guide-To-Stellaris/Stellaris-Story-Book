@@ -427,7 +427,7 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
                 }
             }
             create_leader = {
-                class = general
+                class = commander
                 species = event_target:semichki_species
                 name = "NAME_Semichki_leader"
                 skill = 8
@@ -453,7 +453,7 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
                 }
                 traits = {
                     trait = ssp_destiny_genpar #Destiny trait
-                    trait = subclass_general_marshall
+                    trait = subclass_commander_admiral
                     trait = leader_trait_home_guard_3
                     trait = ssp_trait_alcoholic
                     trait = leader_trait_armchair_commander
@@ -542,7 +542,7 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
             }
         }
     }
-#these doesn't actually give the Leader XDDDDDD
+#todo: should be fixed. if not. yellow text here just incase
     option = {
         name = ssp_semichki_response.A1
         response_text =  ssp_semichki_response.A2
