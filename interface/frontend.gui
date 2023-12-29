@@ -509,40 +509,40 @@ guiTypes = {
                 }
 #SSP Archive button TODO: DONT FORGET TO REMOVE THIS IN PUBLISHED VERSION
 #                containerWindowType = {
-                #                    name = "ssp_version_container"
-                #                    position = { x = 0 y = 300 }
-                #                    size = { width = @button_large_width height = @button_large_height }
+                #                                    name = "ssp_version_container"
+                #                                    position = { x = 0 y = 300 }
+                #                                    size = { width = @button_large_width height = @button_large_height }
                 #
-                #                    if_scaled_resolution = {
-                #                        min_height = 900
+                #                                    if_scaled_resolution = {
+                #                                        min_height = 900
                 #
-                #                        position = { x = 0 y = 525 }
-                #                    }
+                #                                        position = { x = 0 y = 525 }
+                #                                    }
                 #
-                #                    buttonType = {
-                #                        id = "ssp"
-                #                        name = "button"
-                #                        spriteType = "GFX_main_menu_button"
-                #                        position = { x = 0 y = 0 }
-                #                        size = { x = @button_large_width y = @button_large_height }
-                #                        oversound = mouse_over
-                #                        clicksound = confirm_click
-                #                    }
+                #                                    buttonType = {
+                #                                        id = "ssp"
+                #                                        name = "button"
+                #                                        spriteType = "GFX_main_menu_button"
+                #                                        position = { x = 0 y = 0 }
+                #                                        size = { x = @button_large_width y = @button_large_height }
+                #                                        oversound = mouse_over
+                #                                        clicksound = confirm_click
+                #                                    }
                 #
-                #                    instantTextBoxType = {
-                #                        name = "text"
-                #                        font = "jura"
-                #                        text = "FRONT_SSP"
-                #                        position = { x = 0 y = -5 }
-                #                        maxWidth = @button_large_width
-                #                        maxHeight = @button_large_height
-                #                        fixedSize = yes
-                #                        format = left
-                #                        vertical_alignment = center
-                #                        alwaysTransparent = yes
-                #                    }
-                #                }
-                #            }
+                #                                    instantTextBoxType = {
+                #                                        name = "text"
+                #                                        font = "jura"
+                #                                        text = "FRONT_SSP"
+                #                                        position = { x = 0 y = -5 }
+                #                                        maxWidth = @button_large_width
+                #                                        maxHeight = @button_large_height
+                #                                        fixedSize = yes
+                #                                        format = left
+                #                                        vertical_alignment = center
+                #                                        alwaysTransparent = yes
+                #                                    }
+                #                                }
+                            }
 
             iconType = {
                 name = "engine_logo"

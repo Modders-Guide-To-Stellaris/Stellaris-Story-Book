@@ -1,6 +1,6 @@
 music = {
     name = "maintheme10"
-    file = ssbtemp_maintheme.ogg
+    file = "Gracefully Into The Story's Abyss.ogg"
     volume = 0.8
 }
 music = {
