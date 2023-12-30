@@ -35,7 +35,6 @@ country_event = {
             owner = {
                 country_event = { id = ssp_random_country.102 }
                 remove_modifier = capital_protests
-                set_policy = { policy = orbital_bombardment option = orbital_bombardment_selective }
             }
         }
     }
@@ -54,8 +53,9 @@ country_event = {
         name = ssp_pacifistdemands_name
         hidden_effect = {
             shift_ethic = "ethic_pacifist"
-            add_modifier = { modifier = former_war_criminal }
             remove_modifier = capital_protests
+            add_modifier = { modifier = former_war_criminal }
+            set_policy = { policy = orbital_bombardment option = orbital_bombardment_selective }
         }
     }
 }
