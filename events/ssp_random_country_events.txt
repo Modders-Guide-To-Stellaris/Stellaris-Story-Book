@@ -54,6 +54,7 @@ country_event = {
         hidden_effect = {
             shift_ethic = "ethic_pacifist"
             remove_modifier = capital_protests
+            remove_country_flag = warcrime_protests
             add_modifier = { modifier = former_war_criminal }
             set_policy = { policy = orbital_bombardment option = orbital_bombardment_selective }
         }

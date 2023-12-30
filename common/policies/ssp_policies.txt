@@ -133,7 +133,10 @@ orbital_bombardment = {
         }
 
         potential = {
-            has_tradition = tr_ssp_invasion_final_3
+            AND = {
+                has_tradition = tr_ssp_invasion_final_3
+                NOT = { has_}
+            }
         }
 
         policy_flags = {
