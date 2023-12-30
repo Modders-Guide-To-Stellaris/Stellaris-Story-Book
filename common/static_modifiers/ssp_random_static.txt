@@ -4,9 +4,9 @@ capital_protests = {
 }
 
 crushing_the_opposition = {
-    pop_happiness = -0.25
+    pop_growth_speed = -0.05
     country_produces_mult = 0.05
-    planet_crime_mult = -0.75 #should this not work, just make it seperate
+    planet_crime_mult = -0.75 #should this not work, just make it separate
 }
 
 former_war_criminal = {

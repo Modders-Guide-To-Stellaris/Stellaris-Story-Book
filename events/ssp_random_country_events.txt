@@ -10,10 +10,13 @@ country_event = {
 
     immediate = {
         add_modifier = { modifier = capital_protests years = 1 }
+        set_timed_country_flag = { flag = warcrime_protests days = 7500 }
     }
+
     trigger = {
-        owner = {
-            has_policy_flag = orbital_bombardment_chemical
+        AND = {
+            owner = { has_policy_flag = orbital_bombardment_chemical }
+            NOT = { has_country_flag = warcrime_protests}
         }
     }
 
@@ -32,6 +35,7 @@ country_event = {
             owner = {
                 country_event = { id = ssp_random_country.102 }
                 remove_modifier = capital_protests
+                set_policy = { policy = orbital_bombardment option = orbital_bombardment_selective }
             }
         }
     }
