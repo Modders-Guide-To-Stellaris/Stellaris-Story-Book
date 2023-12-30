@@ -5,8 +5,6 @@ chemical_warfare = {
         }
     }
 
-#todo: fix this.
-
     default = no
 
     stop_when_armies_dead = no

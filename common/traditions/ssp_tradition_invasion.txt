@@ -306,7 +306,7 @@ tr_ssp_invasion_final_2 = {
         add_tradition = tr_ssp_invasion_finish
         hidden_effect = {
             country_event = {
-                id = tec_tradition.530
+                id = tec_tradition.530 #evolved compat stuff
             }
         }
     }
@@ -338,9 +338,19 @@ tr_ssp_invasion_final_2 = {
 tr_ssp_invasion_final_3 = {
     possible = {
         has_tradition = tr_ssp_invasion_4
-        NOR = {
-            has_tradition = tr_ssp_invasion_final_1
-            has_tradition = tr_ssp_invasion_final_2
+        AND = {
+            NOR = {
+                has_tradition = tr_ssp_invasion_final_1
+                has_tradition = tr_ssp_invasion_final_2
+            }
+            NOR = {
+            has_ethic = ethic_xenophile
+            has_ethic = ethic_fanatic_xenophile
+            has_ethic = ethic_pacifist
+            has_ethic = ethic_fanatic_pacifist
+            is_galactic_custodian = yes
+            has_galactic_emperor = yes
+            }
         }
     }
 

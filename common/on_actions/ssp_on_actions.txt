@@ -29,8 +29,14 @@ on_monthly_pulse_country = {
         ssp_relic.300
         ssp_relic.301
         ssp_relic.400
+
+    }
+    random_events = {
+        99 = ssp_random_country.100
     }
 }
+
+
 
 on_entering_system_fleet = {
     events = {

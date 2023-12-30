@@ -1,0 +1,78 @@
+namespace = ssp_random_country
+
+country_event = {
+    id = ssp_random_country.100
+    title = ssp_random_country_100.name
+    #picture =
+    desc = ssp_random_country_100.desc
+
+    is_triggered_only = yes
+
+    immediate = {
+        add_modifier = { modifier = capital_protests years = 1 }
+    }
+    trigger = {
+        owner = {
+            has_policy_flag = orbital_bombardment_chemical
+        }
+    }
+
+    option = {
+        name = ssp_warcrime_name_A
+        hidden_effect = {
+            owner = {
+                country_event = { id = ssp_random_country.101 }
+            }
+        }
+    }
+
+    option = {
+        name = ssp_warcrime_name_B
+        hidden_effect = {
+            owner = {
+                country_event = { id = ssp_random_country.102 }
+                remove_modifier = capital_protests
+            }
+        }
+    }
+}
+
+#accept demands
+country_event = {
+    id = ssp_random_country.101
+    title = ssp_random_country_101.Name
+    #picture =
+    desc = ssp_random_country_101.Desc
+
+    is_triggered_only = yes
+
+    option = {
+        name = ssp_pacifistdemands_name
+        hidden_effect = {
+            shift_ethic = "ethic_pacifist"
+            add_modifier = { modifier = former_war_criminal }
+            remove_modifier = capital_protests
+        }
+    }
+}
+
+#iron fist
+country_event = {
+    id = ssp_random_country.102
+    title = ssp_random_country_102.Name
+    #picture =
+    desc = ssp_random_country_102.Desc
+
+    is_triggered_only = yes
+
+    option = {
+        name = ssp_ironfist_name
+        hidden_effect = {
+            every_controlled_planet = {
+                add_modifier = { modifier = crushing_the_opposition years = 1 }
+            }
+            add_modifier = { modifier = capital_protests days = 45 }
+            add_modifier = { modifier = opinion_disrespected years = 1 }
+        }
+    }
+}

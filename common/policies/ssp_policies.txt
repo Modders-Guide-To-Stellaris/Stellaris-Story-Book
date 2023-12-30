@@ -2,7 +2,7 @@ orbital_bombardment = {
 
     potential = {
         OR = {
-            tec_is_default_country = yes
+            is_Country_type = default
             is_country_type = vol
         }
     }
@@ -55,7 +55,6 @@ orbital_bombardment = {
             NOR = {
                 has_ethic = "ethic_pacifist"
                 has_ethic = "ethic_fanatic_pacifist"
-                has_valid_civic = "civic_tec_regular_peacekeepers"
             }
         }
         AI_weight = {
@@ -115,7 +114,7 @@ orbital_bombardment = {
             }
         }
     }
-    option = {
+    option = { #CHEMICAL!!!
         name = "orbital_bombardment_chemical"
 
         in_breach_of = {
@@ -135,17 +134,16 @@ orbital_bombardment = {
 
         potential = {
             has_tradition = tr_ssp_invasion_final_3
-            # has_valid_civic = civic_fanatic_purifiers
-            #                has_valid_civic = civic_machine_terminator
-            #                # Evolved
-            #                has_origin = origin_post_apocalyptic
-
         }
 
         policy_flags = {
             orbital_bombardment_chemical
         }
-        modifier = {}
+        modifier = {
+            diplo_weight_mult = -2.5
+            country_trust_growth = -0.25
+            biological_pop_happiness = -0.1
+        }
 
         AI_weight = {
             modifier = {

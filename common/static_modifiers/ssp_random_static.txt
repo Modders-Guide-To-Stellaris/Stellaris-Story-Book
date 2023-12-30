@@ -1,0 +1,14 @@
+capital_protests = {
+    country_produces_mult = -0.10
+    planet_stability_add = -15
+}
+
+crushing_the_opposition = {
+    pop_happiness = -0.25
+    country_produces_mult = 0.05
+    planet_crime_mult = -0.75 #should this not work, just make it seperate
+}
+
+former_war_criminal = {
+    diplo_weight_mult = -0.5
+}

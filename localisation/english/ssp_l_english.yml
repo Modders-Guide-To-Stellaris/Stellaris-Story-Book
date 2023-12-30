@@ -119,6 +119,20 @@ ssp_relic.598.desc:0 "placeholder"
 ssp_relic.599.name:0 "placeholder"
 ssp_relic.599.desc:0 "placeholder"
 
+ ssp_random_country_100.name: "Pacifism protests in the capital!"
+ ssp_random_country_100.desc: "placeholder"
+ ssp_warcrime_name_A: "We shall join the pacifists"
+ ssp_warcrime_name_B: "Protests? Dispatch the military!"
+
+ ssp_random_country_102.Name: "placeholder"
+ ssp_random_country_102.Desc: "placeholder"
+ ssp_pacifistdemands_name: "We shall sign these demands"
+
+ ssp_random_country_102.Name: "placeholder"
+ ssp_random_country_102.Desc: "placeholder"
+ ssp_ironfist_name: "Punish them swiftly... Show no mercy."
+
+
 ssp_semichki_response.A1:0 "Who are you?"
 ssp_semichki_response.A2:0 "RESPONSE A"
 ssp_semichki_response.B1:0 "State your purpose"
@@ -268,6 +282,6 @@ SSP:0 "SSP"
 
  #Version thingie
  SSP_VERSION_BUTTON:0 "Version"
- SSP_VERSION:0 "Story Book Version: FOX-A1R (§R11-24-2023§!)" #todo: update this to FOX-A1RA (§R11-24-2023§!) when update de-push
+ SSP_VERSION:0 "Story Book Version: FOX-A1R (§R12-30-2023§!)" #todo: update this to FOX-A1RA (§R11-24-2023§!) when update de-push
  #Naming system: FOX=Foxy SON=Soncio, / A=Alpha B=Beta R=Release, / RA=Restricted Access
 SSP_VERSION_TOOLTIP:0 "Experimental build, I have a little bit more to do but just wanted to get a small patch out for 3.10 if there are any issues please tell me."

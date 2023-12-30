@@ -57,7 +57,7 @@
  tr_ssp_invasion_final_3:0 "Chemical Warfare"
  tr_ssp_invasion_final_3_tt_txt:0 "unlocks the §BChemical Warfare§! bombarding stance"
  tr_ssp_invasion_final_3_tt:0 "$tradition_warning1$\n\n$tr_ssp_invasion_final_3_tt_txt$"
- tr_ssp_invasion_final_3_delayed:0 "Our scientists have found a cheap way to create war chemical. It's not a war crime if you're the victor."
+ tr_ssp_invasion_final_3_delayed:0 "Our scientists have found a cheap way to create chemicals for war-based purposes. It's not a war crime if you're the victor."
  #/
  tr_ssp_invasion_final_3_disabled:0 "$tr_ssp_invasion_final_3$"
  tr_ssp_invasion_final_3_disabled_tt:0 "$tradition_warning2$\n\n$tr_ssp_invasion_final_3_tt_txt$"
