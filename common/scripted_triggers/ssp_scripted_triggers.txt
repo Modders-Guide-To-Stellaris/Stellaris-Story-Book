@@ -30,11 +30,3 @@ ssp_can_adopt_invasion = {
     }
 }
 
-ssp_warcrimes_denied = {
-    OR = {
-        has_ethic = ethic_xenophile
-        has_ethic = ethic_fanatic_xenophile
-        has_ethic = ethic_pacifist
-        has_ethic = ethic_fanatic_pacifist
-    }
-}

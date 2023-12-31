@@ -12,3 +12,7 @@ crushing_the_opposition = {
 former_war_criminal = {
     diplo_weight_mult = -0.5
 }
+
+war_criminal = {
+    diplo_weight_mult = -1
+}
