@@ -132,6 +132,9 @@ ssp_relic.599.desc:0 "placeholder"
  ssp_random_country_102.Desc: "placeholder"
  ssp_ironfist_name: "Punish them swiftly... Show no mercy."
 
+ ssp_random_country_1041.Name: "Notice from the Intergalatic Council"
+ ssp_random_country_1041.Desc: "WAAAAAAAAA"
+
 
 ssp_semichki_response.A1:0 "Who are you?"
 ssp_semichki_response.A2:0 "RESPONSE A"

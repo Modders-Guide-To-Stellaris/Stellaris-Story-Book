@@ -84,21 +84,58 @@ country_event = {
 country_event = {
     id = ssp_random_country.104
     hide_window = yes
+
     is_triggered_only = yes
 
     trigger = {
-        last_changed_policy = orbital_bombardment
-        has_policy_flag = orbital_bombardment_chemical
-    }
+        AND = {
+            last_changed_policy = orbital_bombardment
+            has_policy_flag = orbital_bombardment_chemical
+                NOR = {
+                    is_galactic_council_established = yes
+                    has_galactic_custodian = yes
+                    has_galactic_emperor = yes
+                }
+            }
+        }
+
     immediate = {
         add_modifier = { modifier = war_criminal }
         set_country_flag = warcriminaltrue
     }
 }
 
+#intergalaticdenounced
+country_event = {
+    id = ssp_random_country.1041
+    title = ssp_random_country_1041.Name
+    desc = ssp_random_country_1041.Desc
+
+    is_triggered_only = yes
+
+    trigger = {
+        AND = {
+            last_changed_policy = orbital_bombardment
+            has_policy_flag = orbital_bombardment_chemical
+            OR = {
+                is_galactic_council_established = yes
+                has_galactic_custodian = yes
+                has_galactic_emperor = yes
+            }
+        }
+    }
+    immediate = {
+        remove_modifier = war_criminal
+        add_modifier = { modifier = intergalactic_war_criminal }
+        set_country_flag = warcriminaltrue
+    }
+}
+
+
 country_event = {
     id = ssp_random_country.105
     hide_window = yes
+
     is_triggered_only = yes
 
     trigger = {
@@ -108,8 +145,30 @@ country_event = {
     }
     immediate = {
         remove_modifier = war_criminal
+        remove_modifier = intergalactic_war_criminal
         remove_country_flag = warcriminaltrue
         add_modifier = { modifier = former_war_criminal }
+    }
+}
+
+
+
+#??
+country_event = {
+    id = ssp_random_country.200
+    title = ssp_random_country_200.Name
+    desc = ssp_random_country_200.Desc
+
+    is_triggered_only = yes
+
+    trigger = {}
+
+    option = {
+        name = ssp_random_country_200A.Name
+    }
+
+    option = {
+        name = ssp_random_country_200B.Name
     }
 }
 

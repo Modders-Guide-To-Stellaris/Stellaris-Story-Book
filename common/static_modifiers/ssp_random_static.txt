@@ -1,4 +1,5 @@
 capital_protests = {
+    country_unity_produces_mult = 0.5 #I mean they are rallying together so... Yeah unity..
     country_produces_mult = -0.10
     planet_stability_add = -15
 }
@@ -15,4 +16,10 @@ former_war_criminal = {
 
 war_criminal = {
     diplo_weight_mult = -1
+}
+
+intergalactic_war_criminal = {
+    diplo_weight_mult = -1
+    country_influence_cost_mult = 0.25
+    country_influence_produces_mult = -0.25
 }
