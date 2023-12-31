@@ -1,5 +1,5 @@
 namespace = ssp_random_country
-
+#Chemical Warfare Stuff
 country_event = {
     id = ssp_random_country.100
     title = ssp_random_country_100.name
@@ -10,7 +10,6 @@ country_event = {
 
     immediate = {
         add_modifier = { modifier = capital_protests years = 1 }
-        add_modifier = { modifier = war_criminal }
         set_timed_country_flag = { flag = warcrime_protests days = 7500 }
     }
 
@@ -54,10 +53,8 @@ country_event = {
         name = ssp_pacifistdemands_name
         hidden_effect = {
             shift_ethic = "ethic_pacifist"
-            remove_modifier = war_criminal
             remove_modifier = capital_protests
             remove_country_flag = warcrime_protests
-            add_modifier = { modifier = former_war_criminal }
             set_policy = { policy = orbital_bombardment option = orbital_bombardment_selective }
         }
     }
@@ -83,3 +80,36 @@ country_event = {
         }
     }
 }
+#Warcriminal onpolicychanged auto
+country_event = {
+    id = ssp_random_country.104
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        last_changed_policy = orbital_bombardment
+        has_policy_flag = orbital_bombardment_chemical
+    }
+    immediate = {
+        add_modifier = { modifier = war_criminal }
+        set_country_flag = warcriminaltrue
+    }
+}
+
+country_event = {
+    id = ssp_random_country.105
+    hide_window = yes
+    is_triggered_only = yes
+
+    trigger = {
+        last_changed_policy = orbital_bombardment
+        has_country_flag = warcriminaltrue
+        NOT = { has_policy_flag = orbital_bombardment_chemical }
+    }
+    immediate = {
+        remove_modifier = war_criminal
+        remove_country_flag = warcriminaltrue
+        add_modifier = { modifier = former_war_criminal }
+    }
+}
+
