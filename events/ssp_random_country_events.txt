@@ -10,6 +10,7 @@ country_event = {
 
     immediate = {
         add_modifier = { modifier = capital_protests years = 1 }
+        add_modifier = { modifier = war_criminal }
         set_timed_country_flag = { flag = warcrime_protests days = 7500 }
     }
 
