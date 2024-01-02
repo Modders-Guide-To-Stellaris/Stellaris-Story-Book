@@ -9,3 +9,8 @@
  intergalactic_war_criminal_desc: "An empire was has been denounced for their evil deeds by the galactic council."
  capital_protests: "Capital Protests"
  capital_protests_desc: "People are leaving work and protesting our use of Chemical weapons!"
+
+ mod_operation_xenomorph_deployment_skill_add: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_skill_add_desc: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_skill_mult: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_skill_mult_desc: "REPLACE_ME"

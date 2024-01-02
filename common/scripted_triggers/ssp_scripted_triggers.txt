@@ -30,3 +30,9 @@ ssp_can_adopt_invasion = {
     }
 }
 
+
+ssp_xeno_valid_target = {
+    any_owned_fleet = {
+        count_controlled_ship = { count >= 20 }
+    }
+}

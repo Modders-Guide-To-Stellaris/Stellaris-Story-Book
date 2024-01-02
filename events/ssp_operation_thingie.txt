@@ -1,0 +1,128 @@
+namespace = operation
+
+operation_random_events_ssp_alien = {
+    random_list = {
+        2 = { #Contact Lost
+            modifier = {
+                factor = 0.1
+                has_country_flag = recent_op_contact_lost
+            }
+            country_event = { id = operation.5000 }
+        }
+        1 = { #Spooked
+            modifier = {
+                factor = 0.1
+                has_country_flag = recent_op_operative_spooked
+            }
+            country_event = { id = operation.5005 }
+        }
+        1 = { #Snuffed Out
+            modifier = {
+                factor = 0
+                root.target = {
+                    NOR = {
+                        has_valid_civic = civic_fanatic_purifiers
+                        has_origin = origin_necrophage
+                    }
+                }
+            }
+            modifier = {
+                factor = 0.1
+                has_country_flag = recent_op_snuffed_out
+            }
+            country_event = { id = operation.5035 }
+        }
+        1 = { #Drain on Resources
+            modifier = {
+                factor = 0.3
+                has_country_flag = recent_op_drain_resources
+                OR = { #Criminal Assets skew the usual time-out
+                    root = { has_espionage_asset_criminal = yes }
+                    root.spynetwork = { has_espionage_asset_criminal = yes }
+                }
+            }
+            modifier = {
+                factor = 0.1
+                has_country_flag = recent_op_drain_resources
+                NOR = {
+                    root = { has_espionage_asset_criminal = yes }
+                    root.spynetwork = { has_espionage_asset_criminal = yes }
+                }
+            }
+            country_event = { id = operation.5040 }
+        }
+        1 = { #Operative Defects
+            modifier = {
+                factor = 0
+                root.target = { is_homicidal = yes }
+            }
+            modifier = {
+                factor = 0.1
+                has_country_flag = recent_op_operative_defects
+            }
+            country_event = { id = operation.5045 }
+        }
+        1 = { #Confidence Wavers
+            modifier = {
+                factor = 0.1
+                has_country_flag = recent_op_confidence_wavers
+            }
+            country_event = { id = operation.5055 }
+        }
+    }
+}
+
+# Regular empire acting upon a gestalt empire
+# country (operation owner) scope | root = operation; from = target
+operation_random_events_regular_gestalt = {
+    random_list = {
+        1 = { #Contact Lost
+            modifier = {
+                factor = 0.1
+                has_country_flag = recent_op_contact_lost
+            }
+            country_event = { id = operation.5000 }
+        }
+        1 = { #Apprehended by Hunter-Seeker Drones
+            modifier = {
+                factor = 0.1
+                has_country_flag = recent_op_apprehended_by_drones
+            }
+            country_event = { id = operation.5010 }
+        }
+        1 = { #Snuffed Out
+            modifier = {
+                factor = 0
+                root.target = {
+                    OR = {
+                        has_valid_civic = civic_hive_empath
+                        has_valid_civic = civic_machine_servitor
+                    }
+                }
+            }
+            modifier = {
+                factor = 0.1
+                has_country_flag = recent_op_snuffed_out
+            }
+            country_event = { id = operation.5035 }
+        }
+        1 = { #Operative Defects
+            modifier = {
+                factor = 0
+                root.target = { is_homicidal = yes }
+            }
+            modifier = {
+                factor = 0.1
+                has_country_flag = recent_op_operative_defects
+            }
+            country_event = { id = operation.5045 }
+        }
+        1 = { #Confidence Wavers
+            modifier = {
+                factor = 0.1
+                has_country_flag = recent_op_confidence_wavers
+            }
+            country_event = { id = operation.5055 }
+        }
+    }
+}

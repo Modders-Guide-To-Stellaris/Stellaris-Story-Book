@@ -1,0 +1,50 @@
+namespace = ssp_operation
+
+
+
+#if the operation fails == stage 2 then make it so that it spawns a fleet in your territory of around ~5k that harbors the alien-- so give it the alien flag and when you kill it it also destroys your fleet or something I guess... something along those lines
+#if the operation fails == stage 4 then make it so that it spawns a fleet in the target's territory xD I mean... This is a risky operation :D
+#ssp_operation.100 = Alien Isolation
+
+#find help/get paperwork done
+espionage_operation_event = {
+    id = ssp_operation.101
+    title = ssp_placeholder_text
+    desc = ssp_placeholder_text
+
+    is_triggered_only = yes
+
+    immediate = {
+        target = {
+
+        }
+        owner = {
+            country_event = { id = ssp_random_country.100 }
+        }
+    }
+}
+#transport specimen onboard // FAIL OPPERTUNITY
+espionage_operation_event = {
+    id = ssp_operation.102
+    title = ssp_placeholder_text
+    desc = ssp_placeholder_text
+}
+#infiltrate country
+espionage_operation_event = {
+    id = ssp_operation.103
+    title = ssp_placeholder_text
+    desc = ssp_placeholder_text
+}
+#transport specimen in target country // FAIL OPPERTUNITY
+espionage_operation_event = {
+    id = ssp_operation.104
+    title = ssp_placeholder_text
+    desc = ssp_placeholder_text
+}
+#finish
+espionage_operation_event = {
+    id = ssp_operation.105
+    title = ssp_placeholder_text
+    desc = ssp_placeholder_text
+}
+

@@ -9,95 +9,69 @@
 @diff_t7 = 11
 @diff_t8 = 12
 @diff_t9 = 13
+#make it so that you target a random planet on the start of this, like you say you leave it to the operative to figure out the best course of action with the infiltrant. Less risk.
+
 
 operation_xenomorph_deployment = {
     categories = { op_cat_bioweapons op_cat_military }
-    picture = GFX_evt_space_station
-    desc = {
-        trigger = { has_overlord_dlc = no }
-        text = operation_sabotage_starbase_desc
-    }
-    desc = {
-        trigger = { has_overlord_dlc = yes }
-        text = operation_sabotage_starbase_orbring_desc
-    }
+    picture = GFX_evt_pirate_armada
+    desc = operation_arm_privateers_desc
     stages = 3
+    spy_power_cost = 60
 
     resources = {
         category = operations
         cost = {
-            influence = 150
-            minor_artifacts = 50
+            influence = 250
         }
         upkeep = {
             society_research = 500
         }
     }
 
-    spy_power_cost = 90
-    target = country
-
     potential = {
-       owner = {
-           has_relic = ssp_r_xenomorph_queen
-       }
+        owner = { has_relic = ssp_r_xenomorph_queen }
+        target = { is_primitive = no }
     }
     allow = {
         custom_tooltip = {
-            fail_text = operation_sabotage_starbase_no_targets
-            target = {
-                any_owned_planet = {
-                }
-            }
+            fail_text = operation_arm_privateers_existing_activity
+            target = { NOT = { has_country_flag = target_of_alien } }
         }
         custom_tooltip = {
             is_running_espionage_operation = no
             fail_text = operation_one_at_a_time
         }
-    } #dont make it so you can target a starbase.
-    #if possible make it so you can choose a planet otherwise make it a random.
-    target_allow = {
-        custom_tooltip = {
-            fail_text = operation_sabotage_starbase_no_targets
-            OR = {
-                AND = {
-                    count_starbase_modules = {
-                        type != shipyard
-                        count > 0
-                    }
-                    count_starbase_modules = {
-                        type != orbital_ring_shipyard
-                        count > 0
-                    }
-                }
-                has_nonshipyard_starbase_buildings = yes
-            }
-        }
-    }
+    }#5 stages
     stage = {
-        difficulty = @diff_t5
-        icon = GFX_espionage_chapter_icon_motion
-        event = operation.2000
+        difficulty = @diff_t6
+        icon = GFX_espionage_chapter_icon_surveillance
+        event = ssp_operation.101
     }
-    stage = {
-        difficulty = @diff_t5
+    stage = {#failstage 1
+        difficulty = @diff_t6
         icon = GFX_espionage_chapter_icon_target
-        event = operation.2001
+        event = ssp_operation.102
     }
     stage = {
-        difficulty = @diff_t5
-        icon = GFX_espionage_chapter_icon_success
-        event = operation.2002
+        difficulty = @diff_t6
+        icon = GFX_espionage_chapter_icon_motion
+        event = ssp_operation.103
     }
-    on_roll_failed = {
-        standard_espionage_operation_on_roll_failed = { RANDOM_EVENTS = operation_random_events_sabotage_targeted } #Requires a bespoke set of trigger scopes given 'target' is not a country
+    stage = {#failstage2
+        difficulty = @diff_t6
+        icon = GFX_espionage_chapter_icon_motion
+        event = ssp_operation.104
     }
-    on_create = {
-        target.owner = {
-            set_timed_country_flag = {
-                flag = espionage_operation_targeted_by@root.owner #Used in random Spy Network events
-                days = @operationTargetedByTimer
-            }
-        }
+    stage = {#passed all checks, free to proceed :D
+        difficulty = @diff_t6
+        icon = GFX_espionage_chapter_icon_motion
+        event = ssp_operation.105
     }
+    on_roll_failed = { #make a custom one for this thats like ''One Alien Specimen broke out." and then you have to terminate it or smt and it makes it harder idk.. I could also have it that if too many break out you also fail the operation. this is possible by just using country flags
+         standard_espionage_operation_on_roll_failed = { RANDOM_EVENTS = operation_random_events_ssp_alien }
+
+
+    }
+    on_create = {}
 }
