@@ -70,8 +70,6 @@ operation_xenomorph_deployment = {
     }
     on_roll_failed = { #make a custom one for this thats like ''One Alien Specimen broke out." and then you have to terminate it or smt and it makes it harder idk.. I could also have it that if too many break out you also fail the operation. this is possible by just using country flags
          standard_espionage_operation_on_roll_failed = { RANDOM_EVENTS = operation_random_events_ssp_alien }
-
-
     }
     on_create = {}
 }

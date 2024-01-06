@@ -20,6 +20,7 @@ espionage_operation_event = {
         }
         owner = {
             country_event = { id = ssp_random_country.100 }
+            set_country_flag = Stage1Alien
         }
     }
 }
@@ -28,23 +29,222 @@ espionage_operation_event = {
     id = ssp_operation.102
     title = ssp_placeholder_text
     desc = ssp_placeholder_text
+
+    is_triggered_only = yes
+
+    immediate = {
+        owner = {
+            remove_country_flag = Stage1Alien
+            set_country_flag = Stage2Alien
+        }
+        target = {
+            country_event = { id = ssp_operation.1000 }
+        }
+    }
 }
 #infiltrate country
 espionage_operation_event = {
     id = ssp_operation.103
     title = ssp_placeholder_text
     desc = ssp_placeholder_text
+
+    is_triggered_only = yes
+    immediate = {
+        owner = {
+            remove_country_flag = Stage2Alien
+            set_country_flag = Stage3Alien
+        }
+    }
 }
-#transport specimen in target country // FAIL OPPERTUNITY
+#transport specimen in target country // FAIL OPPORTUNITY
 espionage_operation_event = {
     id = ssp_operation.104
     title = ssp_placeholder_text
     desc = ssp_placeholder_text
+
+    is_triggered_only = yes
+
+    immediate = {
+        owner = {
+            remove_country_flag = Stage3Alien
+            set_country_flag = Stage4Alien
+        }
+    }
 }
 #finish
 espionage_operation_event = {
     id = ssp_operation.105
     title = ssp_placeholder_text
     desc = ssp_placeholder_text
+
+    is_triggered_only = yes
+
+    immediate = {
+        owner = {
+            remove_country_flag = Stage4Alien
+        }
+    }
+
+    option = {
+        name = ssp_placeholder_text
+        hidden_effect = {
+            target = {
+                country_event = { id = ssp_operation.107 }
+            }
+        }
+    }
 }
 
+country_event = {
+    id = ssp_operation.107
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        country_event = { id = ssp_operation.1071 }
+    }
+}
+
+country_event = {
+    id = ssp_operation.1071
+    title = ssp_placeholder_text
+    desc = ssp_placeholder_text
+
+    is_triggered_only = yes
+
+    option = {
+        name = ssp_placeholder_text
+
+    }
+
+}
+
+#Basic
+country_event = {
+    id = ssp_operation.108
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        IF = {#first incident
+            limit = {
+                owner = {
+                   NOR = {
+                       has_country_flag = alien_random_01
+                       has_country_flag = alien_random_02
+                   }
+                }
+            }
+            owner = {
+                country_event = { id = ssp_operation.1081 }
+                set_country_flag = alien_random_01
+            }
+        }
+        ELSE_IF = {#unfortunate :D
+            limit = {
+                owner = {
+                    has_country_flag = alien_random_01
+                }
+            }
+            owner = {
+                country_event = { id = ssp_operation.1082 }
+                remove_country_flag = alien_random_01
+                set_country_flag = alien_random_02
+            }
+        }
+        ELSE_IF = {#aliens have broken out of containment (regardless of stage)
+            limit = {
+                owner = {
+                    has_country_flag = alien_random_02
+                }
+            }
+            destroy_espionage_operation = from
+            owner = {
+                country_event = { id = ssp_operation.1083 }
+                remove_country_flag = alien_random_02
+            }
+
+        }
+    }
+}
+
+
+#Gestalt NOT USED RN (will do when I have entire event done)
+country_event = {
+    id = ssp_operation.109
+    hide_window = yes
+    is_triggered_only = yes
+}
+
+#country events incidents ig
+
+country_event = {
+    id = ssp_operation.1081
+    title = ssp_placeholder_text
+    desc = ssp_placeholder_text
+
+    is_triggered_only = yes
+
+
+}
+
+country_event = {
+    id = ssp_operation.1082
+    title = ssp_placeholder_text
+    desc = ssp_placeholder_text
+
+    is_triggered_only = yes
+}
+
+country_event = {
+    id = ssp_operation.1083
+    title = ssp_placeholder_text
+    desc = ssp_placeholder_text
+
+    is_triggered_only = yes
+
+    immediate = {
+        hidden_effect = {
+            country_event = { id = ssp_operation.1084 }
+        }
+    }
+}
+#does all teh thinking ig
+country_event = {
+    id = ssp_operation.1084
+    hide_window = yes
+
+    is_triggered_only = yes
+
+    immediate = {
+        IF = {
+            limit = {
+                OR = {
+                    has_country_flag = Stage1Alien
+                    has_country_flag = Stage2Alien
+                }
+            }
+            #stuff here
+        }
+        ELSE_IF = {
+            limit = {
+                OR = {
+                    has_country_flag = Stage3Alien
+                    has_country_flag = Stage4Alien
+                }
+            }
+
+        }
+    }
+}
+
+country_event = {
+    id = ssp_operation.1001
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = has_found_astral_rift_marvel
+        set_country_flag = has_found_astral_scar_marvel
+    }
+}

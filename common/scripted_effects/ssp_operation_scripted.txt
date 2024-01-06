@@ -69,12 +69,20 @@ operation_random_events_ssp_alien = {
             }
             country_event = { id = operation.5055 }
         }
+        1 = {
+            modifier = {
+                factor = 0.1
+                has_country_flag = alientransport
+            }
+            country_event = { id = ssp_operation.108 }
+        }
     }
 }
 
+
 # Regular empire acting upon a gestalt empire
 # country (operation owner) scope | root = operation; from = target
-operation_random_events_regular_gestalt = {
+operation_random_events_ssp_gestalt = {
     random_list = {
         1 = { #Contact Lost
             modifier = {
@@ -123,6 +131,13 @@ operation_random_events_regular_gestalt = {
                 has_country_flag = recent_op_confidence_wavers
             }
             country_event = { id = operation.5055 }
+        }
+        1 = {
+            modifier = {
+                factor = 0.1
+                has_country_flag = alientransport
+            }
+            country_event = { id = ssp_operation.109 }
         }
     }
 }

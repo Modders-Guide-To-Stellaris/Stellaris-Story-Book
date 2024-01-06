@@ -26,7 +26,7 @@ ssp_traits_advanced_reanimated = {
 	icon = "gfx/interface/icons/traits/trait_necrophage.dds"
 
 	modifier = {
-		leader_age = -20
+		leader_age = -20 #todo
 		pop_growth_speed = -0.5
 		planet_pops_organics_food_upkeep_mult = -0.5
 		planet_jobs_ruler_produces_mult = -0.05

@@ -13,7 +13,7 @@ ssp_trait_alcoholic = {
     modifier = {
         country_consumer_goods_produces_mult = -0.1
     }
-    leader_class = { governor scientist admiral general }
+    leader_class = { governor scientist admiral general } #todo
     initial = no
     randomized = no
 }
