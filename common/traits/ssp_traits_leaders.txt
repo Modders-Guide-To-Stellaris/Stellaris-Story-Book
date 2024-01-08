@@ -8,12 +8,11 @@ ssp_trait_alcoholic = {
         TIER = 1
     }
     negative = yes
-    councilor_trait = yes
 
-    modifier = {
+    councilor_modifier = {
         country_consumer_goods_produces_mult = -0.1
     }
-    leader_class = { governor scientist admiral general } #todo
+    leader_class = { commander scientist official }
     initial = no
     randomized = no
 }
@@ -45,7 +44,7 @@ ssp_destiny_genpar = {
         has_ethic = ethic_xenophobe
         always = no
     }
-    leader_class = { general }
+    leader_class = { commander }
     #custom_tooltip = ssp_destiny_genpar_effect
 
     destiny_background_icon = "GFX_leader_background_destiny_1"
