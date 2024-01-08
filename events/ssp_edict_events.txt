@@ -9,7 +9,6 @@ country_event = {  #make sure that this only triggers when you have origin dicti
 	location = capital_scope
     is_triggered_only = yes
 
-
     trigger = {
 		is_spiritualist = yes
 		OR = {
@@ -17,8 +16,6 @@ country_event = {  #make sure that this only triggers when you have origin dicti
             has_valid_civic = civic_death_cult_corporate
         }
     }
-    
-
 
     option = {
         name = sspresurrection.100a
