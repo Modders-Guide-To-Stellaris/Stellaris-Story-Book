@@ -29,6 +29,16 @@
 #Soncio — Today at 6:23 PM
 #Yes
 
-
-
-#maybe improve hanger bays to boost strike craft
+#Curator Foxy — Today at 10:59
+#Alright
+#so
+#Rework Semichki leader to no longer be a meme
+#Test if the arch site still works && double check if the favors of the bacteria still functions since that might be broken
+#Either finish or deactive the alien situation depending if it shows ingame without being finished
+#Rework the diplomat civic to how soncio wanted it
+#Finish the origin
+#Make the icons for the Invasion category
+#Potentially rework the other two finals of invasion category
+#Make war criminal less binary-evented (so that its not just checking X and Y but that its dynamic like the people actually shift ethics)
+#Implement the Ethics like evolved has
+#Take inspiration from other mods like evolved for future civics TBD
