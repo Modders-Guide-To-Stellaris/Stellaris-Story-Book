@@ -26,11 +26,10 @@
  ssp_archaeo_desc.3: "We found a data terminal on the science ship containing data about anomalies and coordinates to now deceased systems. Although we have managed to link one of the coordinates to a system that should still exist, there is a note with the planet saying '01000011 01101111 01101101 01101101 01110101 01101110 01101001 01100011 01100001 01110100 01101001 01101111 01101110 00100000 01001000 01110101 01100010'."
  ssp_archaeo_option_title.3: "Page the nearest science ship about this discovery."
 
- ssp_dig_site.4.name:0 "Nuclear Meltdown"
- ssp_dig_site.4a.name:0 "This specimen will be of great use to our research department."
- ssp_dig_site.4b.name:0 "We will not take unnecessary risks, save the drive core!"
- ssp_dig_site.4.desc:0 "We may have unsettled something in the ship, the reactor leak has grown bigger and we are under constant attack from the nearby fauna, we need to make a decision now. We found a robot specimen infected with something, we believe it to be the cause of the death. Alternatively the drive core of the ship. it's more advanced than ours and in is still in perfect state, these jonans knew what they were doing. "
-
+ ssp_archaeo_title.4:0 "Nuclear Meltdown"
+ ssp_archaeo_desc.4:0 "We may have unsettled something in the ship, the reactor leak has grown bigger and we are under constant attack from the nearby fauna, we need to make a decision now. We found a robot specimen infected with something, we believe it to be the cause of the death. Alternatively the drive core of the ship. it's more advanced than ours and in is still in perfect state, these jonans knew what they were doing. "
+ ssp_archaeo_option_title.4a:0 "This specimen will be of great use to our research department."
+ ssp_archaeo_option_title.4b:0 "We will not take unnecessary risks, save the drive core!"
 
  # Archaeo | Communication Hub - Localization
 

@@ -155,6 +155,6 @@ SSP: "SSP"
  SSP_VERSION_BUTTON: "Version"
  SSP_VERSION: "Story Book Version: FOX-A2RA (§R1-8-2024§!)"
 
- #Naming system: FOX=Foxy SON=Soncio, / A=Alpha B=Beta R=Release, / RA=Restricted Access
+ #Naming system: FOX=Foxy SON=Soncio, incase it's both just put SSP / A=Alpha B=Beta R=Release, / RA=Restricted Access
 
- SSP_VERSION_TOOLTIP: "Experimental build, I have a little bit more to do but just wanted to get a small patch out for 3.10 if there are any issues please tell me."
+ SSP_VERSION_TOOLTIP: "Recoding Build"

@@ -110,8 +110,8 @@ fleet_event = {
 
 fleet_event = {
 	id = ssp_archaeo.4
-	title = ssp_dig_site.4.name
-	desc = ssp_dig_site.4.desc
+	title = ssp_archaeo_title.4
+	desc = ssp_archaeo_desc.4
 	picture = GFX_evt_exploding_ship
 	show_sound = event_scanner
 	location = from
@@ -129,10 +129,11 @@ fleet_event = {
 	}
 	
 	option = {
-		name = ssp_dig_site.4a.name
+		name = ssp_archaeo_option_title.4a
 		trigger = {
 			NOT = {
-				has_government = "gov_devouring_swarm"
+				has_government = "gov_devouring_swarm" #NOT total war smh todo
+
 			}
 		}
 		owner = { 
@@ -141,7 +142,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = ssp_dig_site.4b.name
+		name = ssp_archaeo_option_title.4b
 		owner = { # trigger ssp_relic.300 here!
 			add_relic = ssp_r_drive_core
 		}
