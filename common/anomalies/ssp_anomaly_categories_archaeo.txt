@@ -1,18 +1,19 @@
-disco_bacterium_ship = {
-	desc = "disco_bacterium_ship_desc"
-	picture = "GFX_evt_worrying_signal"
-	level = 3
 
-	max_once_global = yes
+# Archaeo | Bacterium Ship - Anomaly
 
-	spawn_chance = {
-		modifier = {
-			add = 20
-			is_planet_class = pc_ocean
-		}
-	}
-	on_success = fox_archaeo.1
+ssp_anomaly_bacterium_ship = {
+    desc = "ssp_on_discovery_bacteria_ship"
+    picture = "GFX_evt_worrying_signal"
+    level = 3
+
+    max_once_global = yes
+
+    spawn_chance = {
+        modifier = {
+            add = 20
+            is_planet_class = pc_ocean
+        }
+    }
+    on_success = ssp_archaeo.1
 }
-			
-			
 	

@@ -1,0 +1,160 @@
+﻿l_english:
+#for anyone looking through the code and wondering why the files are labeled as 'SSP' it's because before Stellaris Story Book this project was named Stellaris Story Pack -Foxy
+
+##########
+# armies
+##########
+
+ssp_reanimated_army:0 "Reanimated Army"
+ssp_reanimated_army_desc:0 "Powerful Armies who used to served the Grand Reanimator."
+
+##########
+# Events
+##########
+
+MESSAGE_FAVOR_GAINED_BY_MIND_CONTROL:0 "Thanks to mind control bacteria, we have managed to gain a Favor from the $WHO|Y$."
+
+ssp_relic.501.name:0 "placeholder"
+ssp_relic.501.desc:0 "placeholder"
+ssp_relic.501.a:0 "placeholder"
+ssp_relic.501.b:0 "placeholder"
+
+ssp_relic.502.name:0 "placeholder"
+ssp_relic.502.desc:0 "placeholder"
+ssp_relic.502.a:0 "placeholder"
+ssp_relic.502.a.tt:0 "placeholder"
+ssp_relic.502.b:0 "placeholder"
+ssp_relic.502.b.tt:0 "placeholder"
+
+ssp_relic.511.name:0 "placeholder"
+ssp_relic.511.desc:0 "placeholder"
+ssp_relic.511.A:0 "placeholder"
+
+ssp_relic.598.name:0 "placeholder"
+ssp_relic.598.desc:0 "placeholder"
+
+ssp_relic.599.name:0 "placeholder"
+ssp_relic.599.desc:0 "placeholder"
+
+ ssp_random_country_100.name: "Pacifism protests in the capital!"
+ ssp_random_country_100.desc: "placeholder"
+ ssp_warcrime_name_A: "We shall join the pacifists"
+ ssp_warcrime_name_B: "Protests? Dispatch the military!"
+
+ ssp_random_country_102.Name: "placeholder"
+ ssp_random_country_102.Desc: "placeholder"
+ ssp_pacifistdemands_name: "We shall sign these demands"
+
+ ssp_random_country_102.Name: "placeholder"
+ ssp_random_country_102.Desc: "placeholder"
+ ssp_ironfist_name: "Punish them swiftly... Show no mercy."
+
+ ssp_random_country_1041.Name: "Notice from the Intergalatic Council"
+ ssp_random_country_1041.Desc: "WAAAAAAAAA"
+
+
+ssp_semichki_response.A1:0 "Who are you?"
+ssp_semichki_response.A2:0 "RESPONSE A"
+ssp_semichki_response.B1:0 "State your purpose"
+ssp_semichki_response.B2:0 "GENERIC RESPONSE B"
+ssp_semichki_response.C1:0 "Why is your chair broken?"
+ssp_semichki_response.C2:0 "I fell asleep after passing out. Completely normal here lad."
+
+ ssp_placeholder_text:0 "Placeholder pls ignore :D"
+
+
+
+################
+# Start Screen
+################
+
+START_SCREEN_PART_ONE_CULT:0 "Will add later as soncio didn't ask me to add this and since I want to finish the core first :P"
+
+##########
+# Civics
+##########
+
+ #deprecated
+civic_ssp_one_planet_forced:0 "One Planet Challenge"
+civic_ssp_one_planet_forced_desc:0 "§EUnable to colonize planets.§!"
+
+civic_ssp_mri:0 "Military readiness initiative"
+civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §HModifiers§!:\n £alloys£ $alloy$ from £job£ Menial jobs +§c1§!\n £minerals£ $minerals$ upkeep from £job£ Menial jobs +§R2§!"
+
+
+###########
+# LEADERS
+###########
+
+ NAME_Semichki_leader:0 "Broken Chair Lad"
+ NAME_Semichki:0 "The Lads"
+ desc_semichki:0 "I'm gonna hear airhorns in my sleep"
+
+#############
+# Modifiers
+#############
+
+ mod_planet_farmers_minerals_upkeep_add:0 "£minerals£$minerals$ upkeep from £job_farmer£ [GetFarmerPlural]"
+ mod_planet_farmers_minerals_produces_add:0 "$mod_planet_farmers_minerals_upkeep_add$"
+ mod_planet_farmers_alloys_produces_mult:0 "£alloys£ $alloys$ from £job_farmer£ [GetFarmerPlural]"
+ mod_planet_farmers_alloys_produces_add:0 "$mod_planet_farmers_alloys_produces_mult$"
+
+ mod_planet_clerks_alloys_produces_add:0 "£alloys£ $alloys$ from £job_clerk£ $job_clerk_plural$"
+ mod_planet_clerks_minerals_produces_add:0 "£minerals£$minerals$ upkeep from £job_clerk£ $job_clerk_plural$"
+
+ mod_planet_miners_minerals_upkeep_add:0 "£minerals£$minerals$ upkeep from £job_miner£ [GetMinerPlural]"
+
+ mod_planet_technician_alloys_produces_add:0 "£alloys£ $alloys$ from £job_technician£ [GetTechnicianPlural]"
+ mod_planet_technician_minerals_upkeep_add:0 "£minerals£$minerals$ upkeep from £job_technician£ [GetTechnicianPlural]"
+ mod_planet_technician_minerals_produces_add:0 "$mod_planet_technician_minerals_upkeep_add$"
+
+
+#############
+# espionage
+#############
+
+ #Assets
+ asset_xenomorph_biologist:0 "Xenomorph Biologist"
+ mod_op_cat_bioweapons_skill_add:0 "Operation Skill (Bioweapons)"
+ mod_op_cat_bioweapons_speed_mult:0 "Operation Speed (Bioweapons)"
+
+ #Categories
+ op_cat_bioweapons:0 "Bioweapons Department"
+
+ #Types
+ operation_xenomorph_deployment:0 "Operation Xenomorph Deployment"
+ operation_xenomorph_deployment_desc: "REPLACE_ME"
+ operation_xenomorph_deployment_no_dlc_desc: "REPLACE_ME"
+ operation_xenomorph_deployment_on_success: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_speed_mult: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_speed_mult_desc: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_difficulty_add: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_difficulty_add_desc: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_difficulty_mult: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_difficulty_mult_desc: "REPLACE_ME"
+ mod_hostile_operation_xenomorph_deployment_difficulty_add: "REPLACE_ME"
+ mod_hostile_operation_xenomorph_deployment_difficulty_add_desc: "REPLACE_ME"
+ mod_hostile_operation_xenomorph_deployment_difficulty_mult: "REPLACE_ME"
+ mod_hostile_operation_xenomorph_deployment_difficulty_mult_desc: "REPLACE_ME"
+
+##############
+# Galaxy Shapes/Types
+##############
+
+ #Types
+ mediocre:0 "Mediocre"
+
+
+ #Shapes
+
+
+
+
+SSP: "SSP"
+
+ SSP_VERSION_BUTTON: "Version"
+ SSP_VERSION: "Story Book Version: FOX-A2RA (§R1-8-2024§!)"
+
+ #Naming system: FOX=Foxy SON=Soncio, / A=Alpha B=Beta R=Release, / RA=Restricted Access
+
+ SSP_VERSION_TOOLTIP: "Experimental build, I have a little bit more to do but just wanted to get a small patch out for 3.10 if there are any issues please tell me."

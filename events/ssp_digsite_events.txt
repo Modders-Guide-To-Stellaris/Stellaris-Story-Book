@@ -1,11 +1,11 @@
-namespace = ssp_dig_site
+namespace = ssp_archaeo
 
-#BacteriumShip
+# Archaeo | Bacterium Ship - Events
 
 fleet_event = {
-	id = ssp_dig_site.1
-	title = ssp_dig_site.1.name
-	desc = ssp_dig_site.1.desc
+	id = ssp_archaeo.1
+	title = ssp_archaeo_title.1
+	desc = ssp_archaeo_desc.1
 	picture = GFX_evt_landing_ship
 	show_sound = event_scanner
 	location = from
@@ -23,7 +23,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = ssp_dig_site.1a.name
+		name = ssp_archaeo_option_title.1
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -37,9 +37,9 @@ fleet_event = {
 
 
 fleet_event = {
-	id = ssp_dig_site.2
-	title = ssp_dig_site.2.name
-	desc = ssp_dig_site.2.desc
+	id = ssp_archaeo.2
+	title = ssp_archaeo_title.2
+	desc = ssp_archaeo_desc.2
 	picture = GFX_evt_ocean
 	show_sound = event_sensor_ping
 	location = from
@@ -57,7 +57,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = ssp_dig_site.2a.name
+		name = ssp_archaeo_option_title.2
 		owner = {
 			add_monthly_resource_mult = {
 				resource = society_research
@@ -67,12 +67,12 @@ fleet_event = {
 			}
 		}
 	}
-}  #Society Research
+}
 
 fleet_event = {
-	id = ssp_dig_site.3
-	title = ssp_dig_site.3.name
-	desc = ssp_dig_site.3.desc
+	id = ssp_archaeo.3
+	title = ssp_archaeo_title.3
+	desc = ssp_archaeo_desc.3
 	picture = GFX_evt_ancient_databank
 	show_sound = event_mystic_reveal
 	location = from
@@ -95,7 +95,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = ssp_dig_site.3a.name
+		name = ssp_archaeo_option_title.3
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -109,7 +109,7 @@ fleet_event = {
 	
 
 fleet_event = {
-	id = ssp_dig_site.4
+	id = ssp_archaeo.4
 	title = ssp_dig_site.4.name
 	desc = ssp_dig_site.4.desc
 	picture = GFX_evt_exploding_ship
@@ -147,12 +147,12 @@ fleet_event = {
 		}
 	}
 }
-	
 
-#CommunicationHub
+
+# Archaeo | Communication Hub - Events
 
 fleet_event = {
-	id = ssp_dig_site.5
+	id = ssp_archaeo.5
 	title = ssp_dig_site.5.name
 	desc = ssp_dig_site.5.desc
 	picture = GFX_evt_synth_sabotage
@@ -181,12 +181,12 @@ fleet_event = {
 				max = @tier5researchmax
 			}
 		}
-	} #update this
+	}
 } 
 
 
 fleet_event = {
-	id = ssp_dig_site.6
+	id = ssp_archaeo.6
 	title = ssp_dig_site.6.name
 	desc = ssp_dig_site.6.desc
 	picture = GFX_evt_sentry_guns
@@ -215,11 +215,11 @@ fleet_event = {
 				max = @tier4researchmax
 			}
 		}
-	} #update this
+	}
 } 
 
 fleet_event = {
-	id = ssp_dig_site.7
+	id = ssp_archaeo.7
 	title = ssp_dig_site.7.name
 	desc = ssp_dig_site.7.desc
 	picture = GFX_evt_sapient_AI

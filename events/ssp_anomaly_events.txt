@@ -1,7 +1,9 @@
-namespace = fox_archaeo
-### Bacterium Ship
+namespace = ssp_anomaly
+
+# Archaeo | Bacterium Ship - Anomaly Events
+
 ship_event = {
-	id = fox_archaeo.1
+	id = ssp_anomaly.1
 	title = "archaeo.1.name"
 	desc = "archaeo.1.desc"
     picture = GFX_evt_warm_barren

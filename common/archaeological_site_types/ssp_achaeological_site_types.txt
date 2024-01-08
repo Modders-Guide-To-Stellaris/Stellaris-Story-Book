@@ -1,5 +1,8 @@
-ssp_bacterium_ship_digsite = {
-	desc = ssp_bacterium_ship_desc
+
+# Archaeo | Bacterium Ship - Arch Site
+
+ssp_bacterium_ship_archsite = {
+	desc = ssp_bacterium_ship_archsite_desc
 	picture =  GFX_evt_communication_event
 	stages = 4
 	max_instances = 1
@@ -21,22 +24,22 @@ ssp_bacterium_ship_digsite = {
 	}
 	stage = {
 		difficulty = 2
-		event = ssp_dig_site.1
+		event = ssp_archaeo.1
 		icon = GFX_archaeology_runes_A1
 	}
 	stage = {
 		difficulty = 3
-		event = ssp_dig_site.2
+		event = ssp_archaeo.2
 		icon = GFX_archaeology_runes_A2
 	}
 	stage = {
 		difficulty = 4
-		event = ssp_dig_site.3
+		event = ssp_archaeo.3
 		icon = GFX_archaeology_runes_A3
 	}
 	stage = {
-		difficulty = 6
-		event = ssp_dig_site.4
+		difficulty = 7
+		event = ssp_archaeo.4
 		icon = GFX_archaeology_runes_A1
 	}
 
@@ -47,8 +50,10 @@ ssp_bacterium_ship_digsite = {
 	}
 }
 
-ssp_communication_hub_digsite = {
-	desc = ssp_communication_hub_desc
+# Archaeo | Communication Hub - Arch Site
+
+ssp_communication_hub_archsite = {
+	desc = ssp_communication_hub_archsite_desc
 	picture = GFX_evt_intelligence_report
 	stages = 3
 	max_instances = 1
@@ -62,17 +67,17 @@ ssp_communication_hub_digsite = {
 	}
 	stage = {
 		difficulty = 5
-		event = ssp_dig_site.5
+		event = ssp_archaeo.5
 		icon = GFX_archaeology_runes_A1
 	}
 	stage = {
-		difficulty = 5
-		event = ssp_dig_site.6
+		difficulty = 6
+		event = ssp_archaeo.6
 		icon = GFX_archaeology_runes_A2
 	}
 	stage = {
-		difficulty = 7
-		event = ssp_dig_site.7
+		difficulty = 8
+		event = ssp_archaeo.7
 		icon = GFX_archaeology_runes_A3
 	}
 
