@@ -36,15 +36,14 @@
  ssp_communication_hub_archsite:0 "Jonan Communication Hub"
  ssp_communication_hub_archsite_desc:0 "Precursor Arch Site Pt.2"
 
- ssp_dig_site.5.name:0 "Infiltration"
- ssp_dig_site.5a.name:0 "Translate and keep going."
- ssp_dig_site.5.desc:0 "As soon as we landed on the somehow still active hub we stumbled upon an inscription and a lot of warnings, we are unsure on how to proceed."
+ ssp_archaeo_title.5:0 "Infiltration"
+ ssp_archaeo_desc.5:0 "As soon as we landed on the somehow still active hub we stumbled upon an inscription and a lot of warnings, we are unsure on how to proceed."
+ ssp_archaeo_option_title.5:0 "Translate and keep going."
 
- ssp_dig_site.6.name:0 "Active Defenses!"
- ssp_dig_site.6a.name:0 "Shut them down, no matter the cost."
- ssp_dig_site.6.desc:0 "It was a trap! after following the wierd inscribed instructions left by our predecessor, we found ourselves in a hallway which quickly turned into our prison when one of the scientists activated one of the traps inside the hallway. /n/ luckily one of crew found a way to shutdown the device but its very risky."
+ ssp_archaeo_title.6:0 "Active Defenses!"
+ ssp_archaeo_desc.6:0 "It was a trap! after following the wierd inscribed instructions left by our predecessor, we found ourselves in a hallway which quickly turned into our prison when one of the scientists activated one of the traps inside the hallway. /n/ luckily one of crew found a way to shutdown the device but its very risky."
+ ssp_archaeo_option_title.6:0 "Shut them down, no matter the cost."
 
- ssp_dig_site.7.name:0 "Jonan AI Intelligence"
- ssp_dig_site.7a.name:0 "Take the key"
- ssp_dig_site.7.desc:0 "We found ourself standing infront of a giant AI, the controller of the facility. \n After we told the AI what had become of his creator he decided to share with us the secrets of their ways."
-
+ ssp_archaeo_title.7:0 "Jonan AI Intelligence"
+ ssp_archaeo_desc.7:0 "We found ourself standing in front of a giant AI, the controller of the facility. \n After we told the AI what had become of his creator he decided to share with us the secrets of their ways."
+ ssp_archaeo_option_title.7:0 "Take the key"

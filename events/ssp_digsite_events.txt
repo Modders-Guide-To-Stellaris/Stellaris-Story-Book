@@ -132,8 +132,7 @@ fleet_event = {
 		name = ssp_archaeo_option_title.4a
 		trigger = {
 			NOT = {
-				has_government = "gov_devouring_swarm" #NOT total war smh todo
-
+				ssp_is_total_war = yes
 			}
 		}
 		owner = { 
@@ -143,7 +142,7 @@ fleet_event = {
 
 	option = {
 		name = ssp_archaeo_option_title.4b
-		owner = { # trigger ssp_relic.300 here!
+		owner = { # trigger ssp_relic.300 here! , Recoder foxy, what the hell is ssp_relic.300
 			add_relic = ssp_r_drive_core
 		}
 	}
@@ -154,8 +153,8 @@ fleet_event = {
 
 fleet_event = {
 	id = ssp_archaeo.5
-	title = ssp_dig_site.5.name
-	desc = ssp_dig_site.5.desc
+	title = ssp_archaeo_title.5
+	desc = ssp_archaeo_desc.5
 	picture = GFX_evt_synth_sabotage
 	show_sound = event_scanner
 	location = from
@@ -173,7 +172,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = ssp_dig_site.5a.name
+		name = ssp_archaeo_option_title.5
 		owner = {
 			add_monthly_resource_mult = {
 				resource = physics_research
@@ -188,8 +187,8 @@ fleet_event = {
 
 fleet_event = {
 	id = ssp_archaeo.6
-	title = ssp_dig_site.6.name
-	desc = ssp_dig_site.6.desc
+	title = ssp_archaeo_title.6
+	desc = ssp_archaeo_desc.6
 	picture = GFX_evt_sentry_guns
 	show_sound = event_sensor_ping
 	location = from
@@ -207,7 +206,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = ssp_dig_site.6a.name
+		name = ssp_archaeo_option_title.6
 		owner = {
 			add_monthly_resource_mult = {
 				resource = society_research
@@ -221,8 +220,8 @@ fleet_event = {
 
 fleet_event = {
 	id = ssp_archaeo.7
-	title = ssp_dig_site.7.name
-	desc = ssp_dig_site.7.desc
+	title = ssp_archaeo_title.7
+	desc = ssp_archaeo_desc.7
 	picture = GFX_evt_sapient_AI
 	show_sound = event_mystic_reveal
 	location = from
@@ -240,7 +239,7 @@ fleet_event = {
 	}
 
 	option = {
-		name = ssp_dig_site.7a.name
+		name = ssp_archaeo_option_title.7
 		owner = {
 			add_research_option = tech_ssp_jonan_communication_key
 					hidden_effect = { add_tech_progress = { tech = tech_ssp_jonan_communication_key progress = 0.33 } }

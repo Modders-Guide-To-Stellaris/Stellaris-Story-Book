@@ -1,3 +1,6 @@
+
+# Tradition | Chemical Warfare >
+
 chemical_warfare = {
     trigger = {
         owner = {

@@ -19,7 +19,7 @@ ship_event = {
     option = {
         name = INTRIGUING
         fromfrom = {
-            create_archaeological_site = ssp_bacterium_ship_digsite
+            create_archaeological_site = ssp_bacterium_ship_archsite
         }
     }
 }

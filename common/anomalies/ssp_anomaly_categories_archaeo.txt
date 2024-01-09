@@ -14,6 +14,6 @@ ssp_anomaly_bacterium_ship = {
             is_planet_class = pc_ocean
         }
     }
-    on_success = ssp_archaeo.1
+    on_success = ssp_anomaly.1
 }
 	

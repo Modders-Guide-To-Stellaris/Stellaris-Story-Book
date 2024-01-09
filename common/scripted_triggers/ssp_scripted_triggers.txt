@@ -1,8 +1,10 @@
 ssp_is_total_war = {
-    has_civic = civic_hive_devouring_swarm
-    has_civic = civic_hive_devouring_swarm_lithoid
-    has_civic = civic_machine_terminator
-    has_civic = civic_machine_assimilator
+    OR = {
+        has_civic = civic_hive_devouring_swarm
+        has_civic = civic_hive_devouring_swarm_lithoid
+        has_civic = civic_machine_terminator
+        has_civic = civic_machine_assimilator
+    }
 }
 
 has_grand_reanimator = {

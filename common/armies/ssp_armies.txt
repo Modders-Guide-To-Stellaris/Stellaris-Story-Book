@@ -1,3 +1,6 @@
+
+# Army | Reanimated Army > Reanimator Cult - Active Effect Relic
+
 ssp_reanimated_army = {
 	damage = 3.75
 	morale_damage = 2.5
@@ -38,7 +41,7 @@ ssp_reanimated_army = {
 	}
 }
 
-#OVERWRITE
+# Army | Undead Army > Reanimator Cult - Overwrite
 undead_army = {
 	damage = 1.00
 	health = 1.00

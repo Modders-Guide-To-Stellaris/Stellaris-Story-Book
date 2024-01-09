@@ -3,6 +3,8 @@
 
 @sacrificeReward1 = 0.15
 
+# Edicts | Reanimator Cult - Overwrite
+
 sacrifice_togetherness = {
 	length = @sacrificeDuration
 	icon = "GFX_edict_type_time"
