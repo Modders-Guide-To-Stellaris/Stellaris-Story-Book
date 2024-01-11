@@ -1,3 +1,5 @@
-op_cat_bioweapons = {
 
+# Espionage | Bioweapons > Xenomorph Invasion - Categories
+
+ssp_op_cat_bioweapons = {
 }

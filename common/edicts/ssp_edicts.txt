@@ -64,12 +64,8 @@ sacrifice_togetherness = {
 	show_tech_unlock_if = { always = no }
 
 	effect = {
-		country_event = { 
-			id = necroids.200 days = 0
-		}
-		country_event = { 
-			id = ssp_ritual.100 days = 33 
-		}
+		country_event = { id = necroids.200 days = 0 }
+		country_event = { id = ssp_ritual.100 days = 33 }
 }
 	
 

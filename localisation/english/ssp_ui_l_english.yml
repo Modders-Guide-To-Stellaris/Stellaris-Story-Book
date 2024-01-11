@@ -109,44 +109,6 @@ civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §
  mod_planet_technician_minerals_produces_add:0 "$mod_planet_technician_minerals_upkeep_add$"
 
 
-#############
-# espionage
-#############
-
- #Assets
- asset_xenomorph_biologist:0 "Xenomorph Biologist"
- mod_op_cat_bioweapons_skill_add:0 "Operation Skill (Bioweapons)"
- mod_op_cat_bioweapons_speed_mult:0 "Operation Speed (Bioweapons)"
-
- #Categories
- op_cat_bioweapons:0 "Bioweapons Department"
-
- #Types
- operation_xenomorph_deployment:0 "Operation Xenomorph Deployment"
- operation_xenomorph_deployment_desc: "REPLACE_ME"
- operation_xenomorph_deployment_no_dlc_desc: "REPLACE_ME"
- operation_xenomorph_deployment_on_success: "REPLACE_ME"
- mod_operation_xenomorph_deployment_speed_mult: "REPLACE_ME"
- mod_operation_xenomorph_deployment_speed_mult_desc: "REPLACE_ME"
- mod_operation_xenomorph_deployment_difficulty_add: "REPLACE_ME"
- mod_operation_xenomorph_deployment_difficulty_add_desc: "REPLACE_ME"
- mod_operation_xenomorph_deployment_difficulty_mult: "REPLACE_ME"
- mod_operation_xenomorph_deployment_difficulty_mult_desc: "REPLACE_ME"
- mod_hostile_operation_xenomorph_deployment_difficulty_add: "REPLACE_ME"
- mod_hostile_operation_xenomorph_deployment_difficulty_add_desc: "REPLACE_ME"
- mod_hostile_operation_xenomorph_deployment_difficulty_mult: "REPLACE_ME"
- mod_hostile_operation_xenomorph_deployment_difficulty_mult_desc: "REPLACE_ME"
-
-##############
-# Galaxy Shapes/Types
-##############
-
- #Types
- mediocre:0 "Mediocre"
-
-
- #Shapes
-
 
 
 
