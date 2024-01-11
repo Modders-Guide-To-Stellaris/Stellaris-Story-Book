@@ -2,5 +2,5 @@ version="1"
 tags={
 	"Gameplay"
 }
-name="Story Book Beta"
-supported_version="3.8.*"
+name="Stellaris Story Local"
+supported_version="3.10.4"
