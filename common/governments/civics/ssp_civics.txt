@@ -1,16 +1,7 @@
-#civic_ssp_one_planet_forced = {
-#	modification = no
-#	icon = "gfx/interface/icons/governments/civics/civic_empire_in_decline.dds"
-#	potential = {
-#		always = no
-#	}
-#	random_weight = { base = @civic_default_random_weight }
-#	description = civic_ssp_one_planet_forced_desc
-#	modifier = {
-#	}
-#}
 
-civic_ssp_mri = {
+# Civics | Military Readiness Initiative - Setup
+
+ssp_civic_mri = {
 	modification = yes
 	icon = "gfx/interface/icons/governments/civics/regular_civics/civic_ssp_farmerdelight.dds"
 	potential = {
@@ -27,12 +18,13 @@ civic_ssp_mri = {
 		inline_script = governments/conditions/ethic_militarist
 	}
 	random_weight = { base = @civic_default_random_weight }
-	description = civic_ssp_mri_desc
 	modifier = {
+
 		planet_farmers_alloys_produces_add = 1
 		planet_clerks_alloys_produces_add = 1
 		planet_miners_alloys_produces_add = 1
 		planet_technician_alloys_produces_add = 1
+
 		#upkeep
 		planet_farmers_minerals_produces_add = -2
 		planet_clerks_minerals_produces_add = -2
@@ -42,7 +34,9 @@ civic_ssp_mri = {
 
 }
 
-civic_ssp_the_diplomat = {
+# Civics | The Diplomat - Setup
+
+ssp_civic_diplomatic = {
 	modification = no
 	icon = "gfx/interface/icons/governments/civics/regular_civics/civic_ssp_diplomat.dds"
 	potential = {
@@ -58,15 +52,13 @@ civic_ssp_the_diplomat = {
 		#"The diplomat"
 		#+1/200% diplo from eco, pop, research
 		#-3/600% diplo from fleet
+
+		#todo recode to the actual things
 	}
 	random_weight = { base = @civic_default_random_weight }
-	description = civic_ssp_linguist_desc
+
 	modifier = {
-		envoys_add = 2
-		diplo_weight_mult = 0.50
-		planet_jobs_physics_research_produces_mult = -0.05
-		planet_jobs_society_research_produces_mult = -0.05
-		planet_jobs_engineering_research_produces_mult = -0.05
-		all_technology_research_speed = -0.05
+		diplo_weight_mult = -0.03
+		diplo_weight_mult = 0.01
 	}
 }

@@ -1,0 +1,13 @@
+﻿l_english:
+
+ # Civics | Military Readiness Initiative - Localization
+ ssp_civic_mri: "Military readiness initiative"
+ ssp_civic_mri_desc: "Gives the menial jobs the ability to produce alloys\n\n §HModifiers§!:\n £alloys£ $alloy$ from £job£ Menial jobs §G+1§!\n £minerals£ $minerals$ upkeep from £job£ Menial jobs §R+2§!"
+
+
+ # Civics | The Diplomat - Localization
+
+ ssp_civic_diplomatic: "The Diplomat"
+ ssp_civic_diplomatic_desc: "- Gives §R-3%§! £diplo_weight£ Diplomatic weight per fleet up to a maximum of §H600%§!\n- Gives §G1%§! £diplo_weight£ Diplomatic weight per £pop£ Pop, £economy£ Economy, £research£ Research up to a maximum of §H200%§!"
+
+

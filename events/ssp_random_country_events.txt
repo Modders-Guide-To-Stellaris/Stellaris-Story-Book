@@ -1,4 +1,6 @@
 namespace = ssp_random_country
+
+
 #Chemical Warfare Stuff
 country_event = {
     id = ssp_random_country.100

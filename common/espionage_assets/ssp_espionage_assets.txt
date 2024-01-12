@@ -1,5 +1,5 @@
 
-# Espionage | Biologist > Xenomorph Invasion - Assets
+# Espionage | Biologist - Assets
 
 asset_xenomorph_biologist = {
     passive = {}
@@ -10,10 +10,10 @@ asset_xenomorph_biologist = {
     }
     possible = {}
     potential = {}
-    categories = { ssp_cat_op_bioweapons op_cat_military }
+    categories = { ssp_op_cat_bioweapons op_cat_military }
     appearance = {
         portrait_generation_method = nongenerated
         name_generation_method = nongenerated
-        default_portrait = GFX_espionage_asset_organs
+        default_portrait = GFX_espionage_asset_hive
     }
 }

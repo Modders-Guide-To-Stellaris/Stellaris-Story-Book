@@ -1,5 +1,6 @@
 ﻿l_english:
-#for anyone looking through the code and wondering why the files are labeled as 'SSP' it's because before Stellaris Story Book this project was named Stellaris Story Pack -Foxy
+ #for anyone looking through the code and wondering why the files are labeled as 'SSP' it's because before Stellaris Story Book this project was named Stellaris Story Pack -Foxy
+ #also this is the main language file.
 
 ##########
 # armies
@@ -70,18 +71,6 @@ ssp_semichki_response.C2:0 "I fell asleep after passing out. Completely normal h
 
 START_SCREEN_PART_ONE_CULT:0 "Will add later as soncio didn't ask me to add this and since I want to finish the core first :P"
 
-##########
-# Civics
-##########
-
- #deprecated
-civic_ssp_one_planet_forced:0 "One Planet Challenge"
-civic_ssp_one_planet_forced_desc:0 "§EUnable to colonize planets.§!"
-
-civic_ssp_mri:0 "Military readiness initiative"
-civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §HModifiers§!:\n £alloys£ $alloy$ from £job£ Menial jobs +§c1§!\n £minerals£ $minerals$ upkeep from £job£ Menial jobs +§R2§!"
-
-
 ###########
 # LEADERS
 ###########
@@ -115,8 +104,8 @@ civic_ssp_mri_desc:0 "Gives the menial jobs the ability to produce alloys\n\n §
 SSP: "SSP"
 
  SSP_VERSION_BUTTON: "Version"
- SSP_VERSION: "Story Book Version: FOX-A2RA (§R1-8-2024§!)"
+ SSP_VERSION: "Story Book Version: FOX-A2RA (§R1-12-2024§!)"
 
  #Naming system: FOX=Foxy SON=Soncio, incase it's both just put SSP / A=Alpha B=Beta R=Release, / RA=Restricted Access
 
- SSP_VERSION_TOOLTIP: "Recoding Build"
+ SSP_VERSION_TOOLTIP: "The Great Recodening"

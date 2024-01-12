@@ -1,3 +1,6 @@
+
+# Origins
+
 origin_follower_cult = {
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/unused/origins_unwashed_masses.dds"
