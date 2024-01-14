@@ -1,4 +1,8 @@
-# governments/conditions/ethic_spiritualist
 
-value = ethic_spiritualist
-value = ethic_fanatic_spiritualist
+# Checks | Spiritualist Ethos - Inline
+
+OR = {
+    has_ethic = ethic_spiritualist
+    has_ethic = ethic_fanatic_spiritualist
+}
+

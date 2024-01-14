@@ -1,5 +1,5 @@
 
-# Origins
+# Origins | Reanimator Cult - Setup
 
 origin_follower_cult = {
 	is_origin = yes
@@ -33,7 +33,9 @@ origin_follower_cult = {
 	}
 }
 
-ssp_origin_separatists = { #ORIGINAL STELLARIS NON PLAYER ORIGIN BUT I DIDNT WANT TO OVERWRITE IT
+# Origins | Reanimator Cult - Setup
+
+ssp_origin_separatists = { #ORIGINAL STELLARIS NON PLAYER ORIGIN - Up to rework :D
 	is_origin = yes
 	icon = "gfx/interface/icons/origins/origins_separatists.dds"
 

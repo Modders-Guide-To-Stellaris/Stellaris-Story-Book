@@ -26,7 +26,7 @@ ssp_destiny_genpar = {
     inline_script = {
         script = trait/icon
         CLASS = general
-        ICON = "GFX_leader_trait_pilferer"
+        ICON = "GFX_leader_trait_aggressive" #todo
         RARITY = paragon
         COUNCIL = no
         TIER = none
@@ -45,7 +45,7 @@ ssp_destiny_genpar = {
         always = no
     }
     leader_class = { commander }
-    #custom_tooltip = ssp_destiny_genpar_effect
+
 
     destiny_background_icon = "GFX_leader_background_destiny_1"
     initial = no
