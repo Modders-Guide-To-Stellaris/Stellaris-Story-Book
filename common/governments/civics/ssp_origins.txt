@@ -33,6 +33,7 @@ origin_follower_cult = {
 	}
 }
 
+
 # Origins | Reanimator Cult - Setup
 
 ssp_origin_separatists = { #ORIGINAL STELLARIS NON PLAYER ORIGIN - Up to rework :D

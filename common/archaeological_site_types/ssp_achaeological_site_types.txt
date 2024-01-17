@@ -50,6 +50,7 @@ ssp_bacterium_ship_archsite = {
 	}
 }
 
+
 # Archaeo | Communication Hub - Arch Site
 
 ssp_communication_hub_archsite = {

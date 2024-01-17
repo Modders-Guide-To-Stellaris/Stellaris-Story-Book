@@ -1,5 +1,5 @@
 
-# Tradition | Chemical Warfare >
+# Tradition | Chemical Warfare > Invasion - Bombardment Stance
 
 chemical_warfare = {
     trigger = {

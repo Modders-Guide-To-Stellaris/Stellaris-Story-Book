@@ -1,5 +1,5 @@
 
-# Jobs | Mortal Initiate > - Overwrite
+# Jobs | Mortal Initiate > Reanimator Cult - Overwrite
 
 mortal_initiate = {
 	category = worker

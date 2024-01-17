@@ -3,7 +3,8 @@
 @triumph_duration_forth = 900
 @triumph_duration_1year = 360
 
-#Khyran Bacterium
+# Relics | Khyran Bacterium - Setup
+
 ssp_r_khyran_bacterium = {
 	activation_duration = @triumph_duration_normal
 	portrait = "GFX_relic_bacterium_sample"
@@ -53,7 +54,9 @@ ssp_r_khyran_bacterium = {
 	}
 }
 
-#Drive Core
+
+# Relics | Drive Core > Bacterium Ship - Setup
+
 ssp_r_drive_core = {
 	activation_duration = @triumph_duration_normal
 	portrait = "GFX_relic_drive_core"
@@ -148,7 +151,9 @@ ssp_r_drive_core = {
 	}
 }
 
-#Animarum
+
+# Relics | Animarum > Reanimator Cult - Setup
+
 ssp_r_animarum = {
 	activation_duration = @triumph_duration_normal
 	portrait = "GFX_ssp_r_the_animarum"
@@ -243,7 +248,9 @@ ssp_r_animarum = {
 	}
   }
 
-#XenoQueen
+
+# Relics | Xenomorph Queen - Setup
+
 ssp_r_xenomorph_queen = {
 	activation_duration = @triumph_duration_normal
 	portrait = "GFX_ssp_r_xeno_queen"

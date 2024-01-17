@@ -41,7 +41,9 @@ ssp_reanimated_army = {
 	}
 }
 
+
 # Army | Undead Army > Reanimator Cult - Overwrite
+
 undead_army = {
 	damage = 1.00
 	health = 1.00

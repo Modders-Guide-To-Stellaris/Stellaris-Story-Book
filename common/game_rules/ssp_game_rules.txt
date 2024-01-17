@@ -1,3 +1,6 @@
+
+# Checks | Leader Destiny Trait - Game Rule
+
 can_leader_get_destiny_trait = {
     AND = {
         NAND = {

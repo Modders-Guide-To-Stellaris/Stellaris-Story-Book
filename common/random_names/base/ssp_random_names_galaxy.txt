@@ -3,12 +3,12 @@ nebula_names = {
 }
 
 star_names = {
-    Mallet
-    Semichki
+    Malletia
     Vox
     Swedania
+    Seminova
 }
 
 black_hole_names = {
-    Hypno
+
 }

@@ -34,6 +34,7 @@ ssp_civic_mri = {
 
 }
 
+
 # Civics | The Diplomat - Setup
 
 ssp_civic_diplomatic = {
