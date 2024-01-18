@@ -3,13 +3,6 @@
  #also this is the main language file.
 
 ##########
-# armies
-##########
-
-ssp_reanimated_army:0 "Reanimated Army"
-ssp_reanimated_army_desc:0 "Powerful Armies who used to served the Grand Reanimator."
-
-##########
 # Events
 ##########
 

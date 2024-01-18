@@ -203,8 +203,8 @@ ssp_r_animarum = {
 						while = {
 							count = 5
 							create_army_transport = {
-								ship_name = "The Undead Army"
-								army_name = "Seeds of the Undead"
+								ship_name = "AnimarumShipName"
+								army_name = "AnimarumArmyName"
 								army_type = ssp_reanimated_army
 							}
 						}

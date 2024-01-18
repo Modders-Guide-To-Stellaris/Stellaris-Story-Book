@@ -26,8 +26,6 @@ on_monthly_pulse_country = {
     }
 }
 
-
-
 on_entering_system_fleet = {
     events = {
         ssp_relic.501
@@ -64,5 +62,4 @@ on_relic_lost = {
         ssp_relic.301
     }
 }
-
 
