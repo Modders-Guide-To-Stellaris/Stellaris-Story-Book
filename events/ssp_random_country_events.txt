@@ -2,6 +2,7 @@ namespace = ssp_random_country
 
 
 #Chemical Warfare Stuff
+
 country_event = {
     id = ssp_random_country.100
     title = ssp_random_country_100.name
@@ -43,6 +44,7 @@ country_event = {
 }
 
 #accept demands
+
 country_event = {
     id = ssp_random_country.101
     title = ssp_random_country_101.Name

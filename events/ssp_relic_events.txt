@@ -55,7 +55,7 @@ ship_event = {
         }
     }
 
-    immediate = { #changed this to owner, so incase any issue arise, remove owner
+    immediate = {
         owner = {
             every_controlled_ship = {
                 if = {
@@ -88,10 +88,10 @@ ship_event = {
 		owner = {
 			has_relic = ssp_r_drive_core
 		}
-			is_ship_class = shipclass_science_ship
+        is_ship_class = shipclass_science_ship
 	}
 
-	immediate = {		
+	immediate = {
         add_modifier = {
 			modifier = ssp_r_drive_core_passive
 			days = -1
@@ -99,8 +99,6 @@ ship_event = {
 	}
 }
 
-# trigger when you obtain the relic! (Rodathnov)
-# .300 = Warpdrive
 country_event = {
     id = ssp_relic.300
     hide_window = yes
@@ -226,6 +224,7 @@ country_event = {
         }
     }
 }
+
 #grand renanimator
 country_event = {
     id = ssp_relic.500

@@ -13,7 +13,7 @@
  ssp_r_drive_core:0 "Repaired Drive Core"
  ssp_r_drive_core_desc:0 "The repaired drive core we salvaged from the Jonan Foundry science ship"
  drive_core_passive:0 "Grants your science ships +50% Sublight speed"
- drive_core_random:0 "Active the powerful precursor jump drives giving you full galaxy warp range for a random fleet"
+ drive_core_tooltip:0 "Active the powerful precursor jump drives giving you full galaxy warp range for a random fleet"
 
 
  # Relics | Reanimator Staff > Reanimator Cult - Localization

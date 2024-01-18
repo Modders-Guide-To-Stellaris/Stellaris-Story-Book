@@ -1,3 +1,6 @@
+
+# Stars | Grand Reanimator > Reanimator Cult - Solar System
+
 grand_reanimator_finish = {
     name = NAME_reanimator
     class = sc_b
@@ -21,8 +24,8 @@ grand_reanimator_finish = {
 
             save_event_target_as = reanimator_sun
             create_country = {
-                name = "NAME_grand_reanimator"
-                type = guardian_dragon_reanimator
+                name = "NAME_Grand_Reanimator"
+                type = ssp_guardian_dragon_reanimator
                 flag = {
                     icon = {
                         category = "spherical" #TODO: replace flag
