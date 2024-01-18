@@ -1,0 +1,104 @@
+﻿l_english:
+ #for anyone looking through the code and wondering why the files are labeled as 'SSP' it's because before Stellaris Story Book this project was named Stellaris Story Pack -Foxy
+ #also this is the main language file.
+
+##########
+# Events
+##########
+
+MESSAGE_FAVOR_GAINED_BY_MIND_CONTROL:0 "Thanks to mind control bacteria, we have managed to gain a Favor from the $WHO|Y$."
+
+ssp_relic.501.name:0 "placeholder"
+ssp_relic.501.desc:0 "placeholder"
+ssp_relic.501.a:0 "placeholder"
+ssp_relic.501.b:0 "placeholder"
+
+ssp_relic.502.name:0 "placeholder"
+ssp_relic.502.desc:0 "placeholder"
+ssp_relic.502.a:0 "placeholder"
+ssp_relic.502.a.tt:0 "placeholder"
+ssp_relic.502.b:0 "placeholder"
+ssp_relic.502.b.tt:0 "placeholder"
+
+ssp_relic.511.name:0 "placeholder"
+ssp_relic.511.desc:0 "placeholder"
+ssp_relic.511.A:0 "placeholder"
+
+ssp_relic.598.name:0 "placeholder"
+ssp_relic.598.desc:0 "placeholder"
+
+ssp_relic.599.name:0 "placeholder"
+ssp_relic.599.desc:0 "placeholder"
+
+ ssp_random_country_100.name: "Pacifism protests in the capital!"
+ ssp_random_country_100.desc: "placeholder"
+ ssp_warcrime_name_A: "We shall join the pacifists"
+ ssp_warcrime_name_B: "Protests? Dispatch the military!"
+
+ ssp_random_country_102.Name: "placeholder"
+ ssp_random_country_102.Desc: "placeholder"
+ ssp_pacifistdemands_name: "We shall sign these demands"
+
+ ssp_random_country_102.Name: "placeholder"
+ ssp_random_country_102.Desc: "placeholder"
+ ssp_ironfist_name: "Punish them swiftly... Show no mercy."
+
+ ssp_random_country_1041.Name: "Notice from the Intergalatic Council"
+ ssp_random_country_1041.Desc: "WAAAAAAAAA"
+
+
+ssp_semichki_response.A1:0 "Who are you?"
+ssp_semichki_response.A2:0 "RESPONSE A"
+ssp_semichki_response.B1:0 "State your purpose"
+ssp_semichki_response.B2:0 "GENERIC RESPONSE B"
+ssp_semichki_response.C1:0 "Why is your chair broken?"
+ssp_semichki_response.C2:0 "I fell asleep after passing out. Completely normal here lad."
+
+ ssp_placeholder_text:0 "Placeholder pls ignore :D"
+
+
+
+################
+# Start Screen
+################
+
+START_SCREEN_PART_ONE_CULT:0 "Will add later as soncio didn't ask me to add this and since I want to finish the core first :P"
+
+###########
+# LEADERS
+###########
+
+ NAME_Semichki_leader:0 "Broken Chair Lad"
+ NAME_Semichki:0 "The Lads"
+ desc_semichki:0 "I'm gonna hear airhorns in my sleep"
+
+#############
+# Modifiers
+#############
+
+ mod_planet_farmers_minerals_upkeep_add:0 "£minerals£$minerals$ upkeep from £job_farmer£ [GetFarmerPlural]"
+ mod_planet_farmers_minerals_produces_add:0 "$mod_planet_farmers_minerals_upkeep_add$"
+ mod_planet_farmers_alloys_produces_mult:0 "£alloys£ $alloys$ from £job_farmer£ [GetFarmerPlural]"
+ mod_planet_farmers_alloys_produces_add:0 "$mod_planet_farmers_alloys_produces_mult$"
+
+ mod_planet_clerks_alloys_produces_add:0 "£alloys£ $alloys$ from £job_clerk£ $job_clerk_plural$"
+ mod_planet_clerks_minerals_produces_add:0 "£minerals£$minerals$ upkeep from £job_clerk£ $job_clerk_plural$"
+
+ mod_planet_miners_minerals_upkeep_add:0 "£minerals£$minerals$ upkeep from £job_miner£ [GetMinerPlural]"
+
+ mod_planet_technician_alloys_produces_add:0 "£alloys£ $alloys$ from £job_technician£ [GetTechnicianPlural]"
+ mod_planet_technician_minerals_upkeep_add:0 "£minerals£$minerals$ upkeep from £job_technician£ [GetTechnicianPlural]"
+ mod_planet_technician_minerals_produces_add:0 "$mod_planet_technician_minerals_upkeep_add$"
+
+
+
+
+
+SSP: "SSP"
+
+ SSP_VERSION_BUTTON: "Version"
+ SSP_VERSION: "Story Book Version: FOX-A2RA (§R1-12-2024§!)"
+
+ #Naming system: FOX=Foxy SON=Soncio, incase it's both just put SSP / A=Alpha B=Beta R=Release, / RA=Restricted Access
+
+ SSP_VERSION_TOOLTIP: "The Great Recodening"

@@ -3,7 +3,8 @@
 @triumph_duration_forth = 900
 @triumph_duration_1year = 360
 
-#Khyran Bacterium
+# Relics | Khyran Bacterium - Setup
+
 ssp_r_khyran_bacterium = {
 	activation_duration = @triumph_duration_normal
 	portrait = "GFX_relic_bacterium_sample"
@@ -34,7 +35,7 @@ ssp_r_khyran_bacterium = {
 		custom_tooltip = bacterium_control_agressive
 		
 		hidden_effect = {
-			country_event = {	id = ssp_relic.401	}
+			country_event = { id = ssp_relic.401 }
 		}
 
 
@@ -53,7 +54,9 @@ ssp_r_khyran_bacterium = {
 	}
 }
 
-#Drive Core
+
+# Relics | Drive Core > Bacterium Ship - Setup
+
 ssp_r_drive_core = {
 	activation_duration = @triumph_duration_normal
 	portrait = "GFX_relic_drive_core"
@@ -84,7 +87,7 @@ ssp_r_drive_core = {
 
 		set_country_flag = drive_core_active_flag
 
-		custom_tooltip = drive_core_random
+		custom_tooltip = drive_core_tooltip
 		hidden_effect = {
 			root = {
 				random_owned_fleet = {
@@ -101,10 +104,11 @@ ssp_r_drive_core = {
 				}
 			}
 		}
-				set_timed_country_flag = {
-					flag = jump_drive_allowed
-					days = 3600
-				}
+
+		set_timed_country_flag = {
+			flag = jump_drive_allowed
+			days = 3600
+		}
 
 		every_controlled_ship = {
 			hidden_effect = {
@@ -135,10 +139,6 @@ ssp_r_drive_core = {
 		}	
 	}
 
-		
-	
-
-
 	# Possible check for activation
 	possible = {
 		custom_tooltip = {
@@ -148,7 +148,9 @@ ssp_r_drive_core = {
 	}
 }
 
-#Animarum
+
+# Relics | Animarum > Reanimator Cult - Setup
+
 ssp_r_animarum = {
 	activation_duration = @triumph_duration_normal
 	portrait = "GFX_ssp_r_the_animarum"
@@ -182,9 +184,6 @@ ssp_r_animarum = {
 		army_defense_health_mult = 0.25
 	}
 
-
-	
-	
 	score = 1000
 
 	active_effect = {
@@ -204,8 +203,8 @@ ssp_r_animarum = {
 						while = {
 							count = 5
 							create_army_transport = {
-								ship_name = "The Undead Army"
-								army_name = "Seeds of the Undead"
+								ship_name = "AnimarumShipName"
+								army_name = "AnimarumArmyName"
 								army_type = ssp_reanimated_army
 							}
 						}
@@ -243,7 +242,9 @@ ssp_r_animarum = {
 	}
   }
 
-#XenoQueen
+
+# Relics | Xenomorph Queen - Setup
+
 ssp_r_xenomorph_queen = {
 	activation_duration = @triumph_duration_normal
 	portrait = "GFX_ssp_r_xeno_queen"

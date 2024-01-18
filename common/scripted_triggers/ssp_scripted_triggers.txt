@@ -1,25 +1,36 @@
-#is_not_doing_one_planet_challenge = { why check if NOT has civic. You should check IF it has the civic instead -Foxy
-#    NOT = {
-#        has_civic = civic_ssp_one_system_forced
-#    }
-#}
+
+# Checks | Total War - Scripted Triggers
+
+ssp_is_total_war = {
+    OR = {
+        has_civic = civic_hive_devouring_swarm
+        has_civic = civic_hive_devouring_swarm_lithoid
+        has_civic = civic_machine_terminator
+        has_civic = civic_machine_assimilator
+    }
+}
+
+
+# Checks | Reanimator Cult - Scripted Triggers
 
 has_grand_reanimator = {
-    has_ssp_reanimator_trait = yes
+    any_owned_leader = {
+        has_leader_flag = ssp_galparagon_necromancer
+    }
 }
-#dont check for a trait, but for a flag TODO
-has_ssp_reanimator_trait = {
-    has_trait = ssp_destiny_genpar
-}
+
 
 is_reanimator = {
     OR = {
         has_valid_civic = civic_reanimated_armies
         has_valid_civic = civic_permanent_employment
         has_valid_civic = civic_hive_cordyceptic_drones
-        has_ssp_reanimator_trait = yes
+        has_grand_reanimator = yes
     }
 }
+
+
+# Checks | Invasion - Scripted Triggers
 
 ssp_can_adopt_invasion = {
     AND = {
@@ -30,6 +41,8 @@ ssp_can_adopt_invasion = {
     }
 }
 
+
+# Checks | Xenomorph Invasion - Scripted Triggers
 
 ssp_xeno_valid_target = {
     any_owned_fleet = {

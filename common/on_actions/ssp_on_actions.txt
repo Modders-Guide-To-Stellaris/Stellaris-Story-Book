@@ -1,13 +1,6 @@
-on_survey = {
-	events = {
-    }
-}
-
 on_game_start_country = {
 	events = {
         necroids.1000
-        ssp_gamestart.1
-        ssp_gamestart.2
     }
 }
 
@@ -26,17 +19,12 @@ on_ship_built = {
 
 on_monthly_pulse_country = {
 	events = {
-        ssp_relic.300
-        ssp_relic.301
         ssp_relic.400
-
     }
     random_events = {
         5 = ssp_random_country.100
     }
 }
-
-
 
 on_entering_system_fleet = {
     events = {
@@ -63,4 +51,15 @@ on_galactic_council_established = {
     }
 }
 
+on_relic_received = {
+    events = {
+        ssp_relic.300
+    }
+}
+
+on_relic_lost = {
+    events = {
+        ssp_relic.301
+    }
+}
 

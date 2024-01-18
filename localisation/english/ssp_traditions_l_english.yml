@@ -1,10 +1,10 @@
 ﻿l_english:
 
- tradition_warning1:0 "§RChoosing this tradition disable other options.§!"
+ tradition_warning1:0 "§RChoosing this tradition disables other options.§!"
  tradition_warning2:0 "§R$TRIGGER_FAIL$This tradition is disabled as another choice has been made.§!"
 
 
- #-Invasion
+ # Traditions | Invasion - Localization
 
  tradition_ssp_invasion:0 "Invasion"
  tradition_ssp_invasion_desc:0 "Offence is the best defence. \n Disruption of communications can mean only one thing.... INVASION!"
@@ -62,6 +62,25 @@
  tr_ssp_invasion_final_3_disabled:0 "$tr_ssp_invasion_final_3$"
  tr_ssp_invasion_final_3_disabled_tt:0 "$tradition_warning2$\n\n$tr_ssp_invasion_final_3_tt_txt$"
  tr_ssp_invasion_final_3_disabled_delayed:0 "$tr_ssp_invasion_final_3_delayed$"
+
+ # Traditions | War Criminal > Invasion - Localization
+
+ crushing_the_opposition: "Crushing The Opposition"
+ crushing_the_opposition_desc: "The government has dispatched the military to take care of protests."
+
+ capital_protests: "Capital Protests"
+ capital_protests_desc: "People are leaving work and protesting our use of Chemical weapons!"
+
+ former_war_criminal: "Former War Criminal"
+ former_war_criminal_desc: "An empire which has renounced the ways of war crimes but still has penalties for doing these nefarious deeds."
+
+ war_criminal: "War Criminal"
+ war_criminal_desc: "An empire which has done nefarious deeds."
+
+ intergalactic_war_criminal: "Intergalactic War Criminal"
+ intergalactic_war_criminal_desc: "An empire was has been denounced for their evil deeds by the galactic council."
+
+
 
 
 

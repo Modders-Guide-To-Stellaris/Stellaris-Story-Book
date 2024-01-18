@@ -1,3 +1,6 @@
+
+# Government | Orbital Bombardment - Overwrite
+
 orbital_bombardment = {
 
     potential = {
@@ -97,6 +100,7 @@ orbital_bombardment = {
         policy_flags = {
             orbital_bombardment_armageddon
         }
+
         modifier = {}
 
         AI_weight = {
@@ -114,7 +118,10 @@ orbital_bombardment = {
             }
         }
     }
-    option = { #CHEMICAL!!!
+
+    # Government | Chemical Bombardment > Invasion - Setting
+
+    option = {
         name = "orbital_bombardment_chemical"
 
         in_breach_of = {
@@ -133,21 +140,26 @@ orbital_bombardment = {
         }
 
         potential = {
+            OR = {
                 has_tradition = tr_ssp_invasion_final_3
+                has_country_flag = tr_invasion_3
+            }
         }
 
         valid = {
-            NOR = {
-                has_ethic = ethic_xenophile
-                has_ethic = ethic_fanatic_xenophile
-                has_ethic = ethic_pacifist
-                has_ethic = ethic_fanatic_pacifist
+
+            NOR = { #todo, for some reason the text is also getting caught up in the valid
+                text = civic_tooltip_xenophile
+                inline_script = governments/conditions/ethic_xenophile
+                text = civic_tooltip_pacifist
+                inline_script = governments/conditions/ethic_pacifist
             }
         }
 
         policy_flags = {
             orbital_bombardment_chemical
         }
+
         modifier = {
             diplo_weight_mult = -1
             country_trust_growth = -0.25

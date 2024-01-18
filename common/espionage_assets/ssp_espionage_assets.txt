@@ -1,16 +1,19 @@
+
+# Espionage | Biologist - Assets
+
 asset_xenomorph_biologist = {
     passive = {}
     active = {
-        op_cat_bioweapons_skill_add = 4
-        op_cat_bioweapons_speed_mult = 2
+        ssp_op_cat_bioweapons_skill_add = 4
+        ssp_op_cat_bioweapons_speed_mult = 2
         op_cat_military_skill_add = 1
     }
     possible = {}
     potential = {}
-    categories = { op_cat_bioweapons op_cat_military }
+    categories = { ssp_op_cat_bioweapons op_cat_military }
     appearance = {
         portrait_generation_method = nongenerated
         name_generation_method = nongenerated
-        default_portrait = GFX_espionage_asset_organs
+        default_portrait = GFX_espionage_asset_hive
     }
 }

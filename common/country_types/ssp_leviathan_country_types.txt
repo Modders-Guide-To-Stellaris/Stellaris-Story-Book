@@ -1,4 +1,7 @@
-guardian_dragon_reanimator = {
+
+# Country | Reanimated Dragon > Reanimator Cult - Dragon
+
+ssp_guardian_dragon_reanimator = {
     scaled_difficulty_bonuses = 0.5	# scales to setting
     is_space_critter = yes
     government = no

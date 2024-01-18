@@ -1,0 +1,45 @@
+﻿l_english:
+
+ # Espionage | Xenomorph Invasion - Localization
+
+ operation_xenomorph_deployment: "REPLACE_ME"
+ operation_xenomorph_deployment_on_success: "REPLACE_ME"
+
+ mod_operation_xenomorph_deployment_speed_mult: "REPLACE_ME"
+
+ mod_operation_xenomorph_deployment_difficulty_add: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_difficulty_mult: "REPLACE_ME"
+
+ mod_hostile_operation_xenomorph_deployment_difficulty_add: "REPLACE_ME"
+ mod_hostile_operation_xenomorph_deployment_difficulty_mult: "REPLACE_ME"
+
+ mod_operation_xenomorph_deployment_skill_add: "REPLACE_ME"
+ mod_operation_xenomorph_deployment_skill_mult: "REPLACE_ME"
+
+ #Espionage | Bioweapons - Localization
+
+ ssp_op_cat_bioweapons:0 "Bioweapons Department"
+ ssp_op_cat_bioweapons_desc: "REPLACE_ME"
+
+ mod_ssp_op_cat_bioweapons_speed_mult: "Operation Speed Multiplier (Bioweapons)"
+ mod_ssp_op_cat_bioweapons_speed_mult_desc: "REPLACE_ME"
+
+ mod_ssp_op_cat_bioweapons_difficulty_add: "REPLACE_ME"
+ mod_ssp_op_cat_bioweapons_difficulty_add_desc: "REPLACE_ME"
+ mod_ssp_op_cat_bioweapons_difficulty_mult: "REPLACE_ME"
+ mod_ssp_op_cat_bioweapons_difficulty_mult_desc: "REPLACE_ME"
+
+ mod_hostile_ssp_op_cat_bioweapons_difficulty_add: "REPLACE_ME"
+ mod_hostile_ssp_op_cat_bioweapons_difficulty_add_desc: "REPLACE_ME"
+ mod_hostile_ssp_op_cat_bioweapons_difficulty_mult: "REPLACE_ME"
+ mod_hostile_ssp_op_cat_bioweapons_difficulty_mult_desc: "REPLACE_ME"
+
+ mod_ssp_op_cat_bioweapons_skill_add: "Operation Skill (Bioweapons)"
+ mod_ssp_op_cat_bioweapons_skill_add_desc: "REPLACE_ME"
+ mod_ssp_op_cat_bioweapons_skill_mult: "REPLACE_ME"
+ mod_ssp_op_cat_bioweapons_skill_mult_desc: "REPLACE_ME"
+
+ # Espionage | Assets - Localization
+
+ asset_xenomorph_biologist:0 "Xenomorph Biologist"
+

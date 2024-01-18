@@ -1,3 +1,6 @@
+
+# Tradition | Chemical Warfare > Invasion - Bombardment Stance
+
 chemical_warfare = {
     trigger = {
         owner = {

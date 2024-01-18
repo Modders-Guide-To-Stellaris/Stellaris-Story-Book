@@ -11,9 +11,10 @@
 @diff_t9 = 13
 #make it so that you target a random planet on the start of this, like you say you leave it to the operative to figure out the best course of action with the infiltrant. Less risk.
 
+# Espionage | Xenomorph Invasion - Setup
 
 operation_xenomorph_deployment = {
-    categories = { op_cat_bioweapons op_cat_military }
+    categories = { ssp_op_cat_bioweapons op_cat_military }
     picture = GFX_evt_pirate_armada
     desc = operation_arm_privateers_desc
     stages = 3
@@ -48,7 +49,7 @@ operation_xenomorph_deployment = {
         icon = GFX_espionage_chapter_icon_surveillance
         event = ssp_operation.101
     }
-    stage = {#failstage 1
+    stage = { #failstage 1
         difficulty = @diff_t6
         icon = GFX_espionage_chapter_icon_target
         event = ssp_operation.102
@@ -58,12 +59,12 @@ operation_xenomorph_deployment = {
         icon = GFX_espionage_chapter_icon_motion
         event = ssp_operation.103
     }
-    stage = {#failstage2
+    stage = { #failstage2
         difficulty = @diff_t6
         icon = GFX_espionage_chapter_icon_motion
         event = ssp_operation.104
     }
-    stage = {#passed all checks, free to proceed :D
+    stage = { #passed all checks, free to proceed :D
         difficulty = @diff_t6
         icon = GFX_espionage_chapter_icon_motion
         event = ssp_operation.105

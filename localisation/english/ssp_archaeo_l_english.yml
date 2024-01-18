@@ -1,0 +1,49 @@
+﻿l_english:
+
+ # Archaeo | Bacterium Ship - Localization
+
+ #anomaly
+ ssp_anomaly_bacterium_ship: "Strange Transmission"
+ ssp_on_discovery_bacteria_ship: "We have received a strange transmission from a science crew somewhere in the system [FromFrom.GetName] on planet [From.GetName], it won't take long to track down an estimated point of origin on the planet. We should send a science ship to check it out."
+
+ archaeo.1.name:0 "Archaeo Digsite Test"
+ archaeo.1.desc:0 "Our sciencetists have picked up a strange transmission from [From.GetName] \n The signal is very close to one our ships use. \n Study suggests that the signal is in the northwest region of the planet. "
+
+
+ #digsite
+ ssp_bacterium_ship_archsite: "$ssp_anomaly_bacterium_ship$"
+ ssp_bacterium_ship_archsite_desc: "We have received a strange transmission from a science crew somewhere in the galaxy.\n Hello! We are &^@#$*&!!*() from science ship Ichki-0ne, our engines have blown while studying planet [From.planet.GetName] and we request immediate pickup!\n Our scientists have noted high levels of radiation, we will have to find a way how to protect our crew and ship to be able to land on the planet"
+
+ ssp_archaeo_title.1: "Our Ship Lands"
+ ssp_archaeo_desc.1: "We have landed on the planet, research suggests that this planet has rich biodiversity. The ocean floor is full of metal wrecks along with flora that does not appear on any planet we have seen before. Scans suggest that this has come from the extended exposure to the reactor of the crashed ship. Further research is advised. "
+ ssp_archaeo_option_title.1: "Great"
+
+ ssp_archaeo_title.2: "The Mysterious Wreckage"
+ ssp_archaeo_desc.2: "After traversing and scanning the flora and fauna we finally came upon the ship mentioned in the transmission, their message seemed to be for a now extinct species. Signs show that this ship is more than 1000 years old, which would indicate it served during the Crisis of Kangs era."
+ ssp_archaeo_option_title.2: "We should go in to investigate."
+
+ ssp_archaeo_title.3: "Data Terminal"
+ ssp_archaeo_desc.3: "We found a data terminal on the science ship containing data about anomalies and coordinates to now deceased systems. Although we have managed to link one of the coordinates to a system that should still exist, there is a note with the planet saying '01000011 01101111 01101101 01101101 01110101 01101110 01101001 01100011 01100001 01110100 01101001 01101111 01101110 00100000 01001000 01110101 01100010'."
+ ssp_archaeo_option_title.3: "Page the nearest science ship about this discovery."
+
+ ssp_archaeo_title.4:0 "Nuclear Meltdown"
+ ssp_archaeo_desc.4:0 "We may have unsettled something in the ship, the reactor leak has grown bigger and we are under constant attack from the nearby fauna, we need to make a decision now. We found a robot specimen infected with something, we believe it to be the cause of the death. Alternatively the drive core of the ship. it's more advanced than ours and in is still in perfect state, these jonans knew what they were doing. "
+ ssp_archaeo_option_title.4a:0 "This specimen will be of great use to our research department."
+ ssp_archaeo_option_title.4b:0 "We will not take unnecessary risks, save the drive core!"
+
+ # Archaeo | Communication Hub - Localization
+
+ ssp_communication_hub_archsite:0 "Jonan Communication Hub"
+ ssp_communication_hub_archsite_desc:0 "Precursor Arch Site Pt.2"
+
+ ssp_archaeo_title.5:0 "Infiltration"
+ ssp_archaeo_desc.5:0 "As soon as we landed on the somehow still active hub we stumbled upon an inscription and a lot of warnings, we are unsure on how to proceed."
+ ssp_archaeo_option_title.5:0 "Translate and keep going."
+
+ ssp_archaeo_title.6:0 "Active Defenses!"
+ ssp_archaeo_desc.6:0 "It was a trap! after following the wierd inscribed instructions left by our predecessor, we found ourselves in a hallway which quickly turned into our prison when one of the scientists activated one of the traps inside the hallway. /n/ luckily one of crew found a way to shutdown the device but its very risky."
+ ssp_archaeo_option_title.6:0 "Shut them down, no matter the cost."
+
+ ssp_archaeo_title.7:0 "Jonan AI Intelligence"
+ ssp_archaeo_desc.7:0 "We found ourself standing in front of a giant AI, the controller of the facility. \n After we told the AI what had become of his creator he decided to share with us the secrets of their ways."
+ ssp_archaeo_option_title.7:0 "Take the key"

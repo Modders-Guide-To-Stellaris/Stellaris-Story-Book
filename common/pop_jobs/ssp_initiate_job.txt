@@ -1,3 +1,6 @@
+
+# Jobs | Mortal Initiate > Reanimator Cult - Overwrite
+
 mortal_initiate = {
 	category = worker
 	condition_string = WORKER_JOB_TRIGGER
@@ -15,8 +18,8 @@ mortal_initiate = {
 
 	possible_precalc = can_fill_worker_job
 	possible = {
-		NOT = { has_trait = trait_mechanical } #No machines
-		NOT = { has_trait = trait_zombie } #How do you kill that which has no life?
+		NOT = { has_trait = trait_mechanical } #No machines.
+		NOT = { has_trait = trait_zombie } #How do you kill something which does not posses life?
         NOT = { has_trait = trait_grimoire_qualityI }
 		NOT = { has_trait = trait_grimoire_qualityII }
 		NOT = { has_trait = trait_grimoire_qualityIII }

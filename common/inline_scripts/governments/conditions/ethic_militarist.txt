@@ -1,4 +1,11 @@
-# governments/conditions/ethic_militarist / thanks Evolved XD
 
-value = ethic_militarist
-value = ethic_fanatic_militarist
+# Checks | Militarist Ethos - Inline
+
+ethics = {
+    OR = {
+        value = ethic_militarist
+        value = ethic_fanatic_militarist
+    }
+}
+
+

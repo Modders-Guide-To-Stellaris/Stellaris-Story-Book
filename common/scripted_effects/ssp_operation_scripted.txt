@@ -1,5 +1,7 @@
 namespace = operation
 
+# Espionage | Random Events > Xenomorph Invasion - Events setup
+
 operation_random_events_ssp_alien = {
     random_list = {
         2 = { #Contact Lost

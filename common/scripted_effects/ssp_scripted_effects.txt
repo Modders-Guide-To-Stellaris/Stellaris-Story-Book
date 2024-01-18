@@ -1,3 +1,6 @@
+
+# Archaeo | Communication Hub - Setup
+
 setup_jonan_digsite = {
 	random_system_planet = {
 		limit = {

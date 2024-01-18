@@ -1,0 +1,26 @@
+﻿l_english:
+
+ # Traits | Revival > Reanimator Cult - Localization
+
+ trait_grimoire_qualityI:0 "Reincarnated?"
+ trait_grimoire_qualityI_desc:0 "This pop is basically a brain dead zombie"
+
+ trait_grimoire_qualityII:0 "Signs of Life"
+ trait_grimoire_qualityII_desc:0 "This pop still has some brain activity left"
+
+ trait_grimoire_qualityIII:0 "Average Worker"
+ trait_grimoire_qualityIII_desc:0 "This pop is suffering from constant fatigue"
+
+ trait_grimoire_maxima:0 "Resurrection Maxima"
+ trait_grimoire_maxima_desc:0 "This pop doesn't fear death itself!"
+
+
+ # Traits | Grand Reanimator > Reanimator Cult - Localization
+
+ ssp_destiny_genpar:0 "Grand Reanimator"
+
+
+
+ ssp_trait_alcoholic:0 "Alcoholic"
+
+

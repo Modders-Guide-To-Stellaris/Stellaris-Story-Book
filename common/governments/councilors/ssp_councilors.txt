@@ -1,16 +1,19 @@
-councilor_reanimated_armies = { #OVERWRITE
-    leader_class = { general scientist }
+
+# Government | Master Necromancer - Setup
+
+councilor_reanimated_armies = {
+    leader_class = { commander scientist }
     is_leader_possible = {
         OR = {
-            leader_class = general
+            leader_class = commander
             leader_class = scientist
         }
     }
     possible = {
-        #OR = {
+        OR = {
             has_civic = civic_reanimated_armies
-            #has_grand_reanimator = yes
-        #}
+            has_grand_reanimator = yes
+        }
     }
     custom_tooltip = "councilor_reanimated_armies_custom_modifier_desc"
 }
