@@ -1,8 +1,13 @@
 ﻿l_english:
 
  # Galaxy | Shapes
-
+ ssp_core_struck: "Core Struck"
+ ssp_rifted: "Rifted Galaxy"
 
  # Galaxy | Types
-
- mediocre:0 "Mediocre"
+ ssp_micro: "Micro" #100
+ ssp_little: "Little" #300
+ ssp_mediocre: "Mediocre" #500
+ ssp_spacious: "Spacious" #700
+ ssp_jumbo: "Jumbo" #900
+ ssp_extreme: "Extreme" #1200

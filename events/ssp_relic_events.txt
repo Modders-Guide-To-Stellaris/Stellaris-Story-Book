@@ -566,4 +566,6 @@ planet_event = { #REVERT HIDE WINDOW LATER
     desc = ssp_relic.600.desc
     hide_window =  yes
     is_triggered_only = yes
+
+
 }

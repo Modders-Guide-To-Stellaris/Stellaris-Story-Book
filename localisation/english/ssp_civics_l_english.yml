@@ -8,6 +8,6 @@
  # Civics | The Diplomat - Localization
 
  ssp_civic_diplomatic: "The Diplomat"
- ssp_civic_diplomatic_desc: "- Gives §R-3%§! £diplo_weight£ Diplomatic weight per fleet up to a maximum of §H600%§!\n- Gives §G1%§! £diplo_weight£ Diplomatic weight per £pop£ Pop, £economy£ Economy, £research£ Research up to a maximum of §H200%§!"
+ ssp_civic_diplomatic_desc: "- Gives §R-3%§! £diplo_weight£ Diplomatic weight per fleet up to a maximum of §H600%§!\n- Gives §G1%§! £diplo_weight£ Diplomatic weight per £pop£ Pop, £economy£ Economy, £research£ Research up to a maximum of §H200%§! per category"
 
 
