@@ -1,6 +1,6 @@
 setup_scenario = {
 	name = "medium"
-	priority = 2					#priority decides in which order the scenarios are listed
+	priority = 5					#priority decides in which order the scenarios are listed
 	default = yes
 	num_stars = 600
 	radius = 400					#should be less than 500, preferably less than ~460

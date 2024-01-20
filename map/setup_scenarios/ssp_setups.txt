@@ -1,9 +1,9 @@
 setup_scenario = {
     name = "ssp_micro"
-    priority = -1					#priority decides in which order the scenarios are listed
+    priority = 0					#priority decides in which order the scenarios are listed
     num_stars = 100
     radius = 100					#should be less than 500, preferably less than ~460
-    num_empires = { min = 0 max = 15 }	#limits player customization
+    num_empires = { min = 0 max = 6 }	#limits player customization
     num_empire_default = 3
     fallen_empire_default = 0
     fallen_empire_max = 1
@@ -64,7 +64,7 @@ setup_scenario = {
 
 setup_scenario = {
     name = "ssp_little"
-    priority = 1					#priority decides in which order the scenarios are listed
+    priority = 2					#priority decides in which order the scenarios are listed
     num_stars = 300
     radius = 250					#should be less than 500, preferably less than ~460
     num_empires = { min = 0 max = 12 }	#limits player customization
@@ -130,7 +130,7 @@ setup_scenario = {
 
 setup_scenario = {
     name = "ssp_mediocre"
-    priority = 2 					#priority decides in which order the scenarios are listed, Base stellaris ends at 4, that being Huge
+    priority = 4
     num_stars = 500
     radius = 244					#should be less than 500, preferably less than ~460
     num_empires = { min = 0 max = 15 }	#limits player customization
@@ -199,7 +199,7 @@ setup_scenario = {
 
 setup_scenario = {
     name = "ssp_extreme"
-    priority = 6 					#priority decides in which order the scenarios are listed, Base stellaris ends at 4, that being Huge
+    priority = 10 					#priority decides in which order the scenarios are listed, Base stellaris ends at 4, that being Huge
     num_stars = 1200
     radius = 450					#should be less than 500, preferably less than ~460
     num_empires = { min = 0 max = 15 }	#limits player customization
@@ -267,5 +267,4 @@ setup_scenario = {
     supports_shape = cartwheel
     supports_shape = spoked
     supports_shape = ssp_rifted
-    supports_shape = ssp_core_struck
 }

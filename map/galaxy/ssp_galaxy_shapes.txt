@@ -3,13 +3,13 @@ ssp_rifted = {
 }
 
 ssp_core_struck = { #this galaxy was made on accident lol
-    core_radius_perc = 2                # Core radius is 50% of the galaxy radius
-    num_stars_core_perc = 100            # Number of stars in core
+    core_radius_perc = 0.25                # Core radius is 10% of the galaxy radius
+    num_stars_core_perc = 0.40            # Number of stars in core
     stars_min_dist = 12.5                # Min distance between stars
 
     countries = {
         ideal_sq_dist_between = 5625    # 75*75 Ideal square distance between countries
-        min_sq_dist_between = 2500        # 50*50 Min square distance between countries
+        min_sq_dist_between = 2500       # 50*50 Min square distance between countries
     }
 
     fallen_empires = {
