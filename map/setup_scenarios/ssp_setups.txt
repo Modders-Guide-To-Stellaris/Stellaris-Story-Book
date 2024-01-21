@@ -2,7 +2,7 @@ setup_scenario = {
     name = "ssp_micro"
     priority = 0					#priority decides in which order the scenarios are listed
     num_stars = 100
-    radius = 100					#should be less than 500, preferably less than ~460
+    radius = 150					#should be less than 500, preferably less than ~460
     num_empires = { min = 0 max = 6 }	#limits player customization
     num_empire_default = 3
     fallen_empire_default = 0
@@ -132,7 +132,7 @@ setup_scenario = {
     name = "ssp_mediocre"
     priority = 4
     num_stars = 500
-    radius = 244					#should be less than 500, preferably less than ~460
+    radius = 350					#should be less than 500, preferably less than ~460
     num_empires = { min = 0 max = 15 }	#limits player customization
     num_empire_default = 3
     fallen_empire_default = 0
@@ -195,13 +195,14 @@ setup_scenario = {
     supports_shape = bar
     supports_shape = starburst
     supports_shape = cartwheel
+    supports_shape = ssp_core_struck
 }
 
 setup_scenario = {
     name = "ssp_extreme"
     priority = 10 					#priority decides in which order the scenarios are listed, Base stellaris ends at 4, that being Huge
     num_stars = 1200
-    radius = 450					#should be less than 500, preferably less than ~460
+    radius = 550				#should be less than 500, preferably less than ~460
     num_empires = { min = 0 max = 15 }	#limits player customization
     num_empire_default = 3
     fallen_empire_default = 0
@@ -249,12 +250,12 @@ setup_scenario = {
     nebula_size = 60
     nebula_min_dist = 200
 
-    num_wormhole_pairs = { min = 0 max = 5 }
-    num_wormhole_pairs_default = 1
+    num_wormhole_pairs = { min = 3 max = 10 }
+    num_wormhole_pairs_default = 5
     num_gateways = { min = 0 max = 5 }
     num_gateways_default = 1
     num_hyperlanes = { min=0.5 max= 3 }
-    num_hyperlanes_default = 1
+    num_hyperlanes_default = 1.25
 
     supports_shape = elliptical
     supports_shape = spiral_2
@@ -267,4 +268,7 @@ setup_scenario = {
     supports_shape = cartwheel
     supports_shape = spoked
     supports_shape = ssp_rifted
+    supports_shape = ssp_scattershot
+    supports_shape = ssp_core_implosion
 }
+
