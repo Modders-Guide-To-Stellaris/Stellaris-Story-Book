@@ -11,3 +11,9 @@
 
  ssp_origin_separatists: "Separatists"
  ssp_origin_separatists_desc: "REPLACE_ME"
+
+
+ # Origins | rename - Localization
+
+ ssp_origin_lolbot: "Blackhole Thingie"
+ ssp_origin_lolbot_desc: "this is a very good description, yes yes"

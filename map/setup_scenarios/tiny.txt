@@ -62,5 +62,4 @@ setup_scenario = {
 	#supports_shape = spiral_4
 	supports_shape = ring
 	supports_shape = bar
-	supports_shape = ssp_core_struck
 }

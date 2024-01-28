@@ -67,5 +67,5 @@ setup_scenario = {
 	supports_shape = starburst
 	supports_shape = cartwheel
 	supports_shape = spoked
-	supports_shape = ssp_rifted
+	#supports_shape = ssp_rifted
 }

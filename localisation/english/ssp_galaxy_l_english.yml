@@ -1,10 +1,7 @@
 ﻿l_english:
 
  # Galaxy | Shapes
- ssp_core_implosion: "Core Implosion"
- ssp_core_struck: "Core Struck"
  ssp_rifted: "Rifted Galaxy"
- ssp_scattershot: "Scattershot"
 
  # Galaxy | Types
  ssp_micro: "Micro" #100

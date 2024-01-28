@@ -12,7 +12,8 @@
  Swedania:0 "Swedania"
 
  #event star names
- NAME_reanimator:0 "Nostra Liberatas" #Semichki Origin Star
+ NAME_ssp_reanimator:0 "Nostra Liberatas" #Semichki Origin Star
+ Name_ssp_blackhole:0 "Lux o Silentium"
 
  #black holes
 

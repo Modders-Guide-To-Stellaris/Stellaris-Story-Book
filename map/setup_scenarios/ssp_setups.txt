@@ -57,7 +57,6 @@ setup_scenario = {
     num_hyperlanes = { min=0.5 max= 3 }
     num_hyperlanes_default = 1
 
-    supports_shape = ssp_core_struck
     supports_shape = elliptical
     supports_shape = ring
 }
@@ -125,7 +124,6 @@ setup_scenario = {
     supports_shape = spiral_2
     supports_shape = ring
     supports_shape = bar
-    supports_shape = ssp_core_struck
 }
 
 setup_scenario = {
@@ -195,7 +193,6 @@ setup_scenario = {
     supports_shape = bar
     supports_shape = starburst
     supports_shape = cartwheel
-    supports_shape = ssp_core_struck
 }
 
 setup_scenario = {
@@ -267,8 +264,6 @@ setup_scenario = {
     supports_shape = starburst
     supports_shape = cartwheel
     supports_shape = spoked
-    supports_shape = ssp_rifted
-    supports_shape = ssp_scattershot
-    supports_shape = ssp_core_implosion
+    #supports_shape = ssp_rifted
 }
 

@@ -2,7 +2,7 @@
 # Stars | Grand Reanimator > Reanimator Cult - Solar System
 
 grand_reanimator_finish = {
-    name = NAME_reanimator
+    name = NAME_ssp_reanimator
     class = sc_b
     usage = misc_system_init
 
@@ -114,5 +114,59 @@ grand_reanimator_finish = {
         }
 
 
+    }
+}
+
+# Stars | Lolbot thingie, rename - Solar System
+ssp_blackhole_system_init = {
+    name = Name_ssp_blackhole
+    class = sc_black_hole
+    usage = custom_empire
+
+    flags = { ssp_blackhole_system }
+
+    planet = {
+        name = "Name_ssp_blackhole"
+        class = "pc_black_hole"
+        orbit_distance = 0
+        orbit_angle = 1
+        size = 25
+        has_ring = yes
+    }
+
+
+    planet = {
+        name = "NAME_ssp_blackhole_capital"
+        class = pc_shielded
+        orbit_distance = 53
+        orbit_angle = 120
+        size = 22
+        starting_planet = yes
+        has_ring = no
+        deposit_blockers = none
+        modifiers = none
+        flags = {  }
+
+        init_effect = {
+            save_global_event_target_as = ssp_blackhole_start
+            prevent_anomaly = yes
+        }
+
+        planet = {
+            name = "Name_ssp_blackhole_tomb"
+            class = pc_nuked
+            orbit_distance = 79
+            orbit_angle = 
+        }
+
+        moon = {
+            name = "NAME_Luna"
+            class = "pc_barren_cold"
+            size = 5
+            orbit_distance = 12
+            orbit_angle = 40
+            has_ring = no
+            entity = "cold_barren_planet_luna_entity"
+        }
     }
 }

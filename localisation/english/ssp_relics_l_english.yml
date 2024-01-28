@@ -27,4 +27,5 @@
  # Relics | Xenomorph Queen - Localization
 
  ssp_r_xenomorph_queen:0 "Xenomorph Queen"
+ ssp_r_xenomorph_queen_desc: "REPLACE_ME"
  xenomorph_queen_passive:0 "Allows the Operation 'Deploy Xenomorphs' as an espionage option."
