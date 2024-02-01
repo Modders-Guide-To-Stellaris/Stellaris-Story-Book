@@ -61,6 +61,8 @@ ssp_origin_lolbot = { #todo, rename
 	is_origin = yes
 	icon = gfx/interface/icons/traditions/ssp_placeholder.dds
 
+	starting_colony = pc_frozen
+
 	playable = {
 	}
 

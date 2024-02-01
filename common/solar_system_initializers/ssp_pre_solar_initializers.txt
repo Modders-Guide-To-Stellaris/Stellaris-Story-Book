@@ -133,40 +133,62 @@ ssp_blackhole_system_init = {
         size = 25
         has_ring = yes
     }
+    asteroid_belt = {
+        type = debris_asteroid_belt
+        radius = 30
+    }
+    asteroid_belt = {
+        type = rocky_asteroid_belt
+        radius = 35
+    }
+    asteroid_belt = {
+        type = icy_asteroid_belt
+        radius = 40
+    }
 
 
     planet = {
-        name = "NAME_ssp_blackhole_capital"
-        class = pc_shielded
-        orbit_distance = 53
+        name = "NAME_ssp_blackhole_tomb"
+        class = pc_nuked
+        orbit_distance = 67
+        orbit_angle = 277
+        size = 31
+        deposit_blockers = none
+        modifiers = none #replace.
+        flags = { }
+
+        init_effect = {
+            prevent_anomaly = yes
+        }
+
+        moon = {
+            name = "NAME_ssp_blackhole_tomb_moon"
+            class = "pc_barren_cold"
+            size = 15
+            orbit_distance = 17
+            orbit_angle = 47
+            has_ring = no
+            entity = "cold_barren_planet_luna_entity"
+        }
+    }
+
+    change_orbit = 25
+
+    planet = {
+        class = pc_frozen
+        orbit_distance = 5
         orbit_angle = 120
         size = 22
         starting_planet = yes
         has_ring = no
         deposit_blockers = none
         modifiers = none
-        flags = {  }
+        flags = { }
 
         init_effect = {
             save_global_event_target_as = ssp_blackhole_start
             prevent_anomaly = yes
         }
-
-        planet = {
-            name = "Name_ssp_blackhole_tomb"
-            class = pc_nuked
-            orbit_distance = 79
-            orbit_angle = 
-        }
-
-        moon = {
-            name = "NAME_Luna"
-            class = "pc_barren_cold"
-            size = 5
-            orbit_distance = 12
-            orbit_angle = 40
-            has_ring = no
-            entity = "cold_barren_planet_luna_entity"
-        }
     }
 }
+
