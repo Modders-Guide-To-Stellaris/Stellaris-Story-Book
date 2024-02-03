@@ -7,9 +7,13 @@ entity = {
 
 }
 
+
+
 entity = {
     name = "frontend_background_attached_entity2"
     pdxmesh = "nemesis_frontend_mesh"
+
+
 
     default_state = "idle"
     state = { name = "idle"		animation = "idle"
@@ -18,7 +22,7 @@ entity = {
         start_event = { node = "stars_locator_02" particle = "apocalypse_frontend_stars_effect" keep_particle = yes trigger_once = yes }
         #start_event = { node = "ship_light_locator_01" particle = "nemesis_frontend_ship_light_effect" keep_particle = yes trigger_once = yes }
         #		start_event = { node = "ship_light_locator_02" particle = "apocalypse_frontend_ship_light_effect" keep_particle = yes trigger_once = yes }
-        #start_event = { node = "ship_light_locator_03" particle = "nemesis_frontend_station_light_effect" keep_particle = yes trigger_once = yes }
+        #start_event = { node = "ship_light_locator_03" particle = "avian_01_colossus_inner_core_effect" keep_particle = no trigger_once = yes }
         #		start_event = { node = "ship_light_locator_04" particle = "apocalypse_frontend_ship_light_effect" keep_particle = yes trigger_once = yes }
         start_event = { node = "background" particle = "nemesis_frontend_gas_outburst_effect" keep_particle = yes trigger_once = yes }
     }
