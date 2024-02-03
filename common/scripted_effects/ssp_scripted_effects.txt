@@ -9,7 +9,7 @@ setup_jonan_digsite = {
 			NOT = { exists = archaeological_site }
 			NOT = { has_planet_flag = suppress_archaeological_sites }
 		}
-            create_archaeological_site = ssp_communication_hub_digsite
+            create_archaeological_site = ssp_communication_hub_archsite
 	}
 }
 
