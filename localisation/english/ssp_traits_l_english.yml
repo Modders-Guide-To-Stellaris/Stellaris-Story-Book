@@ -18,9 +18,13 @@
  # Traits | Grand Reanimator > Reanimator Cult - Localization
 
  ssp_destiny_genpar:0 "Grand Reanimator"
-
-
+ ssp_destiny_genpar_desc: "REPLACE_ME"
 
  ssp_trait_alcoholic:0 "Alcoholic"
+ ssp_trait_alcoholic_desc: "REPLACE_ME"
+
+ ssp_traits_advanced_reanimated: "REPLACE_ME"
+ ssp_traits_advanced_reanimated_desc: "REPLACE_ME"
+
 
 

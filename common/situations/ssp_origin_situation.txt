@@ -22,7 +22,7 @@
 #        }
 
 #We could neet to "initialize" the new variable by doing set_variable = {which = { sacrifice_result_total value = 0} 
-#not 100% sure it's required, but if you have time the way to do this is by making a new country_event and trigger it
+#not 100% sure it's required, but if you have time and motivation the way to do this is by making a new country_event and trigger it
 #in the on_start portion of the situation
 
 
@@ -156,7 +156,10 @@ situation_grimoire_decipher = {
 
 	monthly_progress = {
 		base = 1
-        add = root.sacrifice_result_total
+		modifier = {
+			desc = ssp_placeholder_text
+			add = value:ssp_killed_initiatie_count
+		}
         divide = 10
 	 #monthly progress = 0.1 + 0.1 times sacrificed pops #todo: doesnt actually work?
 	#	modifier = {

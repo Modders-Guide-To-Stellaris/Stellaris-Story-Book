@@ -330,7 +330,7 @@ country_event = { # Upon defeating the Entity
 
     trigger = {
         this = {
-            from = { is_country_type = guardian_dragon_reanimator }
+            from = { is_country_type = ssp_guardian_dragon_reanimator }
         }
         has_origin = origin_follower_cult
     }
@@ -560,12 +560,3 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
 }
 
 #XenoDisaster
-planet_event = { #REVERT HIDE WINDOW LATER
-    id = ssp_relic.600
-    title = ssp_relic.600.name
-    desc = ssp_relic.600.desc
-    hide_window =  yes
-    is_triggered_only = yes
-
-
-}

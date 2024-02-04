@@ -47,7 +47,7 @@ country_event = {
 
 country_event = {
     id = ssp_random_country.101
-    title = ssp_random_country_101.Name
+    title = ssp_random_country_101.name
     #picture =
     desc = ssp_random_country_101.Desc
 

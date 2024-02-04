@@ -1,13 +1,6 @@
 tr_ssp_invasion_adopt = {
 
     possible = {
-        #custom_tooltip = {
-        #	fail_text = tec_requires_supremacy_or_unyielding_traditions_finished
-        #	OR = {
-        #		has_tradition = tr_supremacy_finish
-        #		has_tradition = tr_unyielding_finish
-        #	}
-        #}
         ssp_can_adopt_invasion = yes
     }
 
@@ -15,78 +8,6 @@ tr_ssp_invasion_adopt = {
         starbase_shipyard_build_speed_mult = 0.1
     }
 
-    #ai_weight = {
-    #        factor = 10
-    #        modifier = {
-    #            factor = 5
-    #            years_passed < 10
-    #        }
-    #        modifier = {
-    #            factor = 2
-    #            OR = {
-    #                has_ethic = ethic_militarist
-    #                has_ethic = ethic_gestalt_apathy
-    #            }
-    #        }
-    #        modifier = {
-    #            factor = 3
-    #            has_ethic = ethic_fanatic_militarist
-    #        }
-    #        modifier = {
-    #            factor = 0
-    #            OR = {
-    #                AND = {
-    #                    has_tradition = tr_expansion_adopt
-    #                    NOT = { has_tradition = tr_expansion_finish }
-    #                }
-    #                AND = {
-    #                    has_tradition = tr_domination_adopt
-    #                    NOT = { has_tradition = tr_domination_finish }
-    #                }
-    #                AND = {
-    #                    has_tradition = tr_harmony_adopt
-    #                    NOT = { has_tradition = tr_harmony_finish }
-    #                }
-    #                AND = {
-    #                    has_tradition = tr_prosperity_adopt
-    #                    NOT = { has_tradition = tr_prosperity_finish }
-    #                }
-    #                AND = {
-    #                    has_tradition = tr_diplomacy_adopt
-    #                    NOT = { has_tradition = tr_diplomacy_finish }
-    #                }
-    #                AND = {
-    #                    has_tradition = tr_discovery_adopt
-    #                    NOT = { has_tradition = tr_discovery_finish }
-    #                }
-    #                # new
-    #                AND = {
-    #                    has_tradition = tr_tec_outreach_adopt
-    #                    NOT = { has_tradition = tr_tec_outreach_finish }
-    #                }
-    #                AND = {
-    #                    has_tradition = tr_tec_control_adopt
-    #                    NOT = { has_tradition = tr_tec_control_finish }
-    #                }
-    #                AND = {
-    #                    has_tradition = tr_tec_balance_adopt
-    #                    NOT = { has_tradition = tr_tec_balance_finish }
-    #                }
-    #                AND = {
-    #                    has_tradition = tr_tec_might_adopt
-    #                    NOT = { has_tradition = tr_tec_might_finish }
-    #                }
-    #                AND = {
-    #                    has_tradition = tr_tec_statecraft_adopt
-    #                    NOT = { has_tradition = tr_tec_statecraft_finish }
-    #                }
-    #                AND = {
-    #                    has_tradition = tr_tec_invention_adopt
-    #                    NOT = { has_tradition = tr_tec_invention_finish }
-    #                }
-    #            }
-    #        }
-    #    }
 } #TODO: change the Evolved thingies of Gestalt stuff
 tr_ssp_invasion_finish = {
     custom_tooltip_with_modifiers = tr_ssp_invasion_finish_tooltip
@@ -94,13 +15,7 @@ tr_ssp_invasion_finish = {
         ascension_perks_add = 1
     }
 
-    on_enabled = { #TODO: See Tec_tradition.520
-        hidden_effect = {
-            country_event = {
-                id = tec_tradition.520
-            }
-        }
-    }
+    on_enabled = {}
 }
 
 
@@ -304,11 +219,6 @@ tr_ssp_invasion_final_2 = {
     on_enabled = {
         set_country_flag = tr_invasion_2
         add_tradition = tr_ssp_invasion_finish
-        hidden_effect = {
-            country_event = {
-                id = tec_tradition.530 #evolved compat stuff
-            }
-        }
     }
 
     ai_weight = {
@@ -337,6 +247,9 @@ tr_ssp_invasion_final_2 = {
 
 tr_ssp_invasion_final_3 = {
     possible = {
+        NOT = {
+            is_gestalt = yes
+        }
         has_tradition = tr_ssp_invasion_4
         AND = {
             NOR = {

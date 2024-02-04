@@ -47,7 +47,7 @@ ssp_destiny_genpar = {
     leader_class = { commander }
 
 
-    destiny_background_icon = "GFX_leader_background_destiny_1"
+    background_icon = "GFX_leader_background_destiny_1"
     initial = no
     randomized = no
 }

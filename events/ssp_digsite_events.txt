@@ -132,7 +132,9 @@ fleet_event = {
 		name = ssp_archaeo_option_title.4a
 		trigger = {
 			NOT = {
-				ssp_is_total_war = yes
+				owner = {
+					ssp_is_total_war = yes
+				}
 			}
 		}
 		owner = { 

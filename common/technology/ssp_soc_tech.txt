@@ -3,7 +3,6 @@ tech_ssp_jonan_communication_key = {
 	cost = @tier2cost1
 	category = { military_theory }
 	tier = 2
-	is_custom_tech_3 = yes
 	ai_update_type = all
 	weight = 1
 

@@ -1,5 +1,7 @@
 namespace = ssp_ritual
 
+# Events | Reanimator Cult - Grimoire decipher situation edict
+
 country_event = {  #make sure that this only triggers when you have origin dictionnaire infernal
     id = ssp_ritual.100
     title = ssp_ritual.100.name
@@ -32,6 +34,10 @@ country_event = {  #make sure that this only triggers when you have origin dicti
 
     immediate = {
         hidden_effect = {
+            change_variable = {
+                which = sacrifice_result_total
+                value = sacrifice_result_current_count
+            }
             switch = {
                 trigger = has_country_flag
            
@@ -65,7 +71,7 @@ country_event = {  #make sure that this only triggers when you have origin dicti
                 }
             }
         }
-    
+
 
         while = {
 		    count = sacrifice_result_current_count

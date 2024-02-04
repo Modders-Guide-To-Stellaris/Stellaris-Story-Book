@@ -1,1 +1,4 @@
-# Deprecated
+ssp_killed_initiatie_count = {
+    base = 1
+    add = sacrifice_result_total
+}

@@ -52,7 +52,7 @@ orbital_bombardment = {
         policy_flags = {
             orbital_bombardment_indiscriminate
         }
-        modifier = {}
+        modifier = { }
 
         valid = {
             NOR = {
@@ -92,7 +92,6 @@ orbital_bombardment = {
             OR = {
                 has_valid_civic = civic_fanatic_purifiers
                 has_valid_civic = civic_machine_terminator
-                # Evolved
                 has_origin = origin_post_apocalyptic
             }
         }
@@ -101,7 +100,7 @@ orbital_bombardment = {
             orbital_bombardment_armageddon
         }
 
-        modifier = {}
+        modifier = { }
 
         AI_weight = {
             modifier = {
@@ -146,12 +145,10 @@ orbital_bombardment = {
             }
         }
 
-        valid = {
 
-            NOR = { #todo, for some reason the text is also getting caught up in the valid
-                text = civic_tooltip_xenophile
+        valid = {
+            NOR = {
                 inline_script = governments/conditions/ethic_xenophile
-                text = civic_tooltip_pacifist
                 inline_script = governments/conditions/ethic_pacifist
             }
         }
