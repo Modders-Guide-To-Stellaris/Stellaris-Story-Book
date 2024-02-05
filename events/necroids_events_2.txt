@@ -12,6 +12,8 @@ namespace = necroids
 @sacrificeUpWeighting = 5
 @sacrificeDownWeighting = 0.1
 
+# Edicts | Reanimator Cult > Sacrificial Edicts - Events/Overwrite
+
 #Sacrifice: Togetherness (fired by edict)
 country_event = {
 	id = necroids.200
@@ -568,6 +570,8 @@ country_event = {
 
 #############################################################################################################
 
+#??? wtf is this
+
 country_event = {
 	id = necroids.1000
 	hide_window = yes
@@ -586,7 +590,7 @@ country_event = {
 		}
 	}
 }
-
+#todo fix later when reroute Semichki
 country_event = {
 	id = necroids.15
 	hide_window = yes

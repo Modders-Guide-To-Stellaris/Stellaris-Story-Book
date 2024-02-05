@@ -1,0 +1,334 @@
+namespace = ssp_origin
+
+country_event = {
+    id = ssp_relic.500
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = {
+                NOT = { has_global_flag = grand_reanimator_spawned }
+            }
+            owner = {
+                random_system_within_border = {
+                    weights = {
+                        base = 1
+                        modifier = {
+                            factor = 10
+                            is_capital_system = no
+                        }
+                        modifier = {
+                            factor = 10
+                            OR = {
+                                NOT = { exists = sector }
+                                sector = {
+                                    NOT = { has_sector_type = core_sector }
+                                }
+                            }
+                        }
+                    }
+                    save_event_target_as = spawning_system
+                    spawn_system = {
+                        initializer = grand_reanimator_finish
+                        effect = {
+                            root = { set_visited = prev }
+                            save_event_target_as = ssp_reanimator_system
+                        }
+                    }
+                    if = {
+                        limit = { last_created_system = { NOT = { has_hyperlane_to = prev } } }
+                        add_hyperlane = {
+                            from = this
+                            to = last_created_system
+                        }
+                    }
+                    else = {
+                        add_extra_hyperlane_to_spawned_system_effect = yes
+                    }
+                }
+            }
+        }
+    }
+}
+
+fleet_event = { #meet dragon
+    id = ssp_relic.501
+    title = ssp_relic.501.name
+    desc = ssp_relic.501.desc # Just open hyperlane
+    picture = GFX_evt_toxic_god #TODO: change
+    show_sound = evn_tox_knights_of_the_toxic_god
+    location = from
+
+    is_triggered_only = yes
+
+    trigger = {
+        from = {
+            has_star_flag = guardian_reanimator_system
+        }
+        controller = {
+            has_origin = origin_follower_cult
+            NOR = {
+                has_country_flag = visited_reanimator_system
+                has_global_flag = reanimator_captured
+            }
+        }
+        from = {
+            any_fleet_in_system = { has_fleet_flag = grand_reanimator_original_fleet }
+        }
+    }
+
+    immediate = {
+        controller = {
+            set_country_flag = visited_reanimator_system
+        }
+    }
+
+    option = {
+        name = ssp_relic.501.a
+    }
+
+    option = {
+        name = ssp_relic.501.b
+    }
+}
+
+country_event = { # Upon defeating the Entity
+    id = ssp_relic.502
+    title = ssp_relic.502.name
+    desc = ssp_relic.502.desc
+    picture = GFX_evt_toxic_god
+    show_sound = evn_tox_knights_of_the_toxic_god
+
+    is_triggered_only = yes
+
+    trigger = {
+        this = {
+            from = { is_country_type = ssp_guardian_dragon_reanimator }
+        }
+        has_origin = origin_follower_cult
+    }
+
+    option = { # recruit him
+        name = ssp_relic.502.a
+        custom_tooltip = ssp_relic.502.a.tt
+        hidden_effect = {
+            owner = {
+                country_event = { id = ssp_relic.598 }
+            }
+        }
+    }
+
+
+    option = { # Kill him, kill him now. DEW IT
+        name = ssp_relic.502.b
+        custom_tooltip = ssp_relic.502.b.tt
+        hidden_effect = {
+            owner = {
+                country_event = { id = ssp_relic.511 scopes = { fromfrom = fromfrom.solar_system } }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_relic.511
+    title = ssp_relic.511.name
+    desc = ssp_relic.511.desc
+    picture = GFX_evt_toxic_god
+    location = fromfrom
+    show_sound = event_mystic_reveal
+
+    is_triggered_only = yes
+
+    option = {
+        name = ssp_relic.511.A
+        add_relic = ssp_r_animarum
+    }
+}
+
+country_event = { # Create Semichki && maybe spawn him on some reanimated armies: See animarum active effect
+    id = ssp_relic.598
+    title = ssp_relic.598.name
+    desc = ssp_relic.598.desc
+    picture = GFX_evt_board_meeting
+    show_sound = par_event_keides
+    fire_only_once = yes
+    is_triggered_only = yes
+    event_window_type = leader_story
+    event_picture_background = "GFX_leader_recruitment_bg_legendary_keides"
+
+    immediate = {
+
+        create_country = {
+            name = "NAME_Unknown"
+            type = global_event
+            auto_delete = yes
+            flag = {
+                icon = {
+                    category = "special"
+                    file = "unknown.dds"
+                }
+                background = {
+                    category = "backgrounds"
+                    file = "00_solid.dds"
+                }
+                colors = {
+                    "red"
+                    "red"
+                    "null"
+                    "null"
+                }
+            }
+            effect = {
+                save_event_target_as = semichki_country
+                set_country_flag = obtained_semichki
+            }
+        }
+
+        event_target:semichki_country = {
+            create_species = {
+                name = "NAME_Semichki"
+                class = NECROID
+                portrait = nec6 #Exakeides portrait
+                namelist = "PRT1"
+                traits = {
+                    #trait = "trait_"
+                }
+                effect = {
+                    save_event_target_as = semichki_species
+                }
+            }
+            create_leader = {
+                class = commander
+                species = event_target:semichki_species
+                name = "NAME_Semichki_leader"
+                skill = 8
+                randomize_traits = yes
+                gender = male
+                event_leader = yes
+                skip_background_generation = yes
+                background_ethic = ethic_xenophobe
+                custom_catch_phrase = keides_catch_phrase
+                custom_description = desc_semichki
+                set_age = 1999
+                effect = {
+                    set_leader_flag = legendary_leader
+                    set_leader_flag = semichki_leader
+                    set_leader_flag = immune_to_negative_traits
+                    set_leader_flag = immune_to_destiny_traits
+                    set_leader_flag = leader_death_events_blocked
+                    set_immortal = yes
+                    save_global_event_target_as = semichki_leader
+                    #add_trait_no_notify = leader_trait_legendary_far_from_home
+                    set_owner = root
+                    exile_leader_as = semichki_leader
+                }
+                traits = {
+                    trait = ssp_destiny_genpar #Destiny trait
+                    trait = subclass_commander_admiral
+                    trait = leader_trait_home_guard_3
+                    trait = ssp_trait_alcoholic
+                    trait = leader_trait_armchair_commander
+                }
+            }
+        }
+    }
+
+    picture_event_data = {
+        portrait = event_target:semichki_leader
+        room = galactic_custodian_room
+    }
+
+    option = {
+        name = paragon.3115.a
+        hidden_effect = { country_event = { id = ssp_relic.599 } }
+    }
+}
+
+country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy anyways?
+    id = ssp_relic.599
+    title = ssp_relic.599.name
+    desc = ssp_relic.599.desc
+    diplomatic = yes
+    fire_only_once = yes
+    is_triggered_only = yes
+    show_sound = par_event_keides
+
+    picture = GFX_leader_recruitment_bg_legendary_keides
+    event_window_type = leader_recruit
+
+    picture_event_data = {
+        portrait = event_target:semichki_leader
+        room = galactic_custodian_room
+    }
+
+    trigger = {
+        exists = event_target:semichki_country
+    }
+
+    option = {
+        # Special tag to make mark this is the hire option
+        name = HIRE
+        tag = hire_leader
+        sound = "par_keides_hire"
+
+        hidden_effect = {
+            clone_leader = {
+                target = event_target:semichki_leader
+            }
+            last_created_leader = {
+                set_leader_flag = immune_to_destiny_traits
+                set_leader_flag = legendary_leader
+                save_global_event_target_as = semichki_leader
+                set_leader_flag = immune_to_negative_traits
+                set_owner = root
+            }
+        }
+
+        create_message = {
+            type = MESSAGE_RECRUITED_LEADER
+            localization =  MESSAGE_RECRUITED_LEADER_DESC
+            days = @toast_message_days
+            target = event_target:semichki_country
+            variable = {
+                type = name
+                localization = LEADER
+                scope = event_target:semichki_leader
+            }
+            variable = {
+                key = "border"
+                value = "GFX_border_legendary"
+            }
+        }
+    }
+
+    option = {
+        name = DISMISS
+        # Special tag to mark this as the dismiss option
+        tag = dismiss_leader
+        sound = "par_keides_dismiss"
+
+        hidden_effect = {
+            event_target:semichki_leader = {
+                kill_leader = { show_notification = no }
+            }
+        }
+    }
+    #todo: should be fixed. if not. yellow text here just incase
+    option = {
+        name = ssp_semichki_response.A1
+        response_text =  ssp_semichki_response.A2
+        is_dialog_only = yes
+    }
+    option = {
+        name = ssp_semichki_response.B1
+        response_text =  ssp_semichki_response.B2
+        is_dialog_only = yes
+    }
+    option = {
+        name =  ssp_semichki_response.C1
+        response_text = ssp_semichki_response.C2
+        is_dialog_only = yes
+    }
+}

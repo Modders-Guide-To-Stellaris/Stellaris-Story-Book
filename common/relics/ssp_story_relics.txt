@@ -35,7 +35,7 @@ ssp_r_khyran_bacterium = {
 		custom_tooltip = bacterium_control_agressive
 		
 		hidden_effect = {
-			country_event = { id = ssp_relic.401 }
+			country_event = { id = ssp_relic.201 }
 		}
 
 

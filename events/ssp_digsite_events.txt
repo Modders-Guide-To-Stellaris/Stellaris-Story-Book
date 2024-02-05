@@ -144,8 +144,11 @@ fleet_event = {
 
 	option = {
 		name = ssp_archaeo_option_title.4b
-		owner = { # trigger ssp_relic.300 here! , Recoder foxy, what the hell is ssp_relic.300
+		owner = {
 			add_relic = ssp_r_drive_core
+			hidden_effect = {
+				country_event = { id = ssp_relic.110 }
+			}
 		}
 	}
 }

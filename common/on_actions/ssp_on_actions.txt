@@ -13,13 +13,13 @@ on_jump_drive = {
 
 on_ship_built = {
 	events = {
-		ssp_relic.200
+		ssp_relic.102
     }
 }
 
 on_monthly_pulse_country = {
 	events = {
-        ssp_relic.400
+        ssp_relic.200
     }
     random_events = {
         5 = ssp_random_country.100
@@ -59,7 +59,7 @@ on_relic_received = {
 
 on_relic_lost = {
     events = {
-        ssp_relic.301
+        ssp_relic.104
     }
 }
 
