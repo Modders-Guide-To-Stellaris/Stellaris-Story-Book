@@ -1,5 +1,11 @@
 SpriteTypes = {
 
+
+    spriteType = {
+        name = GFX_tradition_category_bg_tradition_ssp_invasion
+        textureFile = "gfx/interface/icons/traditions/ssp_tr_invasion_background.dds"
+    }
+
     spriteType = {
         name = GFX_tr_ssp_invasion_1
         textureFile = "gfx/interface/icons/traditions/ssp_tr_invasion_improved_logistics.dds"
