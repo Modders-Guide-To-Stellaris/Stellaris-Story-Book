@@ -1,4 +1,4 @@
-ssp_traits_advanced_reanimated = {
+ssp_traits_fanatic_worshipper = {
 	cost = 0
 	potential_crossbreeding_chance = 0
 	opposites = {}
@@ -27,12 +27,9 @@ ssp_traits_advanced_reanimated = {
 
 	modifier = {
 		leader_lifespan_add = -20
-		pop_growth_speed = -0.5
-		planet_pops_organics_food_upkeep_mult = -0.5
-		planet_jobs_ruler_produces_mult = -0.05
-		planet_jobs_specialist_only_produces_mult = -0.05
-		planet_jobs_worker_only_produces_mult = 0.1
+		pop_growth_speed = -0.1
+		planet_jobs_specialist_produces_mult = -0.25
+		planet_jobs_ruler_produces_mult = -0.25
 	}
 
-	#custom_tooltip_with_modifiers = trait_necrophage_gestalt_tooltip
 }
