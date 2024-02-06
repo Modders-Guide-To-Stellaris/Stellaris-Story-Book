@@ -6,7 +6,10 @@
  mod_councilor_reanimated_armies_exp_gain: "REPLACE_ME"
  mod_councilor_reanimated_armies_exp_gain_desc: "REPLACE_ME"
 
- # Government | Country - Localization
+ # Government | Country > Grand Reanimator - Localization
 
  NAME_Grand_Reanimator:0 "Grand Reanimator"
+
+ # Government | Fallen Empire > Fowanta - Localization
+ NAME_ssp_fe_fowanta_country: "Kingdom of Fowanta"
 
