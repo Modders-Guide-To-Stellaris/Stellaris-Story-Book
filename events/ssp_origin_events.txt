@@ -1,10 +1,11 @@
 namespace = ssp_origin
 
-# | Reanimator cult - Events
+# | Reanimator cult - Events, starts ID 100
 
 country_event = {
     id = ssp_origin.100
-    hide_window = yes
+    title = ssp_origin.100.name
+    desc = ssp_origin.100.desc
     is_triggered_only = yes
 
     immediate = {
@@ -55,9 +56,9 @@ country_event = {
 }
 
 fleet_event = { #meet dragon
-    id = ssp_origin.501
-    title = ssp_origin.501.name
-    desc = ssp_origin.501.desc # Just open hyperlane
+    id = ssp_origin.101
+    title = ssp_origin.101.name
+    desc = ssp_origin.101.desc # Just open hyperlane
     picture = GFX_evt_toxic_god #TODO: change
     show_sound = evn_tox_knights_of_the_toxic_god
     location = from
@@ -87,18 +88,18 @@ fleet_event = { #meet dragon
     }
 
     option = {
-        name = ssp_origin.501.a
+        name = ssp_origin.101.a
     }
 
     option = {
-        name = ssp_origin.501.b
+        name = ssp_origin.101.b
     }
 }
 
 country_event = { # Upon defeating the Entity
-    id = ssp_origin.502
-    title = ssp_origin.502.name
-    desc = ssp_origin.502.desc
+    id = ssp_origin.102
+    title = ssp_origin.102.name
+    desc = ssp_origin.102.desc
     picture = GFX_evt_toxic_god
     show_sound = evn_tox_knights_of_the_toxic_god
 
@@ -112,8 +113,8 @@ country_event = { # Upon defeating the Entity
     }
 
     option = { # recruit him
-        name = ssp_origin.502.a
-        custom_tooltip = ssp_origin.502.a.tt
+        name = ssp_origin.102.a
+        custom_tooltip = ssp_origin.102.a.tt
         hidden_effect = {
             owner = {
                 country_event = { id = ssp_origin.598 }
@@ -123,20 +124,20 @@ country_event = { # Upon defeating the Entity
 
 
     option = { # Kill him, kill him now. DEW IT
-        name = ssp_origin.502.b
-        custom_tooltip = ssp_origin.502.b.tt
+        name = ssp_origin.102.b
+        custom_tooltip = ssp_origin.102.b.tt
         hidden_effect = {
             owner = {
-                country_event = { id = ssp_origin.511 scopes = { fromfrom = fromfrom.solar_system } }
+                country_event = { id = ssp_origin.103 scopes = { fromfrom = fromfrom.solar_system } }
             }
         }
     }
 }
 
 country_event = {
-    id = ssp_origin.511
-    title = ssp_origin.511.name
-    desc = ssp_origin.511.desc
+    id = ssp_origin.103
+    title = ssp_origin.103.name
+    desc = ssp_origin.103.desc
     picture = GFX_evt_toxic_god
     location = fromfrom
     show_sound = event_mystic_reveal
@@ -144,21 +145,22 @@ country_event = {
     is_triggered_only = yes
 
     option = {
-        name = ssp_origin.511.A
+        name = ssp_origin.103.A
         add_relic = ssp_r_animarum
     }
 }
 
-country_event = { # Create Semichki && maybe spawn him on some reanimated armies: See animarum active effect
-    id = ssp_origin.598
-    title = ssp_origin.598.name
-    desc = ssp_origin.598.desc
-    picture = GFX_evt_board_meeting
-    show_sound = par_event_keides
+country_event = { # Creates necroparagon && maybe spawn him on some reanimated armies: See animarum active effect
+    id = ssp_origin.198
+    hide_window = yes #I have no clue why there was even a title here, the effect does nothing. This event is silently spawning the leader xD
+#    title = ssp_origin.598.name
+#    desc = ssp_origin.598.desc
+#    picture = GFX_evt_board_meeting
+#    show_sound = par_event_keides
+#    event_window_type = leader_story
+#    event_picture_background = "GFX_leader_recruitment_bg_legendary_keides"
     fire_only_once = yes
     is_triggered_only = yes
-    event_window_type = leader_story
-    event_picture_background = "GFX_leader_recruitment_bg_legendary_keides"
 
     immediate = {
 
@@ -183,12 +185,12 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
                 }
             }
             effect = {
-                save_event_target_as = semichki_country
+                save_event_target_as = necropar_country
                 set_country_flag = obtained_semichki
             }
         }
 
-        event_target:semichki_country = {
+        event_target:necropar_country = {
             create_species = {
                 name = "NAME_Semichki"
                 class = NECROID
@@ -204,8 +206,8 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
             create_leader = {
                 class = commander
                 species = event_target:semichki_species
-                name = "NAME_Semichki_leader"
-                skill = 8
+                name = "NAME_necropar_leader"
+                skill = 8 #to avoid 2 destiny traits from appearing we set his level to 8
                 randomize_traits = yes
                 gender = male
                 event_leader = yes
@@ -213,45 +215,43 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
                 background_ethic = ethic_xenophobe
                 custom_catch_phrase = keides_catch_phrase
                 custom_description = desc_semichki
-                set_age = 1999
+                set_age = 1999 
                 effect = {
                     set_leader_flag = legendary_leader
-                    set_leader_flag = semichki_leader
+                    set_leader_flag = necropar_leader
                     set_leader_flag = immune_to_negative_traits
                     set_leader_flag = immune_to_destiny_traits
                     set_leader_flag = leader_death_events_blocked
                     set_immortal = yes
-                    save_global_event_target_as = semichki_leader
+                    save_global_event_target_as = necropar_leader
                     #add_trait_no_notify = leader_trait_legendary_far_from_home
                     set_owner = root
-                    exile_leader_as = semichki_leader
+                    exile_leader_as = necropar_leader
                 }
                 traits = {
                     trait = ssp_destiny_genpar #Destiny trait
                     trait = subclass_commander_admiral
                     trait = leader_trait_home_guard_3
-                    trait = ssp_trait_alcoholic
-                    trait = leader_trait_armchair_commander
                 }
             }
         }
     }
 
     picture_event_data = {
-        portrait = event_target:semichki_leader
+        portrait = event_target:necropar_leader
         room = galactic_custodian_room
     }
 
     option = {
         name = paragon.3115.a
-        hidden_effect = { country_event = { id = ssp_origin.599 } }
+        hidden_effect = { country_event = { id = ssp_origin.199 } }
     }
 }
 
-country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy anyways?
-    id = ssp_origin.599
-    title = ssp_origin.599.name
-    desc = ssp_origin.599.desc
+country_event = { # HIRE/DISMISS Paragon
+    id = ssp_origin.199
+    title = ssp_origin.199.name
+    desc = ssp_origin.199.desc
     diplomatic = yes
     fire_only_once = yes
     is_triggered_only = yes
@@ -261,12 +261,12 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
     event_window_type = leader_recruit
 
     picture_event_data = {
-        portrait = event_target:semichki_leader
+        portrait = event_target:necropar_leader
         room = galactic_custodian_room
     }
 
     trigger = {
-        exists = event_target:semichki_country
+        exists = event_target:necropar_country
     }
 
     option = {
@@ -277,12 +277,12 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
 
         hidden_effect = {
             clone_leader = {
-                target = event_target:semichki_leader
+                target = event_target:necropar_leader
             }
             last_created_leader = {
                 set_leader_flag = immune_to_destiny_traits
                 set_leader_flag = legendary_leader
-                save_global_event_target_as = semichki_leader
+                save_global_event_target_as = necropar_leader
                 set_leader_flag = immune_to_negative_traits
                 set_owner = root
             }
@@ -292,11 +292,11 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
             type = MESSAGE_RECRUITED_LEADER
             localization =  MESSAGE_RECRUITED_LEADER_DESC
             days = @toast_message_days
-            target = event_target:semichki_country
+            target = event_target:necropar_country
             variable = {
                 type = name
                 localization = LEADER
-                scope = event_target:semichki_leader
+                scope = event_target:necropar_leader
             }
             variable = {
                 key = "border"
@@ -312,25 +312,26 @@ country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy
         sound = "par_keides_dismiss"
 
         hidden_effect = {
-            event_target:semichki_leader = {
+            event_target:necropar_leader = {
                 kill_leader = { show_notification = no }
             }
         }
     }
     #todo: should be fixed. if not. yellow text here just incase
+    
     option = {
-        name = ssp_semichki_response.A1
-        response_text =  ssp_semichki_response.A2
+        name = ssp_necropar_response.A1
+        response_text =  ssp_necropar_response.A2
         is_dialog_only = yes
     }
     option = {
-        name = ssp_semichki_response.B1
-        response_text =  ssp_semichki_response.B2
+        name = ssp_necropar_response.B1
+        response_text =  ssp_necropar_response.B2
         is_dialog_only = yes
     }
     option = {
-        name =  ssp_semichki_response.C1
-        response_text = ssp_semichki_response.C2
+        name =  ssp_necropar_response.C1
+        response_text = ssp_necropar_response.C2
         is_dialog_only = yes
     }
 }

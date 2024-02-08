@@ -17,3 +17,38 @@
 
  ssp_origin_lolbot: "Blackhole Thingie"
  ssp_origin_lolbot_desc: "this is a very good description, yes yes"
+
+
+# Origins | Events - Localization
+
+ssp_origin.100.name: "A System appears"
+ssp_origin.100.desc: "A new system pops up.. bla bla renaimtor stuff bla bla I have no idea what to put here for now and I dont want to spend time thinking about it right now when I could also be modifying other stuff that I dont have to do later"
+
+ssp_relic.101.name:0 "placeholder"
+ssp_relic.101.desc:0 "placeholder"
+ssp_relic.101.a:0 "placeholder"
+ssp_relic.101.b:0 "placeholder"
+
+ssp_relic.102.name:0 "The dragon falls"
+ssp_relic.102.desc:0 "placeholder"
+ssp_relic.102.a:0 "Recruit him"
+ssp_relic.102.a.tt:0 "Lets take him in for questioning.\nWe would like to know how he, a measly individual, was able to command a leviathan."
+ssp_relic.102.b:0 "Murder him."
+ssp_relic.102.b.tt:0 "He has caused enough trouble for our empire, it would be best if we kill him now.\nThere is no telling what our citizens will do if we take the person in who caused us harm."
+
+ssp_relic.511.name:0 "placeholder"
+ssp_relic.511.desc:0 "placeholder"
+ssp_relic.511.A:0 "placeholder"
+
+ssp_relic.598.name:0 "placeholder"
+ssp_relic.598.desc:0 "placeholder"
+
+ssp_relic.599.name:0 "placeholder"
+ssp_relic.599.desc:0 "placeholder"
+
+ssp_necropar_response.A1:0 "Who are you?"
+ssp_necropar_response.A2:0 "Response A"
+ssp_necropar_response.B1:0 "How did you manage to control a leviathan?"
+ssp_necropar_response.B2:0 "Response B"
+ssp_necropar_response.C1:0 "State your purpose"
+ssp_necropar_response.C2:0 "Response C"
