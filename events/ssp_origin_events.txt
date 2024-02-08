@@ -1,7 +1,9 @@
 namespace = ssp_origin
 
+# | Reanimator cult - Events
+
 country_event = {
-    id = ssp_relic.500
+    id = ssp_origin.100
     hide_window = yes
     is_triggered_only = yes
 
@@ -53,9 +55,9 @@ country_event = {
 }
 
 fleet_event = { #meet dragon
-    id = ssp_relic.501
-    title = ssp_relic.501.name
-    desc = ssp_relic.501.desc # Just open hyperlane
+    id = ssp_origin.501
+    title = ssp_origin.501.name
+    desc = ssp_origin.501.desc # Just open hyperlane
     picture = GFX_evt_toxic_god #TODO: change
     show_sound = evn_tox_knights_of_the_toxic_god
     location = from
@@ -85,18 +87,18 @@ fleet_event = { #meet dragon
     }
 
     option = {
-        name = ssp_relic.501.a
+        name = ssp_origin.501.a
     }
 
     option = {
-        name = ssp_relic.501.b
+        name = ssp_origin.501.b
     }
 }
 
 country_event = { # Upon defeating the Entity
-    id = ssp_relic.502
-    title = ssp_relic.502.name
-    desc = ssp_relic.502.desc
+    id = ssp_origin.502
+    title = ssp_origin.502.name
+    desc = ssp_origin.502.desc
     picture = GFX_evt_toxic_god
     show_sound = evn_tox_knights_of_the_toxic_god
 
@@ -110,31 +112,31 @@ country_event = { # Upon defeating the Entity
     }
 
     option = { # recruit him
-        name = ssp_relic.502.a
-        custom_tooltip = ssp_relic.502.a.tt
+        name = ssp_origin.502.a
+        custom_tooltip = ssp_origin.502.a.tt
         hidden_effect = {
             owner = {
-                country_event = { id = ssp_relic.598 }
+                country_event = { id = ssp_origin.598 }
             }
         }
     }
 
 
     option = { # Kill him, kill him now. DEW IT
-        name = ssp_relic.502.b
-        custom_tooltip = ssp_relic.502.b.tt
+        name = ssp_origin.502.b
+        custom_tooltip = ssp_origin.502.b.tt
         hidden_effect = {
             owner = {
-                country_event = { id = ssp_relic.511 scopes = { fromfrom = fromfrom.solar_system } }
+                country_event = { id = ssp_origin.511 scopes = { fromfrom = fromfrom.solar_system } }
             }
         }
     }
 }
 
 country_event = {
-    id = ssp_relic.511
-    title = ssp_relic.511.name
-    desc = ssp_relic.511.desc
+    id = ssp_origin.511
+    title = ssp_origin.511.name
+    desc = ssp_origin.511.desc
     picture = GFX_evt_toxic_god
     location = fromfrom
     show_sound = event_mystic_reveal
@@ -142,15 +144,15 @@ country_event = {
     is_triggered_only = yes
 
     option = {
-        name = ssp_relic.511.A
+        name = ssp_origin.511.A
         add_relic = ssp_r_animarum
     }
 }
 
 country_event = { # Create Semichki && maybe spawn him on some reanimated armies: See animarum active effect
-    id = ssp_relic.598
-    title = ssp_relic.598.name
-    desc = ssp_relic.598.desc
+    id = ssp_origin.598
+    title = ssp_origin.598.name
+    desc = ssp_origin.598.desc
     picture = GFX_evt_board_meeting
     show_sound = par_event_keides
     fire_only_once = yes
@@ -242,14 +244,14 @@ country_event = { # Create Semichki && maybe spawn him on some reanimated armies
 
     option = {
         name = paragon.3115.a
-        hidden_effect = { country_event = { id = ssp_relic.599 } }
+        hidden_effect = { country_event = { id = ssp_origin.599 } }
     }
 }
 
 country_event = { # HIRE/DISMISS Semichki... Why would you want to sack this guy anyways?
-    id = ssp_relic.599
-    title = ssp_relic.599.name
-    desc = ssp_relic.599.desc
+    id = ssp_origin.599
+    title = ssp_origin.599.name
+    desc = ssp_origin.599.desc
     diplomatic = yes
     fire_only_once = yes
     is_triggered_only = yes
