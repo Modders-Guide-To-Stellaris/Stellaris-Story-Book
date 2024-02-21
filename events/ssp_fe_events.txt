@@ -1,1 +1,14 @@
 namespace = ssp_fevent
+
+#Relics | Event IDs 0 > 1000
+
+
+country_event = {
+    id = ssp_fevent.1
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        every_owned_leader = { limit = { leader = { leader_class = commander}} leader = { add_trait = leader_trait_cybrex}}
+    }
+}

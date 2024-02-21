@@ -16,11 +16,14 @@ ssp_fe_fowanta = {
 
     create_country_effect = {
         create_species = {
-            name = random
+            name = Fowantan
             class = random_non_machine
-            portrait = random
-            traits = random
-            extra_trait_points = 3
+            portrait = humanoid_elf
+            traits = {
+                trait = trait_pc_gaia_preference
+                #make a evolved version with genetic perfection I guess.
+            }
+            extra_trait_points = 5
             allow_negative_traits = no
         }
         create_country = {
@@ -29,17 +32,31 @@ ssp_fe_fowanta = {
             ignore_initial_colony_error = yes
             authority = auth_imperial
             civics = {
+                civic = civic_idyllic_bloom
                 civic = civic_lethargic_leadership
                 civic = civic_empire_in_decline
             }
             species = last_created_species
             ethos = {
-                ethic = ethic_fanatic_materialist
+                ethic = ethic_fanatic_pacifist
+                ethic = ethic_fanatic_authoritarian
+                ethic = ethic_pacifist
             }
             flag = random
             origin = "origin_fallen_empire"
             effect = {
-                set_country_flag = fallen_empire_1
+                create_leader = {
+                    name = ssp_placeholder_text
+                    class = scientist
+                    immortal = yes
+                    set_age = 2576
+                    traits = {
+                        trait =
+                    }
+                }
+                set_
+                set_leader = last_created_leader
+                set_country_flag = ssp_fe_fowanta
                 add_resource = {
                     minerals = 10000
                     energy = 10000
@@ -55,9 +72,6 @@ ssp_fe_fowanta = {
                 add_global_ship_design = "NAME_Librarian"
                 add_global_ship_design = "NAME_Seeker"
                 add_global_ship_design = "NAME_FE_Starbase"
-                ruler = {
-                    add_skill = 9
-                }
             }
         }
     }
@@ -69,9 +83,19 @@ ssp_fe_ekhinni = {
 
 }
 
+# Fallen Empires | SpaceTech Inc. > Andromeda - Setup
+
+ssp_fe_spacetech = {
+
+}
+
 
 # Fallen Empires | Hitchiker - Cluster
 
+# Fallen Empires | Council of Kangs > Hitchhiker - Setup
 ssp_fe_kang_council = {
 
 }
+
+
+# Fallen Empires | 

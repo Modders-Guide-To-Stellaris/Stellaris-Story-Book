@@ -22,3 +22,9 @@
  mod_ssp_cat_op_bioweapons_skill_add_desc: "REPLACE_ME"
  mod_ssp_cat_op_bioweapons_skill_mult: "REPLACE_ME"
  mod_ssp_cat_op_bioweapons_skill_mult_desc: "REPLACE_ME"
+
+ mod_planet_ssp_fe_archives_build_speed_mult: "REPLACE_ME"
+ mod_planet_ssp_fe_archives_build_speed_mult_desc: "REPLACE_ME"
+ mod_ssp_fe_archives_max: "REPLACE_ME"
+ mod_ssp_fe_archives_max_desc: "REPLACE_ME"
+

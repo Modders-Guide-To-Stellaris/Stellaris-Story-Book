@@ -1,0 +1,19 @@
+namespace = ssp_deposit
+
+# Deposits | Fallen Empires
+
+country_event = {
+    id = ssp_deposit.1000
+    title = ssp_deposit_name.1000
+    desc =  ssp_deposit_desc.1000
+
+
+    option = {
+        name =
+    }
+    # get popup to explore, if no set bonus to thingie for unity. thats it.
+    #if yes, go further into and find lost civ fowanta thingie.
+    # can only trigger if fowanta does not exist && on sol + IS NOT UNE
+}
+
+country_event = {  }

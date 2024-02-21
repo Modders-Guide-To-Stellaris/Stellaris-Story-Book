@@ -2,30 +2,34 @@
 
  # Relics | Khyran Bacterium > Bacterium Ship - Localization
 
- ssp_r_khyran_bacterium:0 "Contained Khyran Bacterium"
- ssp_r_khyran_bacterium_desc:0 "Sample of an unknown bacteria gathered from a dead Jonan onboard the Ichki-0ne"
- bacterium_control_passive:0 "Has a small chance of brainwashing the opposing empire to give you favors when improving relations"
- bacterium_control_agressive:0 "Use your envoy who's improving relations to slip something into the opposing empire's food, in turn the Empire will give you favors"
+ ssp_r_khyran_bacterium: "Contained Khyran Bacterium"
+ ssp_r_khyran_bacterium_desc: "Sample of an unknown bacteria gathered from a dead Jonan onboard the Ichki-0ne"
+ bacterium_control_passive: "Has a small chance of brainwashing the opposing empire to give you favors when improving relations"
+ bacterium_control_agressive: "Use your envoy who's improving relations to slip something into the opposing empire's food, in turn the Empire will give you favors"
 
 
  # Relics | Precursor Jump Drives > Bacterium Ship - Localization
 
- ssp_r_drive_core:0 "Repaired Drive Core"
- ssp_r_drive_core_desc:0 "The repaired drive core we salvaged from the Jonan Foundry science ship"
- drive_core_passive:0 "Grants your science ships +50% Sublight speed"
+ ssp_r_drive_core: "Repaired Drive Core"
+ ssp_r_drive_core_desc: "The repaired drive core we salvaged from the Jonan Foundry science ship"
+ drive_core_passive: "Grants your science ships +50% Sublight speed"
  drive_core_tooltip:0 "Active the powerful precursor jump drives giving you full galaxy warp range for a random fleet"
 
 
  # Relics | Reanimator Staff > Reanimator Cult - Localization
 
- ssp_r_animarum:0 "The Animarum"
- ssp_r_animarum_desc:0 "This powerful relic was once in possession of the Grand Reanimator. "
- ssp_r_animarum_active_effect:0 "$ssp_r_animarum$"
- ssp_r_animarum_active_effect_tooltip:0 "Spawns Reanimated Armies"
+ ssp_r_animarum: "The Animarum"
+ ssp_r_animarum_desc: "This powerful relic was once in possession of the Grand Reanimator. "
+ ssp_r_animarum_active_effect: "$ssp_r_animarum$"
+ ssp_r_animarum_active_effect_tooltip: "Spawns Reanimated Armies"
 
 
  # Relics | Xenomorph Queen - Localization
 
- ssp_r_xenomorph_queen:0 "Xenomorph Queen"
+ ssp_r_xenomorph_queen: "Xenomorph Queen"
  ssp_r_xenomorph_queen_desc: "REPLACE_ME"
- xenomorph_queen_passive:0 "Allows the Operation 'Deploy Xenomorphs' as an espionage option."
+ xenomorph_queen_passive: "Allows the Operation 'Deploy Xenomorphs' as an espionage option."
+
+
+ # Fallen Relics | Blade Of The Empress - Localization
+ ssp_fr_blade_of_the_north: "Blade Of The North"

@@ -1,0 +1,4 @@
+# Fallen Relics | Contained Astral Anomaly
+
+ssp_fr_blade_of_the_north = {
+}

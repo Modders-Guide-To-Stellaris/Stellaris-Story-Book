@@ -1,0 +1,9 @@
+namespace = ssp_main
+
+country_event = {
+    id = ssp_main.1
+    hide_window = yes
+    is_triggered_only = yes
+}
+
+
