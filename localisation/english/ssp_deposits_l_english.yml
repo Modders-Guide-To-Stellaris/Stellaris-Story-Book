@@ -5,6 +5,22 @@
  ssp_d_fallen_gaia_cavern_system_desc: "Wonder where this may lead hmm, Into exile a species went? Failed they have?"
 
  # Deposits | Events Fallen Empires - Localization
+
  ssp_deposit_name.1000: "The Gaia Caverns"
  ssp_deposit_desc.1000: "A group of explorers wants to go into the cave yes yes, we let those idiots/archaeologists go get something important for us"
+ ssp_deposit_opt1_name.1000: ""
+ ssp_deposit_opt2_name.1000: ""
 
+ ssp_deposit_name.1001: ""
+ ssp_deposit_desc.1001: ""
+
+ ssp_deposit_name.1002: ""
+ ssp_deposit_desc.1002: ""
+
+ ssp_deposit_name.1003: "An Ancient City"
+ ssp_deposit_desc.1003: "archaeologists find a city. Master Skywalker, what are we going to do?"
+ ssp_deposit_opt1_name.1003: "Close the city off."
+ ssp_deposit_opt1_tooltip.1003: "Concludes the Gaia Caverns Event Chain"
+ ssp_deposit_opt2_name.1003: "Take something of value."
+ ssp_deposit_opt2_tooltip.1003: "$ssp_deposit_opt1_name.1003$\nConcludes? the Gaia Caverns Event Chain..."
+ ssp_deposit_opt3_name.1003: "Keep exploring, we need to know what lies below."
