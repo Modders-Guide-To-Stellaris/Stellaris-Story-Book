@@ -1,0 +1,80 @@
+namespace = ssp_deposit
+
+country_event = {
+    id = ssp_deposit.1000
+    title = ssp_deposit_name.1000
+    desc = ssp_deposit_desc.1000
+
+    option = {
+        name = ssp_deposit_opt1_name.1000
+        desc = ssp_deposit_opt1_desc.1000
+        hidden_effect = {
+            # do nothing
+        }
+    }
+
+    option = {
+        name = ssp_deposit_opt2_name.1000
+        desc = ssp_deposit_opt2_desc.1000
+        hidden_effect = {
+            random = {
+                chance = 25
+                set_country_flag = ssp_gaia_caves_bad
+            }
+            if = {
+                limit = {
+                    has_country_flag = ssp_gaia_caves_bad
+                }
+                country_event = { id = ssp_deposit.1001 days = }
+                remove_country_flag = ssp_gaia_caves_bad
+            }
+            else = {
+                country_event = { id = ssp_deposit.1003 days = 720 } 
+                remove_country_flag = ssp_gaia_caves_bad
+            }
+        }
+    }
+}
+
+#Bad outcome inbetween
+country_event = {
+    id = ssp_deposit.1001
+    title = ssp_deposit_name.1001
+    desc = ssp_deposit_desc.1001
+    
+}
+
+country_event = {
+    id = ssp_deposit.1002
+    title = ssp_deposit_name.1002
+    desc = ssp_deposit_desc.1002
+
+}
+
+#continuation.... generate localization
+country_event = {
+    id = ssp_deposit.1003
+    title = ssp_deposit_name.1003
+    desc = ssp_deposit_desc.1003
+
+    immediate = {
+        #swap deposit from gaia caves to hidden city, or potentially add that one.
+    }
+
+    option = {
+        name = ssp_deposit_opt1_name.1003
+        desc = ssp_deposit_opt1_desc.1003
+        tooltip = ssp_deposit_opt1_tooltip.1003 #concludes the event chain : Close the cave.
+        hidden_effect = {
+
+        }
+    }
+
+    option = {
+        name = ssp_deposit_opt2_name.1003
+        desc = ssp_deposit_opt2_name.1003
+        hidden_effect = {
+            country_event = { id = country_event.1004 } #continue
+        } 
+    }
+}
