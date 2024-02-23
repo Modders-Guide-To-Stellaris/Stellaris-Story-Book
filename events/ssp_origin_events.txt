@@ -117,7 +117,7 @@ country_event = { # Upon defeating the Entity
         custom_tooltip = ssp_origin.102.a.tt
         hidden_effect = {
             owner = {
-                country_event = { id = ssp_origin.598 }
+                country_event = { id = ssp_origin.198 }
             }
         }
     }
@@ -152,13 +152,13 @@ country_event = {
 
 country_event = { # Creates necroparagon && maybe spawn him on some reanimated armies: See animarum active effect
     id = ssp_origin.198
-    hide_window = yes #I have no clue why there was even a title here, the effect does nothing. This event is silently spawning the leader xD
-#    title = ssp_origin.598.name
-#    desc = ssp_origin.598.desc
-#    picture = GFX_evt_board_meeting
-#    show_sound = par_event_keides
-#    event_window_type = leader_story
-#    event_picture_background = "GFX_leader_recruitment_bg_legendary_keides"
+    #hide_window = yes #I have no clue why there was even a title here, the effect does nothing. This event is silently spawning the leader xD, Update: I found out xD
+    title = ssp_origin.198.name
+    desc = ssp_origin.198.desc
+    picture = GFX_evt_board_meeting
+    show_sound = par_event_keides
+    event_window_type = leader_story
+    event_picture_background = "GFX_leader_recruitment_bg_legendary_keides"
     fire_only_once = yes
     is_triggered_only = yes
 

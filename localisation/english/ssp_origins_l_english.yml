@@ -24,27 +24,25 @@
 ssp_origin.100.name: "A System appears"
 ssp_origin.100.desc: "A new system pops up.. bla bla renaimtor stuff bla bla I have no idea what to put here for now and I dont want to spend time thinking about it right now when I could also be modifying other stuff that I dont have to do later"
 
-ssp_relic.101.name:0 "placeholder"
-ssp_relic.101.desc:0 "placeholder"
-ssp_relic.101.a:0 "placeholder"
-ssp_relic.101.b:0 "placeholder"
-
-ssp_relic.102.name:0 "The dragon falls"
-ssp_relic.102.desc:0 "placeholder"
-ssp_relic.102.a:0 "Recruit him"
-ssp_relic.102.a.tt:0 "Lets take him in for questioning.\nWe would like to know how he, a measly individual, was able to command a leviathan."
-ssp_relic.102.b:0 "Murder him."
-ssp_relic.102.b.tt:0 "He has caused enough trouble for our empire, it would be best if we kill him now.\nThere is no telling what our citizens will do if we take the person in who caused us harm."
-
-ssp_relic.511.name:0 "placeholder"
-ssp_relic.511.desc:0 "placeholder"
-ssp_relic.511.A:0 "placeholder"
-
-ssp_relic.598.name:0 "placeholder"
-ssp_relic.598.desc:0 "placeholder"
-
-ssp_relic.599.name:0 "placeholder"
-ssp_relic.599.desc:0 "placeholder"
+ssp_origin.101.name:0 "placeholder"
+ssp_origin.101.desc:0 "placeholder"
+ssp_origin.101.a:0 "placeholder"
+ssp_origin.101.b:0 "placeholorigin
+ssp_origin.102.name:0 "The dragon falls"
+ssp_origin.102.desc:0 "placeholder"
+ssp_origin.102.a:0 "Recruit him"
+ssp_origin.102.a.tt:0 "Lets take him in for questioning.\nWe would like to know how he, a measly individual, was able to command a leviathan."
+ssp_origin.102.b:0 "Murder him."
+ssp_origin.102.b.tt:0 "He has caused enough trouble for our empire, it would be best if we kill him now.\nThere is no telling what our citizens will do if we take the person in who caused us haorigin
+ ssp_origin.103.name: "A Relic of the past"
+ ssp_origin.103.A: "Very well, take it for our empire!"
+ ssp_origin.111.name:0 "placeholder"
+ssp_origin.111.desc:0 "placeholder"
+ssp_origin.111.A:0 "placeholorigin"
+ssp_origin.198.name:0 "placeholder"
+ssp_origin.198.desc:0 "placeholorigin"
+ssp_origin.199.name:0 "placeholder"
+ssp_origin.199.desc:0 "placeholder"
 
 ssp_necropar_response.A1:0 "Who are you?"
 ssp_necropar_response.A2:0 "Response A"
