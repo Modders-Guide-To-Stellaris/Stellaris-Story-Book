@@ -186,7 +186,7 @@ country_event = { # Creates necroparagon && maybe spawn him on some reanimated a
             }
             effect = {
                 save_event_target_as = necropar_country
-                set_country_flag = obtained_semichki
+                set_country_flag = obtained_necropar
             }
         }
 
@@ -200,12 +200,12 @@ country_event = { # Creates necroparagon && maybe spawn him on some reanimated a
                     #trait = "trait_"
                 }
                 effect = {
-                    save_event_target_as = semichki_species
+                    save_event_target_as = necropar_species
                 }
             }
             create_leader = {
                 class = commander
-                species = event_target:semichki_species
+                species = event_target:necropar_species
                 name = "NAME_necropar_leader"
                 skill = 8 #to avoid 2 destiny traits from appearing we set his level to 8
                 randomize_traits = yes
@@ -214,7 +214,7 @@ country_event = { # Creates necroparagon && maybe spawn him on some reanimated a
                 skip_background_generation = yes
                 background_ethic = ethic_xenophobe
                 custom_catch_phrase = keides_catch_phrase
-                custom_description = desc_semichki
+                custom_description = desc_necropar
                 set_age = 1999 
                 effect = {
                     set_leader_flag = legendary_leader
