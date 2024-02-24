@@ -1,4 +1,5 @@
 ﻿l_english:
+ #new naming system with the thing_name/desc.id
  # Deposits | Fallen Empires - Localization
 
  ssp_d_fallen_gaia_cavern_system: "Gaia Cavern System"
@@ -24,3 +25,12 @@
  ssp_deposit_opt2_name.1003: "Take something of value."
  ssp_deposit_opt2_tooltip.1003: "$ssp_deposit_opt1_name.1003$\nConcludes? the Gaia Caverns Event Chain..."
  ssp_deposit_opt3_name.1003: "Keep exploring, we need to know what lies below."
+
+ ssp_deposit_name.1004: "Ancients Awaken"
+ ssp_deposit_desc.1004: ""
+ ssp_deposit_opt1_name.1004: "Return the Artifact."
+ ssp_deposit_opt2_name.1004: "What was theirs, is now ours!"
+
+ ssp_deposit_name.1005: "Ancient Civilization Rebels"
+ ssp_deposit_desc.1005: ""
+ ssp_deposit_opt1_name.1005: "Oh no."

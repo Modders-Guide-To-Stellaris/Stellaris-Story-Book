@@ -23,7 +23,7 @@ country_event = {
                 limit = {
                     has_country_flag = ssp_gaia_caves_bad
                 }
-                country_event = { id = ssp_deposit.1001 days = }
+                country_event = { id = ssp_deposit.1001 days = 360}
                 remove_country_flag = ssp_gaia_caves_bad
             }
             else = {
@@ -54,7 +54,7 @@ country_event = {
     id = ssp_deposit.1003
     title = ssp_deposit_name.1003
     desc = ssp_deposit_desc.1003
-    event_picture_background = d_tec_archeology_infrastructure
+    #event_picture_background =
 
     immediate = {
         #swap deposit from gaia caves to hidden city, or potentially add that one.
@@ -64,7 +64,8 @@ country_event = {
         name = ssp_deposit_opt1_name.1003
         custom_tooltip = ssp_deposit_opt1_tooltip.1003
         hidden_effect = {
-            #swap deposit back
+            destroy_situation = From
+
         }
     }
 
@@ -79,9 +80,47 @@ country_event = {
     option = {
         name = ssp_deposit_opt3_name.1003
         hidden_effect = {
-            country_event = { id = country_event.100/ } #continue
+            country_event = { id = country_event.1010 } #continue
         }
     }
 }
 
 # Option 2 >> Negative outcome.
+
+country_event = {
+    id = ssp_deposit.1004
+    #potentially setup a country in here and have it broadcast up your screen
+    title = ssp_deposit_name.1004
+    desc = ssp_deposit_desc.1004
+
+    option = {
+        name = ssp_deposit_opt1_name.1004
+        hidden_effect = {
+            #return artifact, nothing else happens except init effect from bad outcome ofc
+        }
+    }
+
+    option = {
+        name = ssp_deposit_opt2_name.1004
+        hidden_effect = {
+
+        }
+    }
+}
+
+country_event = {
+    id = ssp_deposit.1005
+    title = ssp_deposit_name.1005
+    desc = ssp_deposit_desc.1005
+
+    option = {
+        name = ssp_deposit_opt1_name.1005
+        hidden_effect = {
+            # start situation to fight off the rebellion
+        }
+    }
+}
+
+#space if I need to do things with the situation chain thing, can be 4 events in here :P
+
+country_event = {  }
