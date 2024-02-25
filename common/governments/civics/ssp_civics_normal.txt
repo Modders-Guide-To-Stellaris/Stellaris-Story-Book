@@ -63,3 +63,7 @@ ssp_civic_diplomatic = {
 		diplo_weight_mult = 0.01
 	}
 }
+
+ssp_bio_researchers = {
+	
+}

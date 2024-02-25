@@ -1,0 +1,46 @@
+ssp_bio_research_labs_t1 = {
+    upgrades = {
+        ssp_bio_research_labs_t2
+    }
+
+    potential = {
+        owner = {
+            ssp_is_bio_engineer_empire = yes
+        }
+    }
+
+    destroy_trigger = {
+        owner = {
+            NOT = {
+                ssp_is_bio_engineer_empire = yes
+            }
+        }
+    }
+
+    on_destroy = {
+        add_building = building_research_lab_1
+    }
+
+    planet_modifier = {
+        job_ssp_bio_researcher_add = 2 #increase with ascensions?
+
+    }
+}
+
+ssp_bio_research_labs_t2 = {
+
+    destroy_trigger = {
+        owner = {
+            NOT = {
+                ssp_is_bio_engineer_empire = yes
+            }
+        }
+    }
+convert_to = {
+
+}
+    on_destroy = {
+
+        add_building = building_research_lab_2
+    }
+}

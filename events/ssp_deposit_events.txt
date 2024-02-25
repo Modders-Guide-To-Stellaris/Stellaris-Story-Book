@@ -123,4 +123,6 @@ country_event = {
 
 #space if I need to do things with the situation chain thing, can be 4 events in here :P
 
-country_event = {  }
+country_event = {
+    id = ssp_deposit.1010
+}
