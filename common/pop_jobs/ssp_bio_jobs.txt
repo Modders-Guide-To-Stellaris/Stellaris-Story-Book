@@ -1,6 +1,6 @@
 # Jobs | Bio Researcher > - Setup
 
-ssp_bio_researcher = {
+ssp_bio_engineer = {
     icon = mortal_initiate
     category = specialist
     condition_string = WORKER_JOB_TRIGGER

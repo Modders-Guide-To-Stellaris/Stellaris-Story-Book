@@ -64,6 +64,11 @@ ssp_civic_diplomatic = {
 	}
 }
 
-ssp_bio_researchers = {
-	
+# Civics | Bio Engineers - Setup
+ssp_bio_engineers = {
+	potential = {
+		inline_script = governments/conditions/is_regular
+	}
+	#unlock agenda, and councillor position
+	#agenda boosts what the councillor does.
 }
