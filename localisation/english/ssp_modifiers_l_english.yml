@@ -2,7 +2,7 @@
 
  # Espionage | Xenomorph Invasion - Localization
 
- ssp_cat_op_bioweapons: "REPLACE_ME"
+ ssp_cat_op_bioweapons: "Bio Weapons"
  ssp_cat_op_bioweapons_desc: "REPLACE_ME"
 
  mod_ssp_cat_op_bioweapons_speed_mult: "REPLACE_ME"
