@@ -38,3 +38,11 @@ ssp_xeno_valid_target = {
         count_controlled_ship = { count >= 20 }
     }
 }
+
+ssp_is_fyrvani_empire = {
+    OR = {
+        is_country_type = fallen_empire
+        is_country_type = awakened_fallen_empire
+    }
+    has_country_flag = ssp_fe_fyrvani
+}

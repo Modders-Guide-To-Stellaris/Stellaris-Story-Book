@@ -1,0 +1,48 @@
+# Fyrvani
+
+ship_design = {
+    name = NAME_ssp_fyrvani_col
+    ship_size = colossus
+    section = {
+        template = "SHIP_CRISIS_STAR_EATER_SECTION"
+        slot = "ship"
+
+        component = {
+            slot = PLANET_KILLER_GUN_01
+            template = PLANET_KILLER_STAR_CRACKER #todo: change this or something
+        }
+        component = {
+            slot = "LARGE_UTILITY_1"
+            template = "LARGE_PSI_BARRIER"
+        }
+        component = {
+            slot = "LARGE_UTILITY_2"
+            template = "LARGE_PSI_SHIELD"
+        }
+        component = {
+            slot = "LARGE_UTILITY_3"
+            template = "LARGE_PSI_SHIELD"
+        }
+        component = {
+            slot = "LARGE_UTILITY_4"
+            template = LARGE_ARCHAEO_ARMOR
+        }
+        component = {
+            slot = "LARGE_UTILITY_5"
+            template = "LARGE_ARMOR_5"
+        }
+        component = {
+            slot = "LARGE_UTILITY_6"
+            template = "LARGE_ARMOR_5"
+        }
+    }
+    required_component=GUARDIAN_SENSORS
+    required_component=PSI_JUMP_DRIVE_1
+    required_component=COLOSSUS_DARK_MATTER_REACTOR
+    required_component=COLOSSUS_SHIP_THRUSTER_5
+
+    # For special buildable
+    is_special_buildable = yes
+    allow_buildable_trigger = ssp_is_fyrvani_empire
+}
+

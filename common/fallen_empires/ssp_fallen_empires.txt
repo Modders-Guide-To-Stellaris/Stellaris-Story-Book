@@ -2,7 +2,7 @@
 
 # Fallen Empires | Fowanta > Andromeda - Setup
 
-ssp_fe_fowanta = {
+ssp_fe_fyrvani = {
     graphical_culture = "fallen_empire_02"
     initializer = "fallen_1"
 
@@ -27,7 +27,7 @@ ssp_fe_fowanta = {
             allow_negative_traits = no
         }
         create_country = {
-            name = NAME_ssp_fe_fowanta_country
+            name = NAME_ssp_fe_fyrvani_country
             type = fallen_empire
             ignore_initial_colony_error = yes
             authority = auth_imperial
@@ -46,17 +46,16 @@ ssp_fe_fowanta = {
             origin = "origin_fallen_empire"
             effect = {
                 create_leader = {
-                    name = ssp_placeholder_text
+                    name = ssp_fowantan_ruler
                     class = scientist
                     immortal = yes
                     set_age = 2576
                     traits = {
-                        trait =
+                        #trait =
                     }
                 }
-                set_
                 set_leader = last_created_leader
-                set_country_flag = ssp_fe_fowanta
+                set_country_flag = ssp_fe_fyrvani
                 add_resource = {
                     minerals = 10000
                     energy = 10000
@@ -64,7 +63,7 @@ ssp_fe_fowanta = {
                     influence = 500
                 }
                 # must initialize global designs here
-                add_global_ship_design = "NAME_Enforcer"
+                add_global_ship_design = "NAME_ssp_fyrvani_col"
                 add_global_ship_design = "NAME_Savant"
                 add_global_ship_design = "NAME_Scholar"
                 add_global_ship_design = "NAME_Sage"
@@ -79,23 +78,23 @@ ssp_fe_fowanta = {
 
 # Fallen Empires | Ekhinni > Andromeda - Setup
 
-ssp_fe_ekhinni = {
+#ssp_fe_ekhinni = {
 
-}
+#}
 
 # Fallen Empires | SpaceTech Inc. > Andromeda - Setup
 
-ssp_fe_spacetech = {
+#ssp_fe_spacetech = {
 
-}
+#}
 
 
 # Fallen Empires | Hitchiker - Cluster
 
 # Fallen Empires | Council of Kangs > Hitchhiker - Setup
-ssp_fe_kang_council = {
+#ssp_fe_kang_council = {
 
-}
+#}
 
 
 # Fallen Empires | 
