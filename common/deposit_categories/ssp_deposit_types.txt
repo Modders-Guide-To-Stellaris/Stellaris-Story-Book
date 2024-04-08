@@ -1,3 +1,11 @@
-ssp_deposit_cat_placeholder = {
-    #unused for now
+
+# Deposits | Categories > Fallen Empires - Setup
+
+ssp_deposit_cat_fallen_blocker = {
+    important = yes
+    blocker = yes
+}
+
+ssp_deposit_cat_fallen_rare = {
+    important = yes
 }

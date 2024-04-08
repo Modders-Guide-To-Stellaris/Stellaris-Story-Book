@@ -2,3 +2,12 @@
         BORROW_DIPLO_WEIGHT_FAVOR_RESOURCE	= { "unity" }
         BORROW_DIPLO_WEIGHT_FAVOR_COST		= { 50 }
     }
+    NSpecies = {
+        MIN_ETHIC_POINTS = 3
+    }
+    NGameplay = {
+        GOVERNMENT_CIVIC_POINTS_BASE = 3        # Base amount of civic points (to "pay" for government civic costs)
+        ETHOS_MAX_POINTS = 5
+        ASCENSION_PERKS_SLOTS = 8 # Number of ascension perk slots
+        TRADITION_CATEGORIES_MAX = 7
+    }

@@ -1,0 +1,16 @@
+﻿l_english:
+ # Jobs
+
+ job_ssp_bio_engineer: "Bio Engineer"
+ job_ssp_bio_engineer_plural: "Bio Engineers"
+ job_ssp_bio_engineer_desc: "REPLACE_ME"
+ job_ssp_bio_engineer_effect_desc: "REPLACE_ME"
+
+# Modifiers
+
+ mod_job_ssp_bio_engineer_add: "REPLACE_ME"
+ mod_job_ssp_bio_engineer_add_desc: "REPLACE_ME"
+ mod_job_ssp_bio_engineer_per_pop: "REPLACE_ME"
+ mod_job_ssp_bio_engineer_per_pop_desc: "REPLACE_ME"
+ mod_job_ssp_bio_engineer_per_crime: "REPLACE_ME"
+ mod_job_ssp_bio_engineer_per_crime_desc: "REPLACE_ME"

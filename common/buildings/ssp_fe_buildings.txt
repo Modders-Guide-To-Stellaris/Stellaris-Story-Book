@@ -1,0 +1,17 @@
+ssp_fe_crystal_catalyst = {
+    can_build = no
+
+}
+
+ssp_fe_archives = {
+    can_build = no
+    destroy_trigger = {
+        exists = owner
+        owner = {
+            AND = {
+                has_country_flag = ssp_fe_fowanta
+                is_fallen_empire = yes
+            }
+        }
+    }
+}

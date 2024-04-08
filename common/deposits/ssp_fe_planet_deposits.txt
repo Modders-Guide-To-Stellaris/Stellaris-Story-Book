@@ -1,0 +1,14 @@
+
+# Deposits | Gaia Cavern System > Fallen Empires - Setup
+
+ssp_d_fallen_gaia_cavern_system = {
+    is_for_colonizable = yes
+    icon = d_crystalline_caverns #todo:REPLACE ME
+
+    potential = { always = no }
+
+    category = ssp_deposit_cat_fallen_rare
+
+    planet_modifier = {
+    }
+}

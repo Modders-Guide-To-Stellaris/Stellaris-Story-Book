@@ -1,0 +1,5 @@
+@ssp_ascension_add_high = 1
+@ssp_ascension_add_medhigh = 0.75
+@ssp_ascension_add_med = 0.5
+@ssp_ascension_add_low = 0.25
+@ssp_ascension_add_lowlow = 0.125

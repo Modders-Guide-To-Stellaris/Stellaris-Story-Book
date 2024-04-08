@@ -2,3 +2,16 @@ ssp_killed_initiatie_count = {
     base = 1
     add = sacrifice_result_total
 }
+
+# ADD per Ascension | Took this from rodah, because we also need this but ill leave tec in there.
+ssp_tec_script_planet_ascension = {
+    base = $BASE$
+    add = planet.trigger:has_planetary_ascension_tier
+    mult = $MULT$
+}
+ssp_tec_script_add_per_ascension = {
+    base = $BASE$
+    add = value:ssp_tec_script_planet_ascension|BASE|$ASCENSION_BASE$|MULT|$ASCENSION_MULT$|
+    mult = $MULT$
+    round = $ROUND$
+}

@@ -1,0 +1,18 @@
+# Checks | Total War - Scripted Triggers
+
+ssp_is_total_war = {
+    OR = {
+        has_valid_civic = civic_hive_devouring_swarm
+        has_valid_civic = civic_hive_devouring_swarm_lithoid
+        has_valid_civic = civic_machine_terminator
+        has_valid_civic = civic_machine_assimilator
+    }
+}
+
+# Checks | Bio Engineer - Scripted Triggers
+
+ssp_is_bio_engineer_empire = {
+    OR = {
+        has_valid_civic = ssp_bio_researchers
+    }
+}
