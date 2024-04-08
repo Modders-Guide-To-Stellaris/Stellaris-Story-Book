@@ -1,0 +1,2 @@
+namespace = ssp_gamestart
+

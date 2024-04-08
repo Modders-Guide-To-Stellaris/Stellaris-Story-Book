@@ -23,8 +23,10 @@
  ssp_trait_alcoholic:0 "Alcoholic"
  ssp_trait_alcoholic_desc: "REPLACE_ME"
 
- ssp_traits_advanced_reanimated: "REPLACE_ME"
- ssp_traits_advanced_reanimated_desc: "REPLACE_ME"
+ ssp_traits_fanatic_worshipper: "Fanatic Worshipper"
+ ssp_traits_fanatic_worshipper_desc: "The beliefs in destiny clouds the judgement of the people. They make irrational decisions based on religion leading to an ineffective bureaucracy."
 
-
+ # Traits | Planets - Localization
+ trait_pc_ssp_ecoworld_preference_desc: "REPLACE_ME"
+ trait_pc_ssp_ecoworld_preference: "REPLACE_ME"
 

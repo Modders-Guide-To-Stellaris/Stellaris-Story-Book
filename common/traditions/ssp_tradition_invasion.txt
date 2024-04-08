@@ -20,7 +20,6 @@ tr_ssp_invasion_finish = {
 
 
 tr_ssp_invasion_1 = {
-
     custom_tooltip_with_modifiers = tr_ssp_invasion_1_tt
 
     modifier = {

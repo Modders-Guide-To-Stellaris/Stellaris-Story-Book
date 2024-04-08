@@ -28,13 +28,13 @@ on_monthly_pulse_country = {
 
 on_entering_system_fleet = {
     events = {
-        ssp_relic.501
+        ssp_origin.101
     }
 }
 
 on_ship_destroyed_perp = {
     events = {
-        ssp_relic.502
+        ssp_origin.102
     }
 }
 

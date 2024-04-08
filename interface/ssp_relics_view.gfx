@@ -1,6 +1,8 @@
 
 spriteTypes = {
-	# Bacterium Sample
+
+	# Relics | Bacterium Sample - GFX
+
 	SpriteType = {
 		name = "GFX_relic_bacterium_sample"
 		texturefile = "gfx/interface/icons/relics/ssp_r_bacterium_sample.dds"
@@ -17,7 +19,6 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
 
 		animation = {
 			animationmaskfile = "gfx/interface/icons/relics/ssp_r_bacterium_sample_shine.dds"
@@ -34,7 +35,8 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	# drive core
+	# Relics | Drive Core - GFX
+
 	SpriteType = {
 		name = "GFX_relic_drive_core"
 		texturefile = "gfx/interface/icons/relics/ssp_r_drivecore.dds"
@@ -51,7 +53,6 @@ spriteTypes = {
 			animationrotationoffset = { x = 0.0 y = 0.0 }
 			animationtexturescale = { x = 1.0 y = 1.0 }
 		}
-		legacy_lazy_load = no
 
 		animation = {
 			animationmaskfile = "gfx/interface/icons/relics/ssp_r_drivecore_shine.dds"
@@ -68,13 +69,15 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 
-	#the animarum
+	# Relics | Animarum - GFX
+
 	spriteType = {
 		name = "GFX_ssp_r_the_animarum"
 		texturefile = "gfx/interface/icons/relics/ssp_r_the_animarum.dds"
 	}
 
-	# Xeno Queen
+	# Relics | Xenomorph Queen - GFX
+
 	spriteType = {
 		name = "GFX_ssp_r_xeno_queen"
 		texturefile = "gfx/interface/icons/relics/ssp_r_xeno_queen.dds"

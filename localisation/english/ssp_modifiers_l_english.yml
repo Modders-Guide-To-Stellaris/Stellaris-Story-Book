@@ -2,7 +2,7 @@
 
  # Espionage | Xenomorph Invasion - Localization
 
- ssp_cat_op_bioweapons: "REPLACE_ME"
+ ssp_cat_op_bioweapons: "Bio Weapons"
  ssp_cat_op_bioweapons_desc: "REPLACE_ME"
 
  mod_ssp_cat_op_bioweapons_speed_mult: "REPLACE_ME"
@@ -23,8 +23,14 @@
  mod_ssp_cat_op_bioweapons_skill_mult: "REPLACE_ME"
  mod_ssp_cat_op_bioweapons_skill_mult_desc: "REPLACE_ME"
 
+<<<<<<< HEAD
  mod_planet_ssp_fe_archives_build_speed_mult: "REPLACE_ME"
  mod_planet_ssp_fe_archives_build_speed_mult_desc: "REPLACE_ME"
  mod_ssp_fe_archives_max: "REPLACE_ME"
  mod_ssp_fe_archives_max_desc: "REPLACE_ME"
+=======
+ # Planets | Anything Planets - Localization
+ mod_pc_ssp_ecoworld_habitability_desc: "REPLACE_ME"
+ mod_pc_ssp_ecoworld_habitability: "REPLACE_ME"
+>>>>>>> main
 

@@ -24,6 +24,10 @@ origin_follower_cult = {
 
 	description = civic_tooltip_defensive_origin_effects
 
+	traits = {
+		trait = ssp_traits_fanatic_worshipper
+	}
+
 	advanced_start = yes
 	max_once_global = yes
 
@@ -35,27 +39,27 @@ origin_follower_cult = {
 
 # Origins | Reanimator Cult - Setup
 
-ssp_origin_separatists = { #ORIGINAL STELLARIS NON PLAYER ORIGIN - Up to rework :D
-	is_origin = yes
-	icon = "gfx/interface/icons/origins/origins_separatists.dds"
-
-	playable = {
-		always = yes
-	}
-
-	possible = {
-	}
-
-	modifier = {
-		planet_stability_add = 10
-		pop_government_ethic_attraction = 0.25
-		starbase_shipyard_build_speed_mult = 0.2
-	}
-
-	random_weight = {
-		base = 0
-	}
-}
+#ssp_origin_separatists = { #ORIGINAL STELLARIS NON PLAYER ORIGIN - Up to rework :D
+#	is_origin = yes
+#	icon = "gfx/interface/icons/origins/origins_separatists.dds"
+#
+#	playable = {
+#		always = yes
+#	}
+#
+#	possible = {
+#	}
+#
+#	modifier = {
+#		planet_stability_add = 10
+#		pop_government_ethic_attraction = 0.25
+#		starbase_shipyard_build_speed_mult = 0.2
+#	}
+#
+#	random_weight = {
+#		base = 0
+#	}
+#}
 
 ssp_origin_lolbot = { #todo, rename
 	is_origin = yes
@@ -64,6 +68,7 @@ ssp_origin_lolbot = { #todo, rename
 	starting_colony = pc_frozen
 
 	playable = {
+		always = no
 	}
 
 	initializers = { ssp_blackhole_system_init }
