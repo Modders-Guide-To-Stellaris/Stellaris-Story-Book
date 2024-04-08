@@ -1,0 +1,8 @@
+namespace = ssp_deficit
+
+country_event = {
+    #The British Museum takes your relics... or something else XD
+    id = ssp_deficit.1
+    hide_window = yes
+    is_triggered_only = yes
+}

@@ -22,3 +22,8 @@
  mod_ssp_cat_op_bioweapons_skill_add_desc: "REPLACE_ME"
  mod_ssp_cat_op_bioweapons_skill_mult: "REPLACE_ME"
  mod_ssp_cat_op_bioweapons_skill_mult_desc: "REPLACE_ME"
+
+ # Planets | Anything Planets - Localization
+ mod_pc_ssp_ecoworld_habitability_desc: "REPLACE_ME"
+ mod_pc_ssp_ecoworld_habitability: "REPLACE_ME"
+
