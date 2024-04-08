@@ -3243,7 +3243,6 @@ ethic_gestalt_consciousness = {
             host_has_dlc = "Synthetic Dawn Story Pack"
         }
     }
-
     cost = 5
     category = "hive"
     category_value = 0
