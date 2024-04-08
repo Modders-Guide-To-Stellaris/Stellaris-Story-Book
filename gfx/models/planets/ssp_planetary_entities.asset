@@ -2,13 +2,13 @@
 @astroid_scale = 30
 
 entity = {
-    name = "gaia_planet_01_entity"
+    name = "ssp_ecology_planet_01_entity"
     pdxmesh = "planet_clouded_mesh"
 
     #planet surface texture override
     meshsettings = {
         name = "planet_geosphereShape"
-        texture_diffuse = ""
+        texture_diffuse = "ssp_ecoworld_01_diffuse.dds" #lighter than gaia, that's it :P
         texture_normal = "tropical_03_normal.dds"
         texture_specular = "tropical_03_spec.dds"
     }

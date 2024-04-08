@@ -1,11 +1,11 @@
 # Foxy's amazing thing that Soncio should not touch ever
 
 pc_ssp_ecoworld = {
-    entity = "gaia_planet" #change this to my map.
+    entity = "ssp_ecology_planet" #change this to my map.
     entity_scale = @planet_standard_scale
     icon = GFX_planet_type_gaia
 
-    atmosphere_color		= hsv { 0.59 0.41 0.76 }
+    atmosphere_color		= hsv { 0.60 0.40 0.75 }
     atmosphere_intensity	= 1.0
     atmosphere_width		= 0.5
 
@@ -19,7 +19,8 @@ pc_ssp_ecoworld = {
 
     min_distance_from_sun = 75
     max_distance_from_sun = 125
-    spawn_odds = 0
+    spawn_odds = 0 #make a custom system for alvanian unity with an ecology planet to anger soncio with balance :kekw:
+    #potentially give it a custom modifier that restores the eco-arcology as well as add a custom... unity... district iykyk
 
     extra_orbit_size = 0
     extra_planet_count = 0
@@ -30,7 +31,7 @@ pc_ssp_ecoworld = {
     moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 
     colonizable = yes
-    district_set = standard
+    district_set = standard #todo: find a way to switch districts without changing the planet class
     ideal = yes
     starting_planet = no
     uses_alternative_skies_for_moons = yes
