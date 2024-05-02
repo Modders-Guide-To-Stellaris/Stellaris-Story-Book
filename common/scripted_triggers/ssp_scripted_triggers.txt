@@ -46,3 +46,20 @@ ssp_is_fyrvani_empire = {
     }
     has_country_flag = ssp_fe_fyrvani
 }
+
+# Checks | Ecoworlds - Scripted Triggers
+ssp_can_terraform_ecology = {
+    and = {
+        OR = {
+            is_planet_class = pc_city
+            is_planet_class = pc_ssp_ecoworld
+        }
+        exists = owner
+            owner = {
+                NOR = {
+                    has_valid_civic = civic_hive_devouring_swarm_lithoid
+                    has_valid_civic = civic_hive_devouring_swarm
+                }
+            }
+    }
+}

@@ -1,0 +1,14 @@
+ssp_ecology_transform = {
+    potential = {
+
+        OR = {
+            owner = {
+                is_xenophobe = yes
+            }
+            has_planet_flag = ssp_alvanian_capital #custom system
+        }
+    }
+    effect = {
+        change_pc = pc_ssp_ecoworld
+    }
+}
