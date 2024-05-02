@@ -47,3 +47,8 @@
  ssp_archaeo_title.7:0 "Jonan AI Intelligence"
  ssp_archaeo_desc.7:0 "We found ourself standing in front of a giant AI, the controller of the facility. \n After we told the AI what had become of his creator he decided to share with us the secrets of their ways."
  ssp_archaeo_option_title.7:0 "Take the key"
+
+ # Archaeo | Sevastapol Station - Localization
+ ssp_anomaly_sevastapol_station: "Space Station Found"
+ ssp_sevastapol_anomaly_desc: "I'll write this later as I dont have motivation to work it out."
+

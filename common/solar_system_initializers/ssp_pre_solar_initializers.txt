@@ -11,7 +11,7 @@ grand_reanimator_finish = {
     # Star
     planet = {
         count = 1
-        class = star
+        class = pc_b_star
         orbit_distance = 0
         orbit_angle = 1
         size = { min = 20 max = 30 }

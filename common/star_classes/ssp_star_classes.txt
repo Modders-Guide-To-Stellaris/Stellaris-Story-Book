@@ -1,0 +1,19 @@
+ssp_sc_binary_1 = {
+    # X-ray Binary Star System: Blue star around a Pulsar
+    class = a_star
+    icon = e_binary_star
+    planet = {
+        key = pc_g_star
+        class = g_star
+    }
+    planet = {
+        key = pc_g_star
+        class = g_star
+    }
+    spawn_odds = 0
+
+    is_environmental_hazard = yes
+    modifier = {
+        ship_shield_reduction = 1.0
+    }
+}

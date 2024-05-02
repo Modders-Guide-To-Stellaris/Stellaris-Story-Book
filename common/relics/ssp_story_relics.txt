@@ -243,7 +243,7 @@ ssp_r_animarum = {
   }
 
 
-# Relics | Xenomorph Queen - Setup
+# Relics | Xenomorph Queen - Setup >> For Sevastapol Station situation.
 
 ssp_r_xenomorph_queen = {
 	activation_duration = @triumph_duration_normal
