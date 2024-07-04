@@ -1,4 +1,0 @@
-ssp_rifted = {
-    #todo
-    #is basically a galaxy with a band in the middle with stars without hyperlanes, or very few.. they should not be connected to either side of the slices.
-}

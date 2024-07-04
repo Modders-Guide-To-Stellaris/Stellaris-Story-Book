@@ -1,6 +1,0 @@
-song = {
-    name = "maintheme10"
-}
-song = {
-    name = "overlord_menumusic"
-}

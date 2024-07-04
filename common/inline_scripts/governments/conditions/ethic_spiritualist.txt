@@ -1,8 +1,0 @@
-
-# Checks | Spiritualist Ethos - Inline
-
-OR = {
-    has_ethic = ethic_spiritualist
-    has_ethic = ethic_fanatic_spiritualist
-}
-
