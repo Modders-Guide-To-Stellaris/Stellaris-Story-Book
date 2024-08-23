@@ -36,6 +36,26 @@ origin_follower_cult = {
 	}
 }
 
+origin_voidtime = {
+	is_origin = yes
+	icon = "gfx/interface/icons/origins/unused/origins_unwashed_masses.dds"
+	picture = GFX_origin_fanatic_worshippers
+
+	playable = {
+		always = no
+		#the fox always needs to test
+	}
+
+	possible = {
+		civics = {
+			OR = {
+				value = civic_dark_consortium
+				value = civic_corporate_dark_consortium
+			}
+		}
+	}
+	initializers = { ssp_blackhole_system_init }
+}
 
 # Origins | Reanimator Cult - Setup
 
@@ -60,19 +80,3 @@ origin_follower_cult = {
 #		base = 0
 #	}
 #}
-
-ssp_origin_lolbot = { #todo, rename
-	is_origin = yes
-	icon = gfx/interface/icons/traditions/ssp_placeholder.dds
-
-	starting_colony = pc_frozen
-
-	playable = {
-		always = no
-	}
-
-	initializers = { ssp_blackhole_system_init }
-
-	modifier = {
-	}
-}

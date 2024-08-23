@@ -1,5 +1,5 @@
 soncio_advisor = {
-    name = "italian_voice_advisor"
+    name = "advisor_voice_italian"
     icon = "gfx/interface/icons/ethics/ethic_authoritarian.dds" #todo: replace this
 
     playable = {
@@ -10,3 +10,4 @@ soncio_advisor = {
         base = 0
     }
 }
+

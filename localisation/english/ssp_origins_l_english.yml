@@ -13,10 +13,10 @@
  ssp_origin_separatists_desc: "REPLACE_ME"
 
 
- # Origins | rename - Localization
+ # Origins | Race Against Time - Localization
 
- ssp_origin_lolbot: "Blackhole Thingie"
- ssp_origin_lolbot_desc: "this is a very good description, yes yes"
+ origin_voidtime: "Race Against Time"
+ origin_voidtime: "Blackhole, Advanced Start, Situation, Into Blackhole, Revert?"
 
 
 # Origins | Events - Localization
