@@ -1,0 +1,25 @@
+namespace = ssp_archaeo
+
+# Bacterium Ship
+
+ship_event = {
+    id = ssp_archaeo.100
+    title = "archaeo.100.name"
+    desc = "archaeo.100.desc"
+    picture = GFX_evt_warm_barren
+    show_sound = event_scanner
+    location = fromfrom
+
+    is_triggered_only = yes
+
+    immediate = {
+        fromfrom = { save_event_target_as = bacterium_digsi
+    }
+
+    option = {
+        name = INTRIGUING
+        fromfrom = {
+            create_archaeological_site = ssp_bacterium_ship_archsite
+        }
+    }
+}

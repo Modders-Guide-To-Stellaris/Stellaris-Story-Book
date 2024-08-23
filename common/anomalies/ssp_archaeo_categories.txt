@@ -1,0 +1,91 @@
+ssp_anomaly_bacterium_ship = {
+    desc = ssp_anomaly_bacterium_ship_desc
+    picture = GFX_evt_worrying_signal
+    level = 3
+
+    max_once_global = yes
+
+    spawn_chance = {
+        modifier = {
+            add = 20
+            is_planet_class = pc_ocean
+        }
+    }
+    on_success = ssp_archaeo.100
+}
+
+ssp_anomaly_sevastapol_station = {
+    desc = ssp_anomaly_sevastapol_station_desc
+    level = 10
+
+    max_once_global = yes
+
+    spawn_chance = {
+        add = 0 # in custom system
+    }
+
+    on_success = ssp_anomaly.??
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
