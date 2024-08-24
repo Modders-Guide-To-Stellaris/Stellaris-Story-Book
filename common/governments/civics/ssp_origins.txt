@@ -42,7 +42,7 @@ origin_voidtime = {
 	picture = GFX_origin_fanatic_worshippers
 
 	playable = {
-		always = no
+		always = yes
 		#the fox always needs to test
 	}
 

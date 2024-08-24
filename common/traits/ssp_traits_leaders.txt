@@ -7,7 +7,7 @@ ssp_trait_alcoholic = { #unused, will probably be repurposed
         COUNCIL = no
         TIER = 1
     }
-    negative = yes
+    leader_trait_type = negative
 
     councilor_modifier = {
         country_consumer_goods_produces_mult = -0.1
@@ -21,7 +21,7 @@ ssp_trait_alcoholic = { #unused, will probably be repurposed
 
 #destiny
 ssp_destiny_genpar = {
-    destiny_trait = yes
+    leader_trait_type = destiny
     ethic_destiny_trait = yes
     inline_script = {
         script = trait/icon

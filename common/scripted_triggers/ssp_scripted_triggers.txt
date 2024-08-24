@@ -1,4 +1,8 @@
+# Checks | Important?
 
+is_running_evolved = {
+    has_stellaris_evolved = yes
+}
 
 # Checks | Reanimator Cult - Scripted Triggers
 

@@ -8,11 +8,3 @@ ssp_is_total_war = {
         has_valid_civic = civic_machine_assimilator
     }
 }
-
-# Checks | Bio Engineer - Scripted Triggers
-
-ssp_is_bio_engineer_empire = {
-    OR = {
-        has_valid_civic = ssp_bio_researchers
-    }
-}
