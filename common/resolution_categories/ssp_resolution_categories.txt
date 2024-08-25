@@ -1,0 +1,9 @@
+resolution_category_british_musuem = {
+    group = british_musuem
+    icon = "GFX_resolution_galactic_studies"
+
+
+    resolution_types = {
+        "ssp_resolution_stop_the_british"
+    }
+}

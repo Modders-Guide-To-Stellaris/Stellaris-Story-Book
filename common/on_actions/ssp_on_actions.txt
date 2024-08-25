@@ -53,13 +53,15 @@ on_galactic_council_established = {
 
 on_relic_received = {
     events = {
-        ssp_relic.300
+        #Jump drive science ship passive
+        #ssp_relic.300
     }
 }
 
 on_relic_lost = {
     events = {
-        ssp_relic.104
+        #No clue what this does.
+        #ssp_relic.104
     }
 }
 

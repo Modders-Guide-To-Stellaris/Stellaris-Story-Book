@@ -4,6 +4,10 @@ is_running_evolved = {
     has_stellaris_evolved = yes
 }
 
+has_relics = {
+    num_owned_relics > 0
+}
+
 # Checks | Reanimator Cult - Scripted Triggers
 
 has_grand_reanimator = {
