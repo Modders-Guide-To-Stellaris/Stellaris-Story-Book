@@ -49,3 +49,5 @@
 
  ssp_deficit.1.name: "Opening Ancient Caches"
  ssp_deficit.1.desc: "We're resorting to mining our capital planet dry of any old artifacts we may find. Hopefully this will help us long enough to combat our losses."
+
+mod_job_archaeoengineers_per_pop: "Archaeo Engineers Per Pop"

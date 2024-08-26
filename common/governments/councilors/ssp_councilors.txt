@@ -15,10 +15,12 @@ councilor_reanimated_armies = {
             has_grand_reanimator = yes
         }
     }
+    civic = civic_reanimated_armies
     custom_tooltip = "councilor_reanimated_armies_custom_modifier_desc"
 }
 
 councilor_british_musuem = {
+    icon = GFX_leader_subclass_scientist_councilor_small
     leader_class = {  scientist }
     is_leader_possible = {
         OR = {
@@ -26,14 +28,13 @@ councilor_british_musuem = {
         }
     }
     possible = {
-        AND = {
-            has_country_flag = British_Seized_Assets
-        }
+        has_country_flag = BritishOfferAccepted
     }
     modifier = {
         planet_jobs_minor_artifacts_produces_mult = 0.10
-        job_archaeoengineers_per_pop = 0.05
+        job_archaeoengineers_per_pop = 0.005
     }
+
     ai_hiring_weight = {
         inline_script = councilor_leader_weights
     }
