@@ -1,10 +1,12 @@
-<<<<<<< HEAD
 ﻿l_english:
- ssp_fowantan_ruler: "Princess Sylvie of Fowanta"
-=======
-l_english:
 
-NAME_necropar_leader:0 "Broken Chair Lad"
+ NAME_necropar_leader:0 "Broken Chair Lad"
  NAME_Semichki:0 "The Lads"
  desc_semichki:0 "I'm gonna hear airhorns in my sleep"
->>>>>>> main
+
+#I'm just gonna throw councilors here too
+
+ councilor_british_musuem: "Artifact Specialist"
+ councilor_british_musuem_desc: "A councilor gifted to us by the British Museum for seizing our relics."
+ mod_councilor_british_musuem_exp_gain: "REPLACE_ME"
+ mod_councilor_british_musuem_exp_gain_desc: "REPLACE_ME"
