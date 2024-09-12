@@ -19,6 +19,7 @@ origin_follower_cult = {
 					value = civic_death_cult
 				}
 		  	}
+			always = no
 		}
 #situation_grimoire_decipher
 
@@ -42,8 +43,7 @@ origin_voidtime = {
 	picture = GFX_origin_fanatic_worshippers
 
 	playable = {
-		always = yes
-		#the fox always needs to test
+
 	}
 
 	possible = {

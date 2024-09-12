@@ -1,5 +1,3 @@
-# Foxy's amazing thing that Soncio should not touch ever
-
 pc_ssp_ecoworld = {
     entity = "ssp_ecology_planet" #change this to my map.
     entity_scale = @planet_standard_scale
@@ -31,7 +29,7 @@ pc_ssp_ecoworld = {
     moon_size = { min = @habitable_moon_min_size max = @habitable_moon_max_size }
 
     colonizable = yes
-    district_set = standard #todo: find a way to switch districts without changing the planet class
+    district_set = ssp_ecoworld
     ideal = yes
     starting_planet = no
     uses_alternative_skies_for_moons = yes

@@ -1,0 +1,76 @@
+
+#Menial
+ssp_biogen_engineer = {
+    category = worker
+    condition_string = WORKER_JOB_TRIGGER
+    building_icon = building_energy_nexus
+    clothes_texture_index = 2
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_worker_job
+    possible = {
+        hidden_trigger = { exists = owner }
+        owner = {
+            is_gestalt = no
+        }
+    }
+
+    resources = {
+        category = planet_technician
+        produces = {
+            energy = 10
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_ascension_perk = ap_mastery_of_nature
+                }
+            }
+            physics_research = 2
+        }
+    }
+}
+
+ssp_biogen_engineer_drone = { #organic
+    category = simple_drone
+    condition_string = WORKER_JOB_TRIGGER
+    building_icon = building_energy_nexus
+    clothes_texture_index = 2
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_worker_job
+    possible = {
+        hidden_trigger = { exists = owner }
+        owner = {
+            is_robot_empire = yes
+        }
+    }
+
+    resources = {
+        category = planet_technician
+        produces = {
+            energy = 10
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_ascension_perk = ap_mastery_of_nature
+                }
+            }
+            physics_research = 2
+        }
+    }
+}
+
