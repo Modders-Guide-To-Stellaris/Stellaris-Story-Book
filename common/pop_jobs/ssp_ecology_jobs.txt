@@ -37,7 +37,7 @@ ssp_biogen_engineer = {
     }
 }
 
-ssp_biogen_engineer_drone = { #organic
+ssp_biogen_engineer_drone = {
     category = simple_drone
     condition_string = WORKER_JOB_TRIGGER
     building_icon = building_energy_nexus

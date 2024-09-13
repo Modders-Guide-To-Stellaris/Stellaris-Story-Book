@@ -35,3 +35,34 @@
  mod_resolution_category_british_musuem_vote_strength_mult: "REPLACE_ME"
  mod_job_archaeoengineers_per_pop: "Archaeo Engineers Per Pop §G+0.005§!"
 
+ ssp_ecology_desert: "Desert-bound Solar Fields"
+ ssp_ecology_desert_desc: "Harnessing the power of the sun"
+
+ ssp_ecology_arid: "REPLACE_ME"
+ ssp_ecology_arid_desc: "REPLACE_ME"
+
+ ssp_ecology_savannah: "REPLACE_ME"
+ ssp_ecology_savannah_desc: "REPLACE_ME"
+
+ ssp_ecology_ocean: "REPLACE_ME"
+ ssp_ecology_ocean_desc: "REPLACE_ME"
+
+ ssp_ecology_continental: "REPLACE_ME"
+ ssp_ecology_continental_desc: "REPLACE_ME"
+
+ ssp_ecology_tropical: "REPLACE_ME"
+ ssp_ecology_tropical_desc: "REPLACE_ME"
+
+ ssp_ecology_arctic: "REPLACE_ME"
+ ssp_ecology_arctic_desc: "REPLACE_ME"
+
+ ssp_ecology_alpine: "REPLACE_ME"
+ ssp_ecology_alpine_desc: "REPLACE_ME"
+
+ ssp_ecology_tundra: "REPLACE_ME"
+ ssp_ecology_tundra_desc: "REPLACE_ME"
+
+ ssp_ecology_gaia: "REPLACE_ME"
+ ssp_ecology_gaia_desc: "REPLACE_ME"
+
+

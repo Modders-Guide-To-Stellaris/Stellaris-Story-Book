@@ -8,16 +8,16 @@ planet_event = {
     immediate = {
         switch = {
             trigger = is_planet_class
-            pc_desert = { add_modifier = { modifier = a_hitchikers_guide_to_the_galaxy}}
-            pc_arid = { add_modifier = { modifier = a_hitchikers_guide_to_the_galaxy }}
-            pc_savannah = { add_modifier = { modifier = a_hitchikers_guide_to_the_galaxy}}
-            pc_ocean = { add_modifier = { modifier = a_hitchikers_guide_to_the_galaxy}}
-            pc_continental = { add_modifier = { modifier = a_hitchikers_guide_to_the_galaxy}}
-            pc_tropical = { add_modifier = { modifier = a_hitchikers_guide_to_the_galaxy}}
-            pc_arctic = { add_modifier = { modifier = a_hitchikers_guide_to_the_galaxy}}
-            pc_alpine = { add_modifier = { modifier = a_hitchikers_guide_to_the_galaxy}}
-            pc_tundra = { add_modifier = { modifier = a_hitchikers_guide_to_the_galaxy}}
-            pc_gaia = { add_modifier = { modifier = a_hitchikers_guide_to_the_galaxy}}
+            pc_desert = { add_modifier = { modifier = ssp_ecology_desert}}
+            pc_arid = { add_modifier = { modifier = ssp_ecology_arid }}
+            pc_savannah = { add_modifier = { modifier = ssp_ecology_savannah}}
+            pc_ocean = { add_modifier = { modifier = ssp_ecology_ocean}}
+            pc_continental = { add_modifier = { modifier = ssp_ecology_continental}}
+            pc_tropical = { add_modifier = { modifier = ssp_ecology_tropical}}
+            pc_arctic = { add_modifier = { modifier = ssp_ecology_arctic}}
+            pc_alpine = { add_modifier = { modifier = ssp_ecology_alpine}}
+            pc_tundra = { add_modifier = { modifier = ssp_ecology_tundra}}
+            pc_gaia = { add_modifier = { modifier = ssp_ecology_gaia}}
         }
         change_pc = pc_ssp_ecoworld
     }

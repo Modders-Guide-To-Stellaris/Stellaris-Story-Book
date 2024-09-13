@@ -122,6 +122,9 @@ ssp_ecoworld_generator = {
         district_generator
     }
 
+    min_for_deposits_on_planet = 3
+    max_for_deposits_on_planet = 15
+
     resources = {
         category = planet_districts
         cost = {
@@ -187,6 +190,9 @@ ssp_ecoworld_mining = {
     convert_to = {
         district_mining
     }
+
+    min_for_deposits_on_planet = 3
+    max_for_deposits_on_planet = 15
 
     resources = {
         category = planet_districts

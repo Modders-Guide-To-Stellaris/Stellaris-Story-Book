@@ -1,0 +1,44 @@
+ssp_ecology_desert = {
+    planet_technician_energy_produces_add = 2
+    planet_technician_energy_produces_mult = 0.33
+}
+
+ssp_ecology_arid = {
+
+}
+
+ssp_ecology_savannah = {
+
+}
+
+ssp_ecology_ocean = {
+
+}
+
+ssp_ecology_continental = {
+
+}
+
+ssp_ecology_tropical = {
+
+}
+
+ssp_ecology_arctic = {
+
+}
+
+ssp_ecology_alpine = {
+
+}
+
+ssp_ecology_tundra = {
+
+}
+
+ssp_ecology_gaia = {
+    pop_growth_speed = 0.15
+
+}
+
+
+
