@@ -24,15 +24,15 @@ ssp_biogen_engineer = {
     resources = {
         category = planet_technician
         produces = {
-            energy = 10
+            energy = 12
         }
         produces = {
             trigger = {
-                owner = {
-                    has_ascension_perk = ap_mastery_of_nature
+                planet = {
+                    has_building = ssp_ecology_unification_centre
                 }
             }
-            physics_research = 2
+            unity = 4
         }
     }
 }
@@ -61,15 +61,15 @@ ssp_biogen_engineer_drone = {
     resources = {
         category = planet_technician
         produces = {
-            energy = 10
+            energy = 12
         }
         produces = {
             trigger = {
-                owner = {
-                    has_ascension_perk = ap_mastery_of_nature
+                planet = {
+                    has_building = ssp_ecology_unification_centre
                 }
             }
-            physics_research = 2
+            unity = 4
         }
     }
 }
@@ -95,18 +95,28 @@ ssp_mineralcrystal_fabricator = {
         }
     }
 
+    triggered_planet_modifier = {
+        # Gives some Stability per "Mining Guild" Councilor level.
+        potential = {
+            has_councilor = { COUNCILOR = "councilor_mining_guilds" }
+        }
+        planet_stability_add = @councilor_mining_guilds_miner_stability
+        mult = value:councilor_level|TYPE|councilor_mining_guilds|
+    }
+
     resources = {
         category = planet_miners
         produces = {
-            minerals = 12
+            minerals = 8
         }
         produces = {
             trigger = {
-                owner = {
-                    has_ascension_perk = ap_mastery_of_nature
+                planet = {
+                    has_building = ssp_ecology_unification_centre
                 }
             }
-            engineering_research = 2
+            unity = 4
+            #mult by amount job unity building
         }
     }
 }
@@ -135,17 +145,92 @@ ssp_mineralcrystal_fabricator_drone = {
     resources = {
         category = planet_miners
         produces = {
-            minerals = 12
+            minerals = 8
         }
         produces = {
             trigger = {
-                owner = {
-                    has_ascension_perk = ap_mastery_of_nature
+                planet = {
+                    has_building = ssp_ecology_unification_centre
                 }
             }
-            engineering_research = 2
+            unity = 4
         }
     }
 }
+
+ssp_ecology_hunter = {
+    category = worker
+    condition_string = WORKER_JOB_TRIGGER
+    building_icon = building_food_processing_facility
+    clothes_texture_index = 2
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_worker_job
+    possible = {
+        hidden_trigger = { exists = owner }
+        owner = {
+            is_robot_empire = no
+        }
+    }
+
+    resources = {
+        category = planet_farmers
+        produces = {
+            food = 12
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_building = ssp_ecology_unification_centre
+                }
+            }
+            unity = 4
+        }
+    }
+}
+
+ssp_ecology_hunter_drone = {
+    category = simple_drone
+    condition_string = WORKER_JOB_TRIGGER
+    building_icon = building_food_processing_facility
+    clothes_texture_index = 2
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_worker_job
+    possible = {
+        hidden_trigger = { exists = owner }
+        owner = {
+            is_robot_empire = yes
+        }
+    }
+
+    resources = {
+        category = planet_farmers
+        produces = {
+            food = 12
+        }
+        produces = {
+            trigger = {
+                planet = {
+                    has_building = ssp_ecology_unification_centre
+                }
+            }
+            unity = 4
+        }
+    }
+}
+
 
 

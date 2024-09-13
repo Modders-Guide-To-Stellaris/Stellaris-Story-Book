@@ -65,3 +65,9 @@ on_relic_lost = {
     }
 }
 
+on_planet_conquer = {
+    events = {
+        ssp_terraform.2
+    }
+}
+

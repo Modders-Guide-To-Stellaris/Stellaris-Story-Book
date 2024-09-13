@@ -19,17 +19,8 @@ ssp_civic_mri = {
 	}
 	random_weight = { base = @civic_default_random_weight }
 	modifier = {
-
-		planet_farmers_alloys_produces_add = 1
-		planet_clerks_alloys_produces_add = 1
-		planet_miners_alloys_produces_add = 1
-		planet_technician_alloys_produces_add = 1
-
-		#upkeep
-		planet_farmers_minerals_produces_add = -2
-		planet_clerks_minerals_produces_add = -2
-		planet_miners_minerals_produces_add = -2
-		planet_technician_minerals_produces_add = -2
+		pop_category_workers_alloys_produces_add = 1
+		pop_category_workers_minerals_upkeep_add = 2
 	}
 
 }

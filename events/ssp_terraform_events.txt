@@ -22,3 +22,34 @@ planet_event = {
         change_pc = pc_ssp_ecoworld
     }
 }
+
+planet_event = {
+    id = ssp_terraform.2
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        if = {
+            limit = { is_planet_class = pc_ssp_ecoworld }
+            if = {
+                limit = {
+                    AND = {
+                        has_building = ssp_ecology_unification_centre
+                        has_modifier = ssp_ecology_unify_centre_destroyed
+                    }
+                }
+                remove_modifier = ssp_ecology_unify_centre_destroyed
+            }
+            if = {
+                limit = {
+                    AND = {
+                        has_planet_flag = EcologyCentreBuilt
+                        NOT = { has_building = ssp_ecology_unification_centre }
+                    }
+                }
+                remove_planet_flag = EcologyCentreBuilt
+                add_modifier = { modifier = ssp_ecology_unify_centre_destroyed days = -1}
+            }
+        }
+    }
+}

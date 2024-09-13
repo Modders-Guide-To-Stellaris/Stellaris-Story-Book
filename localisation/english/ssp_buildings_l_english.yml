@@ -4,3 +4,10 @@
 
  ssp_fe_crystal_catalyst: "The Crystal of Galaxies" #todo: rename this or something XD
  ssp_fe_crystal_catalyst_desc: "This crystals acts a catalyst bla bla"
+
+ ssp_ecology_unification_centre: "Meditation Centre"
+ ssp_ecology_unification_centre_desc: "REPLACE_ME"
+ mod_planet_ssp_ecology_unification_centre_build_speed_mult: "REPLACE_ME"
+ mod_planet_ssp_ecology_unification_centre_build_speed_mult_desc: "REPLACE_ME"
+ mod_ssp_ecology_unification_centre_max: "REPLACE_ME"
+ mod_ssp_ecology_unification_centre_max_desc: "REPLACE_ME"

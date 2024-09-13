@@ -1,3 +1,8 @@
+ssp_ecology_unify_centre_destroyed = {
+    planet_jobs_unity_produces_mult = -0.5
+    planet_stability_mult = -10
+}
+
 ssp_ecology_desert = {
     planet_technician_energy_produces_add = 2
     planet_technician_energy_produces_mult = 0.33

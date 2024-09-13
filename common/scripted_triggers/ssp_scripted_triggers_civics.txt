@@ -6,5 +6,13 @@ ssp_is_total_war = {
         has_valid_civic = civic_hive_devouring_swarm_lithoid
         has_valid_civic = civic_machine_terminator
         has_valid_civic = civic_machine_assimilator
+        has_valid_civic = civic_fanatic_purifiers
     }
+}
+
+ssp_is_consumer_empire = {
+    has_valid_civic = civic_hive_devouring_swarm
+    has_valid_civic = civic_hive_devouring_swarm_lithoid
+    has_valid_civic = civic_fanatic_purifiers
+    has_valid_civic = civic_machine_terminator
 }

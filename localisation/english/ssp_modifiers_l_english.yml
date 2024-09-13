@@ -35,6 +35,9 @@
  mod_resolution_category_british_musuem_vote_strength_mult: "REPLACE_ME"
  mod_job_archaeoengineers_per_pop: "Archaeo Engineers Per Pop §G+0.005§!"
 
+ ssp_ecology_unify_centre_destroyed: "Meditation Centre Destroyed"
+ ssp_ecology_unify_centre_destroyed_desc: "REPLACE_ME"
+
  ssp_ecology_desert: "Desert-bound Solar Fields"
  ssp_ecology_desert_desc: "Harnessing the power of the sun"
 

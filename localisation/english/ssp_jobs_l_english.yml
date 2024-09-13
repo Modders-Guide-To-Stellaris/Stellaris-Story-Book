@@ -45,6 +45,30 @@
  mod_job_ssp_mineralcrystal_fabricator_drone_per_crime: "REPLACE_ME"
  mod_job_ssp_mineralcrystal_fabricator_drone_per_crime_desc: "REPLACE_ME"
 
+ job_ssp_ecology_hunter_drone: "Animal Hunter Drone"
+ job_ssp_ecology_hunter_drone_plural: "REPLACE_ME"
+ job_ssp_ecology_hunter_drone_desc: "REPLACE_ME"
+ job_ssp_ecology_hunter_drone_effect_desc: "REPLACE_ME"
+ mod_job_ssp_ecology_hunter_drone_add: "REPLACE_ME"
+ mod_job_ssp_ecology_hunter_drone_add_desc: "REPLACE_ME"
+ mod_job_ssp_ecology_hunter_drone_per_pop: "REPLACE_ME"
+ mod_job_ssp_ecology_hunter_drone_per_pop_desc: "REPLACE_ME"
+ mod_job_ssp_ecology_hunter_drone_per_crime: "REPLACE_ME"
+ mod_job_ssp_ecology_hunter_drone_per_crime_desc: "REPLACE_ME"
+
+ job_ssp_ecology_hunter: "Animal Hunter"
+ job_ssp_ecology_hunter_plural: "REPLACE_ME"
+ job_ssp_ecology_hunter_desc: "REPLACE_ME"
+ job_ssp_ecology_hunter_effect_desc: "REPLACE_ME"
+ mod_job_ssp_ecology_hunter_add: "REPLACE_ME"
+ mod_job_ssp_ecology_hunter_add_desc: "REPLACE_ME"
+ mod_job_ssp_ecology_hunter_per_pop: "REPLACE_ME"
+ mod_job_ssp_ecology_hunter_per_pop_desc: "REPLACE_ME"
+ mod_job_ssp_ecology_hunter_per_crime: "REPLACE_ME"
+ mod_job_ssp_ecology_hunter_per_crime_desc: "REPLACE_ME"
+
+
+
 
 
 
