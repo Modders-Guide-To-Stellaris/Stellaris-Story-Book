@@ -132,18 +132,13 @@ ssp_ecoworld_generator = {
         }
     }
 
-    planet_modifier = {
-        planet_housing_add = 6
-    }
-
     triggered_planet_modifier = {
         potential = {
             exists = owner
             owner = { is_gestalt = yes }
         }
-        modifier = {
-            job_ssp_biogen_engineer_drone_add = 9
-        }
+        modifier = { job_ssp_biogen_engineer_drone_add = 9 }
+        planet_housing_add = 9
     }
 
     triggered_planet_modifier = {
@@ -153,9 +148,8 @@ ssp_ecoworld_generator = {
                 is_regular_empire = yes
             }
         }
-        modifier = {
-            job_ssp_biogen_engineer_add = 6
-        }
+        modifier = { job_ssp_biogen_engineer_add = 6 }
+        planet_housing_add = 6
     }
 
     triggered_desc = {
@@ -163,7 +157,7 @@ ssp_ecoworld_generator = {
             exists = owner
             owner = { is_gestalt = yes }
         }
-        text = job_technician_drone_effect_desc
+        text = job_ssp_biogen_engineer_drone_effect_desc
     }
 
     triggered_desc = {
@@ -171,7 +165,7 @@ ssp_ecoworld_generator = {
             exists = owner
             owner = { is_regular_empire = yes}
         }
-        text = job_technician_effect_desc
+        text = job_ssp_biogen_engineer_effect_desc
     }
 }
 
@@ -182,5 +176,59 @@ ssp_ecoworld_mining = {
 
     show_on_uncolonized = {
         uses_district_set = ssp_ecology
+    }
+
+    potential = {
+        uses_district_set = ssp_ecology
+    }
+
+    conversion_ratio = 0.5
+
+    convert_to = {
+        district_mining
+    }
+
+    resources = {
+        category = planet_districts
+        cost = {
+            minerals = 750
+        }
+        upkeep = {
+            energy = 5
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_robot_empire = no }
+        }
+        modifier = { job_ssp_mineralcrystal_fabricator_add = 6 }
+        planet_housing_add = 6
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_robot_empire = yes }
+        }
+        modifier = { job_ssp_mineralcrystal_fabricator_drone_add = 8 }
+        planet_housing_add = 8
+    }
+
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_robot_empire = no }
+        }
+        text = job_ssp_mineralcrystal_fabricator_effect_desc
+    }
+
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_robot_empire = yes}
+        }
+        text = job_ssp_mineralcrystal_fabricator_drone_effect_desc
     }
 }
