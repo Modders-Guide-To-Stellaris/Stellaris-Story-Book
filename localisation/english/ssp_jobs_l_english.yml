@@ -2,7 +2,7 @@
  # Jobs
 
  job_ssp_biogen_engineer: "Bio-generator Technician"
- job_ssp_biogen_engineer_plural: "REPLACE_ME"
+ job_ssp_biogen_engineer_plural: "Bio-generator Technicians"
  job_ssp_biogen_engineer_desc: "REPLACE_ME"
  job_ssp_biogen_engineer_effect_desc: "REPLACE_ME"
  mod_job_ssp_biogen_engineer_add: "£job_primitive_technician£ Bio-generator Technicians"
@@ -13,7 +13,7 @@
  mod_job_ssp_biogen_engineer_per_crime_desc: "REPLACE_ME"
 
  job_ssp_biogen_engineer_drone: "Bio-generator Drone"
- job_ssp_biogen_engineer_drone_plural: "REPLACE_ME"
+ job_ssp_biogen_engineer_drone_plural: "Bio-generator Drones"
  job_ssp_biogen_engineer_drone_desc: "REPLACE_ME"
  job_ssp_biogen_engineer_drone_effect_desc: "REPLACE_ME"
  mod_job_ssp_biogen_engineer_drone_add: "£job_primitive_technician£ Bio-generator Drones"
@@ -22,5 +22,29 @@
  mod_job_ssp_biogen_engineer_drone_per_pop_desc: "REPLACE_ME"
  mod_job_ssp_biogen_engineer_drone_per_crime: "REPLACE_ME"
  mod_job_ssp_biogen_engineer_drone_per_crime_desc: "REPLACE_ME"
+
+ mod_job_ssp_mineralcrystal_fabricator_per_crime_desc: "REPLACE_ME"
+ mod_job_ssp_mineralcrystal_fabricator_per_crime: "REPLACE_ME"
+ mod_job_ssp_mineralcrystal_fabricator_per_pop_desc: "REPLACE_ME"
+ mod_job_ssp_mineralcrystal_fabricator_per_pop: "REPLACE_ME"
+ mod_job_ssp_mineralcrystal_fabricator_add_desc: "REPLACE_ME"
+ mod_job_ssp_mineralcrystal_fabricator_add: "£job_replicator£ Mineral Fabricators"
+ job_ssp_mineralcrystal_fabricator_effect_desc: "REPLACE_ME"
+ job_ssp_mineralcrystal_fabricator_desc: "REPLACE_ME"
+ job_ssp_mineralcrystal_fabricator_plural: "Mineral Fabricators"
+ job_ssp_mineralcrystal_fabricator: "Mineral Fabricator"
+
+ job_ssp_mineralcrystal_fabricator_drone: "Mineral Fabricator Drone"
+ job_ssp_mineralcrystal_fabricator_drone_plural: "Mineral Fabricator Drones"
+ job_ssp_mineralcrystal_fabricator_drone_desc: "REPLACE_ME"
+ job_ssp_mineralcrystal_fabricator_drone_effect_desc: "REPLACE_ME"
+ mod_job_ssp_mineralcrystal_fabricator_drone_add: "£job_replicator£ Mineral Fabricator Drones"
+ mod_job_ssp_mineralcrystal_fabricator_drone_add_desc: "REPLACE_ME"
+ mod_job_ssp_mineralcrystal_fabricator_drone_per_pop: "REPLACE_ME"
+ mod_job_ssp_mineralcrystal_fabricator_drone_per_pop_desc: "REPLACE_ME"
+ mod_job_ssp_mineralcrystal_fabricator_drone_per_crime: "REPLACE_ME"
+ mod_job_ssp_mineralcrystal_fabricator_drone_per_crime_desc: "REPLACE_ME"
+
+
 
 

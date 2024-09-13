@@ -1,18 +1,122 @@
-#basics
+ssp_ecoworld_housing = {
+    base_buildtime = 600
+    is_capped_by_modifier = no
+    exempt_from_ai_planet_specialization = yes
+
+    show_on_uncolonized = {
+        uses_district_set = ssp_ecology
+    }
+
+    potential = {
+        uses_district_set = ssp_ecology
+    }
+
+    conversion_ratio = 0.5
+
+    convert_to = {
+        district_city
+    }
+    resources = {
+        category = planet_districts
+        cost = { minerals = 750 }
+        upkeep = { energy = 5 }
+    }
+
+    planet_modifier = {
+        planet_housing_add = 15
+        planet_max_buildings_add = 1
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        modifier = {
+            job_maintenance_drone_add = 12
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            AND = {
+                is_regular_empire = yes
+                NOT = { is_lithoid = yes }
+            }
+        }
+        modifier = {
+            job_clerk_add = 8
+            job_trader_add = 1
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            exists = owner
+            owner = { is_lithoid = yes }
+        }
+        modifier = {
+            job_clerk_add = 6
+            job_ssp_mineralcrystal_fabricator_add = 3
+        }
+    }
+
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = { is_gestalt = yes }
+        }
+        text = job_maintenance_drone_effect_desc
+    }
+
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_regular_empire = yes
+            }
+        }
+        text = job_clerk_effect_desc
+    }
+
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                is_lithoid = yes
+            }
+        }
+        text = job_miner_effect_desc
+    }
+
+    triggered_desc = {
+        trigger = {
+            exists = owner
+            owner = {
+                AND = {
+                    is_regular_empire = yes
+                    NOT = { is_lithoid = yes }
+                }
+            }
+        }
+        text = job_trader_effect_desc
+    }
+}
+
 ssp_ecoworld_generator = {
     base_buildtime = 600
     is_capped_by_modifier = no
     exempt_from_ai_planet_specialization = yes
 
     show_on_uncolonized = {
-        uses_district_set = ssp_ecoworld
+        uses_district_set = ssp_ecology
     }
 
     potential = {
-        uses_district_set = ssp_ecoworld
+        uses_district_set = ssp_ecology
     }
 
-    conversion_ratio = 1
+    conversion_ratio = 0.5
 
     convert_to = {
         district_generator
@@ -68,5 +172,15 @@ ssp_ecoworld_generator = {
             owner = { is_regular_empire = yes}
         }
         text = job_technician_effect_desc
+    }
+}
+
+ssp_ecoworld_mining = {
+    base_buildtime = 600
+    is_capped_by_modifier = no
+    exempt_from_ai_planet_specialization = yes
+
+    show_on_uncolonized = {
+        uses_district_set = ssp_ecology
     }
 }

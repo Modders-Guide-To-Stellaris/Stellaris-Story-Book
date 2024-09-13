@@ -9,6 +9,6 @@ ssp_ecology_transform = {
         }
     }
     effect = {
-        change_pc = pc_ssp_ecoworld
+        planet_event = { id = ssp_terraform.1 }
     }
 }

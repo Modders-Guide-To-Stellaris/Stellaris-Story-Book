@@ -17,7 +17,7 @@ ssp_biogen_engineer = {
     possible = {
         hidden_trigger = { exists = owner }
         owner = {
-            is_gestalt = no
+            is_robot_empire = no
         }
     }
 
@@ -73,4 +73,79 @@ ssp_biogen_engineer_drone = { #organic
         }
     }
 }
+
+ssp_mineralcrystal_fabricator = {
+    category = worker
+    condition_string = WORKER_JOB_TRIGGER
+    building_icon = old_production/building_mining_network_4
+    clothes_texture_index = 2
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_worker_job
+    possible = {
+        hidden_trigger = { exists = owner }
+        owner = {
+            is_robot_empire = no
+        }
+    }
+
+    resources = {
+        category = planet_miners
+        produces = {
+            minerals = 12
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_ascension_perk = ap_mastery_of_nature
+                }
+            }
+            engineering_research = 2
+        }
+    }
+}
+
+ssp_mineralcrystal_fabricator_drone = {
+    category = simple_drone
+    condition_string = WORKER_JOB_TRIGGER
+    building_icon = old_production/building_mining_network_4
+    clothes_texture_index = 2
+
+    possible_pre_triggers = {
+        has_owner = yes
+        is_being_purged = no
+        is_being_assimilated = no
+        is_sapient = yes
+    }
+
+    possible_precalc = can_fill_worker_job
+    possible = {
+        hidden_trigger = { exists = owner }
+        owner = {
+            is_robot_empire = yes
+        }
+    }
+
+    resources = {
+        category = planet_miners
+        produces = {
+            minerals = 12
+        }
+        produces = {
+            trigger = {
+                owner = {
+                    has_ascension_perk = ap_mastery_of_nature
+                }
+            }
+            engineering_research = 2
+        }
+    }
+}
+
 

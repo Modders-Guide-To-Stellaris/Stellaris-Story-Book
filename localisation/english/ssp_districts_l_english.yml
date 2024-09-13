@@ -1,6 +1,12 @@
 ﻿l_english:
  mod_planet_ssp_ecoworld_generator_build_speed_mult_desc: "REPLACE_ME"
  mod_planet_ssp_ecoworld_generator_build_speed_mult: "REPLACE_ME"
- ssp_ecoworld_generator_plural: "REPLACE_ME"
+ ssp_ecoworld_generator_plural: "Bio-generator Districts"
  ssp_ecoworld_generator_desc: "REPLACE_ME"
  ssp_ecoworld_generator: "Bio-generator District"
+
+ ssp_ecoworld_housing: "Hobbit Hole"
+ ssp_ecoworld_housing_desc: "REPLACE_ME"
+ ssp_ecoworld_housing_plural: "Hobbit Holes"
+ mod_planet_ssp_ecoworld_housing_build_speed_mult: "REPLACE_ME"
+ mod_planet_ssp_ecoworld_housing_build_speed_mult_desc: "REPLACE_ME"
