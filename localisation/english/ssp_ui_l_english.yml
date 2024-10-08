@@ -1,11 +1,6 @@
 ﻿l_english:
  #for anyone looking through the code and wondering why the files are labeled as 'SSP' it's because before Stellaris Story Book this project was named Stellaris Story Pack -Foxy
- #also this is the main language file. (well it was and I'm still using it for the stuff I dont know where to throw)
-
- WAIT: "Wait what?"
- RECONSIDER: "Let's Reconsider"
- DEWIT: "Do It"
- OHNO: "Oh no..."
+ #also this is the main language file.
 
 ##########
 # Events

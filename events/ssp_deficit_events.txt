@@ -1,7 +1,5 @@
 namespace = ssp_deficit
 
-#HEYYYY foxy if you ever look in this file again, add the british museum background into the mod so I can actually do the event backgrounds.. thnx <3
-
 event = {
     id = ssp_deficit.0
     hide_window = yes
@@ -35,6 +33,7 @@ country_event = {
     }
     option = {
         name = RECONSIDER
+
     }
 }
 
@@ -66,120 +65,18 @@ country_event = {
     }
 }
 
-situation_event = {
-    id = ssp_deficit.11
-    title = deficit.100.name
-    desc = {
-        text = deficit.100.desc
-        trigger = { owner = { is_gestalt = no } }
-    }
-    desc = {
-        text = deficit.100.desc.gestalt
-        trigger = { owner = { is_gestalt = yes } }
-    }
-    picture = GFX_evt_deficit
-    show_sound = event_bad_omen
-    is_triggered_only = yes
-    situation = this
-
-    abort_trigger = {
-        situation_progress >= 100
-    }
-
-    immediate = {
-        owner = {
-            ordered_pop_faction = {
-                limit = {
-                    is_pop_faction_type = technologist
-                    is_owner_ethic_pop_faction = yes
-                    NOT = { has_modifier = faction_loan_taken }
-                }
-                order_by = trigger:num_pops
-                position = 0
-                save_event_target_as = ruler_pop_faction
-            }
-            ordered_owned_planet = {
-                limit = {
-                    is_capital = no
-                    NOT = {
-                        is_planet_class = pc_cosmogenesis_world
-                    }
-                }
-                order_by = trigger:num_pops
-                position = 0
-                save_event_target_as = looted_planet
-            }
-            if = {
-                limit = {
-                    AND = {
-                        NOT = { exists = event_target:looted_planet }
-                        owner = {
-                            any_controlled_planet = {
-                                is_planet_class = pc_relic
-                            }
-                        }
-                    }
-                }
-                planet = {
-                    save_event_target_as = looted_planet
-                }
-            }
-        }
-    }
-
-    option = {
-        name = deficit.100.A
-        trigger = {
-            exists = event_target:ruler_pop_faction
-        }
-        owner = {
-            add_resource = {
-                minor_artifacts = 0.1
-                mult = event_target:ruler_pop_faction.trigger:num_pops
-            }
-            event_target:ruler_pop_faction = {
-                add_modifier = {
-                    modifier = faction_loan_taken
-                    years = 10
-                }
-            }
-        }
-    }
-    option = {
-        name = deficit.100.B
-        owner = {
-            add_resource = {
-                minor_artifacts = 2
-                mult = event_target:looted_planet.trigger:num_pops
-            }
-            event_target:looted_planet = {
-                add_planet_devastation = 50
-                if = {
-                    limit = {
-                        has_building = building_archaeostudies_faculty
-                    }
-                    remove_building = building_archaeostudies_faculty
-                }
-            }
-        }
-    }
-    option = {
-        name = deficit.100.C
-    }
-}
-
-
 country_event = {
-    id = ssp_deficit.18
+    id = ssp_deficit.20
     title = ssp_relicseized.name
     desc = ssp_deficit.20.desc
     #event_picture_background = GFX_mega_art_installation_background
     is_triggered_only = yes
+    situation = this
     force_open = yes
 
     immediate = {
         hidden_effect = {
-            country_event = { id = ssp_deficit.24 }
+            country_event = { id = ssp_deficit.200 }
         }
     }
 
@@ -201,30 +98,16 @@ country_event = {
     option = {
         name = BRITISHDENIED
         owner = {
+            add_resource = { minor_artifacts = 1000 }
             add_modifier = { modifier = ssp_raided_british days = 180 }
             set_country_flag = DeniedBritish
-
-            if = {
-                limit = {
-                    ssp_is_total_war = yes
-                }
-                add_resource = { minor_artifacts = 1000 }
-                random = {
-                    chance = 50
-                    country_event = { id = ssp_deficit.22 }
-                }
-            }
-            else = {
-                add_resource = { minor_artifacts = 1000 }
-            }
         }
     }
 }
 
-
 country_event = {
     #The British Museum seizes a relic
-    id = ssp_deficit.19
+    id = ssp_deficit.2001
     hide_window = yes
     is_triggered_only = yes
 
@@ -235,7 +118,7 @@ country_event = {
                     has_global_flag = BritishMuseumVanquished
                 }
             }
-            country_event = { id = ssp_deficit.20 }
+            country_event = { id = ssp_deficit.2002 }
         }
     }
 
@@ -244,7 +127,7 @@ country_event = {
 
 country_event = {
     #The British Museum seizes a relic
-    id = ssp_deficit.20
+    id = ssp_deficit.2002
     title = ssp_relicseized.name
     desc = ssp_deficit.20a.desc
     event_picture_background = GFX_evt_relic_world
@@ -403,7 +286,7 @@ country_event = {
                 remove_relic = ssp_r_xenomorph_queen
             }
             1 = {
-                country_event = { id = ssp_deficit.23 }
+                country_event = { id = ssp_deficit.2003 }
             }
         }
         set_country_flag = British_Seized_Assets_Low
@@ -411,6 +294,27 @@ country_event = {
 
     option = {
         name = WAIT
+    }
+}
+
+
+country_event = {
+    #Fails to seize
+    id = ssp_deficit.2003
+    title = ssp_relicseizedfail.name
+    desc = ssp_deficit.20a.desc
+    event_picture_background = GFX_evt_relic_world
+    is_triggered_only = yes
+
+    immediate = {
+        random_owned_leader = {
+            limit = {
+                NOT = {
+                    is_councilor = yes
+                }
+            }
+            kill_leader = {}
+        }
     }
 }
 
@@ -590,29 +494,8 @@ country_event = {
 }
 
 country_event = {
-    #Fails to seize
-    id = ssp_deficit.23
-    title = ssp_relicseizedfail.name
-    desc = ssp_deficit.20a.desc
-    event_picture_background = GFX_evt_relic_world
-    is_triggered_only = yes
-
-    immediate = {
-        random_owned_leader = {
-            limit = {
-                NOT = {
-                    is_councilor = yes
-                }
-            }
-            kill_leader = {}
-        }
-    }
-}
-
-
-country_event = {
     #The British Museum seizes all relics
-    id = ssp_deficit.24
+    id = ssp_deficit.200
     hide_window = yes
     is_triggered_only = yes
 
@@ -658,3 +541,4 @@ country_event = {
 
         }
 }
+

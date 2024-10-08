@@ -23,17 +23,16 @@
  mod_ssp_cat_op_bioweapons_skill_mult: "REPLACE_ME"
  mod_ssp_cat_op_bioweapons_skill_mult_desc: "REPLACE_ME"
 
+<<<<<<< HEAD
  mod_planet_ssp_fe_archives_build_speed_mult: "REPLACE_ME"
  mod_planet_ssp_fe_archives_build_speed_mult_desc: "REPLACE_ME"
  mod_ssp_fe_archives_max: "REPLACE_ME"
  mod_ssp_fe_archives_max_desc: "REPLACE_ME"
-
+=======
  # Planets | Anything Planets - Localization
  mod_pc_ssp_ecoworld_habitability_desc: "REPLACE_ME"
  mod_pc_ssp_ecoworld_habitability: "REPLACE_ME"
-
- mod_resolution_category_british_musuem_vote_strength_mult: "REPLACE_ME"
- mod_job_archaeoengineers_per_pop: "Archaeo Engineers Per Pop §G+0.005§!"
+>>>>>>> main
 
  ssp_ecology_unify_centre_destroyed: "Meditation Centre Destroyed"
  ssp_ecology_unify_centre_destroyed_desc: "REPLACE_ME"

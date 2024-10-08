@@ -1,5 +1,4 @@
 ﻿l_english:
- #this file is a mess man
  ssp_situation_artifact_deficit_desc: "REPLACE ME"
  ssp_situation_artifact_deficit_type: "Womp Womp"
  ssp_situation_artifact_deficit: "Minor Artifact Deficit"
@@ -16,17 +15,25 @@
  deficit_approach_reorder_scientific_structure: "Reroute Scientists"
  deficit_approach_open_artifact_caches: "Open Artifact Caches"
 
+ WAIT: "Wait what?"
+ RECONSIDER: "Let's Reconsider"
+ DEWIT: "Do It"
+ OHNO: "Oh no..."
  BRITISHDENIED: "We do not need their help!"
  NOTIMMORTAL: "They Are Not Immortal!"
+ british_musuem: "Artifact Collectors"
+ resolution_category_british_musuem: "Artifacts"
+ mod_resolution_category_british_musuem_vote_strength_mult: "REPLACE_ME"
+ resolution_british_success: "Successfully overthrow the British Museum and reclaim relics."
+
+ ssp_resolution_stop_the_british: "Stop The British"
+ ssp_resolution_stop_the_british_desc: "Claiming relics, who do they think they are? We think it is time to put a stop to it and reclaim our property!"
 
  ssp_vanquished_british: "Vanquished The British!"
  ssp_vanquished_british.desc: "Due to collective efforts from the community, we have successfully vanquished the British Museum. Those who had their relics stolen will receive compensation... At least they will never steal another one of our relics ever again.
 
  ssp_raided_british: "Raided British Convoys"
  ssp_raided_british_desc: "Successfully raided the British Convoys containing Artifacts. What was once theirs IS NOW OURS."
-
- ssp_deficit.1.name: "Opening Ancient Caches"
- ssp_deficit.1.desc: "We're resorting to mining our capital planet dry of any old artifacts we may find. Hopefully this will help us long enough to combat our losses."
 
  ssp_relicseized.name: "Relic Asset Seized"
  ssp_relicseizedfail.name: "Relic Seizing Failed"
@@ -35,4 +42,12 @@
  ssp_deficit.20c.desc: "We have successfully broken one of their convoys containing minor artifacts, it is clear they are not immortal. We should try to ask other empires for help in taking down the museum"
  ssp_deficit.20d.desc: "We have caught the spy and executed them on the spot. Our Relic has been reclaimed!"
 
+ councilor_british_musuem: "Artifact Specialist"
+ councilor_british_musuem_desc: "A councilor gifted to us by the British Museum for seizing our relics."
+ mod_councilor_british_musuem_exp_gain: "REPLACE_ME"
+ mod_councilor_british_musuem_exp_gain_desc: "REPLACE_ME"
 
+ ssp_deficit.1.name: "Opening Ancient Caches"
+ ssp_deficit.1.desc: "We're resorting to mining our capital planet dry of any old artifacts we may find. Hopefully this will help us long enough to combat our losses."
+
+mod_job_archaeoengineers_per_pop: "Archaeo Engineers Per Pop"
