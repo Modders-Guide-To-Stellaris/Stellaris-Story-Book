@@ -143,11 +143,8 @@ ssp_situation_artifact_deficit = {
             owner = {
                 if = {
                     limit = {
-                        AND = {
-                            NOT = {
-                                has_global_flag = BritishMuseumVanquished
-                            }
-                            num_owned_relics > 0
+                        NOT = {
+                            has_global_flag = BritishMuseumVanquished
                         }
                     }
                     country_event = { id = ssp_deficit.20 }

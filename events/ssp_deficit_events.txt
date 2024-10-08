@@ -84,7 +84,6 @@ country_event = {
         name = OHNO
         owner = {
             set_country_flag = British_Seized_Assets_High
-            set_country_flag  = BritishOfferAccepted
         }
         allow = {
             NOT = {
@@ -537,8 +536,6 @@ country_event = {
             remove_relic = ssp_r_drive_core
             remove_relic = ssp_r_khyran_bacterium
             remove_relic = ssp_r_xenomorph_queen
-
-
         }
 }
 
