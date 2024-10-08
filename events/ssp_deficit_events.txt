@@ -136,157 +136,43 @@ country_event = {
     #How to get the relics an empire owns, lmk cause that would be super useful for this xD
     immediate = {
         locked_random_list = {
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_ancient_sword } }
-                remove_relic = r_ancient_sword
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_celestial_tear } }
-                remove_relic = r_celestial_tear
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_cetanas_heart } }
-                remove_relic = r_cetanas_heart
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_continuum } }
-                remove_relic = r_continuum
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_cryo_core } }
-                remove_relic = r_cryo_core
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_eternal_throne } }
-                remove_relic = r_eternal_throne
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_ever_spinning_top } }
-                remove_relic = r_ever_spinning_top
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_galatron } }
-                remove_relic = r_galatron
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_galaxy } }
-                remove_relic = r_galaxy
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_infinity_root } }
-                remove_relic = r_infinity_root
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_khans_throne } }
-                remove_relic = r_khans_throne
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_daedalus_seal } }
-                remove_relic = r_daedalus_seal
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_dragon_trophy } }
-                remove_relic = r_dragon_trophy
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_odryskan_crystal } }
-                remove_relic = r_odryskan_crystal
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_omnicodex } }
-                remove_relic = r_omnicodex
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_plasmic_core } }
-                remove_relic = r_plasmic_core
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_pox_sample } }
-                remove_relic = r_pox_sample
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_prethoryn_queen } }
-                remove_relic = r_prethoryn_queen
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_reality_perforator } }
-                remove_relic = r_reality_perforator
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_rubricator } }
-                remove_relic = r_rubricator
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_severed_head } }
-                remove_relic = r_severed_head
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_surveyor } }
-                remove_relic = r_surveyor
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_the_defragmentor } }
-                remove_relic = r_the_defragmentor
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_the_last_baol } }
-                remove_relic = r_the_last_baol
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_the_rulerchip } }
-                remove_relic = r_the_rulerchip
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_contingency_core } }
-                remove_relic = r_contingency_core
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_time_crystal } }
-                remove_relic = r_time_crystal
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_toxic_god } }
-                remove_relic = r_toxic_god
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_unbidden_warlock } }
-                remove_relic = r_unbidden_warlock
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_vacuum_flower } }
-                remove_relic = r_vacuum_flower
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_war_forge } }
-                remove_relic = r_war_forge
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_worm_scales } }
-                remove_relic = r_worm_scales
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = r_zro_crystal } }
-                remove_relic = r_zro_crystal
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = ssp_r_animarum } }
-                remove_relic = ssp_r_animarum
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = ssp_r_drive_core } }
-                remove_relic = ssp_r_drive_core
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = ssp_r_khyran_bacterium } }
-                remove_relic = ssp_r_khyran_bacterium
-            }
-            1 = {
-                modifier = { mult = 0 NOT = { has_relic = ssp_r_xenomorph_queen } }
-                remove_relic = ssp_r_xenomorph_queen
-            }
-            1 = {
-                country_event = { id = ssp_deficit.2003 }
-            }
+            1 = { if = { limit = { has_relic = r_ancient_sword } remove_relic = r_ancient_sword } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_celestial_tear } remove_relic = r_celestial_tear } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_cetanas_heart } remove_relic = r_cetanas_heart } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_continuum } remove_relic = r_continuum } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_cryo_core } remove_relic = r_cryo_core } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_eternal_throne } remove_relic = r_eternal_throne } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_ever_spinning_top } remove_relic = r_ever_spinning_top } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_galatron } remove_relic = r_galatron } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_galaxy } remove_relic = r_galaxy } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_infinity_root } remove_relic = r_infinity_root } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_khans_throne } remove_relic = r_khans_throne } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_daedalus_seal } remove_relic = r_daedalus_seal } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_dragon_trophy } remove_relic = r_dragon_trophy } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_odryskan_crystal } remove_relic = r_odryskan_crystal } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_omnicodex } remove_relic = r_omnicodex } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_plasmic_core } remove_relic = r_plasmic_core } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_pox_sample } remove_relic = r_pox_sample } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_prethoryn_queen } remove_relic = r_prethoryn_queen } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_reality_perforator } remove_relic = r_reality_perforator } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_rubricator } remove_relic = r_rubricator } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_severed_head } remove_relic = r_severed_head } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_surveyor } remove_relic = r_surveyor } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_the_defragmentor } remove_relic = r_the_defragmentor } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_the_last_baol } remove_relic = r_the_last_baol } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_the_rulerchip } remove_relic = r_the_rulerchip } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_contingency_core } remove_relic = r_contingency_core } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_time_crystal } remove_relic = r_time_crystal } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_toxic_god } remove_relic = r_toxic_god } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_unbidden_warlock } remove_relic = r_unbidden_warlock } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_vacuum_flower } remove_relic = r_vacuum_flower } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_war_forge } remove_relic = r_war_forge } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_worm_scales } remove_relic = r_worm_scales } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = r_zro_crystal } remove_relic = r_zro_crystal } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = ssp_r_animarum } remove_relic = ssp_r_animarum } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = ssp_r_drive_core } remove_relic = ssp_r_drive_core } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = ssp_r_khyran_bacterium } remove_relic = ssp_r_khyran_bacterium } else = { country_event = { id = ssp_deficit.2003 }}}
+            1 = { if = { limit = { has_relic = ssp_r_xenomorph_queen } remove_relic = ssp_r_xenomorph_queen } else = { country_event = { id = ssp_deficit.2003 }}}
         }
         set_country_flag = British_Seized_Assets_Low
     }
@@ -352,142 +238,41 @@ country_event = {
 
     immediate = {
         locked_random_list = {
-            1 = {
-                modifier = { mult = 0 has_relic = r_ancient_sword }
-                add_relic = r_ancient_sword
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_celestial_tear }
-                add_relic = r_celestial_tear
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_continuum }
-                add_relic = r_continuum
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_ever_spinning_top }
-                add_relic = r_ever_spinning_top
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_galatron }
-                add_relic = r_galatron
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_galaxy }
-                add_relic = r_galaxy
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_infinity_root }
-                add_relic = r_infinity_root
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_khans_throne }
-                add_relic = r_khans_throne
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_cryo_core }
-                add_relic = r_cryo_core
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_daedalus_seal }
-                add_relic = r_daedalus_seal
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_dragon_trophy }
-                add_relic = r_dragon_trophy
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_odryskan_crystal }
-                add_relic = r_odryskan_crystal
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_omnicodex }
-                add_relic = r_omnicodex
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_plasmic_core }
-                add_relic = r_plasmic_core
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_pox_sample }
-                add_relic = r_pox_sample
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_prethoryn_queen }
-                add_relic = r_prethoryn_queen
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_reality_perforator }
-                add_relic = r_reality_perforator
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_rubricator }
-                add_relic = r_rubricator
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_severed_head }
-                add_relic = r_severed_head
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_surveyor }
-                add_relic = r_surveyor
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_the_defragmentor }
-                add_relic = r_the_defragmentor
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_the_last_baol }
-                add_relic = r_the_last_baol
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_the_rulerchip }
-                add_relic = r_the_rulerchip
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_contingency_core }
-                add_relic = r_contingency_core
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_time_crystal }
-                add_relic = r_time_crystal
-            }
-            1 = {
-                modifier = { mult = 0 AND = { has_relic = r_toxic_god NOT = { any_country = { any_situation = { is_situation_type = situation_toxic_knights }}}}}
-                add_relic = r_toxic_god
-            }
-            1 = {
-                modifier = { mult = 0 AND = { NOT = { has_relic = r_vacuum_flower } NOT = { any_country = { any_situation = { is_situation_type = situation_kaleidoscope }}}}}
-                add_relic = r_vacuum_flower
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_war_forge }
-                add_relic = r_war_forge
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_worm_scales }
-                add_relic = r_worm_scales
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = r_zro_crystal }
-                add_relic = r_zro_crystal
-            }
-            1 = {
-                modifier = { mult = 0 AND = { NOT = { has_relic = ssp_r_animarum } NOT = { any_country = { any_situation = { is_situation_type = situation_grimoire_decipher }}}}}
-                add_relic = ssp_r_animarum
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = ssp_r_drive_core }
-                add_relic = ssp_r_drive_core
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = ssp_r_khyran_bacterium }
-                add_relic = ssp_r_khyran_bacterium
-            }
-            1 = {
-                modifier = { mult = 0 has_relic = ssp_r_xenomorph_queen }
-                add_relic = ssp_r_xenomorph_queen
-            }
+            1 = { if = { limit = { NOT = { has_relic = r_ancient_sword }} add_relic = r_ancient_sword }}
+            1 = { if = { limit = { NOT = { has_relic = r_celestial_tear }} add_relic = r_celestial_tear }}
+            1 = { if = { limit = { NOT = { has_relic = r_continuum }} add_relic = r_continuum }}
+            1 = { if = { limit = { NOT = { has_relic = r_ever_spinning_top }} add_relic = r_ever_spinning_top }}
+            1 = { if = { limit = { NOT = { has_relic = r_galatron }} add_relic = r_galatron }}
+            1 = { if = { limit = { NOT = { has_relic = r_galaxy }} add_relic = r_galaxy }}
+            1 = { if = { limit = { NOT = { has_relic = r_infinity_root }} add_relic = r_infinity_root }}
+            1 = { if = { limit = { NOT = { has_relic = r_khans_throne }} add_relic = r_khans_throne }}
+            1 = { if = { limit = { NOT = { has_relic = r_cryo_core }} add_relic = r_cryo_core }}
+            1 = { if = { limit = { NOT = { has_relic = r_khans_throne }} add_relic = r_khans_throne }}
+            1 = { if = { limit = { NOT = { has_relic = r_daedalus_seal }} add_relic = r_daedalus_seal }}
+            1 = { if = { limit = { NOT = { has_relic = r_dragon_trophy }} add_relic = r_dragon_trophy }}
+            1 = { if = { limit = { NOT = { has_relic = r_odryskan_crystal }} add_relic = r_odryskan_crystal }}
+            1 = { if = { limit = { NOT = { has_relic = r_omnicodex }} add_relic = r_omnicodex }}
+            1 = { if = { limit = { NOT = { has_relic = r_plasmic_core }} add_relic = r_plasmic_core }}
+            1 = { if = { limit = { NOT = { has_relic = r_pox_sample }} add_relic = r_pox_sample }}
+            1 = { if = { limit = { NOT = { has_relic = r_prethoryn_queen }} add_relic = r_prethoryn_queen }}
+            1 = { if = { limit = { NOT = { has_relic = r_reality_perforator }} add_relic = r_reality_perforator }}
+            1 = { if = { limit = { NOT = { has_relic = r_rubricator }} add_relic = r_rubricator }}
+            1 = { if = { limit = { NOT = { has_relic = r_severed_head }} add_relic = r_severed_head }}
+            1 = { if = { limit = { NOT = { has_relic = r_surveyor }} add_relic = r_surveyor }}
+            1 = { if = { limit = { NOT = { has_relic = r_the_defragmentor }} add_relic = r_the_defragmentor }}
+            1 = { if = { limit = { NOT = { has_relic = r_the_last_baol }} add_relic = r_the_last_baol }}
+            1 = { if = { limit = { NOT = { has_relic = r_the_rulerchip }} add_relic = r_the_rulerchip }}
+            1 = { if = { limit = { NOT = { has_relic = r_contingency_core }} add_relic = r_contingency_core }}
+            1 = { if = { limit = { NOT = { has_relic = r_time_crystal }} add_relic = r_time_crystal }}
+            1 = { if = { limit = { AND = { has_relic = r_toxic_god NOT = { any_country = { any_situation = { is_situation_type = situation_toxic_knights}}}}} add_relic = r_toxic_god }}
+            1 = { if = { limit = { AND = { NOT = { has_relic = r_vacuum_flower } NOT = { any_country = { any_situation = { is_situation_type = situation_kaleidoscope}}}}} add_relic = r_vacuum_flower }}
+            1 = { if = { limit = { NOT = { has_relic = r_war_forge }} add_relic = r_war_forge }}
+            1 = { if = { limit = { NOT = { has_relic = r_worm_scales }} add_relic = r_worm_scales }}
+            1 = { if = { limit = { NOT = { has_relic = r_zro_crystal }} add_relic = r_zro_crystal }}
+            1 = { if = { limit = { AND = { NOT = { has_relic = ssp_r_animarum } NOT = { any_country = { any_situation = { is_situation_type = situation_grimoire_decipher}}}}} add_relic = ssp_r_animarum }}
+            1 = { if = { limit = { NOT = { has_relic = ssp_r_drive_core }} add_relic = ssp_r_drive_core }}
+            1 = { if = { limit = { NOT = { has_relic = ssp_r_khyran_bacterium }} add_relic = ssp_r_khyran_bacterium }}
+            1 = { if = { limit = { NOT = { has_relic = ssp_r_xenomorph_queen }} add_relic = ssp_r_xenomorph_queen }}
         }
     }
 }

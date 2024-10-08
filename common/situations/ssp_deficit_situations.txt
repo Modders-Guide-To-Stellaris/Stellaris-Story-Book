@@ -216,8 +216,8 @@ ssp_situation_artifact_deficit = {
         icon = GFX_situation_approach_research
         icon_background = GFX_situation_approach_bg_red
         modifier = {
-            planet_researchers_produces_mult = -1
-            planet_jobs_minor_artifacts_produces_mult = 2
+            planet_researchers_produces_mult = -0.75
+            planet_jobs_minor_artifacts_produces_mult = 0.33
         }
 
         ai_weight = {
