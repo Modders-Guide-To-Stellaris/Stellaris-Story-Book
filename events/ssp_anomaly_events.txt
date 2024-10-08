@@ -26,20 +26,20 @@ ship_event = {
 
 # Archaeo | Sevastapol Station - Anomaly Events
 
-#ship_event = {
-#    id = ssp_anomaly.2
-#    title = ssp_anomaly.2.name
-#    desc = ssp_anomaly.2.desc
-#    #picture =
-#    #show_sound =
-#    location = fromfrom
-#
-#    is_triggered_only = yes
-#
-#     option = {
-#         name = INTERESTING
-#         fromfrom = {
-#
-#         }
-#     }
-# }
+ship_event = {
+    id = ssp_anomaly.2
+    title = ssp_anomaly.2.name
+    desc = ssp_anomaly.2.desc
+    #picture =
+    #show_sound =
+    location = fromfrom
+
+    is_triggered_only = yes
+
+    option = {
+        name = INTERESTING
+        fromfrom = {
+            
+        }
+    }
+}

@@ -17,24 +17,3 @@ councilor_reanimated_armies = {
     }
     custom_tooltip = "councilor_reanimated_armies_custom_modifier_desc"
 }
-
-councilor_british_musuem = {
-    leader_class = {  scientist }
-    is_leader_possible = {
-        OR = {
-            leader_class = scientist
-        }
-    }
-    possible = {
-        AND = {
-            has_country_flag = British_Seized_Assets
-        }
-    }
-    modifier = {
-        planet_jobs_minor_artifacts_produces_mult = 0.10
-        job_archaeoengineers_per_pop = 0.05
-    }
-    ai_hiring_weight = {
-        inline_script = councilor_leader_weights
-    }
-}
