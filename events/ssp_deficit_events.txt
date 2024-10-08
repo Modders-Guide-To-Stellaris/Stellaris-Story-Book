@@ -172,6 +172,54 @@ country_event = {
     }
 }
 
+country_event = {
+    #The British Museum seizes all relics
+    id = ssp_deficit.20b
+    hide_window = yes
+    is_triggered_only = yes
+
+
+
+    immediate = {
+        remove_relic = r_ancient_sword
+        remove_relic = r_celestial_tear
+        remove_relic = r_cetanas_heart
+        remove_relic = r_continuum
+        remove_relic = r_cryo_core
+        remove_relic = r_eternal_throne
+        remove_relic = r_ever_spinning_top
+        remove_relic = r_galatron
+        remove_relic = r_galaxy
+        remove_relic = r_infinity_root
+        remove_relic = r_khans_throne
+        remove_relic = r_daedalus_seal
+        remove_relic = r_dragon_trophy
+        remove_relic = r_odryskan_crystal
+        remove_relic = r_omnicodex
+        remove_relic = r_plasmic_core
+        remove_relic = r_pox_sample
+        remove_relic = r_prethoryn_queen
+        remove_relic = r_reality_perforator
+        remove_relic = r_rubricator
+        remove_relic = r_severed_head
+        remove_relic = r_surveyor
+        remove_relic = r_the_defragmentor
+        remove_relic = r_the_last_baol
+        remove_relic = r_the_rulerchip
+        remove_relic = r_contingency_core
+        remove_relic = r_time_crystal
+        remove_relic = r_toxic_god
+        remove_relic = r_unbidden_warlock
+        remove_relic = r_vacuum_flower
+        remove_relic = r_war_forge
+        remove_relic = r_worm_scales
+        remove_relic = r_zro_crystal
+        remove_relic = ssp_r_animarum
+        remove_relic = ssp_r_drive_core
+        remove_relic = ssp_r_khyran_bacterium
+        remove_relic = ssp_r_xenomorph_queen
+    }
+}
 
 country_event = {
     id = ssp_deficit.20c
@@ -274,412 +322,5 @@ country_event = {
             1 = { if = { limit = { NOT = { has_relic = ssp_r_khyran_bacterium }} add_relic = ssp_r_khyran_bacterium }}
             1 = { if = { limit = { NOT = { has_relic = ssp_r_xenomorph_queen }} add_relic = ssp_r_xenomorph_queen }}
         }
-    }
-}
-
-country_event = {
-    #The British Museum seizes all relics
-    id = ssp_deficit.200
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_ancient_sword } remove_relic = r_ancient_sword }
-        country_event = { id = ssp_deficit.201 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.201
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_celestial_tear } remove_relic = r_celestial_tear }
-        country_event = { id = ssp_deficit.202 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.202
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_cetanas_heart } remove_relic = r_cetanas_heart }
-        country_event = { id = ssp_deficit.203 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.203
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_continuum } remove_relic = r_continuum }
-        country_event = { id = ssp_deficit.204 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.204
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_cryo_core } remove_relic = r_cryo_core }
-        country_event = { id = ssp_deficit.205 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.205
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_eternal_throne } remove_relic = r_eternal_throne }
-        country_event = { id = ssp_deficit.206 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.206
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_ever_spinning_top } remove_relic = r_ever_spinning_top }
-        country_event = { id = ssp_deficit.207 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.207
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_galatron } remove_relic = r_galatron }
-        country_event = { id = ssp_deficit.208 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.208
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_galaxy } remove_relic = r_galaxy }
-        country_event = { id = ssp_deficit.209 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.209
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_infinity_root } remove_relic = r_infinity_root }
-        country_event = { id = ssp_deficit.210 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.210
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_khans_throne } remove_relic = r_khans_throne }
-        country_event = { id = ssp_deficit.211 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.211
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_daedalus_seal } remove_relic = r_daedalus_seal }
-        country_event = { id = ssp_deficit.212 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.212
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_dragon_trophy } remove_relic = r_dragon_trophy }
-        country_event = { id = ssp_deficit.213 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.213
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_odryskan_crystal } remove_relic = r_odryskan_crystal }
-        country_event = { id = ssp_deficit.214 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.214
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_omnicodex } remove_relic = r_omnicodex }
-        country_event = { id = ssp_deficit.215 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.215
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_plasmic_core } remove_relic = r_plasmic_core }
-        country_event = { id = ssp_deficit.216 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.216
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_pox_sample } remove_relic = r_pox_sample }
-        country_event = { id = ssp_deficit.217 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.217
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_prethoryn_queen } remove_relic = r_prethoryn_queen }
-        country_event = { id = ssp_deficit.218 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.218
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_reality_perforator } remove_relic = r_reality_perforator }
-        country_event = { id = ssp_deficit.219 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.219
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_rubricator } remove_relic = r_rubricator }
-        country_event = { id = ssp_deficit.220 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.220
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_severed_head } remove_relic = r_severed_head }
-        country_event = { id = ssp_deficit.221 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.221
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_surveyor } remove_relic = r_surveyor }
-        country_event = { id = ssp_deficit.222 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.222
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_the_defragmentor } remove_relic = r_the_defragmentor }
-        country_event = { id = ssp_deficit.223 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.223
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_the_last_baol } remove_relic = r_the_last_baol }
-        country_event = { id = ssp_deficit.224 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.224
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_the_rulerchip } remove_relic = r_the_rulerchip }
-        country_event = { id = ssp_deficit.225 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.225
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_contingency_core } remove_relic = r_contingency_core }
-        country_event = { id = ssp_deficit.226 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.226
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_time_crystal } remove_relic = r_time_crystal }
-        country_event = { id = ssp_deficit.227 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.227
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_toxic_god } remove_relic = r_toxic_god }
-        country_event = { id = ssp_deficit.228 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.228
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_unbidden_warlock } remove_relic = r_unbidden_warlock }
-        country_event = { id = ssp_deficit.229 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.229
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_vacuum_flower } remove_relic = r_vacuum_flower }
-        country_event = { id = ssp_deficit.230 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.230
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_war_forge } remove_relic = r_war_forge }
-        country_event = { id = ssp_deficit.231 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.231
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_worm_scales } remove_relic = r_worm_scales }
-        country_event = { id = ssp_deficit.232 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.232
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = r_zro_crystal } remove_relic = r_zro_crystal }
-        country_event = { id = ssp_deficit.233 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.233
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = ssp_r_animarum } remove_relic = ssp_r_animarum }
-        country_event = { id = ssp_deficit.234 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.234
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = ssp_r_drive_core } remove_relic = ssp_r_drive_core }
-        country_event = { id = ssp_deficit.235 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.235
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = ssp_r_khyran_bacterium } remove_relic = ssp_r_khyran_bacterium }
-        country_event = { id = ssp_deficit.236 days = 1}
-    }
-}
-
-country_event = {
-    id = ssp_deficit.236
-    hide_window = yes
-    is_triggered_only = yes
-
-    immediate = {
-        if = { limit = { has_relic = ssp_r_xenomorph_queen } remove_relic = ssp_r_xenomorph_queen }
     }
 }
