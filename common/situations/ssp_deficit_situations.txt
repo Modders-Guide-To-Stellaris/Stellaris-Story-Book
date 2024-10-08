@@ -24,7 +24,7 @@ ssp_situation_artifact_deficit = {
     start_value = 15
     on_monthly = {
         random_events = {
-            5 = ssp_deficit.2001
+            1 = ssp_deficit.20a1
         }
     }
 
@@ -109,7 +109,7 @@ ssp_situation_artifact_deficit = {
             icon_background = GFX_situation_stage_frame_red
             end = 100
             on_first_enter = {
-                situation_event = { id = deficit.100 } #todo: change this
+                situation_event = { id = deficit.100 }
             }
             modifier = {
                 planet_researchers_physics_research_produces_add = -3

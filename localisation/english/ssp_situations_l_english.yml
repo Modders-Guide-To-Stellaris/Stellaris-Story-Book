@@ -37,7 +37,7 @@
 
  ssp_relicseized.name: "Relic Asset Seized"
  ssp_relicseizedfail.name: "Relic Seizing Failed"
- ssp_deficit.20.desc: "The British Museum (now in space) has come to seize all our relics, as we are not worthy of owning them due to our artifact deficit. This will a major blow to our empire. However, in return they will offer us a specialist."
+ ssp_deficit.20.desc: "The British Museum (now in space) has come to seize all our relics, as we are not worthy of owning them due to our artifact deficit. /nThis will a major blow to our empire. However, in return they will offer us a specialist."
  ssp_deficit.20a.desc: "One of our relics has gone missing, we think this to be the work of a thief in our high command."
  ssp_deficit.20c.desc: "We have successfully broken one of their convoys containing minor artifacts, it is clear they are not immortal. We should try to ask other empires for help in taking down the museum"
  ssp_deficit.20d.desc: "We have caught the spy and executed them on the spot. Our Relic has been reclaimed!"
