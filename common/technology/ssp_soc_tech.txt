@@ -15,3 +15,20 @@ tech_ssp_jonan_communication_key = {
 		factor = 0
 	}
 }
+
+tech_ssp_bountiful_nature = { #unlocks ecoworlds
+	area = society
+	cost = 15000
+	category = { new_worlds }
+	tier = 4
+	ai_update_type = all
+	weight = 1
+
+	potential = {
+		ssp_is_consumer_empire = no
+	}
+
+	prerequisites = {
+		tech_ecological_adaptation
+	}
+}

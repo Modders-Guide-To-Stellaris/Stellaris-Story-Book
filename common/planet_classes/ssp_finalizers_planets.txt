@@ -13,6 +13,8 @@ pc_ssp_ecoworld = {
         planet_jobs_produces_mult = 0.10
         pop_happiness = 0.10
         planet_resettlement_unemployed_destination_mult = 0.5
+        pop_growth_speed = 0.25
+
     }
 
     min_distance_from_sun = 75

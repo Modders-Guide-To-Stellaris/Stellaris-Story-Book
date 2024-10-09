@@ -4,3 +4,6 @@
 
  tech_ssp_jonan_communication_key:0 "Jonan Communication Key"
  tech_ssp_jonan_communication_key_desc:0 "A way to encrypt our messages into the old Jonan language."
+
+ tech_ssp_bountiful_nature: "Bountiful Nature"
+ tech_ssp_bountiful_nature_desc: "Unlocks the decision to terraform a world into an Ecology planet."

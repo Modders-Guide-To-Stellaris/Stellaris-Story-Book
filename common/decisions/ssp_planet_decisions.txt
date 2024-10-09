@@ -3,7 +3,7 @@ ssp_ecology_transform = {
 
         OR = {
             owner = {
-                is_xenophobe = yes
+                has_technology = tech_ssp_bountiful_nature
             }
             has_planet_flag = ssp_alvanian_capital #custom system
         }
