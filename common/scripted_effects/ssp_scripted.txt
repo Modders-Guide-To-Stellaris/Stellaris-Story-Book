@@ -1,0 +1,11 @@
+setup_jonan_digsite = {
+    random_system_planet = {
+        limit = {
+            is_planet_class = pc_barren
+            has_anomaly = no
+            NOT = { exists = archaeological_site }
+            NOT = { has_planet_flag = suppress_archaeological_sites }
+        }
+        create_archaeological_site = ssp_communication_hub_archsite
+    }
+}

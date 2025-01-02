@@ -1,0 +1,23 @@
+namespace = ssp_anomaly
+
+fleet_event = {
+    id = ssp_anomaly.1
+    title = ssp_anomaly.1.Name
+    desc = ssp_anomaly.1.Desc
+    picture = GFX_evt_warm_barren
+    show_sound = event_scanner
+    location = fromfrom
+
+    is_triggered_only = yes
+
+    immediate = {
+        from = { save_event_target_as = bacterium_digsite }
+    }
+
+    option = {
+        name = INTRIGUING
+        fromfrom = {
+            create_archaeological_site = ssp_bacterium_ship_archsite
+        }
+    }
+}

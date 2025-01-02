@@ -1,0 +1,58 @@
+﻿l_english:
+
+ # bacteria
+ ssp_bacterium_ship_archsite: "$ssp_anomaly_bacterium_ship$"
+ ssp_bacterium_ship_archsite_desc: "We’ve received a distress signal from the science ship Ichki-0ne. Its engines failed while studying planet [From.planet.GetName]. The crew reports dangerous radiation levels. We’ll need protective measures to land."
+
+ ssp_archaeo_1.Name: "Our Ship Lands"
+ ssp_archaeo_1.Desc: "Our research indicates this planet has unique biodiversity. The ocean floor is littered with metal wrecks and strange flora altered by reactor exposure. Further investigation is needed."
+ ssp_archaeo_1.OptionA.Name: "Fascinating."
+
+ ssp_archaeo_2.Name: "The Mysterious Wreckage"
+ ssp_archaeo_2.Desc: "Among strange flora and fauna, we located the ship from the transmission. Its message was meant for an extinct species. Evidence suggests it’s over 1,000 years old, possibly from the Crisis of Kangs."
+ ssp_archaeo_2.OptionA.Name: "Investigate the ship."
+
+ ssp_archaeo_3.Name: "Data Terminal"
+ ssp_archaeo_3.Desc: "A terminal onboard contains coordinates to lost systems. One points to a system still existing today, labeled with cryptic binary: '01000011 01101111 01101101 01101101 01110101 01101110 01101001 01100011 01100001 01110100 01101001 01101111 01101110 00100000 01001000 01110101 01100010'."
+ ssp_archaeo_3.OptionA.Name: "Inform the nearest science ship."
+
+ ssp_archaeo_4.Name: "Nuclear Meltdown"
+ ssp_archaeo_4.Desc: "The reactor leak worsens, and hostile fauna attack. We found a specimen infected with an unknown agent and a pristine advanced drive core. We must decide quickly."
+ ssp_archaeo_4.OptionA.Name: "Secure the specimen for research."
+ ssp_archaeo_4.OptionB.Name: "Take the drive core."
+
+ ssp_communication_hub_archsite: "Jonan Communication Hub"
+ ssp_communication_hub_archsite_desc: "An ancient hub of Jonan communication. Though eroded, its systems emit faint signals. Decoding them may reveal secrets of a forgotten empire."
+
+ ssp_archaeo_5.Name: "Infiltration"
+ ssp_archaeo_5.Desc: "The hub is active, marked with warnings and inscriptions. Proceeding requires caution."
+ ssp_archaeo_5.OptionA.Name: "Translate and advance."
+
+ ssp_archaeo_6.Name: "Active Defenses!"
+ ssp_archaeo_6.Desc: "It’s a trap! Our crew triggered defenses while following the inscriptions. A scientist found a risky way to disable the trap."
+ ssp_archaeo_6.OptionA.Name: "Disable it, no matter the risk."
+
+ ssp_archaeo_7.Name: "Jonan AI Intelligence"
+ ssp_archaeo_7.Desc: "We stand before a massive AI controlling the facility. Upon learning of its creators’ fate, it shares the secrets of its technology."
+ ssp_archaeo_7.OptionA.Name: "Accept the key."
+
+ # evolved
+ ssp_rodahtkamon_tomb_archsite: "Strange Pyramid"
+ ssp_rodahtkamon_tomb_archsite_desc: "A towering pyramid looms above the desert sands, its surface inscribed with strange, shifting symbols. The air around it feels heavy, charged with an ancient energy. At the entrance, a foreboding inscription hints at a choice that will test the resolve of any who dare to enter."
+
+ ssp_archaeo_10.Name: "Entrance Discovered"
+ ssp_archaeo_10.Desc: "Our advanced scans of the enigmatic pyramid have revealed a previously concealed entrance, partially buried under centuries of sand and debris. The archaeology team is eager to proceed, suspecting that the passage may hold invaluable artifacts and untold historical insights into this ancient civilization."
+ ssp_archaeo_10.OptionA.Name: "Proceed Inside"
+
+ ssp_archaeo_11.Name: "A Grim Discovery"
+ ssp_archaeo_11.Desc: "Venturing into the pyramid's depths, our team has encountered a grim tableau of hazards and misfortune. Deadly traps lie in wait, while the skeletal remains of past explorers serve as a chilling reminder of the risks involved. It seems others before us have sought the secrets of this place and paid the ultimate price. Their failures, however, may provide us with valuable clues as we press on."
+ ssp_archaeo_11.OptionA.Name: "There must be more..."
+
+ ssp_archaeo_12.Name: "The Tomb of Rodahtkamon"
+ ssp_archaeo_12.Desc: "After hours of careful exploration, our team has uncovered a hidden chamber, sealed behind a cleverly concealed wall. Within lies the tomb of Rodahtkamon, a ruler whose legend has echoed through the ages. Surrounding the sarcophagus are offerings of unimaginable craftsmanship, but most intriguing is a mysterious disk resting on a pedestal. Its purpose and origin are unknown, but its significance is undeniable."
+ ssp_archaeo_12.OptionA.Name: "We must have the disk!"
+ ssp_archaeo_12.OptionA.Tooltip: "Warning: Curses are not covered under standard liability."
+ ssp_archaeo_12.OptionB.Name: "Leave the Tomb Undisturbed"
+
+ ssp_archaeo_13.Name: "The Legal Curse"
+ ssp_archaeo_13.Desc: "Rodahtkamon has risen from the dead and filed a lawsuit against us for copyright infringement. The settlement has drained all our resources."

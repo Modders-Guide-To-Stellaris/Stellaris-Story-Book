@@ -1,0 +1,369 @@
+namespace = leviathans
+
+country_event = {
+    id = leviathans.593
+    title = "leviathans.593"
+    desc = "leviathans.593.desc"
+    picture = GFX_evt_space_debris
+    location = event_target:curator_system
+    show_sound = event_ship_bridge
+
+    is_triggered_only = yes
+
+    immediate = {
+        set_country_flag = destroyed_curator
+        if = {
+            limit = { has_modifier = curator_insight }
+            remove_modifier = "curator_insight"
+        }
+    }
+
+    option = {
+        name = EXCELLENT
+        add_resource = {
+            physics_research = 1000
+            society_research = 1000
+            engineering_research = 1000
+        }
+        if = {
+            limit = { has_ancrel = yes }
+            medium_artifact_reward = yes
+        }
+        if = {
+            limit = { has_grand_archive_dlc = yes }
+            #hidden_effect = {
+                locked_random_list = { #this is stellaris, if an RNG feature isnt even more RNG... is it really stellaris?
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_celestial_resonator
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_celestial_resonator
+                            }
+                            add_relic = r_celestial_resonator
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_entangled_relay
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_entangled_relay
+                            }
+                            add_relic = r_entangled_relay
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_propagandosphere
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_propagandosphere
+                            }
+                            add_relic = r_propagandosphere
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_prototype_vir_core
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_prototype_vir_core
+                            }
+                            add_relic = r_prototype_vir_core
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_executus_compendium
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_executus_compendium
+                            }
+                            add_relic = r_executus_compendium
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_preservation_chamber
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_preservation_chamber
+                            }
+                            add_relic = r_preservation_chamber
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_gavel_of_the_tribunal
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_gavel_of_the_tribunal
+                            }
+                            add_relic = r_gavel_of_the_tribunal
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_tiyanki_matriarch_nerve_core
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_tiyanki_matriarch_nerve_core
+                            }
+                            add_relic = r_tiyanki_matriarch_nerve_core
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_the_pattern_maker
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_the_pattern_maker
+                            }
+                            add_relic = r_the_pattern_maker
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_vaporous_mega_orchid
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_vaporous_mega_orchid
+                            }
+                            add_relic = r_vaporous_mega_orchid
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_the_modularium
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_the_modularium
+                            }
+                            add_relic = r_the_modularium
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_everchanging_stone
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_everchanging_stone
+                            }
+                            add_relic = r_everchanging_stone
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_flowmetal_alloy
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_flowmetal_alloy
+                            }
+                            add_relic = r_flowmetal_alloy
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_pulsestone
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_pulsestone
+                            }
+                            add_relic = r_pulsestone
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+
+                    7 = {
+                        if = {
+                            limit = {
+                                AND = {
+                                    exists = event_target:curator_enclave_country
+                                    NOT = {
+                                        event_target:curator_enclave_country = {
+                                            has_country_flag = gave_relic_r_crystallinus_diffuser
+                                        }
+                                    }
+                                }
+                            }
+                            event_target:curator_enclave_country = {
+                                set_country_flag = gave_relic_r_crystallinus_diffuser
+                            }
+                            add_relic = r_crystallinus_diffuser
+                        }
+                        else = {
+                            add_modifier = { modifier = ssp_curator_databanks_raided }
+                        }
+                    }
+                #}
+            }
+        }
+    }
+}

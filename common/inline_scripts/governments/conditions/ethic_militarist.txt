@@ -1,0 +1,3 @@
+
+value = ethic_militarist
+value = ethic_fanatic_militarist

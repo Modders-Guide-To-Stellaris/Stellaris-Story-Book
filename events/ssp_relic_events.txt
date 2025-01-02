@@ -1,0 +1,227 @@
+namespace = ssp_relic
+
+country_event = {
+    id = ssp_relic.1
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        has_relic = ssp_r_khyran_bacterium
+    }
+
+    immediate = {
+        every_envoy = {
+            limit = {
+                has_envoy_task = { task = improve_relations }
+                root = {
+                    num_favors = {
+                        target = prev.envoy_location_country
+                        value < 10
+                    }
+                }
+            }
+            random_list = {
+                5 = {
+                    root = {
+                        add_favors = {
+                            target = prev.envoy_location_country
+                            value = 1
+                        }
+                        create_message = {
+                            type = MESSAGE_FAVOR_GAINED_TRADITION
+                            localization = MESSAGE_FAVOR_GAINED_BY_MIND_CONTROL
+                            days = 30
+                            target = prev.envoy_location_country.capital_scope
+                            variable = {
+                                type = name
+                                localization = WHO
+                                scope = prev.envoy_location_country
+                            }
+                        }
+                    }
+                }
+                95 = {}
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_relic.2
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        every_envoy = {
+            limit = {
+                has_envoy_task = { task = improve_relations }
+                root = {
+                    num_favors = {
+                        target = prev.envoy_location_country
+                        value < 10
+                    }
+                }
+            }
+            root = {
+                add_favors = {
+                    target = prev.envoy_location_country
+                    value = 10
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_relic.10
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        random_owned_fleet = { #chooses the guy
+            limit = {
+                AND = {
+                    any_controlled_ship = {
+                        is_ship_class = shipclass_military
+                    }
+                    NOT = {
+                        has_fleet_flag = ssp_warp_drive_chosen
+                    }
+                }
+            }
+
+            if = {
+                limit = {
+                    has_fleet_flag = ssp_warp_drive_negative
+                }
+                remove_fleet_flag = ssp_warp_drive_negative
+                every_controlled_ship = {
+                    remove_modifier = ssp_r_drive_core_jump_range
+                    remove_modifier = ssp_r_drive_core_negative
+                }
+            }
+
+            set_fleet_flag = ssp_warp_drive_chosen
+
+            every_controlled_ship = {
+                add_modifier = {
+                    modifier = ssp_r_drive_core_jump_range
+                    mult = value:ssp_r_drive_core_jumpdrive_range|MULTIPLIER|50|
+                }
+            }
+
+            change_variable = {
+                which = ssp_warp_drive_chosen_amount
+                value = 1
+            }
+        }
+
+        every_owned_fleet = {
+            limit = {
+                NOT = {
+                    has_fleet_flag = ssp_warp_drive_chosen
+                }
+            }
+            fleet_event = { id = ssp_relic.12 }
+        }
+    }
+}
+
+ship_event = {
+    id = ssp_relic.11
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        this.fleet = {
+            if = {
+                limit = {
+                    has_fleet_flag = ssp_warp_drive_chosen
+                }
+                remove_fleet_flag = ssp_warp_drive_chosen
+
+                every_controlled_ship = {
+                    remove_modifier = ssp_r_drive_core_jump_range
+
+                    add_modifier = {
+                        modifier = ssp_r_drive_core_temp_boost
+                        days = 180 #better make use of this
+                    }
+                }
+
+                change_variable = {
+                    which = ssp_warp_drive_chosen_amount
+                    value = -1
+                }
+
+                if = {
+                    limit = {
+                        check_variable = {
+                            which = ssp_warp_drive_chosen_amount
+                            value > 0
+                        }
+                    }
+                    fleet_event = { id = ssp_relic.12 }
+                }
+                else = {
+                    owner = {
+                        country_event = { id = ssp_relic.13 }
+                    }
+                }
+            }
+        }
+    }
+}
+
+fleet_event = {
+    id = ssp_relic.12
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        set_fleet_flag = ssp_warp_drive_negative
+
+        every_controlled_ship = {
+            if = {
+                limit = {
+                    has_component = PSI_JUMP_DRIVE_1
+                }
+                add_modifier = {
+                    modifier = ssp_r_drive_core_jump_range
+                    mult = value:ssp_r_drive_core_jumpdrive_range|MULTIPLIER|-0.75|
+                }
+            }
+            else = {
+                add_modifier = {
+                    modifier = ssp_r_drive_core_jump_range
+                    mult = value:ssp_r_drive_core_jumpdrive_range|MULTIPLIER|-0.5|
+                }
+            }
+
+            add_modifier = {
+                modifier = ssp_r_drive_core_negative
+                days = -1
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_relic.13
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        every_owned_fleet = {
+            if = {
+                limit = {
+                    has_fleet_flag = ssp_warp_drive_negative
+                }
+                every_owned_ship = {
+                    remove_modifier = ssp_r_drive_core_jump_range
+                    remove_modifier = ssp_r_drive_core_negative
+                }
+            }
+        }
+    }
+}

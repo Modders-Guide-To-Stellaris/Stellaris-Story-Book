@@ -1,0 +1,15 @@
+ssp_anomaly_bacterium_ship = {
+    picture = GFX_evt_worrying_signal
+    level = 3
+
+    max_once_global = yes
+
+    spawn_chance = {
+        modifier = {
+            add = 20
+            is_planet_class = pc_ocean
+        }
+    }
+
+    on_success = ssp_anomaly.1
+}

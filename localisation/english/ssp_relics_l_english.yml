@@ -1,0 +1,16 @@
+﻿l_english:
+
+ ssp_r_khyran_bacterium: "Contained Khyran Bacterium"
+ ssp_r_khyran_bacterium_desc: "A mysterious bacterial sample recovered from the remains of a deceased Jonan aboard the Ichki-One. Its properties are largely unknown but hold significant potential for both subterfuge and manipulation."
+ ssp_r_khyran_bacterium_passive: "§YImproving relations§! with another empire has a small chance to covertly influence their leadership, subtly steering decisions in your §Yfavor§!."
+ ssp_r_khyran_bacterium_active: "Deploy your envoy to administer the bacterium into the food supply of a rival empire. The affected empire will be compelled to grant diplomatic §Yfavors§!."
+ MESSAGE_FAVOR_GAINED_BY_MIND_CONTROL:0 "Thanks to mind control bacteria, we have managed to gain a Favor from the $WHO|Y$."
+
+ ssp_r_drive_core: "Repaired Drive Core"
+ ssp_r_drive_core_desc: "The salvaged and restored drive core from a Jonan Foundry science ship. Its advanced technology unlocks new possibilities for both exploration and strategic mobility."
+ ssp_r_drive_core_passive: "Increases the §Yspeed§! of your science ships by 50%, enabling faster exploration and deployment."
+ ssp_r_drive_core_active: "Activate the precursor jump drive to achieve full galaxy §Ywarp range§! for one randomly selected military fleet, circumventing traditional travel limitations. Due to the nature of this foreign object, it provides malices to all our ships not running it."
+
+ evolved_code: "Modification Source Code"
+ evolved_code_desc_short: "Ancient code from Rodahtkamon's tomb, designed to reshape the game."
+ evolved_code_desc_details: "Unearthed from the legendary tomb of Rodahtkamon, this code alters game files to customize mechanics and introduce unique changes. Its mysterious origins hint at power long forgotten, now repurposed for gameplay transformation."

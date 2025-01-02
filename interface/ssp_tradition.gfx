@@ -1,0 +1,43 @@
+SpriteTypes = {
+
+
+    spriteType = {
+        name = GFX_tradition_category_bg_tradition_ssp_invasion
+        textureFile = "gfx/interface/icons/traditions/ssp_tr_invasion_background.dds"
+    }
+
+    spriteType = {
+        name = GFX_tr_ssp_invasion_1
+        textureFile = "gfx/interface/icons/traditions/ssp_tr_invasion_improved_logistics.dds"
+    }
+
+    spriteType = {
+        name = GFX_tr_ssp_invasion_2
+        textureFile = "gfx/interface/icons/traditions/ssp_tr_invasion_specialized_genes.dds"
+    }
+
+    spriteType = {
+        name = GFX_tr_ssp_invasion_3
+        textureFile = "gfx/interface/icons/traditions/ssp_tr_invasion_strategic_battleplans.dds"
+    }
+
+    spriteType = {
+        name = GFX_tr_ssp_invasion_4
+        textureFile = "gfx/interface/icons/traditions/ssp_tr_invasion_expanded_budget.dds"
+    }
+
+    spriteType = {
+        name = GFX_tr_ssp_invasion_final_1
+        textureFile = "gfx/interface/icons/traditions/ssp_tr_invasion_conscription_initiative.dds"
+    }
+
+    spriteType = {
+        name = GFX_tr_ssp_invasion_final_2
+        textureFile = "gfx/interface/icons/traditions/ssp_tr_invasion_extensive_operations.dds"
+    }
+
+    spriteType = {
+        name = GFX_tr_ssp_invasion_final_3
+        textureFile = "gfx/interface/icons/traditions/ssp_tr_invasion_chemical_warfare.dds"
+    }
+}

@@ -1,0 +1,20 @@
+﻿l_english:
+
+ ssp_military_scientists_exhausted: "Overworked Military Scientists"
+ ssp_military_scientists_exhausted_desc: "Our scientists have been pushed to their limits in the pursuit of military breakthroughs. While progress continues, their fatigue is beginning to show, slowing the pace of research."
+
+ ssp_commander_ship_assembly_fail: "Failed Ship Assembly Ballot"
+ ssp_commander_ship_assembly_fail_desc: "The assembly has voted against further fleet expansion, citing inefficiencies and an overstretched budget. Naval growth will now be hindered by political resistance, slowing the empire’s rise as a naval superpower."
+
+ ssp_commander_naval_strike_desc: "Commanders' Resentment"
+ ssp_commander_naval_strike: "A growing sense of frustration spreads among the commanders, who feel undermined by political decisions and a lack of funding for strategic advancements. Their morale is sinking as their voices fall on deaf ears."
+
+ ssp_commander_titan_fail: "Titan Project Abandoned"
+ ssp_commander_titan_fail_desc: "The empire's dream of creating a Titan-class vessel has been dashed. With internal dissent and fiscal concerns, the project has been shelved, opting for a focus on the faster, more cost-effective construction of standard ships."
+
+ ssp_curator_databanks_raided: "Curator Databanks Reclaimed"
+ ssp_curator_databanks_raided_desc: "The raid on the Curators' archives did not uncover the relics we sought, but the databanks we secured hold knowledge that is already accelerating our research efforts. Even fragments of their expertise prove invaluable to our scientists."
+
+ ssp_planet_researchers_research_produces_mult: "$mod_ssp_planet_researchers_research_produces_mult$"
+ ssp_planet_researchers_research_produces_mult_desc: "REPLACE_ME"
+ mod_ssp_planet_researchers_research_produces_mult: "£research£ $research$ from £job_researcher£ [GetResearcherPlural]"

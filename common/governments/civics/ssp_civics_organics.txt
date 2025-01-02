@@ -1,0 +1,55 @@
+ssp_civic_mri = {
+    icon = gfx/interface/icons/governments/civics/regular_civics/civic_ssp_mri_org.dds
+    description = ssp_civic_mri_tooltip
+    hide_modifiers = yes
+
+    potential = {
+        ethics = { NOT = { value = ethic_gestalt_consciousness } }
+        authority = { NOT = { value = auth_corporate } }
+    }
+    possible = {
+        ethics = {
+            OR = {
+                text = civic_tooltip_militarist
+                inline_script = governments/conditions/ethic_militarist
+            }
+        }
+    }
+
+    modifier = {
+        pop_category_workers_alloys_produces_add = 1
+        pop_category_workers_minerals_upkeep_add = 2
+        pop_happiness = -0.05
+    }
+
+    random_weight = { base = @civic_default_random_weight }
+}
+
+ssp_civic_diplomatic = {
+    modification = no
+    icon = "gfx/interface/icons/governments/civics/regular_civics/civic_ssp_diplomat.dds"
+    potential = {
+        ethics = { NOT = { value = ethic_gestalt_consciousness } }
+        authority = { NOT = { value = auth_corporate } }
+    }
+    possible = {
+        civics = {
+            NOT = {
+                value = civic_diplomatic_corps
+            }
+        }
+        always = no
+    }
+        #meh make it instead something alike
+        #"The diplomat"
+        #+1/200% diplo from eco, pop, research
+        #-3/600% diplo from fleet
+
+        #todo recode to the actual things
+    random_weight = { base = @civic_default_random_weight }
+
+    modifier = {
+        diplo_weight_mult = -0.03
+        diplo_weight_mult = 0.01
+    }
+}

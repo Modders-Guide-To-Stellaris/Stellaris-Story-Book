@@ -1,0 +1,122 @@
+ssp_r_drive_core_jumpdrive_range = {
+    base = 1
+    mult = $MULTIPLIER$
+}
+
+## normal ship scaling logic
+## For Soncio, Yes, I know the scaling is off and no I cant fix it. I spent like 2-3 hours on it and I cant see these variables straight anymore. If you can fix it, pls do <3
+ssp_fleet_cost_scaling = {
+    add = ssp_fleet_value
+    divide = 100
+    mult = value:ssp_fleet_power_naval_capacity_based|NAVAL_CAPACITY|$NAVAL_CAPACITY$|
+    divide = 1.5
+
+    min = 10
+    max = 1200
+}
+
+
+ssp_fleet_power_scaling = {
+    add = value:ssp_fleet_power_year_based|YEARS|$YEARS$|
+    add = value:ssp_fleet_power_naval_capacity_based|NAVAL_CAPACITY|$NAVAL_CAPACITY$|
+    subtract = 50
+
+    mult = value:ssp_fleet_obtained
+
+    min = 20
+    max = 250
+}
+
+ssp_fleet_power_year_based = {
+    add = $YEARS$
+    mult = 0.2
+    add = 10
+    mult = value:ssp_fleet_year_cap|YEARS|$YEARS$|
+    add = 20
+}
+
+ssp_fleet_power_naval_capacity_based = {
+    add = $NAVAL_CAPACITY$
+    mult = 0.15
+    add = 20
+}
+
+ssp_fleet_year_cap = {
+    add = $YEARS$
+    max = 200
+}
+
+ssp_fleet_obtained = {
+    base = 1
+    add = ssp_fleet_obtained_times
+    mult = 0.005
+}
+
+# FE logic
+
+ssp_fallen_fleet_cost_scaling = {
+    add = ssp_fallen_fleet_value
+    divide = 150
+    mult = value:ssp_fallen_fleet_obtained
+    ceiling = yes
+    min = 10
+    max = 1200
+}
+
+ssp_fallen_fleet_power_scaling = {
+    add = value:ssp_fallen_fleet_power_year_based|YEARS|$YEARS$|
+    divide = 6
+    add = value:ssp_fallen_fleet_power_naval_capacity_based|NAVAL_CAPACITY|$NAVAL_CAPACITY$|
+    mult = value:ssp_fallen_fleet_obtained
+}
+
+ssp_fallen_fleet_power_year_based = {
+    add = $YEARS$
+    mult = 4.5
+    subtract = 150
+    mult = value:ssp_fleet_year_cap|YEARS|$YEARS$|
+    add = 1250
+}
+
+ssp_fallen_fleet_power_naval_capacity_based = {
+    add = $NAVAL_CAPACITY$
+    mult = 40
+}
+
+ssp_fallen_fleet_year_cap = {
+    add = $YEARS$
+    max = 200
+}
+
+ssp_fallen_fleet_obtained = {
+    base = 2
+    add = ssp_fallen_fleet_obtained_times
+    mult = 0.5
+}
+
+ssp_num_fallen_big_ships = {
+    add = $VALUE$
+    divide = $SHIP_STRENGTH$
+    mult = 1
+    divide = 4
+    round = yes
+    min = 0
+}
+
+ssp_num_fallen_small_ships_prev = {
+    add = $VALUE$
+    modulo = $BIG_SHIP_STRENGTH$
+    divide = $SMALL_SHIP_STRENGTH$
+    ceiling = yes
+    min = 0
+}
+
+ssp_num_fallen_small_ships = {
+    add = $VALUE$
+    divide = $BIG_SHIP_STRENGTH$
+    mult = 3
+    divide = 4
+    add = value:ssp_num_fallen_small_ships_prev|VALUE|$VALUE$|BIG_SHIP_STRENGTH|$BIG_SHIP_STRENGTH$|SMALL_SHIP_STRENGTH|$SMALL_SHIP_STRENGTH$|
+    round = yes
+    min = 0
+}

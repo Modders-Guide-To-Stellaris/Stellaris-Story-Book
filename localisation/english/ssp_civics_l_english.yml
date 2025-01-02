@@ -1,0 +1,53 @@
+﻿l_english:
+
+ placeholder_name: "I HATE STELLARIS"
+ HATE_STELLARIS_DESC: "I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS I HATE STELLARIS"
+
+ ssp_civic_mri:0 "Military Readiness Initiative"
+ ssp_civic_mri_tooltip:0 "Transforms §Hmenial workers§! into vital contributors to the war effort, boosting military expansion.\n\n§HModifiers§!:\n- §G+1§! £alloys£$alloys$ production from £job£ §HMenial Jobs§!.\n- §R+2§! £minerals£$minerals$ upkeep for £job£ §HMenial Jobs§!.\n- §R-5%§! £happiness£ Happiness for all pops.\n\n§GPeriodic Events§! may provide:\n- §BAdditional ships§!.\n- §MFallen Empire fleets§!.\n- §CNaval technologies§!.\n- §YTitan (if technology is unlocked)§!."
+ ssp_civic_mri_desc: "No empire rises to dominance without sacrifice. The Military Readiness Initiative represents a relentless focus on preparation for war, turning even the most humble workers into cogs in a grand machine of conquest. The steady drumbeat of industry ensures that when conflict arises, your fleets will be ready to answer the call. In peace, we prepare for war; in war, we strive for victory."
+
+ ssp_civic_diplomatic: "The Diplomat"
+ ssp_civic_diplomatic_desc: "- Gives §R-3%§! £diplo_weight£ Diplomatic weight per fleet up to a maximum of §H600%§!\n- Gives §G1%§! £diplo_weight£ Diplomatic weight per £pop£ Pop, £economy£ Economy, £research£ Research up to a maximum of §H200%§! per category"
+
+##
+# Events
+##
+
+ #MRI
+ CommanderAnger.Tooltip: "§RCommanders Angered§!\nIncreases Commander upkeep by 10 Unity£unity£ and 5 Energy£energy£"
+ ssp_civic_21.Name: "Material Request for Reinforcements"
+ ssp_civic_21.Desc: "A desperate plea for additional resources to bolster our naval strength. The call for reinforcements is made, but the price is steep. We must decide whether to spend valuable resources to boost our fleet or hold off for now."
+ ssp_civic_21.OptionA.Name: "Allocate Resources for Reinforcements"
+ ssp_civic_21.OptionB.Name: "We do not need Reinforcements"
+ ssp_civic_21.OptionB.Tooltip: "$CommanderAnger.Tooltip$\n\nIncreases ship build speed£mod_ship_build_cost_mult£ by §Y10%§! for 5 years as resources are redirected to public works projects. (Reduces planetary build cost£mod_planet_building_cost_mult£ by 5%"
+
+ ssp_civic_22.Name: "Reinforcements Arrived"
+ ssp_civic_22.Desc: "The reinforcements have arrived, bolstering our naval strength. The new fleet stands ready to defend our borders and project our power. The question now is how best to deploy these fresh assets to ensure the security and prosperity of our empire."
+
+ ssp_civic_30.Name: "Naval Reforms"
+ ssp_civic_30.Desc: "The time has come to implement sweeping reforms to the naval doctrine. These changes could significantly improve our fleet’s capabilities, but they come at a high cost. Shall we proceed with the reforms and bear the expenses, or reject them as an inefficient use of resources?"
+ ssp_civic_30.OptionA.Name: "Yes, We shall implement these"
+ ssp_civic_30.OptionB.Name: "What, no! Too expensive and worthless."
+ ssp_civic_30.OptionB.Tooltip: "$CommanderAnger.Tooltip$\n\nThe decision leaves the commander visibly agitated, potentially impacting their performance in unforeseen ways."
+
+ ssp_civic_50.Name: "Titan Budget Increase"
+ ssp_civic_50.Desc: "Your advisors propose a significant increase in resources dedicated to the construction of a massive Titan-class vessel. This monumental undertaking will require a substantial investment of energy and alloys, but its completion promises an unparalleled addition to your fleet's firepower and prestige."
+
+ ssp_civic_51.Name: "Titan High in the Sky"
+ ssp_civic_51.Desc: "The Titan-class vessel, a true feat of engineering and testament to your empire's vision, has been completed. Towering over the rest of your fleet, the Gargantuan now stands ready to strike fear into your enemies. Its maiden voyage awaits your command."
+ ssp_civic_51.OptionB.Name: "We do not need a Titan."
+ ssp_civic_51.OptionB.Tooltip: "$CommanderAnger.Tooltip$\n\nFrees up resources, Increases ship build speed£mod_ship_build_speed_mult£ by §Y5%§! for §Y5 years§!"
+
+ ssp_civic_61.Name: "Ancient Fleet Repairs"
+ ssp_civic_61.Desc: "My Lord, we've discovered a derelict fleet from an ancient civilization. The ships are damaged but repairable; restoring them will take time, but could grant us formidable power. Do we commit resources or leave them adrift?"
+ ssp_civic_61.OptionA.Name: "Do It!"
+ ssp_civic_61.OptionB.Name: "Leave them, it costs too much."
+ ssp_civic_61.OptionB.Tooltip: "$CommanderAnger.Tooltip$\n\nThe fleet is left to drift in decay, demoralizing the populace. Ship upkeep£mod_ship_upkeep_mult£ increases by §Y5%§! for 5 years as fleet cohesion declines."
+
+ ssp_civic_62.Name: "The Engines Roar"
+ ssp_civic_62.Desc: "The restoration of the Ancient Fleet has been completed. These mighty vessels, relics of a forgotten civilization, now stand ready in orbit around the capital, awaiting your command. Their imposing presence serves as a testament to the power of your empire."
+ ssp_civic_62.Tooltip.Name: "Creates a Repaired Fallen Fleet in the capital"
+
+
+

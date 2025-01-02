@@ -1,0 +1,26 @@
+ssp_temp_annoyed_trait = {
+    cost = 0
+    inline_script = {
+        script = trait/icon
+        CLASS = commander
+        ICON = "GFX_leader_trait_cunning" #change this?
+        RARITY = common
+        COUNCIL = no
+        TIER = none
+    }
+
+    inline_script = {
+        script = paragon/leader_resource_produces
+        RESOURCE = energy
+        AMOUNT = -5
+    }
+    inline_script = {
+        script = paragon/leader_resource_produces
+        RESOURCE = unity
+        AMOUNT = -10
+    }
+
+    leader_class = { commander }
+    initial = no
+    randomized = no
+}

@@ -1,0 +1,128 @@
+ssp_bacterium_ship_archsite = {
+    desc = ssp_bacterium_ship_archsite_desc
+    picture =  GFX_evt_communication_event
+    stages = 4
+    max_instances = 1
+
+    allow = {
+        is_ship_class = shipclass_science_ship
+        exists = leader
+    }
+
+    visible = {
+        default_site_visible_trigger = yes
+    }
+
+    stage = {
+        difficulty = 2
+        event = ssp_archaeo.1
+        icon = GFX_archaeology_runes_A1
+    }
+    stage = {
+        difficulty = 3
+        event = ssp_archaeo.2
+        icon = GFX_archaeology_runes_A2
+    }
+    stage = {
+        difficulty = 4
+        event = ssp_archaeo.3
+        icon = GFX_archaeology_runes_A3
+    }
+    stage = {
+        difficulty = 7
+        event = ssp_archaeo.4
+        icon = GFX_archaeology_runes_A1
+    }
+
+    on_roll_failed = {
+        from = {
+            standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+        }
+    }
+}
+
+ssp_communication_hub_archsite = {
+    desc = ssp_communication_hub_archsite_desc
+    picture = GFX_evt_intelligence_report
+    stages = 3
+    max_instances = 1
+    weight = 0
+    allow = {
+        is_ship_class = shipclass_science_ship
+        exists = leader
+    }
+    visible = {
+        default_site_visible_trigger = yes
+    }
+    stage = {
+        difficulty = 5
+        event = ssp_archaeo.5
+        icon = GFX_archaeology_runes_A1
+    }
+    stage = {
+        difficulty = 6
+        event = ssp_archaeo.6
+        icon = GFX_archaeology_runes_A2
+    }
+    stage = {
+        difficulty = 8
+        event = ssp_archaeo.7
+        icon = GFX_archaeology_runes_A3
+    }
+
+    on_roll_failed = {
+        from = {
+            standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+        }
+    }
+}
+
+ssp_rodahtkamon_tomb_archsite = {
+    desc = ssp_rodahtkamon_tomb_archsite_desc
+    picture = GFX_evt_warm_barren
+    stages = 3
+    max_instances = 1
+
+    weight = {
+        base = 0
+        modifier = {
+            add = 50
+            is_planet_class = pc_desert
+        }
+    }
+
+    stage = {
+        difficulty = 2
+        icon = GFX_archaeology_runes_C1
+        event = ssp_archaeo.10
+    }
+
+    stage = {
+        difficulty = 3
+        icon = GFX_archaeology_runes_C2
+        event = ssp_archaeo.11
+    }
+
+    stage = {
+        difficulty = 4
+        icon = GFX_archaeology_runes_C3
+        event = ssp_archaeo.12
+    }
+
+    allow = {
+        # always = yes
+        exists = leader
+        leader = { leader_class = scientist }
+    }
+
+    visible = {
+        default_site_visible_trigger = yes
+    }
+
+
+    on_roll_failed = {
+        from = {
+            standard_archaeological_site_on_roll_failed = { RANDOM_EVENTS = all_random_events }
+        }
+    }
+}

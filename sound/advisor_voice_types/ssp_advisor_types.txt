@@ -1,0 +1,13 @@
+soncio_advisor = {
+    name = "advisor_voice_italian"
+    icon = "gfx/interface/icons/ethics/ethic_authoritarian.dds" #todo: replace this
+
+    playable = {
+        always = yes
+    }
+
+    weight = {
+        base = 0
+    }
+}
+

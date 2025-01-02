@@ -1,0 +1,7 @@
+soundgroup = {
+    name = soncio_advisor
+    soundoverride = {
+        name = "advisor_notification_tile_blocker_clear_01"
+        file = "vo/soncio_advisor/advisor_notification_tile_blocker_clear_01.wav"
+    }
+}

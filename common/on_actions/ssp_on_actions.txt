@@ -1,0 +1,17 @@
+on_monthly_pulse_country = {
+    events = {
+        ssp_relic.1
+    }
+}
+
+on_decade_pulse_country = {
+    events = {
+        ssp_civic.1
+    }
+}
+
+on_jump_drive = {
+    events = {
+        ssp_relic.11
+    }
+}

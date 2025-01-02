@@ -1,0 +1,6 @@
+﻿l_english:
+ ssp_anomaly_bacterium_ship: "Strange Transmission"
+ ssp_anomaly_bacterium_ship_desc: "We have received a strange transmission from a science crew somewhere in the system [FromFrom.GetName] on planet [From.GetName], it won't take long to track down an estimated point of origin on the planet. We should send a science ship to check it out."
+
+ ssp_anomaly.1.Name:0 "Transmission located"
+ ssp_anomaly.1.Desc:0 "Our scientists have picked up the strange transmission from [From.GetName] \n The signal is very close to one our ships use. \n Study suggests that the signal is in the northwest region of the planet. "

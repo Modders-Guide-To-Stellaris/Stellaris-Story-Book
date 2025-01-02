@@ -1,0 +1,812 @@
+namespace = ssp_civic
+
+#MRI:Ships
+country_event = {
+    id = ssp_civic.1
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        country_event = { id = ssp_civic.10 days = 450}
+    }
+}
+
+country_event = {
+    id = ssp_civic.10
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        if = {
+            limit = {
+                AND = {
+                    has_civic = ssp_civic_mri
+                    NOT = { has_country_flag = ssp_garantueed_fe_fleet }
+                }
+            }
+
+            random_list = {
+                65 = {
+                    country_event = { id = ssp_civic.20 }
+                }
+                20 = {
+                    random_list = {
+                        50 = {
+                            country_event = { id = ssp_civic.30 }
+                        }
+                        50 = {
+                            country_event = { id = ssp_civic.40 }
+                        }
+                    }
+                }
+                10 = {
+                    if = {
+                        limit = { has_technology = tech_titans }
+                        country_event = { id = ssp_civic.50 }
+                    }
+                    else = {
+                        country_event = { id = ssp_civic.20 }
+                    }
+                }
+                5 = {
+                    if = {
+                        limit = {
+                            AND = {
+                                years_passed < 30 #It would be so sad if people got it before year 30 and then it says "nah better luck next time"
+                                NOT = {
+                                    has_country_flag = ssp_garantueed_fe_fleet
+                                }
+                            }
+                        }
+                        set_country_flag = ssp_garantueed_fe_fleet
+                        # buffed chances for the tech, cause FE fleet is technologically advanced.. idk either ok xD
+                        random_list = {
+                            50 = {
+                                country_event = { id = ssp_civic.30 }
+                            }
+                            50 = {
+                                country_event = { id = ssp_civic.40 }
+                            }
+                        }
+                    }
+                    else = {
+                        country_event = { id = ssp_civic.60 }
+                    }
+                }
+            }
+        }
+        else = {
+            country_event = { id = ssp_civic.60 }
+            remove_country_flag = ssp_garantueed_fe_fleet
+        }
+    }
+}
+
+country_event = {
+    id = ssp_civic.20
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        set_variable = {
+            which = current_naval_capacity
+            value = trigger:max_naval_capacity
+        }
+
+        set_variable = {
+            which = years_passed
+            value = trigger:years_passed
+        }
+
+        set_variable = {
+            which = ssp_fleet_value
+            value = value:ssp_fleet_power_scaling|NAVAL_CAPACITY|current_naval_capacity|YEARS|years_passed|
+        }
+
+        set_variable = {
+            which = ssp_fleet_cost
+            value = value:ssp_fleet_cost_scaling|NAVAL_CAPACITY|current_naval_capacity|
+        }
+        country_event = { id = ssp_civic.21 }
+    }
+}
+
+country_event = {
+    id = ssp_civic.21
+    is_triggered_only = yes
+    picture = GFX_evt_mercenary_enclave
+    title = ssp_civic_21.Name
+    desc = ssp_civic_21.Desc
+
+    option = {
+        name = ssp_civic_21.OptionA.Name
+
+        allow = {
+            AND = {
+                resource_stockpile_compare = {
+                    resource = energy
+                    value >= 250
+                    mult = ssp_fleet_cost
+                }
+                resource_stockpile_compare = {
+                    resource = alloys
+                    value >= 175
+                    mult = ssp_fleet_cost
+                }
+            }
+        }
+
+        add_resource = {
+            energy = -250
+            alloys = -175
+            mult = ssp_fleet_cost
+        }
+
+        country_event = { id = ssp_civic.22 months = 36 random = 12 }
+    }
+
+
+    option = {
+        name = ssp_civic_21.OptionB.Name
+
+        custom_tooltip = ssp_civic_21.OptionB.Tooltip
+        hidden_effect = {
+            country_event = { id = ssp_civic.70 }
+
+            add_modifier = { modifier = ssp_commander_ship_assembly_fail years = 5 }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_civic.22
+    is_triggered_only = yes
+    picture = GFX_evt_federation_fleet
+    title = ssp_civic_22.Name
+    desc = ssp_civic_22.Desc
+
+    immediate = {
+        divide_variable = {
+            which = ssp_fleet_value
+            value = 1000
+        }
+
+        #some quick adjustments so that powerscaling isnt that weird early game (compared to cost anyways)
+        if = {
+            limit = {
+                check_variable = {
+                    which = ssp_fleet_cost
+                    value = 20
+                }
+            }
+            set_variable = {
+                which = ssp_fleet_value
+                value = 1
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    which = ssp_fleet_cost
+                    value <= 33
+                }
+            }
+            set_variable = {
+                which = ssp_fleet_value
+                value = 0.66
+            }
+        }
+        else_if = {
+            limit = {
+                check_variable = {
+                    which = ssp_fleet_cost
+                    value <= 50
+                }
+            }
+            set_variable = {
+                which = ssp_fleet_value
+                value = 0.33
+            }
+        }
+    }
+
+    option = {
+        name = OK
+        hidden_effect = {
+            create_fleet_from_naval_cap = ssp_fleet_value
+            capital_scope = {
+                last_created_fleet = {
+                    set_owner = fromfrom
+                    set_location = {
+                        target = prev
+                        distance = 45
+                        angle = random
+                    }
+                }
+            }
+            change_variable = {
+                which = ssp_fleet_obtained_times
+                value = 1
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_civic.30
+    is_triggered_only = yes
+    picture = GFX_evt_cosmic_storms_broadcast_hacking
+    title = ssp_civic_30.Name
+    desc = ssp_civic_30.Desc
+
+    option = {
+        name = ssp_civic_30.OptionA.Name
+        allow = {
+            inverted_switch = {
+                trigger = has_technology
+                default = {
+                    AND = {
+                        has_resource = {
+                            type = energy
+                            amount >= 40000
+                        }
+                        has_resource = {
+                            type = alloys
+                            amount >= 15000
+                        }
+                    }
+                }
+                tech_doctrine_navy_size_1 = {
+                    AND = {
+                        has_resource = {
+                            type = energy
+                            amount >= 5000
+                        }
+                        has_resource = {
+                            type = alloys
+                            amount >= 1000
+                        }
+                    }
+                }
+                tech_doctrine_navy_size_2 = {
+                    AND = {
+                        has_resource = {
+                            type = energy
+                            amount >= 7500
+                        }
+                        has_resource = {
+                            type = alloys
+                            amount >= 2500
+                        }
+                    }
+                }
+                tech_doctrine_navy_size_3 = {
+                    AND = {
+                        has_resource = {
+                            type = energy
+                            amount >= 15000
+                        }
+                        has_resource = {
+                            type = alloys
+                            amount >= 5000
+                        }
+                    }
+                }
+                tech_doctrine_navy_size_4 = {
+                    AND = {
+                        has_resource = {
+                            type = energy
+                            amount >= 20000
+                        }
+                        has_resource = {
+                            type = alloys
+                            amount >= 7500
+                        }
+                    }
+                }
+            }
+        }
+        if = {
+            limit = {
+                NOT = {
+                    has_technology = tech_doctrine_navy_size_4
+                }
+            }
+            inverted_switch = {
+                trigger = has_technology
+                tech_doctrine_navy_size_1 = {
+                    add_resource = {
+                        energy = -5000
+                        alloys = -1000
+                    }
+                    give_technology = { tech = tech_doctrine_navy_size_1 }
+                }
+                tech_doctrine_navy_size_2 = {
+                    add_resource = {
+                        energy = -7500
+                        alloys = -2500
+                    }
+                    give_technology = { tech = tech_doctrine_navy_size_2 }
+                }
+                tech_doctrine_navy_size_3 = {
+                    add_resource = {
+                        energy = -15000
+                        alloys = -5000
+                    }
+                    give_technology = { tech = tech_doctrine_navy_size_3 }
+                }
+                tech_doctrine_navy_size_4 = {
+                    add_resource = {
+                        energy = -20000
+                        alloys = -7500
+                    }
+                    give_technology = { tech = tech_doctrine_navy_size_4 }
+                }
+            }
+        }
+        else = {
+            add_resource = {
+                energy = -40000
+                alloys = -15000
+            }
+            give_technology = { tech = tech_repeatable_naval_cap }
+        }
+        add_modifier = { modifier = ssp_military_scientists_exhausted days = 360}
+    }
+
+    option = {
+        name = ssp_civic_30.OptionB.Name
+        custom_tooltip = ssp_civic_30.OptionB.Tooltip
+        hidden_effect = {
+            country_event = { id = ssp_civic.70 }
+
+            owner = {
+                add_modifier = {
+                    modifier = ssp_commander_naval_strike
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_civic.40
+    is_triggered_only = yes
+    picture = GFX_evt_cosmic_storms_broadcast_hacking
+    title = ssp_civic_30.Name
+    desc = ssp_civic_30.Desc
+
+    option = {
+        name = ssp_civic_30.OptionA.Name
+        allow = {
+            inverted_switch = {
+                trigger = has_technology
+                default = {
+                    AND = {
+                        has_resource = {
+                            type = energy
+                            amount >= 40000
+                        }
+                        has_resource = {
+                            type = alloys
+                            amount >= 15000
+                        }
+                    }
+                }
+                tech_doctrine_fleet_size_1 = {
+                    AND = {
+                        has_resource = {
+                            type = energy
+                            amount >= 4000
+                        }
+                        has_resource = {
+                            type = alloys
+                            amount >= 1000
+                        }
+                    }
+                }
+                tech_doctrine_fleet_size_2 = {
+                    AND = {
+                        has_resource = {
+                            type = energy
+                            amount >= 8000
+                        }
+                        has_resource = {
+                            type = alloys
+                            amount >= 2500
+                        }
+                    }
+                }
+                tech_doctrine_fleet_size_3 = {
+                    AND = {
+                        has_resource = {
+                            type = energy
+                            amount >= 12000
+                        }
+                        has_resource = {
+                            type = alloys
+                            amount >= 5000
+                        }
+                    }
+                }
+                tech_doctrine_fleet_size_4 = {
+                    AND = {
+                        has_resource = {
+                            type = energy
+                            amount >= 16000
+                        }
+                        has_resource = {
+                            type = alloys
+                            amount >= 7500
+                        }
+                    }
+                }
+                tech_doctrine_fleet_size_5 = {
+                    AND = {
+                        has_resource = {
+                            type = energy
+                            amount >= 20000
+                        }
+                        has_resource = {
+                            type = alloys
+                            amount >= 10000
+                        }
+                    }
+                }
+            }
+        }
+        if = {
+            limit = {
+                NOT = {
+                    has_technology = tech_doctrine_fleet_size_5
+                }
+            }
+            inverted_switch = {
+                trigger = has_technology
+                tech_doctrine_fleet_size_1 = {
+                    add_resource = {
+                        energy = -4000
+                        alloys = -1000
+                    }
+                    give_technology = { tech = tech_doctrine_fleet_size_1 }
+                }
+                tech_doctrine_fleet_size_2 = {
+                    add_resource = {
+                        energy = -8000
+                        alloys = -2500
+                    }
+                    give_technology = { tech = tech_doctrine_fleet_size_2 }
+                }
+                tech_doctrine_fleet_size_3 = {
+                    add_resource = {
+                        energy = -12000
+                        alloys = -5000
+                    }
+                    give_technology = { tech = tech_doctrine_fleet_size_3 }
+                }
+                tech_doctrine_fleet_size_4 = {
+                    add_resource = {
+                        energy = -16000
+                        alloys = -7500
+                    }
+                    give_technology = { tech = tech_doctrine_fleet_size_4 }
+                }
+                tech_doctrine_fleet_size_5 = {
+                    add_resource = {
+                        energy = -20000
+                        alloys = -10000
+                    }
+                    give_technology = { tech = tech_doctrine_fleet_size_5 }
+                }
+            }
+            else = {
+                add_resource = {
+                    energy = -40000
+                    alloys = -15000
+                }
+                give_technology = { tech = tech_repeatable_command_limit }
+            }
+        }
+        add_modifier = { modifier = ssp_military_scientists_exhausted days = 180 }
+    }
+
+    option = {
+        name = ssp_civic_30.OptionB.Name
+        custom_tooltip = ssp_civic_30.OptionB.Tooltip
+
+        hidden_effect = {
+            country_event = { id = ssp_civic.70 }
+
+            owner = {
+                add_modifier = {
+                    modifier = ssp_commander_naval_strike
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_civic.50
+    is_triggered_only = yes
+    picture = GFX_evt_relic_shipyard
+    title = ssp_civic_50.Name
+    desc = ssp_civic_50.Desc
+
+    option = {
+        name = MAKE_IT_SO
+        allow = {
+            resource_stockpile_compare = {
+                resource = energy
+                value >= 12500
+            }
+            resource_stockpile_compare = {
+                resource = alloys
+                value >= 2750
+            }
+        }
+
+        add_resource = {
+            energy = -12500
+            alloys = -2750
+        }
+
+        country_event = { id = ssp_civic.51 days = 450 }
+    }
+
+    option = {
+        name = ssp_civic_51.OptionB.Name
+        custom_tooltip = ssp_civic_51.OptionB.Tooltip
+
+        hidden_effect = {
+            country_event = { id = ssp_civic.70 }
+
+            add_modifier = { modifier = ssp_commander_titan_fail years = 5 }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_civic.51
+    is_triggered_only = yes
+    picture = GFX_evt_juggernaut
+    title = ssp_civic_51.Name
+    desc = ssp_civic_51.Desc
+
+    option = {
+        name = FANTASTIC
+
+        capital_scope = {
+            create_fleet = {
+                name = NAME_Titanwill
+                effect = {
+                    set_owner = root
+                    create_ship = {
+                        name = "NAME_Gargantuan"
+                        design = "NAME_Gargantuan"
+                        graphical_culture = "fallen_empire_01"
+                    }
+                    set_location = {
+                        target = prev
+                        distance = 45
+                        angle = random
+                    }
+                }
+                settings = {
+                    can_change_composition = yes
+                    uses_naval_capacity = no
+                    can_disband = yes
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_civic.60
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        owner = {
+            hidden_effect = {
+                set_variable = {
+                    which = current_naval_capacity
+                    value = trigger:max_naval_capacity
+                }
+
+                set_variable = {
+                    which = years_passed
+                    value = trigger:years_passed
+                }
+
+                set_variable = {
+                    which = ssp_fallen_fleet_value
+                    value = value:ssp_fallen_fleet_power_scaling|YEARS|root.years_passed|NAVAL_CAPACITY|root.current_naval_capacity|
+                }
+
+                set_variable = {
+                    which = ssp_fallen_fleet_cost
+                    value = value:ssp_fallen_fleet_cost_scaling
+                }
+
+                if = {
+                    limit = {
+                        AND = {
+                            mid_game_years_passed >= 0
+                            NOT = {
+                                end_game_years_passed >= 0
+                            }
+                            check_variable = {
+                                which = ssp_fallen_fleet_cost
+                                value < 500
+                            }
+                        }
+                    }
+                    multiply_variable = {
+                        which = ssp_fallen_fleet_cost
+                        value = 1.5
+                    }
+                }
+                else_if = {
+                    limit = {
+                        AND = {
+                            end_game_years_passed >= 0
+                            check_variable = {
+                                which = ssp_fallen_fleet_cost
+                                value < 650
+                            }
+                        }
+                    }
+                    multiply_variable = {
+                        which = ssp_fallen_fleet_cost
+                        value = 1.75
+                    }
+                }
+            }
+            country_event = { id = ssp_civic.61 }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_civic.61
+    is_triggered_only = yes
+    picture = GFX_evt_face_off_in_space
+    title = ssp_civic_61.Name
+    desc = ssp_civic_61.Desc
+
+
+    option = {
+        name = ssp_civic_61.OptionA.Name
+
+        allow = {
+            AND = {
+                resource_stockpile_compare = {
+                    resource = energy
+                    value >= 250
+                    mult = ssp_fallen_fleet_cost
+                }
+                resource_stockpile_compare = {
+                    resource = alloys
+                    value >= 175
+                    mult = ssp_fallen_fleet_cost
+                }
+            }
+        }
+        add_resource = {
+            energy = -250
+            alloys = -175
+            mult = ssp_fallen_fleet_cost
+        }
+        country_event = { id = ssp_civic.62 days = 450 random = 90}
+    }
+
+    option = {
+        name = ssp_civic_61.OptionB.Name
+
+        custom_tooltip = ssp_civic_61.OptionB.Tooltip
+        hidden_effect = {
+            country_event = { id = ssp_civic.70 }
+
+            random_owned_fleet = {
+                limit = {
+                    is_civilian = no
+                    exists = fleet.leader
+                }
+                fleet.leader = {
+                    if = {
+                        limit = {
+                            is_councilor = yes
+                        }
+                        add_trait_no_notify = leader_trait_embezzler_2
+                    }
+                    else = {
+                        add_trait_no_notify = leader_trait_slipshod_2
+                    }
+                }
+            }
+
+            owner = {
+                add_modifier = { modifier = ssp_commander_naval_strike years = 5 }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_civic.62
+    is_triggered_only = yes
+    picture = GFX_evt_fallen_empire_awakes
+    title = ssp_civic_62.Name
+    desc = ssp_civic_62.Desc
+
+    option = {
+        name = AMAZING
+
+        custom_tooltip = ssp_civic_62.Tooltip.Name
+        hidden_effect = {
+            capital_scope = {
+                create_fleet = {
+                    name = "Repaired Forgotten Fleet"
+                    effect = {
+                        set_owner = root
+                        while = {
+                            count = root.value:ssp_num_fallen_big_ships|VALUE|root.ssp_fallen_fleet_value|SHIP_STRENGTH|1200|
+                            create_ship = {
+                                name = random
+                                design = "NAME_Scholar"
+                                graphical_culture = fallen_empire_01
+                            }
+                        }
+                        while = {
+                            count = root.value:ssp_num_fallen_small_ships|VALUE|root.ssp_fallen_fleet_value|BIG_SHIP_STRENGTH|1200|SMALL_SHIP_STRENGTH|400|
+                            create_ship = {
+                                name = random
+                                design = "NAME_Sage"
+                                graphical_culture = fallen_empire_01
+                            }
+                        }
+                        set_location = {
+                            target = prev
+                            distance = 45
+                            angle = random
+                        }
+                    }
+                    settings = {
+                        can_change_composition = yes
+                        uses_naval_capacity = no
+                        can_disband = yes
+                    }
+                }
+            }
+
+            change_variable = {
+                which = ssp_fallen_fleet_obtained_times
+                value = 1
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_civic.70
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        every_owned_fleet = {
+            if = {
+                limit = {
+                    AND = {
+                        is_civilian = no
+                        exists = fleet.leader
+                    }
+                }
+                fleet.leader = {
+                    add_timed_trait = { trait = ssp_temp_annoyed_trait days = 1800 }
+                }
+            }
+        }
+    }
+}

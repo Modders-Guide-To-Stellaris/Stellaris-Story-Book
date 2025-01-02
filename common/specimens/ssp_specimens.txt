@@ -1,0 +1,29 @@
+evolved_code = {
+    icon = "GFX_specimen_black_needle_ledger"
+    type = historical_item
+
+    inline_script = {
+        script = "grand_archive/set_specimen_rarity"
+        RARITY = exceptional
+    }
+
+    triggered_country_modifier = {
+        potential = {
+            NOT = {
+                has_global_flag = rodahtkamon_court_case
+            }
+        }
+
+        mult = value:historical_item_specimens_modifiers_mult
+        ssp_planet_researchers_research_produces_mult = 0.125
+    }
+
+    triggered_country_modifier = {
+        potential = {
+            has_global_flag = rodahtkamon_court_case
+        }
+
+        mult = value:historical_item_specimens_modifiers_mult
+        planet_jobs_produces_mult = -0.05
+    }
+}

@@ -1,0 +1,102 @@
+@triumph_duration_normal = 3600
+@triumph_duration_half = 1800
+@triumph_duration_forth = 900
+@triumph_duration_1year = 360
+
+ssp_r_khyran_bacterium = {
+    activation_duration = @triumph_duration_normal
+    portrait = "GFX_relic_bacterium_sample"
+    sound = "relic_activation_javorian_pox_sample"
+
+    resources = {
+        category = relics
+        cost = {
+            minor_artifacts = 100
+            unity = 5000
+        }
+    }
+
+    ai_weight = {
+        weight = 100
+    }
+
+    triggered_country_modifier = {
+        potential = {
+            always = yes
+        }
+        custom_tooltip = ssp_r_khyran_bacterium_passive
+    }
+
+    active_effect = {
+        custom_tooltip = ssp_r_khyran_bacterium_active
+
+        hidden_effect = {
+            country_event = { id = ssp_relic.2 }
+        }
+
+
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = { modifier = "relic_activation_cooldown" days = 3600 }
+        }
+    }
+
+    possible = {
+        custom_tooltip = {
+            fail_text = "requires_relic_no_cooldown"
+            NOT = { has_modifier = relic_activation_cooldown }
+        }
+    }
+}
+
+ssp_r_drive_core = {
+    activation_duration = @triumph_duration_normal
+    portrait = "GFX_relic_drive_core"
+    sound = "relic_activation_the_rubricator"
+
+    resources = {
+        category = relics
+        cost = {
+            minor_artifacts = 100
+            energy = 5000
+        }
+    }
+
+    ai_weight = {
+        weight = 100
+    }
+
+    triggered_country_modifier = {
+        potential = {
+            any_controlled_fleet = { #block you from doing it if you cant stack it anymore
+                AND = {
+                    is_ship_class = shipclass_military
+                    NOT = {
+                        has_fleet_flag = ssp_warp_drive_chosen
+                    }
+                }
+            }
+        }
+        show_only_custom_tooltip = yes
+        custom_tooltip = ssp_r_drive_core_passive
+        ship_science_speed_mult = 0.50
+        ship_astral_rift_speed_mult = 0.50
+    }
+
+    active_effect = {
+        country_event = { id = ssp_relic.10 }
+        custom_tooltip = ssp_r_drive_core_active
+
+        custom_tooltip = relic_triumph_cooldown
+        hidden_effect = {
+            add_modifier = { modifier = "relic_activation_cooldown" days = 3600 }
+        }
+    }
+
+    possible = {
+        custom_tooltip = {
+            fail_text = "requires_relic_no_cooldown"
+            NOT = { has_modifier = relic_activation_cooldown }
+        }
+    }
+}

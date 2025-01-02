@@ -1,0 +1,49 @@
+ssp_military_scientists_exhausted = {
+    category_military_theory_research_speed_mult = -0.25
+    category_military_theory_draw_chance_mult = -0.1
+}
+
+ssp_commander_ship_assembly_fail = {
+    starbase_shipyard_build_cost_mult = 0.10
+    planet_buildings_cost_mult = -0.05
+}
+
+ssp_commander_naval_strike = {
+    ships_upkeep_mult = 0.05
+}
+
+ssp_commander_titan_fail = {
+    starbase_shipyard_build_speed_mult = -0.05
+}
+
+ssp_curator_databanks_raided = {
+    all_technology_research_speed = 0.10
+    ssp_planet_researchers_research_produces_mult = 0.1
+}
+
+ssp_planet_researchers_research_produces_mult = { #actually 100% but we ignore that
+    custom_tooltip = mod_ssp_planet_researchers_research_produces_mult
+    show_only_custom_tooltip = yes
+    planet_researchers_physics_research_produces_mult = 1
+    planet_researchers_society_research_produces_mult = 1
+    planet_researchers_engineering_research_produces_mult = 1
+}
+
+ssp_r_drive_core_jump_range = {
+    ship_ftl_jumpdrive_range_mult = 1
+}
+
+ssp_r_drive_core_negative = {
+    ship_speed_mult = -0.25
+    ship_shield_mult = -0.125
+}
+
+ssp_r_drive_core_temp_boost = { #power overload
+    ship_speed_mult = 0.88 #+0.50 to make up for the warp driving debuff
+    weapon_type_energy_weapon_damage_mult = 0.50 #this in reality only a +0.25 due to (seen below)
+    weapon_type_energy_weapon_fire_rate_mult = 0.50
+    ship_weapon_damage = 0.25 #+0.25 to make up for some of the warp driving debuff.. you're already getting more from the energy weapon damage
+    ship_shield_mult = 0.25
+    ship_shield_regen_add_perc = 0.10
+    ship_evasion_mult = 0.10
+}

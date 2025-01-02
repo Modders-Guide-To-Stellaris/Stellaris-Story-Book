@@ -1,0 +1,417 @@
+namespace = ssp_archaeo
+
+fleet_event = {
+    id = ssp_archaeo.1
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = ssp_archaeo_1.Name
+    desc = ssp_archaeo_1.Desc
+    picture = GFX_evt_landing_ship
+    show_sound = event_scanner
+    archaeology = yes
+    location = From
+
+    immediate = {
+        From = { set_site_progress_locked = yes }
+    }
+
+    after = {
+        From = { set_site_progress_locked = no }
+    }
+
+    option = {
+        name = ssp_archaeo_1.OptionA.Name
+        owner = {
+            add_monthly_resource_mult = {
+                resource = physics_research
+                value = 25
+                min = 300
+                max = 2000000
+            }
+        }
+    }
+}
+
+fleet_event = {
+    id = ssp_archaeo.2
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = ssp_archaeo_2.Name
+    desc = ssp_archaeo_2.Desc
+    picture = GFX_evt_ocean
+    show_sound = event_sensor_ping
+    archaeology = yes
+    location = From
+
+    immediate = {
+        From = { set_site_progress_locked = yes }
+    }
+
+    after = {
+        From = { set_site_progress_locked = no }
+    }
+
+    option = {
+        name = ssp_archaeo_2.OptionA.Name
+        owner = {
+            add_monthly_resource_mult = {
+                resource = society_research
+                value = @tier4researchreward
+                min = @tier1researchmin
+                max = @tier4researchmax
+            }
+        }
+    }
+}
+
+fleet_event = {
+    id = ssp_archaeo.3
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = ssp_archaeo_3.Name
+    desc = ssp_archaeo_3.Desc
+    picture = GFX_evt_ancient_databank
+    show_sound = event_mystic_reveal
+    archaeology = yes
+    location = From
+
+    immediate = {
+        From = { set_site_progress_locked = yes }
+        closest_system = {
+            min_steps = 5
+            max_steps = 15
+            setup_jonan_digsite = yes
+        }
+    }
+
+    after = {
+        From = { set_site_progress_locked = no }
+    }
+
+    option = {
+        name = ssp_archaeo_3.OptionA.Name
+        owner = {
+            add_monthly_resource_mult = {
+                resource = physics_research
+                value = @tier3researchreward
+                min = @tier2researchmin
+                max = @tier5researchmax
+            }
+        }
+    }
+}
+
+
+fleet_event = {
+    id = ssp_archaeo.4
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = ssp_archaeo_4.Name
+    desc = ssp_archaeo_4.Desc
+    picture = GFX_evt_exploding_ship
+    show_sound = event_scanner
+    archaeology = yes
+    location = From
+
+    immediate = {
+        From = { set_site_progress_locked = yes }
+    }
+
+    after = {
+        From = { set_site_progress_locked = no }
+    }
+
+    option = {
+        name = ssp_archaeo_4.OptionA.Name
+        small_artifact_reward = yes
+        trigger = {
+            NOT = {
+                owner = {
+                    ssp_is_total_war = yes
+                }
+            }
+        }
+        owner = {
+            add_relic = ssp_r_khyran_bacterium
+        }
+    }
+
+    option = {
+        name = ssp_archaeo_4.OptionB.Name
+        small_artifact_reward = yes
+        owner = {
+            add_relic = ssp_r_drive_core
+        }
+    }
+}
+
+#jonan
+fleet_event = {
+    id = ssp_archaeo.5
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = ssp_archaeo_5.Name
+    desc = ssp_archaeo_5.Desc
+    picture = GFX_evt_synth_sabotage
+    show_sound = event_scanner
+    archaeology = yes
+    location = From
+
+    immediate = {
+        From = { set_site_progress_locked = yes }
+    }
+
+    after = {
+        From = { set_site_progress_locked = no }
+    }
+
+    option = {
+        name = ssp_archaeo_5.OptionA.Name
+        owner = {
+            add_monthly_resource_mult = {
+                resource = physics_research
+                value = @tier3researchreward
+                min = @tier2researchmin
+                max = @tier5researchmax
+            }
+        }
+    }
+}
+
+
+fleet_event = {
+    id = ssp_archaeo.6
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = ssp_archaeo_6.Name
+    desc = ssp_archaeo_6.Desc
+    picture = GFX_evt_sentry_guns
+    show_sound = event_scanner
+    archaeology = yes
+    location = From
+
+    immediate = {
+        fromfrom = { set_site_progress_locked = yes }
+    }
+
+    after = {
+        fromfrom = { set_site_progress_locked = no }
+    }
+
+    option = {
+        name = ssp_archaeo_6.OptionA.Name
+        owner = {
+            add_monthly_resource_mult = {
+                resource = society_research
+                value = @tier4researchreward
+                min = @tier1researchmin
+                max = @tier4researchmax
+            }
+        }
+    }
+}
+
+fleet_event = {
+    id = ssp_archaeo.7
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = ssp_archaeo_7.Name
+    desc = ssp_archaeo_7.Desc
+    picture = GFX_evt_sapient_AI
+    show_sound = event_mystic_reveal
+    archaeology = yes
+    location = From
+
+    immediate = {
+        fromfrom = { set_site_progress_locked = yes }
+    }
+
+    after = {
+        fromfrom = { set_site_progress_locked = no }
+    }
+
+    option = {
+        name = ssp_archaeo_7.OptionA.Name
+        medium_artifact_reward = yes
+        owner = {
+            add_research_option = tech_ssp_jonan_communication_key
+            hidden_effect = { add_tech_progress = { tech = tech_ssp_jonan_communication_key progress = 0.33 } }
+        }
+    }
+}
+
+# evolved
+
+fleet_event = {
+    id = ssp_archaeo.10
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = ssp_archaeo_10.Name
+    desc = ssp_archaeo_10.Desc
+    picture = GFX_evt_hidden_door
+    show_sound = event_mystic_reveal
+    archaeology = yes
+    location = From
+
+    immediate = {
+        fromfrom = { set_site_progress_locked = yes }
+    }
+
+    after = {
+        fromfrom = { set_site_progress_locked = no }
+    }
+
+    option = {
+        name = ssp_archaeo_10.OptionA.Name
+    }
+}
+
+fleet_event = {
+    id = ssp_archaeo.11
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = ssp_archaeo_11.Name
+    desc = ssp_archaeo_11.Desc
+    picture = GFX_evt_riftworld_archsite_ancestors
+    show_sound = event_mystic_reveal
+    archaeology = yes
+    location = From
+
+    immediate = {
+        fromfrom = { set_site_progress_locked = yes }
+    }
+
+    after = {
+        fromfrom = { set_site_progress_locked = no }
+    }
+
+    option = {
+        name = ssp_archaeo_11.OptionA.Name
+        medium_artifact_reward = yes
+        owner = {
+            add_monthly_resource_mult = {
+                resource = unity
+                value = @tier4unityreward
+                min = @tier3unityreward
+                max = @tier3unityreward
+            }
+        }
+    }
+}
+
+fleet_event = {
+    id = ssp_archaeo.12
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = ssp_archaeo_12.Name
+    desc = ssp_archaeo_12.Desc
+    picture = GFX_evt_astral_rift_desert_ruins_first_chamber
+    show_sound = event_mystic_reveal
+    archaeology = yes
+    location = From
+
+    immediate = {
+        fromfrom = { set_site_progress_locked = yes }
+    }
+
+    after = {
+        fromfrom = { set_site_progress_locked = no }
+    }
+
+    option = {
+        name = ssp_archaeo_12.OptionA.Name
+        custom_tooltip = ssp_archaeo_12.OptionA.Tooltip
+
+        owner = {
+            give_specimen = { key = evolved_code origin = $ORIGIN$ }
+
+            add_monthly_resource_mult = {
+                resource = society_research
+                value = @tier5researchreward
+                min = @tier5researchmin
+                max = @tier5researchmax
+            }
+
+        }
+
+        hidden_effect = {
+            owner = {
+                country_event = {
+                    id = ssp_archaeo.13
+                    days = 3600
+                }
+            }
+        }
+    }
+
+    option = {
+        name = ssp_archaeo_12.OptionB.Name
+        owner = {
+            add_monthly_resource_mult = {
+                resource = society_research
+                value = @tier5researchreward
+                min = @tier5researchmin
+                max = @tier5researchmax
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_archaeo.13
+    is_triggered_only = yes
+    fire_only_once = yes
+    title = ssp_archaeo_13.Name
+    desc = ssp_archaeo_13.Desc
+    picture = GFX_evt_night_raid
+    show_sound = event_scanner
+
+    immediate = {
+        set_global_flag = rodahtkamon_court_case
+
+        export_resource_stockpile_to_variable = {
+            resource = energy
+            variable = country_energy_stockpile
+        }
+        export_resource_stockpile_to_variable = {
+            resource = minerals
+            variable = country_minerals_stockpile
+        }
+        export_resource_stockpile_to_variable = {
+            resource = food
+            variable = country_food_stockpile
+        }
+        export_resource_stockpile_to_variable = {
+            resource = consumer_goods
+            variable = country_consumer_goods_stockpile
+        }
+        export_resource_stockpile_to_variable = {
+            resource = alloys
+            variable = country_alloy_stockpile
+        }
+    }
+
+    option = {
+        name = GODDAMNIT
+        add_resource = {
+            energy = -1
+            mult = country_energy_stockpile
+        }
+        add_resource = {
+            minerals = -1
+            mult = country_minerals_stockpile
+        }
+        add_resource = {
+            food = -1
+            mult = country_food_stockpile
+        }
+        add_resource = {
+            consumer_goods = -1
+            mult = country_consumer_goods_stockpile
+        }
+        add_resource = {
+            alloys = -1
+            mult = country_alloy_stockpile
+        }
+    }
+}

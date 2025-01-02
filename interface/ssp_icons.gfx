@@ -1,0 +1,43 @@
+spriteTypes = {
+    #Invasion
+    spriteType = {
+        name = "GFX_tr_ssp_invasion_1"
+        textureFile = "gfx/interface/icons/traditions/ssp_placeholder.dds"
+    }
+    spriteType = {
+        name = "GFX_tr_ssp_invasion_2"
+        textureFile = "gfx/interface/icons/traditions/ssp_placeholder.dds"
+    }
+    spriteType = {
+        name = "GFX_tr_ssp_invasion_3"
+        textureFile = "gfx/interface/icons/traditions/ssp_placeholder.dds"
+    }
+    spriteType = {
+        name = "GFX_tr_ssp_invasion_4"
+        textureFile = "gfx/interface/icons/traditions/ssp_placeholder.dds"
+    }
+    spriteType = {
+        name = "GFX_tr_ssp_invasion_final_1"
+        textureFile = "gfx/interface/icons/traditions/ssp_placeholder.dds"
+    }
+    spriteType = {
+        name = "GFX_tr_ssp_invasion_final_1_disabled"
+        textureFile = "gfx/interface/icons/traditions/ssp_placeholder.dds"
+    }
+    spriteType = {
+        name = "GFX_tr_ssp_invasion_final_2"
+        textureFile = "gfx/interface/icons/traditions/ssp_placeholder.dds"
+    }
+    spriteType = {
+        name = "GFX_tr_ssp_invasion_final_2_disabled"
+        textureFile = "gfx/interface/icons/traditions/ssp_placeholder.dds"
+    }
+    spriteType = {
+        name = "GFX_tr_ssp_invasion_final_3"
+        textureFile = "gfx/interface/icons/traditions/ssp_placeholder.dds"
+    }
+    spriteType = {
+        name = "GFX_tr_ssp_invasion_final_3_disabled"
+        textureFile = "gfx/interface/icons/traditions/ssp_placeholder.dds"
+    }
+}

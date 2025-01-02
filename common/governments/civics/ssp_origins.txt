@@ -1,0 +1,40 @@
+ssp_origin_fanatic_worshippers = {
+    icon = gfx/interface/icons/origins/ssp_origin_fanatic_worshippers.dds
+    description = //
+    is_origin = yes
+}
+
+
+    # icon =
+    # description =
+    # negative_description =
+    # playable =
+    # ai_playable =
+    # flags =
+    # potential =
+    # possible =
+    # modifier =
+    # starting_colony =
+    # custom_tooltip =
+    # custom_tooltip_with_modifiers =
+    # swap_type =
+    # cost =
+    # pickable_at_start =
+    # modification =
+    # can_build_ruler_ship =
+    # traits =
+    # has_secondary_species =
+    # alternate_civic_version =
+    # ai_weight =
+    # is_origin = yes
+    # picture =
+    # initializers =
+    # max_once_global =
+    # hide_modifiers =
+    # advanced_start =
+    # non_colonizable_planet_class_neighbor = yes
+    # habitability_preference =
+    # preferred_planet_class_neighbor = no
+    # blocks_random_machine_empire_generation =
+    # leader_background_job_weight =
+    # random_weight =
