@@ -1,0 +1,27 @@
+﻿l_english:
+ ssp_temp_annoyed_trait: "Commander Angered"
+ ssp_temp_annoyed_trait_desc: "This leader, due to annoyances, has demanded a higher living cost."
+
+
+ # dictionnaire
+
+ ssp_traits_fanatic_worshipper: "Fanatic Worshipper"
+ ssp_traits_fanatic_worshipper_desc: "The beliefs in destiny clouds the judgement of the people. They make irrational decisions based on religion leading to an ineffective bureaucracy."
+
+ trait_grimoire_qualityI:0 "Reincarnated?"
+ trait_grimoire_qualityI_desc:0 "This pop is basically a brain dead zombie"
+
+ trait_grimoire_qualityII:0 "Signs of Life"
+ trait_grimoire_qualityII_desc:0 "This pop still has some brain activity left"
+
+ trait_grimoire_qualityIII:0 "Average Worker"
+ trait_grimoire_qualityIII_desc:0 "This pop is suffering from constant fatigue"
+
+ trait_grimoire_maxima:0 "Resurrection Maxima"
+ trait_grimoire_maxima_desc:0 "This pop doesn't fear death itself!"
+
+ ssp_destiny_genpar:0 "Grand Reanimator"
+ ssp_destiny_genpar_desc: "REPLACE_ME"
+
+ ssp_trait_alcoholic:0 "Alcoholic"
+ ssp_trait_alcoholic_desc: "REPLACE_ME"

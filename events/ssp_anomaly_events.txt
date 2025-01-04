@@ -1,6 +1,6 @@
 namespace = ssp_anomaly
 
-fleet_event = {
+ship_event = {
     id = ssp_anomaly.1
     title = ssp_anomaly.1.Name
     desc = ssp_anomaly.1.Desc

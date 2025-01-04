@@ -1,0 +1,171 @@
+situation_grimoire_decipher = {
+    picture = GFX_evt_disease_outbreak
+    complete_icon_frame = GFX_situation_outcome_frame_blue
+    complete_icon = GFX_situation_outcome_unknown
+    on_start = {
+        owner = {
+            set_country_flag = grimoire_qualityI
+            set_country_flag = grimoire_quantityI
+        }
+    }
+
+    on_abort = {
+
+    }
+
+    target_modifier = {
+
+    }
+
+    start_value = 0
+    stages = {
+        situation_grimoire_decipher_stage_one = {
+            icon = GFX_situation_stage_1
+            icon_background = GFX_situation_stage_frame_red
+            end = 200
+            on_first_enter = {
+                #	owner = {
+                #	set_country_flag = grimoire_qualityI
+                #	set_country_flag = grimoire_quantityI
+                #	}
+            }
+        }
+        situation_grimoire_decipher_stage_two = {
+            icon = GFX_situation_stage_2
+            icon_background = GFX_situation_stage_frame_red
+            end = 400
+            on_first_enter = {
+                owner = {
+                    remove_country_flag = grimoire_qualityI
+                    set_country_flag = grimoire_qualityII
+                }
+            }
+        }
+        situation_grimoire_decipher_stage_three = {
+            icon = GFX_situation_stage_3
+            icon_background = GFX_situation_stage_frame_red
+            end = 600
+            on_first_enter = {
+                owner = {
+                    remove_country_flag = grimoire_quantityI
+                    set_country_flag = grimoire_quantityII
+                }
+            }
+        }
+        situation_grimoire_decipher_stage_four = {
+            icon = GFX_situation_stage_4
+            icon_background = GFX_situation_stage_frame_red
+            end = 800
+            on_first_enter = {
+                owner = {
+                    remove_country_flag = grimoire_qualityII
+                    set_country_flag = grimoire_qualityIII
+                }
+            }
+        }
+        situation_grimoire_decipher_stage_five = {
+            icon = GFX_situation_stage_4
+            icon_background = GFX_situation_stage_frame_red
+            end = 1000
+            on_first_enter = {
+                owner = {
+                    remove_country_flag = grimoire_quantityII
+                    set_country_flag = grimoire_quantityIII
+                }
+            }
+        }
+    }
+
+    on_progress_complete = {
+        # owner = {
+        #     country_event = {
+        #         id = #
+        #     }
+        # }
+    }
+
+    monthly_progress = {
+        base = 1
+        modifier = {
+            desc = ssp_glfry.Name
+            mult = owner.capital_scope.sacrificed_result_total
+        }
+
+        # monthly progress = 0.1 + 0.1 times sacrificed pops #todo: doesnt actually work?
+        # 	modifier = {
+        # 		desc = string_current_approach#TODO: make a desc for when the approach is changed
+        # 		mult = 1.5
+        # 		current_situation_approach = read_dying_minds
+        # 	}
+    }
+
+    on_monthly = {
+
+        random_events = {
+            100 = 0
+        }
+    }
+
+    #approach = {
+    #	name = read_dying_minds
+    #	icon = GFX_situation_approach_influence
+    #	icon_background = GFX_situation_approach_bg_red
+    #	on_select = {
+    #		owner = {
+    #			set_country_flag = risky_mind_reading
+    #		}
+    #
+    #			custom_tooltip = "SSP_TBD"
+    #			#set_situation_flag = "SSP_read_dead_minds"
+    #		}
+    #		allow = {
+    #			custom_tooltip = {
+    #				fail_text = "SSP_TBD"
+    #			}
+    #		}
+    #		resources = {
+    #			category = situations
+    #			upkeep = {
+    #				sr_zro = 2
+    #			}
+    #		}
+    #	}
+
+    approach = {
+        name = continue_sacrificing
+        icon = GFX_situation_approach_balance_sheet
+        icon_background = GFX_situation_approach_bg_green
+        on_select = {
+            owner = {
+                remove_country_flag = risky_mind_reading
+            }
+
+            custom_tooltip = "SSP_TBD"
+            #set_situation_flag = "SSP_TBD"
+
+        }
+        allow = {
+            always = yes
+        }
+    }
+
+    on_fail = {
+        # This should never happen, but if it does...
+        owner = {
+            start_situation = {
+                type = situation_grimoire_decipher
+                target = capital_scope
+                effect = {
+                    save_event_target_as = new_situation
+                }
+            }
+        }
+        event_target:new_situation = {
+            set_situation_locked = no
+        }
+    }
+
+    abort_trigger = {
+        NOT = { exists = owner }
+    }
+}

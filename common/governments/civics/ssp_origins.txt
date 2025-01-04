@@ -1,40 +1,69 @@
-ssp_origin_fanatic_worshippers = {
-    icon = gfx/interface/icons/origins/ssp_origin_fanatic_worshippers.dds
-    description = //
+# icon =
+# description =
+# negative_description =
+# playable =
+# ai_playable =
+# flags =
+# potential =
+# possible =
+# modifier =
+# starting_colony =
+# custom_tooltip =
+# custom_tooltip_with_modifiers =
+# swap_type =
+# cost =
+# pickable_at_start =
+# modification =
+# can_build_ruler_ship =
+# traits =
+# has_secondary_species =
+# alternate_civic_version =
+# ai_weight =
+# is_origin = yes
+# picture =
+# initializers =
+# max_once_global =
+# hide_modifiers =
+# advanced_start =
+# non_colonizable_planet_class_neighbor = yes
+# habitability_preference =
+# preferred_planet_class_neighbor = no
+# blocks_random_machine_empire_generation =
+# leader_background_job_weight =
+# random_weight =
+
+
+origin_follower_cult = {
     is_origin = yes
+    icon = "gfx/interface/icons/origins/unused/origins_unwashed_masses.dds"
+    picture = GFX_origin_fanatic_worshippers
+
+
+
+    playable = {
+        has_necroids = yes
+    }
+
+    possible = {
+        civics = {
+            OR = {
+                value = civic_death_cult_corporate
+                value = civic_death_cult
+            }
+        }
+        always = yes #testing purposes, foxy I swear to god, disable this before you push it to steam
+    }
+
+    description = civic_tooltip_defensive_origin_effects
+
+    traits = {
+        trait = ssp_traits_fanatic_worshipper
+    }
+
+    advanced_start = yes
+    max_once_global = yes
+
+    random_weight = {
+        base = 5
+    }
 }
-
-
-    # icon =
-    # description =
-    # negative_description =
-    # playable =
-    # ai_playable =
-    # flags =
-    # potential =
-    # possible =
-    # modifier =
-    # starting_colony =
-    # custom_tooltip =
-    # custom_tooltip_with_modifiers =
-    # swap_type =
-    # cost =
-    # pickable_at_start =
-    # modification =
-    # can_build_ruler_ship =
-    # traits =
-    # has_secondary_species =
-    # alternate_civic_version =
-    # ai_weight =
-    # is_origin = yes
-    # picture =
-    # initializers =
-    # max_once_global =
-    # hide_modifiers =
-    # advanced_start =
-    # non_colonizable_planet_class_neighbor = yes
-    # habitability_preference =
-    # preferred_planet_class_neighbor = no
-    # blocks_random_machine_empire_generation =
-    # leader_background_job_weight =
-    # random_weight =
