@@ -13,3 +13,5 @@ ssp_anomaly_bacterium_ship = {
 
     on_success = ssp_anomaly.1
 }
+
+effect = { random_playable_country = { add_anomaly = { category = ssp_anomaly_bacterium_ship } } }

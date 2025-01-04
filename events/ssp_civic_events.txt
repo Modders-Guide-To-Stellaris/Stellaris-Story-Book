@@ -74,10 +74,10 @@ country_event = {
                     }
                 }
             }
-        }
-        else = {
-            country_event = { id = ssp_civic.60 }
-            remove_country_flag = ssp_garantueed_fe_fleet
+            else = {
+                country_event = { id = ssp_civic.60 }
+                remove_country_flag = ssp_garantueed_fe_fleet
+            }
         }
     }
 }
