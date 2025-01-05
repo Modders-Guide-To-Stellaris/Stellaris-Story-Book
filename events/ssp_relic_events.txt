@@ -29,7 +29,7 @@ country_event = {
                         }
                         create_message = {
                             type = MESSAGE_FAVOR_GAINED_TRADITION
-                            localization = MESSAGE_FAVOR_GAINED_BY_MIND_CONTROL
+                            localization = MESSAGE_FAVOUR_GAINED_BY_MIND_CONTROL
                             days = 30
                             target = prev.envoy_location_country.capital_scope
                             variable = {

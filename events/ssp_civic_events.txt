@@ -810,3 +810,195 @@ country_event = {
         }
     }
 }
+country_event = {
+    id = ssp_civic.100
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        AND = {
+            ssp_is_custodian_aspirant_empire = yes
+            is_galactic_community_member = yes
+        }
+    }
+
+    immediate = {
+        #basic
+        export_resource_income_to_variable = {
+            resource = energy
+            variable = ssp_energy_income
+        }
+        export_resource_income_to_variable = {
+            resource = minerals
+            variable = ssp_mineral_income
+        }
+        export_resource_income_to_variable = {
+            resource = consumer_goods
+            variable = ssp_consumer_goods_income
+        }
+        multiply_variable = {
+            which = ssp_consumer_goods_income
+            value = 2
+        }
+        export_resource_income_to_variable = {
+            resource = alloys
+            variable = ssp_alloys_income
+        }
+        multiply_variable = {
+            which = ssp_alloys_income
+            value = 4
+        }
+
+        #rare
+        export_resource_income_to_variable = {
+            resource = volatile_motes
+            variable = ssp_volatile_motes_income
+        }
+        multiply_variable = {
+            which = ssp_volatile_motes_income
+            value = 10
+        }
+        export_resource_income_to_variable = {
+            resource = exotic_gases
+            variable = ssp_exotic_gases_income
+        }
+        multiply_variable = {
+            which = ssp_exotic_gases_income
+            value = 10
+        }
+        export_resource_income_to_variable = {
+            resource = rare_crystals
+            variable = ssp_rare_crystals_income
+        }
+        multiply_variable = {
+            which = ssp_rare_crystals_income
+            value = 10
+        }
+
+        #special
+        export_resource_income_to_variable = {
+            resource = sr_dark_matter
+            variable = ssp_dark_matter_income
+        }
+        multiply_variable = {
+            which = ssp_dark_matter_income
+            value = 20
+        }
+        export_resource_income_to_variable = {
+            resource = sr_living_metal
+            variable = ssp_living_metal_income
+        }
+        multiply_variable = {
+            which = ssp_living_metal_income
+            value = 20
+        }
+        export_resource_income_to_variable = {
+            resource = sr_zro
+            variable = ssp_zro_income
+        }
+        multiply_variable = {
+            which = ssp_zro_income
+            value = 20
+        }
+
+        country_event = { id = ssp_civic.101 }
+    }
+}
+
+country_event = {
+    id = ssp_civic.101
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        set_variable = {
+            which = ssp_current_economy_mult
+            value = 0
+        }
+
+        #so it begins
+        change_variable = {
+            which = ssp_current_economy_mult
+            value = ssp_energy_income
+        }
+        change_variable = {
+            which = ssp_current_economy_mult
+            value = ssp_mineral_income
+        }
+        change_variable = {
+            which = ssp_current_economy_mult
+            value = ssp_consumer_goods_income
+        }
+        change_variable = {
+            which = ssp_current_economy_mult
+            value = ssp_alloys_income
+        }
+        change_variable = {
+            which = ssp_current_economy_mult
+            value = ssp_volatile_motes_income
+        }
+        change_variable = {
+            which = ssp_current_economy_mult
+            value = ssp_exotic_gases_income
+        }
+        change_variable = {
+            which = ssp_current_economy_mult
+            value = ssp_rare_crystals_income
+        }
+        change_variable = {
+            which = ssp_current_economy_mult
+            value = ssp_dark_matter_income
+        }
+        change_variable = {
+            which = ssp_current_economy_mult
+            value = ssp_living_metal_income
+        }
+        change_variable = {
+            which = ssp_current_economy_mult
+            value = ssp_zro_income
+        }
+
+        country_event = { id = ssp_civic.102 }
+    }
+}
+
+country_event = {
+    id = ssp_civic.102
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        #gets all the funny values
+        set_variable = {
+            which = ssp_current_pop_mult
+            value = trigger:num_pops
+        }
+        set_variable = {
+            which = ssp_current_research_mult
+            value = trigger:num_researched_techs
+        }
+        set_variable = {
+            which = ssp_current_fleet_mult
+            value = trigger:fleet_power
+        }
+
+        #Sets all the funny values
+        add_modifier = {
+            modifier = ssp_diploweight_pop
+            mult = value:ssp_pop_diplo_scaling|POP_COUNT|ssp_current_pop_mult|
+        }
+        add_modifier = {
+            modifier = ssp_diploweight_economy
+            mult = value:ssp_eco_diplo_scaling|ECONOMY_COUNT|ssp_current_economy_mult|
+        }
+        add_modifier = {
+            modifier = ssp_diploweight_researcher
+            mult = value:ssp_research_diplo_scaling|RESEARCHER_COUNT|ssp_current_research_mult|
+        }
+        add_modifier = {
+            modifier = ssp_diploweight_fleet
+            mult = value:ssp_fleet_diplo_scaling|FLEET_POWER|ssp_current_fleet_mult|
+        }
+
+    }
+}

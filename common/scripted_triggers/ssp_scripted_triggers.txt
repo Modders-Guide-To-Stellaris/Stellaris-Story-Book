@@ -7,3 +7,11 @@ ssp_is_total_war = {
         has_valid_civic = civic_fanatic_purifiers
     }
 }
+
+ssp_is_custodian_aspirant_empire = {
+    OR = {
+        has_civic = ssp_civic_diplomatic
+        has_civic = ssp_civic_diplomatic_megacorp
+    }
+}
+

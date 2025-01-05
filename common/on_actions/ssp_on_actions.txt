@@ -1,6 +1,7 @@
 on_monthly_pulse_country = {
     events = {
         ssp_relic.1
+        ssp_civic.100
     }
 }
 

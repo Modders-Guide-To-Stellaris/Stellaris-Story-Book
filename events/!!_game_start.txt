@@ -1,0 +1,93 @@
+namespace = game_start
+
+planet_event = {
+    id = game_start.12
+    hide_window = yes
+    is_triggered_only = yes
+
+    immediate = {
+        if = {
+            limit = {
+                NOT = { has_planet_flag = special_start_planet }
+            }
+            if = {
+                limit = {
+                    OR = {
+                        NOT = { has_planet_flag = planet_earth }
+                        owner = { has_origin = origin_remnants } #no special earth for you, sorry
+                    }
+                    NOT = {
+                        owner = { has_origin = origin_shattered_ring }	#setup in initializer
+                    }
+                }
+                generate_start_deposits_and_blockers = yes
+            }
+            else_if = {
+                limit = {
+                    has_planet_flag = planet_earth
+                    NOR = {
+                        owner = { has_origin = origin_shattered_ring }	 #setup in initializer
+                        owner = { has_origin = origin_remnants }		 #custom blockers
+                    }
+                }
+                generate_earth_deposits_and_blockers = yes
+                set_earth_entity = yes
+            }
+            generate_start_buildings_and_districts = yes
+            generate_start_pops = yes
+            generate_home_planet_final_pass = yes
+        }
+
+        if = {
+            limit = { has_planet_flag = void_dweller_habitat_1 }
+            void_dweller_home_planet_setup = yes
+        }
+
+        if = {
+            limit = { has_planet_flag = toxic_knights_homeworld }
+            toxic_knights_order_habitat_setup = yes
+        }
+
+        if = {
+            limit = {
+                owner = {
+                    is_astrometeorologist_empire = yes
+                }
+                has_building = building_research_lab_1
+            }
+
+            remove_building = building_research_lab_1
+            add_building = building_astrometeorology_observation_center
+        }
+
+        if = {
+            limit = {
+                owner = {
+                    ssp_is_custodian_aspirant_empire = yes
+                }
+            }
+
+            owner = {
+                give_technology = {
+                    tech = tech_xeno_diplomacy
+                    message = no
+                }
+            }
+
+            if = {
+                limit = {
+                    has_building = building_bureaucratic_1
+                }
+                remove_building = building_bureaucratic_1
+            }
+            else_if = {
+                limit = {
+                    has_building = building_temple
+                }
+                remove_building = building_temple
+            }
+
+            add_building = building_embassy
+        }
+    }
+}

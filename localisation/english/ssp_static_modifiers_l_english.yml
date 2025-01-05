@@ -15,6 +15,15 @@
  ssp_curator_databanks_raided: "Curator Databanks Reclaimed"
  ssp_curator_databanks_raided_desc: "The raid on the Curators' archives did not uncover the relics we sought, but the databanks we secured hold knowledge that is already accelerating our research efforts. Even fragments of their expertise prove invaluable to our scientists."
 
+ ssp_diploweight_pop: "Population Boom"
+ ssp_diploweight_pop_desc: "$MOD_DIPLO_WEIGHT_POPS_MULT$"
+ ssp_diploweight_economy: "Golden Age"
+ ssp_diploweight_economy_desc: "$MOD_DIPLO_WEIGHT_ECONOMY_MULT$"
+ ssp_diploweight_researcher: "Technological Advancements"
+ ssp_diploweight_researcher_desc: "$MOD_DIPLO_WEIGHT_TECHNOLOGY_MULT$"
+ ssp_diploweight_fleet: "Naval Projection"
+ ssp_diploweight_fleet_desc: "$MOD_DIPLO_WEIGHT_NAVAL_MULT$"
+
  ssp_planet_researchers_research_produces_mult: "$mod_ssp_planet_researchers_research_produces_mult$"
  ssp_planet_researchers_research_produces_mult_desc: "REPLACE_ME"
  mod_ssp_planet_researchers_research_produces_mult: "£research£ $research$ from £job_researcher£ [GetResearcherPlural]"
