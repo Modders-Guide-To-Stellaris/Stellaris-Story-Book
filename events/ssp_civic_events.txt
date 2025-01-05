@@ -788,9 +788,28 @@ country_event = {
         }
     }
 }
-
 country_event = {
     id = ssp_civic.70
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        set_variable = {
+            which = ssp_unity_percent_monthly
+            value = 15
+        }
+
+        divide_variable = {
+            which = ssp_unity_percent_monthly
+            value = value:count_leaders_of_class|CLASS|commander|
+        }
+
+        country_event = { id = ssp_civic.71}
+    }
+}
+
+country_event = {
+    id = ssp_civic.71
     is_triggered_only = yes
     hide_window = yes
 

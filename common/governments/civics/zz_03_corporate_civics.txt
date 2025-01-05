@@ -11,7 +11,7 @@ civic_public_relations_specialists = {
             NOR = {
                 value = civic_diplomatic_corps
                 value = ssp_civic_diplomatic
-                value = ssp_civic_diplomatic_megacorp
+                value = ssp_civic_megacorp_diplomatic
             }
         }
     }
