@@ -10,16 +10,15 @@ ssp_temp_annoyed_trait = {
     }
 
     inline_script = {
-        script = paragon/leader_resource_produces
+        script = paragon/leader_resource_upkeep
         RESOURCE = energy
-        AMOUNT = -5
+        AMOUNT = 5
     }
 
     inline_script = {
-        script = paragon/leader_resource_upkeep_mult
+        script = paragon/leader_resource_upkeep
         RESOURCE = unity
-        AMOUNT = -1
-        MULT = value:percent_monthly_resource_income|RESOURCE|unity|PERCENT|ssp_unity_percent_monthly|
+        AMOUNT = 25
     }
 
     leader_class = { commander }

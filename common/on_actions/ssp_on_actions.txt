@@ -16,3 +16,9 @@ on_jump_drive = {
         ssp_relic.11
     }
 }
+
+on_leader_unassigned = {
+    events = {
+        ssp_civic.71 #CHEATERS DENIED
+    }
+}

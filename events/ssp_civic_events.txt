@@ -16,15 +16,20 @@ country_event = {
     is_triggered_only = yes
     hide_window = yes
 
+    trigger = {
+        AND = {
+            has_valid_civic = ssp_civic_mri
+            any_owned_leader = {
+                leader_class = commander
+            }
+        }
+    }
+
     immediate = {
         if = {
             limit = {
-                AND = {
-                    has_civic = ssp_civic_mri
-                    NOT = { has_country_flag = ssp_garantueed_fe_fleet }
-                }
+                NOT = { has_country_flag = ssp_garantueed_fe_fleet }
             }
-
             random_list = {
                 65 = {
                     country_event = { id = ssp_civic.20 }
@@ -788,6 +793,7 @@ country_event = {
         }
     }
 }
+
 country_event = {
     id = ssp_civic.70
     is_triggered_only = yes
@@ -799,27 +805,19 @@ country_event = {
             value = 15
         }
 
-        divide_variable = {
-            which = ssp_unity_percent_monthly
-            value = value:count_leaders_of_class|CLASS|commander|
-        }
-
-        country_event = { id = ssp_civic.71}
-    }
-}
-
-country_event = {
-    id = ssp_civic.71
-    is_triggered_only = yes
-    hide_window = yes
-
-    immediate = {
         every_owned_fleet = {
             if = {
                 limit = {
                     AND = {
                         is_civilian = no
-                        exists = fleet.leader
+                        OR = {
+                            exists = fleet.leader
+                            owner = {
+                                any_owned_leader = {
+                                    has_leader_flag = ssp_unassign_cheaters_denied
+                                }
+                            }
+                        }
                     }
                 }
                 fleet.leader = {
@@ -829,6 +827,29 @@ country_event = {
         }
     }
 }
+
+leader_event = {
+    id = ssp_civic.71
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        AND = {
+            owner = {
+                has_valid_civic = ssp_civic_mri
+            }
+            leader_class = commander
+        }
+    }
+
+    immediate = {
+        set_timed_leader_flag = {
+            flag = ssp_unassign_cheaters_denied
+            days = 1800 #5 years
+        }
+    }
+}
+
 country_event = {
     id = ssp_civic.100
     is_triggered_only = yes

@@ -5,6 +5,11 @@ ssp_r_drive_core_jumpdrive_range = {
     mult = $MULTIPLIER$
 }
 
+ssp_duration_calculator = {
+    base = $DURATION$
+    subtract = $CURRENT_TIME$
+    add = $TIME_WHEN_GIVEN$
+}
 ## normal ship scaling logic
 ## For Soncio, Yes, I know the scaling is off and no I cant fix it. I spent like 2-3 hours on it and I cant see these variables straight anymore. If you can fix it, pls do <3
 ssp_fleet_cost_scaling = {
