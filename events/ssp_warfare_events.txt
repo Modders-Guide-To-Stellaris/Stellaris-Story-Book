@@ -1,0 +1,84 @@
+namespace = ssp_warfare
+
+#1-10 bombardment
+
+ship_event = {
+    id = ssp_warfare.1
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        this.fleet = {
+            AND = {
+                has_fleet_flag = ssp_under_fire_from_planet
+                orbit = {
+                    AND = {
+                        is_colony = yes
+                        NOR = {
+                            exists = this
+                            owner = {
+                                #can be in orbit, just not at war with the planet owner.
+                                #honestly if a fleet moves and is somehow on another planet again within a split second, touche?
+                                is_at_war_with = root.owner
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    immediate = {
+        this.fleet = {
+            remove_fleet_flag = ssp_under_fire_fire_from_planet
+        }
+    }
+}
+
+event = {
+    id = ssp_warfare.2
+    is_triggered_only = yes
+    hide_window = yes
+
+    trigger = {
+        any_controlled_fleet = {
+            has_fleet_flag = ssp_under_fire_from_planet
+        }
+    }
+
+    immediate = {
+        every_playable_country = {
+            every_controlled_fleet = {
+                limit = {
+                    has_fleet_flag = ssp_under_fire_from_planet
+                }
+                every_controlled_ship = {
+                    #this is monthly so :/
+                    if = {
+                        limit = {
+                            orbit = {
+                                this.owner = {
+                                    has_policy_flag = air_standard
+                                }
+                            }
+                        }
+                        damage_ship = value:ssp_air_ship_damage_received|DMG|100|
+                    }
+                    else_if = {
+                        limit = {
+                            orbit = {
+                                this.owner = {
+                                    has_policy_flag = air_high_explosive
+                                }
+                            }
+                        }
+                        damage_ship = value:ssp_air_ship_damage_received|DMG|250|
+                    }
+                    else = {
+                        damage_ship = value:ssp_air_ship_damage_received|DMG|2500|
+                    }
+                }
+            }
+        }
+    }
+}

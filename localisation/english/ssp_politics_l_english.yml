@@ -1,0 +1,5 @@
+﻿l_english:
+ policy_ssp_anti_rounds: "Anti-Air Rounds"
+ policy_ssp_anti_rounds_desc: "REPLACE_ME"
+ air_high_explosive: "High-Explosive Rounds"
+ air_standard: "Standard Rounds"

@@ -1,0 +1,93 @@
+ssp_anti_air_1 = {
+    base_buildtime = 480
+
+    category = army
+
+    upgrades = { ssp_anti_air_2 }
+
+    base_cap_amount = 5
+
+    potential = {
+        count_planet_army = {
+            limit = {
+                is_defensive_army = yes
+            }
+
+            count >= 5
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            count_planet_army = {
+                count > 0
+            }
+        }
+
+        army_defense_damage_mult = 0.10
+        defense_armies_add = 1
+    }
+
+    triggered_desc = {
+        text = job_politician_effect_desc
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 500
+            rare_crystals = 50
+        }
+        upkeep = {
+            energy = 10
+        }
+    }
+}
+
+ssp_anti_air_2 = {
+    base_buildtime = 480
+
+    category = army
+
+    can_build = no
+
+    allow = {
+        AND = {
+            has_upgraded_capital = yes
+
+            count_planet_army = {
+                limit = {
+                    is_defensive_army = yes
+                }
+
+                count >= 10
+            }
+        }
+    }
+
+    triggered_planet_modifier = {
+        potential = {
+            count_planet_army = {
+                count > 0
+            }
+        }
+
+        army_defense_damage_mult = 0.20
+        defense_armies_add = 2
+    }
+
+    triggered_desc = {
+        text = job_politician_effect_desc
+    }
+
+    resources = {
+        category = planet_buildings
+        cost = {
+            minerals = 1000
+            rare_crystals = 100
+        }
+        upkeep = {
+            energy = 20
+        }
+    }
+}

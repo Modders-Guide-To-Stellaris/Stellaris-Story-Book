@@ -162,3 +162,32 @@ ssp_fleet_diplo_scaling = { #needs 600k fleetpower
     min = 1
     max = 600
 }
+
+ssp_planetary_antiair_damage = {
+    base = 10 #base = 0, set to 10 for testing
+
+    complex_trigger_modifier = {
+        trigger = num_buildings
+        parameters = {
+            type = ssp_anti_air_1
+        }
+        mode = add
+    }
+
+    complex_trigger_modifier = {
+        trigger = num_buildings
+        parameters = {
+            type = ssp_anti_air_2
+        }
+        mode = add
+        mult = 2
+    }
+
+    max = 10
+}
+
+ssp_air_ship_damage_received = {
+    base = 0
+    add = $DMG$
+    mult = ssp_planetary_anti_air
+}
