@@ -22,23 +22,3 @@ on_leader_unassigned = {
         ssp_civic.71 #CHEATERS DENIED
     }
 }
-
-on_monthly_pulse = {
-    events = {
-        ssp_warfare.2
-    }
-}
-
-on_planet_bombarded = {
-    events = {
-        ssp_planet.100
-    }
-}
-
-on_ship_order = {
-    events = {
-        ssp_warfare.1
-    }
-}
-
-
