@@ -30,7 +30,12 @@ country_event = {
             medium_artifact_reward = yes
         }
         if = {
-            limit = { has_grand_archive_dlc = yes }
+            limit = {
+                AND = {
+                    NOT = { has_country_flag = taken_relic_from_curators }
+                    has_grand_archive_dlc = yes
+                }
+            }
             #hidden_effect = {
                 locked_random_list = { #this is stellaris, if an RNG feature isnt even more RNG... is it really stellaris?
                     7 = {
@@ -364,6 +369,7 @@ country_event = {
                     }
                 #}
             }
+                set_country_flag = taken_relic_from_curators
         }
     }
 }

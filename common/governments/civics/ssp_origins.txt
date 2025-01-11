@@ -51,7 +51,7 @@ origin_follower_cult = {
                 value = civic_death_cult
             }
         }
-        always = yes #testing purposes, foxy I swear to god, disable this before you push it to steam
+        always = no #testing purposes, foxy I swear to god, disable this before you push it to steam
     }
 
     description = civic_tooltip_defensive_origin_effects

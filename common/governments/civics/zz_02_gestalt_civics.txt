@@ -1,0 +1,33 @@
+civic_hive_empath = {
+    playable = { host_has_dlc = "Federations" }
+    potential = {
+        authority = { value = auth_hive_mind }
+    }
+    possible = {
+        civics = {
+            NOT = {
+                value = civic_hive_devouring_swarm
+            }
+        }
+        origin = {
+            NOT = {
+                value = origin_necrophage
+            }
+        }
+    }
+    random_weight = {
+        base = @civic_default_random_weight
+    }
+    ai_weight = {
+        base = @ai_civic_default_base_weight
+    }
+
+    description = "civic_tooltip_empath_effects"
+    modifier = {
+        councilor_gestalt_growth_exp_gain = @gestalt_civic_node_xp_rate
+        envoys_add = 2
+        diplo_weight_mult = 0.30 # buffed from .2 ..... Yeah I didnt think gestalt needed much buffing XD
+        country_trust_cap_add = 50
+        envoy_improve_relations_mult = 0.30 # buffed from .25
+    }
+}

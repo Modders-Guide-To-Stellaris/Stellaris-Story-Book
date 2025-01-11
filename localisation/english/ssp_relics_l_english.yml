@@ -2,9 +2,9 @@
 
  ssp_r_khyran_bacterium: "Contained Khyran Bacterium"
  ssp_r_khyran_bacterium_desc: "A mysterious bacterial sample recovered from the remains of a deceased Jonan aboard the Ichki-One. Its properties are largely unknown but hold significant potential for both subterfuge and manipulation."
- ssp_r_khyran_bacterium_passive: "§YImproving relations§! with another empire has a small chance to covertly influence their leadership, subtly steering decisions in your §Yfavor§!."
- ssp_r_khyran_bacterium_active: "Deploy your envoy to administer the bacterium into the food supply of a rival empire. The affected empire will be compelled to grant diplomatic §Yfavors§!."
- MESSAGE_FAVOR_GAINED_BY_MIND_CONTROL:0 "Thanks to mind control bacteria, we have managed to gain a Favor from the $WHO|Y$."
+ ssp_r_khyran_bacterium_passive: "§YImproving relations§! with another empire has a small chance to covertly influence their leadership, subtly steering decisions in your §Yfavours§!."
+ ssp_r_khyran_bacterium_active: "Deploy your envoy to administer the bacterium into the food supply of a rival empire. The affected empire will be compelled to grant diplomatic §Yfavours§!."
+ MESSAGE_FAVOUR_GAINED_BY_MIND_CONTROL:0 "Thanks to mind control bacteria, we have managed to gain a favour from the $WHO|Y$."
 
  ssp_r_drive_core: "Repaired Drive Core"
  ssp_r_drive_core_desc: "The salvaged and restored drive core from a Jonan Foundry science ship. Its advanced technology unlocks new possibilities for both exploration and strategic mobility."

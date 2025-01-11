@@ -1,8 +1,15 @@
+#Relic script values
+
 ssp_r_drive_core_jumpdrive_range = {
     base = 1
     mult = $MULTIPLIER$
 }
 
+ssp_duration_calculator = {
+    base = $DURATION$
+    subtract = $CURRENT_TIME$
+    add = $TIME_WHEN_GIVEN$
+}
 ## normal ship scaling logic
 ## For Soncio, Yes, I know the scaling is off and no I cant fix it. I spent like 2-3 hours on it and I cant see these variables straight anymore. If you can fix it, pls do <3
 ssp_fleet_cost_scaling = {
@@ -119,4 +126,39 @@ ssp_num_fallen_small_ships = {
     add = value:ssp_num_fallen_small_ships_prev|VALUE|$VALUE$|BIG_SHIP_STRENGTH|$BIG_SHIP_STRENGTH$|SMALL_SHIP_STRENGTH|$SMALL_SHIP_STRENGTH$|
     round = yes
     min = 0
+}
+
+# Diploweight scaling
+ssp_pop_diplo_scaling = { #needs max 400 pops
+    base = 1
+    mult = $POP_COUNT$
+    DIVIDE = 2
+    min = 1
+    max = 200
+}
+
+ssp_eco_diplo_scaling = { #needs max 20000 eco score worth of income
+    base = 1
+    mult = $ECONOMY_COUNT$
+    DIVIDE = 100
+    min = 1
+    max = 200
+}
+
+ssp_research_diplo_scaling = { #needs max 100 techs
+    base = 1
+    mult = $RESEARCHER_COUNT$
+    mult = 2
+    min = 1
+    max = 200
+}
+
+
+ssp_fleet_diplo_scaling = { #needs 600k fleetpower
+    base = 1
+    add = $FLEET_POWER$
+    divide = 1000
+
+    min = 1
+    max = 600
 }

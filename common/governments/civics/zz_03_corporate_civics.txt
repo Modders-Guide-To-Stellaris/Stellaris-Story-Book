@@ -1,0 +1,53 @@
+civic_public_relations_specialists = {
+    playable = { host_has_dlc = "Federations" }
+    potential = {
+        OR = {
+            authority = { value = auth_corporate }
+            civics = { value = civic_galactic_sovereign_megacorp }
+        }
+    }
+    possible = {
+        civics = {
+            NOR = {
+                value = civic_diplomatic_corps
+                value = ssp_civic_diplomatic
+                value = ssp_civic_megacorp_diplomatic
+            }
+        }
+    }
+    random_weight = { base = @civic_default_random_weight }
+    ai_weight = {
+        base = @ai_civic_default_base_weight
+        modifier = {
+            factor = @ai_civic_personality_match_factor
+            OR = {
+                has_ai_personality = evangelising_zealots
+                has_ai_personality = ruthless_capitalists
+                has_ai_personality = peaceful_traders
+                has_ai_personality = federation_builders
+                has_ai_personality = fanatic_befrienders
+            }
+        }
+        modifier = {
+            factor = @ai_civic_personality_mismatch_factor
+            OR = {
+                has_ai_personality = spiritual_seekers
+                has_ai_personality = slaving_despots
+                has_ai_personality = decadent_hierarchy
+                has_ai_personality = xenophobic_isolationists
+            }
+        }
+        modifier = {
+            factor = @ai_civic_personality_forbid_factor
+            OR = {
+                has_ai_personality = fanatic_purifiers
+            }
+        }
+    }
+    modifier = {
+        envoys_add = 2
+        diplo_weight_mult = 0.4 # buffed from .3
+        country_trust_cap_add = 20 # buffed from 15 or smt
+        envoy_improve_relations_mult = 0.4 # buffed from .3
+    }
+}

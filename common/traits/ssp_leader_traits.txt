@@ -10,14 +10,15 @@ ssp_temp_annoyed_trait = {
     }
 
     inline_script = {
-        script = paragon/leader_resource_produces
+        script = paragon/leader_resource_upkeep
         RESOURCE = energy
-        AMOUNT = -5
+        AMOUNT = 5
     }
+
     inline_script = {
-        script = paragon/leader_resource_produces
+        script = paragon/leader_resource_upkeep
         RESOURCE = unity
-        AMOUNT = -10
+        AMOUNT = 25
     }
 
     leader_class = { commander }

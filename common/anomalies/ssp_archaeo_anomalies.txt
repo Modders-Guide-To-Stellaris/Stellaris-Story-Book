@@ -9,6 +9,12 @@ ssp_anomaly_bacterium_ship = {
             add = 20
             is_planet_class = pc_ocean
         }
+        modifier = {
+            add = 30
+            from.owner = {
+                ssp_is_custodian_aspirant_empire = yes
+            }
+        }
     }
 
     on_success = ssp_anomaly.1

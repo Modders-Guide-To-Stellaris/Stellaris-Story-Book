@@ -1,6 +1,7 @@
 on_monthly_pulse_country = {
     events = {
         ssp_relic.1
+        ssp_civic.100
     }
 }
 
@@ -13,5 +14,11 @@ on_decade_pulse_country = {
 on_jump_drive = {
     events = {
         ssp_relic.11
+    }
+}
+
+on_leader_unassigned = {
+    events = {
+        ssp_civic.71 #CHEATERS DENIED
     }
 }

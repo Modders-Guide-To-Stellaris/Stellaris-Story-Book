@@ -16,6 +16,30 @@ ssp_commander_titan_fail = {
     starbase_shipyard_build_speed_mult = -0.05
 }
 
+#there must be a better way to do this smh
+
+ssp_diploweight_pop = {
+    hide_from_country_list = yes
+    diplo_weight_pops_mult = 0.01 #1%
+}
+
+ssp_diploweight_economy = {
+    hide_from_country_list = yes
+    diplo_weight_economy_mult = 0.01
+}
+
+ssp_diploweight_researcher = {
+    hide_from_country_list = yes
+    diplo_weight_technology_mult = 0.01
+}
+
+ssp_diploweight_fleet = {
+    hide_from_country_list = yes
+    diplo_weight_naval_mult = -0.01
+}
+
+# Researcher stuff curators whatever
+
 ssp_curator_databanks_raided = {
     all_technology_research_speed = 0.10
     ssp_planet_researchers_research_produces_mult = 0.1
@@ -28,6 +52,8 @@ ssp_planet_researchers_research_produces_mult = { #actually 100% but we ignore t
     planet_researchers_society_research_produces_mult = 1
     planet_researchers_engineering_research_produces_mult = 1
 }
+
+#relic stuff
 
 ssp_r_drive_core_jump_range = {
     ship_ftl_jumpdrive_range_mult = 1

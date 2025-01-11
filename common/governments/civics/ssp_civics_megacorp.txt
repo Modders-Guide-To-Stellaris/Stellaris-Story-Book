@@ -1,0 +1,26 @@
+ssp_civic_megacorp_diplomatic = {
+    modification = no
+    icon = "gfx/interface/icons/governments/civics/megacorp_civics/civic_ssp_megacorp_diplomat.dds"
+    description = ssp_civic_diplomatic_tooltip
+    hide_modifiers = yes
+
+    potential = {
+        authority = { value = auth_corporate }
+    }
+    possible = {
+        civics = {
+            NOT = {
+                value = civic_public_relations_specialists
+            }
+        }
+    }
+
+    random_weight = { base = @civic_default_random_weight }
+
+    modifier = {
+        country_trust_cap_add = 25
+        country_trust_growth = 0.50
+        country_trade_fee = -0.20
+        resolution_category_galacticreforms_vote_strength_mult = 0.10
+    }
+}
