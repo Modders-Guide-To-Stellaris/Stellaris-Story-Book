@@ -1,4 +1,0 @@
-NEconomy = {
-    BORROW_DIPLO_WEIGHT_FAVOR_RESOURCE	= { "unity" }
-    BORROW_DIPLO_WEIGHT_FAVOR_COST		= { 50 }
-}
