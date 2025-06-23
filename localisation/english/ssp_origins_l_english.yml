@@ -1,0 +1,18 @@
+﻿l_english:
+
+ # for Purr~sar <3
+ ssp_origin_mutual_connection: "Mutual Connection"
+ ssp_origin_mutual_connection_desc: "§RWarning: This origin only works if theres an even amount of people playing it / CO-OP Origin§!\n"
+ ssp_origin_mutual_connection_effects: ""
+
+ #events
+ ssp_origin.101a: "[ssp_connection_option_1.GetName]"
+ ssp_origin.101.a.tooltip:0 "Make a connection with the people of §Y[ssp_connection_option_1.GetName]§!"
+ ssp_origin.101b:0 "[ssp_connection_option_2.GetName]"
+ ssp_origin.101.b.tooltip:0 "Make a connection with the people of §Y[ssp_connection_option_2.GetName]§!"
+ ssp_origin.101c:0 "[ssp_connection_option_3.GetName]"
+ ssp_origin.101.c.tooltip:0 "Make a connection with the people of §Y[ssp_connection_option_3.GetName]§!"
+ ssp_origin.101d:0 "[ssp_connection_option_4.GetName]"
+ ssp_origin.101.d.tooltip:0 "Make a connection with the people of §Y[ssp_connection_option_4.GetName]§!"
+ ssp_origin.101e:0 "[ssp_connection_option_5.GetName]"
+ ssp_origin.101.e.tooltip:0 "Make a connection with the people of §Y[ssp_connection_option_5.GetName]§!"

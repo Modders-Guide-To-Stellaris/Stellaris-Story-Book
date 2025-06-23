@@ -1,0 +1,210 @@
+namespace = ssp_origin
+
+event = {
+    id = ssp_origin.100
+    is_triggered_only = yes
+    hide_window = yes
+
+    immediate = {
+        random_playable_country = {
+            limit = {
+                has_origin = ssp_origin_mutual_connection
+            }
+            if = {
+                limit = {
+                    NOR = {
+                        has_country_flag = connection_overload
+                        has_country_flag = ssp_found_connection
+                        has_global_flag = ssp_making_connection
+                    }
+                }
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_origin.101
+    is_triggered_only = yes
+    title = placeholder
+    desc = placeholder
+    picture = placeholder
+
+    immediate = {
+        set_country_flag = is_connector
+        set_global_flag = ssp_making_connection
+        random_playable_country = {
+            limit = {
+                NOT = {
+                    is_country = owner
+                    has_country_flag = ssp_found_connection
+                }
+                has_origin = ssp_origin_mutual_connection
+            }
+            save_event_target_as = ssp_connection_option_1
+        }
+        random_playable_country = {
+            limit = {
+                NOT = {
+                    is_country = owner
+                    has_country_flag = ssp_found_connection
+                    is_same_value = event_target:ssp_connection_option_1
+                }
+                has_origin = ssp_origin_mutual_connection
+            }
+            save_event_target_as = ssp_connection_option_2
+        }
+        random_playable_country = {
+            limit = {
+                NOT = {
+                    is_country = owner
+                    has_country_flag = ssp_found_connection
+                    is_same_value = event_target:ssp_connection_option_1
+                    is_same_value = event_target:ssp_connection_option_2
+                }
+                has_origin = ssp_origin_mutual_connection
+            }
+            save_event_target_as = ssp_connection_option_3
+        }
+        random_playable_country = {
+            limit = {
+                NOT = {
+                    is_country = owner
+                    has_country_flag = ssp_found_connection
+                    is_same_value = event_target:ssp_connection_option_1
+                    is_same_value = event_target:ssp_connection_option_2
+                    is_same_value = event_target:ssp_connection_option_3
+                }
+                has_origin = ssp_origin_mutual_connection
+            }
+            save_event_target_as = ssp_connection_option_4
+        }
+        random_playable_country = {
+            limit = {
+                NOT = {
+                    is_country = owner
+                    has_country_flag = ssp_found_connection
+                    is_same_value = event_target:ssp_connection_option_1
+                    is_same_value = event_target:ssp_connection_option_2
+                    is_same_value = event_target:ssp_connection_option_3
+                    is_same_value = event_target:ssp_connection_option_4
+                }
+                has_origin = ssp_origin_mutual_connection
+            }
+            save_event_target_as = ssp_connection_option_5
+        }
+    }
+    option = {
+        trigger = { exists = event_target:ssp_connection_option_1 }
+
+        name = ssp_origin.101a
+        custom_tooltip = ssp_origin.101.a.tooltip
+        hidden_effect = {
+            event_target:ssp_connection_option_1 = {
+                country_event = {
+                    id = ssp_origin.102
+                }
+            }
+        }
+    }
+    option = {
+        trigger = { exists = event_target:ssp_connection_option_2 }
+
+        name = ssp_origin.101b
+        custom_tooltip = ssp_origin.101.b.tooltip
+        hidden_effect = {
+            event_target:ssp_connection_option_2 = {
+                country_event = {
+                    id = ssp_origin.102
+                }
+            }
+        }
+    }
+    option = {
+        trigger = { exists = event_target:ssp_connection_option_3 }
+
+        name = ssp_origin.101c
+        custom_tooltip = ssp_origin.101.c.tooltip
+        hidden_effect = {
+            event_target:ssp_connection_option_3 = {
+                country_event = {
+                    id = ssp_origin.102
+                }
+            }
+        }
+    }
+    option = {
+        trigger = { exists = event_target:ssp_connection_option_4 }
+
+        name = ssp_origin.101d
+        custom_tooltip = ssp_origin.101.d.tooltip
+        hidden_effect = {
+            event_target:ssp_connection_option_4 = {
+                country_event = {
+                    id = ssp_origin.102
+                }
+            }
+        }
+    }
+    option = {
+        trigger = { exists = event_target:ssp_connection_option_5 }
+
+        name = ssp_origin.101e
+        custom_tooltip = ssp_origin.101.e.tooltip
+        hidden_effect = {
+            event_target:ssp_connection_option_5 = {
+                country_event = {
+                    id = ssp_origin.102
+                }
+            }
+        }
+    }
+    option = {
+        name = ssp_origin.101f
+        country_event = { id = ssp_origin.103 }
+        hidden_effect = {
+            remove_country_flag = is_connector
+            set_timed_country_flag = { flag = connection_overload days = 90 }
+            remove_global_flag = ssp_making_connection
+        }
+    }
+}
+
+country_event = {
+    id = ssp_origin.102
+    is_triggered_only = yes
+    title = placeholder
+    desc = placeholder
+    picture = placeholder
+
+    option = {
+        name = ssp_weather
+        ssp_create_linked_wormhole = yes
+    }
+    option = {
+        name = NO
+        hidden_effect = {
+            remove_global_flag = ssp_making_connection
+            every_playable_country = {
+                limit = {
+                    has_country_flag = is_connector
+                }
+                country_event = { id = ssp_origin.103 }
+                set_timed_country_flag = { flag = connection_overload days = 90 }
+                remove_country_flag = is_connector
+            }
+        }
+    }
+}
+
+country_event = {
+    id = ssp_origin.103
+    is_triggered_only = yes
+    picture = GFX_evt_worrying_signal
+    title = placeholder
+    desc =
+
+    option = {
+        name = WORRYING
+    }
+}
