@@ -1,7 +1,7 @@
 ssp_origin_mutual_connection = {
     is_origin = yes
     icon = "gfx/interface/icons/origins/origins_default.dds"
-    picture = GFX_evt_astral_rift_vortex
+    picture = GFX_org_mutual_connection
 
     potential = {
         always = yes

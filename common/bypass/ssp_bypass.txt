@@ -1,16 +1,17 @@
 ssp_connection_wormhole = {
     name = SSP_CONNECTION_WORMHOLE_GALACTIC
     is_pathfind = yes
-    uses_action = no
     requires_exploration = no
+    respect_closed_borders = no
+    block_access_if_hostile = no
+    uses_action = no
     always_active = yes
-    windup_time = 0
-    winddown_time = 0
-    ftl_multiplier = 0
+    windup_time = 10
+    winddown_time = 10
     extends_sensors = yes
-    icon_frame = 12
     remember_instances = yes
-    animation_time = 1
+    animation_time = 10
+    icon_frame = 12
     galactic_map_tooltip_header=SSP_CONNECTION_WORMHOLE_GALACTIC
     galactic_map_tooltip_desc=SSP_CONNECTION_WORMHOLE_DESC
     connection_type = one_to_one
@@ -18,12 +19,9 @@ ssp_connection_wormhole = {
     ftl_bypass_effect = "wormhole_ftl_bypass_effect_entity"
     can_bypass_be_locked = no
 
-    prerequisites = {
-        always = yes
-    }
-
     potential = {
         always = yes
     }
+
     on_action = "on_entering_wormhole"
 }

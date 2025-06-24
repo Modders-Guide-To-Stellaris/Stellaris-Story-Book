@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_org_mutual_connection"
+        texturefile = "gfx/event_pictures/origins/GFX_org_mutual_connection.dds"
+        alwaystransparent = yes
+    }
+}

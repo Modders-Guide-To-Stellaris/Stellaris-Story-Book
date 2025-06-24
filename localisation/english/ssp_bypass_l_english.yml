@@ -1,3 +1,4 @@
 ﻿l_english:
  SSP_CONNECTION_WORMHOLE_GALACTIC: "Linked Wormhole"
+ SSP_CONNECTION_WORMHOLE_DESC_UNEXPLORED: "This system contains a Wormhole but we dont know where it leads."
  SSP_CONNECTION_WORMHOLE_DESC:1 "This system contains a Wormhole Linked to $DEST|Y$"

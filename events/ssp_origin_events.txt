@@ -18,6 +18,7 @@ event = {
                         has_global_flag = ssp_making_connection
                     }
                 }
+                country_event = { id = ssp_origin.101 }
             }
         }
     }
@@ -26,9 +27,9 @@ event = {
 country_event = {
     id = ssp_origin.101
     is_triggered_only = yes
-    title = placeholder
-    desc = placeholder
-    picture = placeholder
+    picture = gfx_default_ime_composition_background
+    title = ssp_origin.101.Name
+    desc = ssp_origin.101.Desc
 
     immediate = {
         set_country_flag = is_connector
@@ -161,6 +162,7 @@ country_event = {
     }
     option = {
         name = ssp_origin.101f
+        custom_tooltip = ssp_origin.101.f.tooltip
         country_event = { id = ssp_origin.103 }
         hidden_effect = {
             remove_country_flag = is_connector
@@ -173,13 +175,23 @@ country_event = {
 country_event = {
     id = ssp_origin.102
     is_triggered_only = yes
-    title = placeholder
-    desc = placeholder
-    picture = placeholder
+    picture = gfx_default_ime_composition_background
+    title = ssp_origin.102.Name
+    desc = ssp_origin.102.Desc
+
 
     option = {
         name = ssp_weather
         ssp_create_linked_wormhole = yes
+        hidden_effect = {
+            set_country_flag = ssp_found_connection
+            every_playable_country = {
+                limit = {
+                    has_country_flag = is_connector
+                }
+                set_country_flag = ssp_found_connection
+            }
+        }
     }
     option = {
         name = NO
@@ -201,8 +213,9 @@ country_event = {
     id = ssp_origin.103
     is_triggered_only = yes
     picture = GFX_evt_worrying_signal
-    title = placeholder
-    desc =
+    title = ssp_origin.103.Name
+    desc = ssp_origin.103.Desc
+    #could eventually do a different description on deny from another empire
 
     option = {
         name = WORRYING
